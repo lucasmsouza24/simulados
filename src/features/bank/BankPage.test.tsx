@@ -15,7 +15,7 @@ describe('BankPage', () => {
   it('filters by format through the URL', async () => {
     const { user, router } = renderRoutes(questions, '/test-exam/questoes');
     await user.selectOptions(await screen.findByRole('combobox', { name: 'Format' }), 'yes-no');
-    expect(screen.getByText('1 of 4 questions')).toBeInTheDocument();
+    expect(await screen.findByText('1 of 4 questions')).toBeInTheDocument();
     expect(router.state.location.search).toBe('?formato=yes-no');
     expect(screen.getByText('stem A-1 (en)')).toBeInTheDocument();
   });
@@ -42,6 +42,6 @@ describe('BankPage', () => {
 
     await router.navigate('/test-exam/questoes');
     await waitFor(() => expect(router.state.location.pathname).toBe('/test-exam'));
-    expect(screen.getByText(/Question 1 of/)).toBeInTheDocument();
+    expect(await screen.findByText(/Question 1 of/)).toBeInTheDocument();
   });
 });
