@@ -1,0 +1,351 @@
+[
+  {
+    "id": "CLOUD-02-04-01",
+    "requirement": "N11",
+    "subject": "gerenciamento da nuvem",
+    "level": "detail",
+    "stem": {
+      "pt": "Um ambiente de nuvem monitora a integridade dos recursos e substitui automaticamente os recursos com falha. Qual afirmação classifica corretamente esse recurso?",
+      "en": "A cloud environment monitors the health of resources and automatically replaces failing resources. Which statement correctly classifies this capability?"
+    },
+    "explanation": {
+      "pt": "O gerenciamento da nuvem trata de gerenciar seus recursos de nuvem: dimensionamento automático, implantação por modelos, monitoramento de integridade com substituição automática de recursos com falha e alertas automáticos. O gerenciamento na nuvem trata de como você gerencia: portal, CLI, APIs e PowerShell.",
+      "en": "Management of the cloud is about managing your cloud resources: autoscaling, deploying from templates, monitoring health and automatically replacing failing resources, and automatic alerts. Management in the cloud covers how you manage: portal, CLI, APIs, and PowerShell."
+    },
+    "distractors": {
+      "pt": "As alternativas A e B são os vizinhos tentadores: usam as ferramentas de 'na nuvem', mas o recurso descrito é um comportamento automático da plataforma.",
+      "en": "Option A and B are the tempting neighbors: they use the 'in the cloud' tools, but the capability described is automatic behavior of the platform."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Gerenciamento na nuvem (management in the cloud), porque um administrador usa um portal da web para substituir recursos",
+          "en": "Management in the cloud, because an administrator uses a web portal to replace resources"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Gerenciamento na nuvem (management in the cloud), porque scripts chamam APIs para substituir recursos",
+          "en": "Management in the cloud, because scripts call APIs to replace resources"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Gerenciamento da nuvem (management of the cloud), porque os recursos com falha são substituídos somente manualmente",
+          "en": "Management of the cloud, because failing resources are replaced only manually"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Gerenciamento da nuvem (management of the cloud), porque os recursos com falha são substituídos automaticamente com base na integridade monitorada",
+          "en": "Management of the cloud, because failing resources are replaced automatically based on monitored health"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-02-04-02",
+    "requirement": "N11",
+    "subject": "gerenciamento da nuvem",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Essas são as quatro capacidades que o Learn lista para o gerenciamento da nuvem: dimensionamento automático, implantação por modelos, monitoramento de integridade com substituição automática e alertas automáticos em métricas configuradas.",
+      "en": "These are the four capabilities Learn lists for management of the cloud: automatic scaling, template deployment, health monitoring with automatic replacement, and automatic alerts on configured metrics."
+    },
+    "distractors": {
+      "pt": "O dimensionamento automático e a substituição por integridade são o par mais próximo: um ajusta a quantidade à demanda, o outro troca recursos com falha.",
+      "en": "Autoscaling and health-based replacement are the closest pair: one adjusts quantity to demand, the other swaps failed resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A implantação de recursos cresce e diminui automaticamente conforme a necessidade.",
+          "en": "Resource deployment grows and shrinks automatically based on need."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os recursos são implantados sem configuração manual.",
+          "en": "Resources are deployed without manual configuration."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "A equipe conhece o desempenho em tempo real por meio de notificações.",
+          "en": "The team knows about performance in real time through notifications."
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Recursos com falha são detectados e trocados sem intervenção.",
+          "en": "Failing resources are detected and swapped without intervention."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Alertas automáticos com base em métricas configuradas",
+          "en": "Automatic alerts based on configured metrics"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Monitoramento de integridade com substituição automática",
+          "en": "Health monitoring with automatic replacement"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Dimensionamento automático (autoscaling)",
+          "en": "Autoscaling"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Implantação a partir de modelos pré-configurados",
+          "en": "Deployment from preconfigured templates"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "D",
+      "3": "A",
+      "4": "B"
+    }
+  },
+  {
+    "id": "CLOUD-02-04-03",
+    "requirement": "N11",
+    "subject": "gerenciamento na nuvem",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Learn lista portal da web, CLI, APIs e PowerShell em gerenciamento na nuvem. O gerenciamento da nuvem abrange comportamentos automáticos como dimensionamento automático, modelos, substituição automática de recursos com falha e alertas.",
+      "en": "Learn lists web portal, CLI, APIs, and PowerShell under management in the cloud. Management of the cloud covers automatic behaviors such as autoscaling, templates, automatic replacement of failing resources, and alerts."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque o PowerShell gerencia recursos, mas ele é uma ferramenta de gerenciamento na nuvem.",
+      "en": "Statement 2 is tempting because PowerShell manages resources, but it is a tool for management in the cloud."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O gerenciamento na nuvem permite gerenciar recursos por meio de um portal da web, uma interface de linha de comando, APIs ou PowerShell.",
+          "en": "Management in the cloud lets you manage resources through a web portal, a command line interface, APIs, or PowerShell."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Usar scripts do PowerShell para gerenciar recursos é um exemplo de gerenciamento da nuvem (management of the cloud).",
+          "en": "Using PowerShell scripts to manage resources is an example of management of the cloud."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O gerenciamento da nuvem inclui substituir manualmente recursos com falha depois que uma falha é relatada.",
+          "en": "Management of the cloud includes manually replacing failing resources after a failure is reported."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-02-04-04",
+    "requirement": "N11",
+    "subject": "gerenciamento da nuvem",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são exemplos de gerenciamento da nuvem (management of the cloud)? Escolha três.",
+      "en": "Which three are examples of management of the cloud? Choose three."
+    },
+    "explanation": {
+      "pt": "O gerenciamento da nuvem inclui dimensionar a implantação automaticamente, implantar a partir de modelos pré-configurados, monitorar a integridade com substituição automática e receber alertas automáticos. Portal e PowerShell são formas de gerenciamento na nuvem.",
+      "en": "Management of the cloud includes automatically scaling deployment, deploying from preconfigured templates, monitoring health with automatic replacement, and receiving automatic alerts. Portal and PowerShell are ways of management in the cloud."
+    },
+    "distractors": {
+      "pt": "As alternativas A e C são as tentadoras porque são ferramentas comuns de gerenciamento.",
+      "en": "Options A and C are the tempting ones because they are common management tools."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Gerenciar recursos por meio de um portal da web",
+          "en": "Managing resources through a web portal"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Dimensionar automaticamente a implantação de recursos com base na necessidade",
+          "en": "Automatically scaling resource deployment based on need"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Gerenciar recursos por meio do PowerShell",
+          "en": "Managing resources through PowerShell"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Receber alertas automáticos com base em métricas configuradas",
+          "en": "Receiving automatic alerts based on configured metrics"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Implantar recursos com base em um modelo pré-configurado",
+          "en": "Deploying resources based on a preconfigured template"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-02-04-05",
+    "requirement": "N11",
+    "subject": "efeito da capacidade de gerenciamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe de operações implanta recursos a partir de modelos, monitora a integridade no portal e automatiza tarefas recorrentes com scripts de CLI ou PowerShell. Qual benefício da nuvem essa combinação entrega principalmente?",
+      "en": "An operations team deploys resources from templates, monitors health in the portal, and automates recurring tasks with CLI or PowerShell scripts. Which cloud benefit does this combination mainly deliver?"
+    },
+    "explanation": {
+      "pt": "Exemplo do Learn: implantar a partir de modelos, monitorar a integridade no portal e automatizar tarefas com CLI ou PowerShell reduz o esforço manual e ajuda a manter configurações consistentes, o que é capacidade de gerenciamento.",
+      "en": "Learn's example: deploying from templates, monitoring health in the portal, and automating tasks with CLI or PowerShell reduces manual effort and helps maintain consistent configurations, which is manageability."
+    },
+    "distractors": {
+      "pt": "Alta disponibilidade é tentadora porque monitoramento soa como tempo de atividade, mas o cenário trata de operar o ambiente, e não de garantir tempo de atividade.",
+      "en": "High availability is tempting because monitoring sounds like uptime, but the scenario is about operating the environment, not guaranteeing uptime."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Confiabilidade (reliability), porque regiões com falha são substituídas automaticamente",
+          "en": "Reliability, because failing regions are replaced automatically"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Capacidade de gerenciamento (manageability), porque reduz o esforço manual e ajuda a manter configurações consistentes",
+          "en": "Manageability, because it reduces manual effort and helps maintain consistent configurations"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Previsibilidade (predictability), porque prevê o gasto na nuvem",
+          "en": "Predictability, because it forecasts cloud spend"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Alta disponibilidade (high availability), porque garante tempo de atividade por meio de SLAs",
+          "en": "High availability, because it guarantees uptime through SLAs"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-02-04-06",
+    "requirement": "N11",
+    "subject": "gerenciamento na nuvem",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Você pode gerenciar recursos de nuvem por meio de um portal da web, uma interface de linha de comando, ______ e PowerShell.",
+      "en": "Complete the sentence. You can manage cloud resources through a web portal, a command line interface, ______, and PowerShell."
+    },
+    "explanation": {
+      "pt": "Em gerenciamento na nuvem, o Learn lista o portal da web, a interface de linha de comando, APIs e PowerShell.",
+      "en": "Under management in the cloud, Learn lists the web portal, the command line interface, APIs, and PowerShell."
+    },
+    "distractors": {
+      "pt": "As regras de dimensionamento automático são tentadoras porque são um recurso de gerenciamento, mas pertencem ao gerenciamento da nuvem.",
+      "en": "Autoscale rules are tempting because they are a management capability, but they belong to management of the cloud."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/5-manageability-cloud",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "APIs",
+          "en": "APIs"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "balanceadores de carga",
+          "en": "load balancers"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "SLAs (contratos de nível de serviço)",
+          "en": "service-level agreements (SLAs)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "regras de dimensionamento automático",
+          "en": "autoscale rules"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

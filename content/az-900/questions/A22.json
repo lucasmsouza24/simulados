@@ -1,0 +1,291 @@
+[
+  {
+    "id": "ARCH-04-03-01",
+    "requirement": "A22",
+    "subject": "colaboração B2B",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe de projeto quer permitir que funcionários de um fornecedor entrem em aplicativos internos com suas próprias credenciais existentes. Os usuários do fornecedor devem ser representados no diretório como usuários convidados. Qual recurso do External ID se encaixa?",
+      "en": "A project team wants to let supplier employees sign in to internal applications with their own existing credentials. The supplier users must be represented in the directory as guest users. Which External ID capability fits?"
+    },
+    "explanation": {
+      "pt": "A colaboração B2B permite que usuários externos usem sua identidade preferida para entrar em seus aplicativos. Os usuários de colaboração B2B são representados no seu diretório, normalmente como usuários convidados.",
+      "en": "B2B collaboration lets external users use their preferred identity to sign in to your applications. B2B collaboration users are represented in your directory, typically as guest users."
+    },
+    "distractors": {
+      "pt": "O B2B direct connect é o vizinho tentador, mas seus usuários não são representados no seu diretório.",
+      "en": "B2B direct connect is the tempting neighbor, but its users aren't represented in your directory."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/4-external-identities",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "B2B direct connect",
+          "en": "B2B direct connect"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Microsoft Entra External ID for customers",
+          "en": "Microsoft Entra External ID for customers"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "B2B collaboration",
+          "en": "B2B collaboration"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Entra Domain Services",
+          "en": "Microsoft Entra Domain Services"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-04-03-02",
+    "requirement": "A22",
+    "subject": "conexão direta B2B",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer estabelecer uma confiança mútua e bidirecional com outro locatário do Microsoft Entra, para que usuários externos trabalhem em canais compartilhados do Teams a partir do seu locatário de origem. Esses usuários não devem ser representados no diretório da empresa. Qual recurso se encaixa?",
+      "en": "A company wants to establish a mutual, two-way trust with another Microsoft Entra tenant, so that external users can work in Teams shared channels from their home tenant. These users must not be represented in the company's directory. Which capability fits?"
+    },
+    "explanation": {
+      "pt": "O B2B direct connect estabelece uma confiança mútua e bidirecional com outro locatário do Microsoft Entra e atualmente oferece suporte a canais compartilhados do Teams. Seus usuários não são representados no seu diretório, mas ficam visíveis no canal compartilhado do Teams e nos relatórios do centro de administração do Teams.",
+      "en": "B2B direct connect establishes a mutual, two-way trust with another Microsoft Entra tenant and currently supports Teams shared channels. Its users aren't represented in your directory, but they are visible within the Teams shared channel and in Teams admin center reports."
+    },
+    "distractors": {
+      "pt": "A colaboração B2B é o vizinho tentador, mas seus usuários são representados como convidados no seu diretório.",
+      "en": "B2B collaboration is the tempting neighbor, but its users are represented as guests in your directory."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/4-external-identities",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "B2B collaboration",
+          "en": "B2B collaboration"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "B2B direct connect",
+          "en": "B2B direct connect"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Entra External ID for customers",
+          "en": "Microsoft Entra External ID for customers"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-04-03-03",
+    "requirement": "A22",
+    "subject": "tipos de identidade externa",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O External ID para clientes (antigo Azure AD B2C) atende consumidores e clientes. A colaboração B2B representa usuários externos como convidados no seu diretório. O B2B direct connect é uma confiança bidirecional para canais compartilhados do Teams, sem representação no diretório.",
+      "en": "External ID for customers (formerly Azure AD B2C) serves consumers and customers. B2B collaboration represents external users as guests in your directory. B2B direct connect is a two-way trust for Teams shared channels without directory representation."
+    },
+    "distractors": {
+      "pt": "Colaboração B2B e B2B direct connect são o par mais próximo: a pista decisiva é se os usuários aparecem no seu diretório.",
+      "en": "B2B collaboration and B2B direct connect are the closest pair: the deciding clue is whether users appear in your directory."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/4-external-identities",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Publicar um aplicativo SaaS moderno ou desenvolvido sob medida para consumidores e clientes, usando o Microsoft Entra External ID para gerenciamento de identidade e acesso",
+          "en": "Publish a modern SaaS or custom-developed app to consumers and customers, using Microsoft Entra External ID for identity and access management"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os usuários externos são representados no seu diretório, normalmente como usuários convidados",
+          "en": "External users are represented in your directory, typically as guest users"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Confiança mútua e bidirecional entre locatários que oferece suporte a canais compartilhados do Teams, com usuários não representados no seu diretório",
+          "en": "Mutual, two-way trust between tenants that supports Teams shared channels, with users not represented in your directory"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Colaboração B2B (B2B collaboration)",
+          "en": "B2B collaboration"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Microsoft Entra External ID para clientes",
+          "en": "Microsoft Entra External ID for customers"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "B2B direct connect",
+          "en": "B2B direct connect"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "A",
+      "3": "C"
+    }
+  },
+  {
+    "id": "ARCH-04-03-04",
+    "requirement": "A22",
+    "subject": "identidades trazidas e revisões de acesso",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Os usuários externos trazem suas próprias identidades (contas corporativas, identidades digitais emitidas por governo ou identidades sociais). O provedor externo gerencia a autenticação; você gerencia a autorização. As revisões de acesso permitem que convidados ou tomadores de decisão recertifiquem o acesso dos convidados.",
+      "en": "External users bring their own identities (work accounts, government-issued digital identities, or social identities). The external provider manages authentication; you manage authorization. Access reviews let guests or decision makers recertify guests' access."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque convidados precisam de alguma credencial, mas usam as que já possuem.",
+      "en": "Statement 1 is tempting because guests need some credential, but they use their existing ones."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/4-external-identities",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Os usuários externos devem criar novas senhas locais no seu locatário antes de poderem colaborar.",
+          "en": "External users must create new local passwords in your tenant before they can collaborate."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Com identidades externas, o provedor de identidade externo gerencia a autenticação e você gerencia a autorização aos seus aplicativos.",
+          "en": "With external identities, the external identity provider manages authentication, and you manage authorization to your applications."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "As revisões de acesso podem ser usadas para pedir a convidados ou a tomadores de decisão que recertifiquem o acesso dos convidados.",
+          "en": "Access reviews can be used to ask guests or decision makers to recertify guests' access."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-04-03-05",
+    "requirement": "A22",
+    "subject": "identidades externas",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre identidades externas estão corretas? Escolha duas.",
+      "en": "Which two statements about external identities are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "Os usuários externos trazem suas próprias identidades, e as revisões de acesso permitem remover o acesso de convidados que não precisam mais dele. Identidades externas são usadas em cenários de acesso entre locatários e de consumidores, e não apenas SSO.",
+      "en": "External users bring their own identities, and access reviews let you remove access for guests who no longer need it. External identities are used for cross-tenant and consumer access scenarios, not just SSO."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque ambos evitam logons extras, mas identidades externas cruzam limites de locatário.",
+      "en": "Option C is tempting because both avoid extra sign-ins, but external identities cross tenant boundaries."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/4-external-identities",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os usuários do B2B direct connect são representados no seu diretório como convidados.",
+          "en": "B2B direct connect users are represented in your directory as guests."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Os usuários externos podem entrar com contas corporativas, identidades digitais emitidas por governo ou identidades sociais, como Google ou Facebook.",
+          "en": "External users can sign in with work accounts, government-issued digital identities, or social identities such as Google or Facebook."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Identidades externas são apenas outro nome para logon único dentro do seu próprio locatário.",
+          "en": "External identities are just another name for single sign-on within your own tenant."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os usuários externos devem ser criados com senhas locais no seu locatário.",
+          "en": "External users must be created with local passwords in your tenant."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "As revisões de acesso podem ser usadas para remover o acesso de convidados que não precisam mais dele.",
+          "en": "Access reviews can be used to remove access for guests who no longer need it."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  }
+]

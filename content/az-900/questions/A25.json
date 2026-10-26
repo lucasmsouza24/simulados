@@ -1,0 +1,291 @@
+[
+  {
+    "id": "ARCH-04-06-01",
+    "requirement": "A25",
+    "subject": "definição Confiança Zero",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual modelo de segurança assume o pior cenário, presume violação desde o início e verifica cada solicitação como se tivesse se originado de uma rede não controlada?",
+      "en": "Which security model assumes the worst-case scenario, assumes breach at the outset, and verifies each request as though it originated from an uncontrolled network?"
+    },
+    "explanation": {
+      "pt": "O Zero Trust assume o pior cenário e protege os recursos de acordo: presume violação desde o início e verifica cada solicitação como se tivesse se originado de uma rede não controlada. Isso corresponde à avaliação deste módulo.",
+      "en": "Zero Trust assumes the worst-case scenario and protects resources accordingly: it assumes breach at the outset and verifies each request as though it originated from an uncontrolled network. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "A defesa em profundidade é o vizinho tentador porque ambos são estratégias de segurança, mas ela trata de múltiplas camadas de proteção.",
+      "en": "Defense-in-depth is the tempting neighbor because both are security strategies, but defense-in-depth is about multiple layers of protection."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Defense-in-depth",
+          "en": "Defense-in-depth"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Role-based access control",
+          "en": "Role-based access control"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Shared responsibility",
+          "en": "Shared responsibility"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Zero Trust",
+          "en": "Zero Trust"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-04-06-02",
+    "requirement": "A25",
+    "subject": "princípios Confiança Zero",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Os três princípios orientadores do Zero Trust são verificar explicitamente, usar acesso com privilégio mínimo e presumir violação.",
+      "en": "The three Zero Trust guiding principles are verify explicitly, use least privilege access, and assume breach."
+    },
+    "distractors": {
+      "pt": "Defesa em profundidade é o distrator: é um modelo diferente, e não um princípio do Zero Trust.",
+      "en": "Defense in depth is the distractor: it is a different model, not a Zero Trust principle."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Sempre autenticar e autorizar com base em todos os pontos de dados disponíveis",
+          "en": "Always authenticate and authorize based on all available data points"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Limitar o acesso do usuário com Just-In-Time e Just-Enough-Access e políticas adaptáveis baseadas em risco",
+          "en": "Limit user access with Just-In-Time and Just-Enough-Access, and risk-based adaptive policies"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Limitar o possível impacto, segmentar o acesso e usar análises para visibilidade e detecção de ameaças",
+          "en": "Limit the potential impact, segment access, and use analytics for visibility and threat detection"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Presumir violação (assume breach)",
+          "en": "Assume breach"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Verificar explicitamente (verify explicitly)",
+          "en": "Verify explicitly"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Usar acesso com privilégio mínimo (use least privilege access)",
+          "en": "Use least privilege access"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Defesa em profundidade",
+          "en": "Defense in depth"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A"
+    }
+  },
+  {
+    "id": "ARCH-04-06-03",
+    "requirement": "A25",
+    "subject": "perímetro vs Confiança Zero",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Zero Trust exige que todos se autentiquem e concede acesso com base na autenticação, e não na localização. Para um dispositivo não gerenciado em uma rede pública, ele avalia sinais de identidade, estado do dispositivo e risco, e pode permitir aplicativos de baixo risco, exigir MFA para sistemas sensíveis ou bloquear quando o risco é alto.",
+      "en": "Zero Trust requires everyone to authenticate and grants access based on authentication rather than location. For an unmanaged device on a public network it evaluates identity signals, device state, and risk, and may allow low-risk apps, require MFA for sensitive systems, or block when risk is too high."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque não gerenciado soa arriscado, mas a decisão é sensível ao contexto, e não automática.",
+      "en": "Statement 3 is tempting because unmanaged sounds risky, but the decision is context-aware, not automatic."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Zero Trust presume violação desde o início e verifica cada solicitação como se tivesse se originado de uma rede não controlada.",
+          "en": "Zero Trust assumes breach at the outset and verifies each request as though it originated from an uncontrolled network."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Zero Trust concede acesso com base em um dispositivo estar dentro de uma rede interna confiável.",
+          "en": "Zero Trust grants access based on a device being inside a trusted internal network."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Sob o Zero Trust, um logon de um dispositivo não gerenciado em uma rede pública é sempre bloqueado.",
+          "en": "Under Zero Trust, a sign-in from an unmanaged device on a public network is always blocked."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-04-06-04",
+    "requirement": "A25",
+    "subject": "acesso contextual",
+    "level": "essential",
+    "stem": {
+      "pt": "Um usuário entra a partir de um dispositivo não gerenciado em uma rede pública. Como uma abordagem Zero Trust trata a solicitação?",
+      "en": "A user signs in from an unmanaged device on a public network. How does a Zero Trust approach handle the request?"
+    },
+    "explanation": {
+      "pt": "As decisões de acesso do Zero Trust são contínuas e sensíveis ao contexto, e não baseadas apenas na origem da solicitação. Ele avalia sinais de identidade, estado do dispositivo e condições de risco antes de conceder acesso.",
+      "en": "Zero Trust access decisions are continuous and context-aware, not based only on where the request originates. It evaluates identity signals, device state, and risk conditions before granting access."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque soa segura, mas o Zero Trust é sensível ao contexto, e não baseado em localização.",
+      "en": "Option A is tempting because it sounds secure, but Zero Trust is context-aware rather than location-based."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Bloquear automaticamente porque vem de uma rede pública.",
+          "en": "Block it automatically because it comes from a public network."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Permitir, porque os usuários são confiáveis após o primeiro logon do dia.",
+          "en": "Allow it, because users are trusted after the first sign-in of the day."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Conceder acesso com base apenas na senha do usuário.",
+          "en": "Grant access based only on the user's password."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Avaliar sinais de identidade, estado do dispositivo e condições de risco e então permitir aplicativos de baixo risco, exigir MFA para sistemas sensíveis ou bloquear quando o risco for muito alto.",
+          "en": "Evaluate identity signals, device state, and risk conditions, then allow low-risk apps, require MFA for sensitive systems, or block when risk is too high."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-04-06-05",
+    "requirement": "A25",
+    "subject": "princípios Confiança Zero",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois são princípios orientadores do modelo Zero Trust? Escolha dois.",
+      "en": "Which two are guiding principles of the Zero Trust model? Choose two."
+    },
+    "explanation": {
+      "pt": "Os princípios são verificar explicitamente, usar acesso com privilégio mínimo e presumir violação. A confiança baseada em perímetro é exatamente o que o Zero Trust substitui.",
+      "en": "The principles are verify explicitly, use least privilege access, and assume breach. Perimeter-based trust is exactly what Zero Trust replaces."
+    },
+    "distractors": {
+      "pt": "As alternativas A e E descrevem o modelo tradicional baseado em perímetro.",
+      "en": "Options A and E describe the traditional perimeter-based model."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Confiar em dispositivos que estão dentro da rede corporativa",
+          "en": "Trust devices that are inside the corporate network"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Usar acesso com privilégio mínimo",
+          "en": "Use least privilege access"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Conceder acesso permanente de Proprietário (Owner) aos administradores",
+          "en": "Grant permanent Owner access to administrators"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Verificar explicitamente",
+          "en": "Verify explicitly"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Confiar em um único firewall de perímetro",
+          "en": "Rely on a single perimeter firewall"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ]
+  }
+]

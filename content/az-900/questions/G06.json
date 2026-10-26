@@ -1,0 +1,605 @@
+[
+  {
+    "id": "GOV-02-02-01",
+    "requirement": "G06",
+    "subject": "finalidade do Azure Policy",
+    "level": "essential",
+    "stem": {
+      "pt": "Como você pode impedir a criação de recursos fora de conformidade sem precisar avaliar manualmente cada recurso?",
+      "en": "How can you prevent the creation of noncompliant resources without having to manually evaluate each resource?"
+    },
+    "explanation": {
+      "pt": "O Azure Policy avalia seus recursos, destaca os que não estão em conformidade e pode impedir que recursos fora de conformidade sejam criados. Isso corresponde à avaliação deste módulo.",
+      "en": "Azure Policy evaluates your resources, highlights those that aren't compliant, and can prevent noncompliant resources from being created. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "Os bloqueios de recursos são o vizinho tentador porque também bloqueiam ações, mas impedem exclusão ou alteração, e não a criação fora de conformidade.",
+      "en": "Resource locks are the tempting neighbor because they also block actions, but they prevent deletion or change, not noncompliant creation."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Microsoft Purview",
+          "en": "Microsoft Purview"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Bloqueios de recursos do Azure",
+          "en": "Azure resource locks"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-02-02-02",
+    "requirement": "G06",
+    "subject": "iniciativa",
+    "level": "essential",
+    "stem": {
+      "pt": "O agrupamento Enable Monitoring in Azure Security Center contém mais de 100 definições de política separadas que, juntas, acompanham a conformidade de uma meta maior. Como se chama esse tipo de agrupamento de políticas relacionadas?",
+      "en": "The Enable Monitoring in Azure Security Center grouping contains over 100 separate policy definitions that together track compliance for a larger goal. What is this kind of grouping of related policies called?"
+    },
+    "explanation": {
+      "pt": "Uma iniciativa do Azure Policy é uma forma de agrupar políticas relacionadas. A definição da iniciativa contém todas as definições de política que ajudam a acompanhar seu estado de conformidade para uma meta maior.",
+      "en": "An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions that help track your compliance state for a larger goal."
+    },
+    "distractors": {
+      "pt": "Um grupo de gerenciamento é tentador porque também agrupa coisas, mas agrupa assinaturas, e não políticas.",
+      "en": "A management group is tempting because it also groups things, but it groups subscriptions, not policies."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um grupo de gerenciamento",
+          "en": "A management group"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um bloqueio de recurso",
+          "en": "A resource lock"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma função do Azure RBAC",
+          "en": "An Azure RBAC role"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma iniciativa (initiative)",
+          "en": "An initiative"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-02-02-03",
+    "requirement": "G06",
+    "subject": "avaliação de recursos existentes",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa define uma política que permite apenas certos tamanhos de máquina virtual. Algumas VMs foram criadas antes de a política existir. O que o Azure Policy faz?",
+      "en": "A company defines a policy that allows only certain virtual machine sizes. Some VMs were created before the policy existed. What does Azure Policy do?"
+    },
+    "explanation": {
+      "pt": "Uma política que restringe tamanhos de VM é invocada quando você cria uma nova VM e sempre que redimensiona VMs existentes. O Azure Policy também avalia e monitora todas as VMs atuais, inclusive as criadas antes da política.",
+      "en": "A policy that restricts VM sizes is invoked when you create a new VM and whenever you resize existing VMs. Azure Policy also evaluates and monitors all current VMs, including those created before the policy."
+    },
+    "distractors": {
+      "pt": "A alternativa B é tentadora porque políticas parecem voltadas ao futuro, mas os recursos existentes também são avaliados.",
+      "en": "Option B is tempting because policies seem forward-looking, but existing resources are evaluated too."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "É invocada quando uma VM é criada ou redimensionada e também avalia e monitora as VMs existentes, inclusive as criadas antes da política.",
+          "en": "It is invoked when a VM is created or resized, and it also evaluates and monitors existing VMs, including those created before the policy."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Aplica-se somente às VMs criadas depois que a política foi atribuída.",
+          "en": "It applies only to VMs created after the policy was assigned."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Audita as VMs apenas uma vez por ano e nunca bloqueia a criação.",
+          "en": "It only audits the VMs once a year and never blocks creation."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Exclui automaticamente todas as VMs existentes que usam um tamanho não permitido.",
+          "en": "It automatically deletes every existing VM that uses a size that isn't allowed."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-02-02-04",
+    "requirement": "G06",
+    "subject": "Policy vs RBAC vs bloqueio vs Purview",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure Policy impõe regras à configuração de recursos (como locais permitidos). Um bloqueio de recurso impede exclusão ou alteração independentemente das permissões. O Azure RBAC controla quais ações um usuário pode executar em um escopo. O Microsoft Purview governa dados.",
+      "en": "Azure Policy enforces rules on resource configuration (such as allowed locations). A resource lock prevents deletion or change regardless of permissions. Azure RBAC controls what actions a user can perform at a scope. Microsoft Purview governs data."
+    },
+    "distractors": {
+      "pt": "Policy, bloqueio e RBAC são o trio a separar: qual estado é permitido, o que não pode ser alterado e quem pode agir.",
+      "en": "Policy, lock, and RBAC are the trio to separate: what state is allowed, what can't be changed, and who can act."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Garantir que contas de armazenamento só possam ser criadas em regiões aprovadas",
+          "en": "Ensure that storage accounts can be created only in approved regions"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Impedir que qualquer pessoa, mesmo um proprietário, exclua acidentalmente um recurso crítico de produção",
+          "en": "Prevent anyone, even an owner, from accidentally deleting a critical production resource"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Permitir que um usuário crie máquinas virtuais em um grupo de recursos, mas não em outros",
+          "en": "Let a user create virtual machines in one resource group but not in others"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Descobrir e classificar dados confidenciais em fontes locais e multicloud",
+          "en": "Discover and classify sensitive data across on-premises and multicloud sources"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Controle de acesso baseado em função do Azure (Azure RBAC)",
+          "en": "Azure role-based access control"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um bloqueio de recurso (resource lock)",
+          "en": "A resource lock"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Purview",
+          "en": "Microsoft Purview"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A",
+      "4": "D"
+    }
+  },
+  {
+    "id": "GOV-02-02-05",
+    "requirement": "G06",
+    "subject": "capacidades do Azure Policy",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Azure Policy pode impedir que recursos fora de conformidade sejam criados, avalia também os recursos existentes e pode ser definido em cada nível, como recurso, grupo de recursos ou assinatura, com herança pelos escopos filhos.",
+      "en": "Azure Policy can prevent noncompliant resources from being created, evaluates existing resources too, and can be set at each level, such as a resource, resource group, or subscription, with inheritance by child scopes."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque assinaturas são o escopo comum, mas as políticas podem ser definidas em cada nível.",
+      "en": "Statement 3 is tempting because subscriptions are the common scope, but policies can be set at each level."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure Policy pode impedir que recursos fora de conformidade sejam criados.",
+          "en": "Azure Policy can prevent noncompliant resources from being created."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure Policy se aplica apenas a recursos criados depois que a política foi atribuída.",
+          "en": "Azure Policy applies only to resources created after the policy was assigned."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Azure Policy só pode ser definido no nível da assinatura.",
+          "en": "Azure Policy can be set only at the subscription level."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-02-02-06",
+    "requirement": "G06",
+    "subject": "capacidades do Azure Policy",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre o Azure Policy estão corretas? Escolha duas.",
+      "en": "Which two statements about Azure Policy are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "O Azure Policy pode corrigir automaticamente recursos e configurações fora de conformidade, e recursos podem ser marcados como exceções para que você mantenha o controle total do ambiente. As políticas são herdadas e podem impedir a criação.",
+      "en": "Azure Policy can automatically remediate noncompliant resources and configurations, and resources can be marked as exceptions so you retain full control of the environment. Policies are inherited, and they can prevent creation."
+    },
+    "distractors": {
+      "pt": "A alternativa A descreve o Azure RBAC.",
+      "en": "Option A describes Azure RBAC."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ele atribui funções que controlam quem pode executar ações em recursos.",
+          "en": "It assigns roles that control who can perform actions on resources."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ele pode corrigir automaticamente recursos fora de conformidade, por exemplo, adicionando uma marca AppName quando ela está ausente.",
+          "en": "It can automatically remediate noncompliant resources, for example by adding an AppName tag when it's missing."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "As políticas definidas em um escopo pai não são herdadas pelos escopos filhos.",
+          "en": "Policies set at a parent scope aren't inherited by child scopes."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ele só pode auditar recursos e nunca pode impedir que um recurso seja criado.",
+          "en": "It can only audit resources and can never prevent a resource from being created."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Os recursos podem ser marcados como exceções.",
+          "en": "Resources can be marked as exceptions."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-02-02-07",
+    "requirement": "G06",
+    "subject": "Policy vs RBAC",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação distingue corretamente o Azure Policy do controle de acesso baseado em função do Azure (Azure RBAC)?",
+      "en": "Which statement correctly distinguishes Azure Policy from Azure role-based access control (Azure RBAC)?"
+    },
+    "explanation": {
+      "pt": "O Azure Policy impõe regras às configurações de recursos para que permaneçam em conformidade com seus padrões. O Azure RBAC concede permissões de função em um escopo. Impedir a exclusão independentemente das permissões é função do bloqueio de recurso.",
+      "en": "Azure Policy enforces rules across resource configurations so they stay compliant with your standards. Azure RBAC grants role permissions at a scope. Preventing deletion regardless of permissions is a resource lock."
+    },
+    "distractors": {
+      "pt": "A alternativa A troca os dois recursos, que é a confusão clássica.",
+      "en": "Option A swaps the two features, which is the classic mix-up."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O Azure Policy decide quais ações um usuário pode executar; o Azure RBAC decide se as configurações de recursos estão em conformidade.",
+          "en": "Azure Policy decides which actions a user can perform; Azure RBAC decides whether resource configurations are compliant."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ambos decidem quais usuários podem entrar no portal do Azure.",
+          "en": "Both decide which users can sign in to the Azure portal."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O Azure Policy controla se as configurações de recursos estão em conformidade com seus padrões; o Azure RBAC controla quais ações um usuário pode executar em um escopo.",
+          "en": "Azure Policy controls whether resource configurations are compliant with your standards; Azure RBAC controls which actions a user can perform at a scope."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O Azure RBAC impede que recursos sejam excluídos independentemente das permissões; o Azure Policy concede funções.",
+          "en": "Azure RBAC prevents resources from being deleted regardless of permissions; Azure Policy grants roles."
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-02-02-08",
+    "requirement": "G06",
+    "subject": "correção automática",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa exige que todo recurso tenha uma marca (tag) AppName e quer que a marca seja adicionada automaticamente quando estiver ausente. Qual recurso do Azure ela deve usar?",
+      "en": "A company requires every resource to have an AppName tag and wants the tag added automatically when it is missing. Which Azure feature should it use?"
+    },
+    "explanation": {
+      "pt": "O Azure Policy pode corrigir automaticamente recursos fora de conformidade, por exemplo, exigindo uma marca AppName e adicionando-a quando está ausente.",
+      "en": "Azure Policy can automatically remediate noncompliant resources, for example by requiring an AppName tag and adding it when it's missing."
+    },
+    "distractors": {
+      "pt": "A análise de custos é tentadora porque as tags dão suporte a relatórios de custos, mas ela não impõe nem adiciona tags.",
+      "en": "Cost analysis is tempting because tags support cost reporting, but it doesn't enforce or add tags."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Bloqueios de recursos",
+          "en": "Resource locks"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Análise de custos",
+          "en": "Cost analysis"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-02-02-09",
+    "requirement": "G06",
+    "subject": "herança de política",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador define um Azure Policy em um grupo de recursos. O que acontece com os recursos criados depois nesse grupo de recursos?",
+      "en": "An administrator sets an Azure Policy on a resource group. What happens to resources later created in that resource group?"
+    },
+    "explanation": {
+      "pt": "As políticas do Azure são herdadas: uma política definida em um nível mais alto é aplicada automaticamente a todos os agrupamentos dentro do pai. Se você definir uma política em um grupo de recursos, todos os recursos criados nele recebem a mesma política.",
+      "en": "Azure Policies are inherited: a policy set at a higher level automatically applies to all groupings within the parent. If you set a policy on a resource group, all resources created within it receive the same policy."
+    },
+    "distractors": {
+      "pt": "A alternativa B é tentadora porque a herança é hierárquica, mas desce para os filhos, nunca sobe para o pai.",
+      "en": "Option B is tempting because inheritance is hierarchical, but it flows down to children, never up to the parent."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "A política deve ser atribuída novamente a cada novo recurso.",
+          "en": "The policy must be assigned again to each new resource."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A política sobe e se aplica a toda a assinatura.",
+          "en": "The policy moves up and applies to the whole subscription."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A política se aplica apenas aos recursos que já existiam.",
+          "en": "The policy applies only to resources that already existed."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A política é herdada e aplicada a todos os recursos do grupo, inclusive os novos.",
+          "en": "The policy is inherited and applied to all resources in the group, including new ones."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-02-02-10",
+    "requirement": "G06",
+    "subject": "herança de política",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. As políticas do Azure podem ser definidas em cada nível, como recurso, grupo de recursos ou assinatura, e são ______ pelos agrupamentos dentro do pai.",
+      "en": "Complete the sentence. Azure Policies can be set at each level, such as resource, resource group, or subscription, and they are ______ by the groupings within the parent."
+    },
+    "explanation": {
+      "pt": "As políticas do Azure são herdadas: se você definir uma política em um nível alto, ela se aplica automaticamente a todos os agrupamentos dentro do pai.",
+      "en": "Azure Policies are inherited: if you set a policy at a high level, it automatically applies to all of the groupings that fall within the parent."
+    },
+    "distractors": {
+      "pt": "Bloqueadas é tentadora por ser o vizinho de governança, mas bloqueios são um recurso separado.",
+      "en": "Locked is tempting because it is the governance neighbor, but locks are a separate feature."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "herdadas (inherited)",
+          "en": "inherited"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "ignoradas",
+          "en": "ignored"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "duplicadas",
+          "en": "duplicated"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "bloqueadas",
+          "en": "locked"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-02-02-11",
+    "requirement": "G06",
+    "subject": "Policy com alterações por IA",
+    "level": "detail",
+    "stem": {
+      "pt": "As equipes usam recomendações do Copilot e automação semelhante a agentes para propor mudanças. A empresa ainda precisa garantir que locais permitidos, marcas (tags) obrigatórias, SKUs de recursos aprovadas e controles de linha de base de segurança sejam respeitados, independentemente de como a mudança foi proposta. Qual recurso do Azure impõe isso?",
+      "en": "Teams use Copilot recommendations and agent-like automation to propose changes. The company must still ensure that allowed locations, required tags, approved resource SKUs, and security baseline controls are respected, regardless of how a change was proposed. Which Azure feature enforces this?"
+    },
+    "explanation": {
+      "pt": "O Azure Policy continua impondo seus padrões a mudanças assistidas por IA: locais permitidos, marcas obrigatórias, SKUs aprovadas e controles de linha de base de segurança valem independentemente de como a mudança foi proposta.",
+      "en": "Azure Policy still enforces your standards for AI-assisted changes: allowed locations, required tags, approved resource SKUs, and security baseline controls apply regardless of how a change was proposed."
+    },
+    "distractors": {
+      "pt": "O Azure RBAC é tentador porque controla quem pode agir, mas não avalia a configuração de recursos em relação a padrões.",
+      "en": "Azure RBAC is tempting because it controls who can act, but it does not evaluate resource configuration against standards."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Controle de acesso baseado em função do Azure",
+          "en": "Azure role-based access control"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Orçamentos do Gerenciamento de Custos",
+          "en": "Cost Management budgets"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Service Health",
+          "en": "Azure Service Health"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

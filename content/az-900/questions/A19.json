@@ -1,0 +1,342 @@
+[
+  {
+    "id": "ARCH-03-06-01",
+    "requirement": "A19",
+    "subject": "Migrações para Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer um único portal para iniciar, executar e acompanhar a avaliação e a migração de seus servidores, bancos de dados e aplicativos web locais para o Azure, com ferramentas como Discovery and assessment e Server Migration. Qual serviço se encaixa?",
+      "en": "A company wants a single portal to start, run, and track the assessment and migration of its on-premises servers, databases, and web apps to Azure, with tools such as Discovery and assessment and Server Migration. Which service fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Migrate é um hub que oferece uma plataforma de migração unificada para a avaliação e a migração da infraestrutura local, com ferramentas para descoberta e avaliação, migração de servidores, de bancos de dados e de aplicativos web.",
+      "en": "Azure Migrate is a hub that provides a unified migration platform for the assessment and migration of on-premises infrastructure, with tools for discovery and assessment, server migration, database migration, and web app migration."
+    },
+    "distractors": {
+      "pt": "O Azure Data Box é o vizinho tentador porque também é um serviço de migração, mas move dados fisicamente e não avalia servidores.",
+      "en": "Azure Data Box is the tempting neighbor because it is also a migration service, but it physically moves data and doesn't assess servers."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure File Sync",
+          "en": "Azure File Sync"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Migrate",
+          "en": "Azure Migrate"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Data Box",
+          "en": "Azure Data Box"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-03-06-02",
+    "requirement": "A19",
+    "subject": "Azure Data Box",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa mover dezenas de terabytes de dados para o Azure em uma migração única em massa. A largura de banda de sua rede é limitada. Qual solução se encaixa melhor?",
+      "en": "A company must move tens of terabytes of data to Azure as a one-time bulk migration. Its network bandwidth is limited. Which solution fits best?"
+    },
+    "explanation": {
+      "pt": "O Azure Data Box é um serviço de migração física para conjuntos de dados muito grandes (geralmente dezenas de terabytes ou mais) quando a largura de banda de rede é limitada. Você recebe um dispositivo com até 80 TB de capacidade utilizável e o devolve.",
+      "en": "Azure Data Box is a physical migration service for very large data sets (often tens of terabytes or more) when network bandwidth is limited. You receive a device with up to 80 TB of usable capacity and ship it back."
+    },
+    "distractors": {
+      "pt": "O AzCopy é tentador porque copia dados para contas de armazenamento, mas usa a rede, que é a restrição.",
+      "en": "AzCopy is tempting because it copies data to storage accounts, but it uses the network, which is the constraint."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Data Box",
+          "en": "Azure Data Box"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Migrate",
+          "en": "Azure Migrate"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Storage Explorer",
+          "en": "Azure Storage Explorer"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-03-06-03",
+    "requirement": "A19",
+    "subject": "Data Box vs Migrações para Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure Migrate é o hub para avaliação e migração. O Azure Data Box é o dispositivo físico (até 80 TB utilizáveis). O AzCopy é o utilitário de linha de comando para copiar blobs e arquivos.",
+      "en": "Azure Migrate is the hub for assessment and migration. Azure Data Box is the physical device (up to 80 TB usable). AzCopy is the command-line utility for copying blobs and files."
+    },
+    "distractors": {
+      "pt": "Azure Migrate e Azure Data Box são o par mais próximo: ambos são serviços de migração, mas um é um hub de software e o outro é um dispositivo enviado.",
+      "en": "Azure Migrate and Azure Data Box are the closest pair: both are migration services, but one is a software hub and the other a shipped device."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Um hub para avaliar e migrar um datacenter local para o Azure",
+          "en": "A hub to assess and migrate an on-premises datacenter to Azure"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um dispositivo físico com capacidade utilizável máxima de 80 terabytes que é enviado ao seu datacenter",
+          "en": "A physical device with a maximum usable capacity of 80 terabytes that is shipped to your datacenter"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Um utilitário de linha de comando para copiar blobs entre contas de armazenamento",
+          "en": "A command-line utility to copy blobs between storage accounts"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Data Box",
+          "en": "Azure Data Box"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Migrate",
+          "en": "Azure Migrate"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure File Sync",
+          "en": "Azure File Sync"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B"
+    }
+  },
+  {
+    "id": "ARCH-03-06-04",
+    "requirement": "A19",
+    "subject": "Data Box vs Migrações para Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Você pode solicitar um Data Box pelo portal do Azure para importar ou exportar dados. Ele é enviado por uma transportadora regional. O Azure Migrate é um hub para avaliação e migração, e não um dispositivo físico.",
+      "en": "You can order a Data Box via the Azure portal to import or export data. It is shipped through a regional carrier. Azure Migrate is a hub for assessment and migration, not a physical device."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque ambos são serviços de migração, mas apenas o Data Box é um dispositivo.",
+      "en": "Statement 3 is tempting because both are migration services, but only Data Box is a device."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure Data Box pode ser usado para importar dados para o Azure e exportar dados do Azure.",
+          "en": "Azure Data Box can be used to import data to Azure and to export data from Azure."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure Data Box transfere dados pela sua conexão de rede e não exige envio.",
+          "en": "Azure Data Box transfers data over your network connection and requires no shipping."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Azure Migrate é um dispositivo físico enviado ao seu datacenter.",
+          "en": "Azure Migrate is a physical device that is shipped to your datacenter."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-03-06-05",
+    "requirement": "A19",
+    "subject": "processo do Data Box",
+    "level": "detail",
+    "stem": {
+      "pt": "Qual afirmação descreve corretamente o processo do Azure Data Box para importar dados?",
+      "en": "Which statement correctly describes the Azure Data Box process for importing data?"
+    },
+    "explanation": {
+      "pt": "Você solicita o dispositivo no portal do Azure, o configura pela interface web local, o conecta à sua rede e o devolve. Nas importações, os dados são carregados automaticamente depois que a Microsoft o recebe, e todo o processo é acompanhado de ponta a ponta no portal. Os discos são apagados conforme o NIST 800-88r1.",
+      "en": "You order the device in the Azure portal, set it up with the local web UI, connect it to your network, and return it. For imports, data is uploaded automatically after Microsoft receives it, and the whole process is tracked end-to-end in the portal. Disks are wiped according to NIST 800-88r1."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque soa como um fluxo de envio, mas o upload é automático e acompanhado de ponta a ponta.",
+      "en": "Option A is tempting because it sounds like a shipping workflow, but the upload is automatic and tracked end-to-end."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O serviço Data Box no portal do Azure acompanha o pedido somente até você receber o dispositivo, e você mesmo deve carregar os dados.",
+          "en": "The Data Box service in the Azure portal tracks the order only until you receive the device, and you must upload the data yourself."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Você deve instalar um agente de migração em cada arquivo antes de enviar o dispositivo.",
+          "en": "You must install a migration agent on every file before shipping the device."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O dispositivo é devolvido sem apagar, e você mesmo deve apagá-lo.",
+          "en": "The device is returned unwiped, and you must erase it yourself."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Você solicita o dispositivo no portal do Azure, o configura pela interface web local e o devolve; os dados importados são carregados automaticamente quando a Microsoft o recebe.",
+          "en": "You order the device in the Azure portal, set it up with the local web UI, and return it; imported data is uploaded automatically when Microsoft receives it."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-03-06-06",
+    "requirement": "A19",
+    "subject": "ferramentas das Migrações para Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas são ferramentas incluídas no hub do Azure Migrate? Escolha duas.",
+      "en": "Which two are tools included in the Azure Migrate hub? Choose two."
+    },
+    "explanation": {
+      "pt": "As ferramentas do Azure Migrate incluem o Azure Migrate: Discovery and assessment e o Azure Migrate: Server Migration. AzCopy, Storage Explorer e Azure File Sync são ferramentas de movimentação de arquivos.",
+      "en": "Azure Migrate tools include Azure Migrate: Discovery and assessment and Azure Migrate: Server Migration. AzCopy, Storage Explorer, and Azure File Sync are file-movement tools."
+    },
+    "distractors": {
+      "pt": "As ferramentas de movimentação de arquivos são tentadoras porque também ajudam a mover dados para o Azure, mas não fazem parte do hub do Azure Migrate.",
+      "en": "The file-movement tools are tempting because they also help move data to Azure, but they aren't part of the Azure Migrate hub."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Migrate: Server Migration",
+          "en": "Azure Migrate: Server Migration"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Storage Explorer",
+          "en": "Azure Storage Explorer"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure File Sync",
+          "en": "Azure File Sync"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Azure Migrate: Discovery and assessment",
+          "en": "Azure Migrate: Discovery and assessment"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  }
+]

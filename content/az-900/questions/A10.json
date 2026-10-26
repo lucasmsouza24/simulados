@@ -1,0 +1,634 @@
+[
+  {
+    "id": "ARCH-02-03-01",
+    "requirement": "A10",
+    "subject": "recursos necessários para VMs",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são recursos que você escolhe ao provisionar uma máquina virtual do Azure? Escolha três.",
+      "en": "Which three are resources you choose when you provision an Azure virtual machine? Choose three."
+    },
+    "explanation": {
+      "pt": "Ao provisionar uma VM, você escolhe o tamanho (finalidade, número de núcleos de processador e RAM), os discos de armazenamento e a rede (rede virtual, endereço IP público e configuração de portas).",
+      "en": "When you provision a VM, you choose its size (purpose, number of processor cores, and RAM), its storage disks, and its networking (virtual network, public IP address, and port configuration)."
+    },
+    "distractors": {
+      "pt": "As alternativas C e E são tentadoras porque aparecem em outras partes da arquitetura do Azure, mas não são recursos da VM.",
+      "en": "Options C and E are tempting because they appear elsewhere in Azure architecture, but they are not VM resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Tamanho, incluindo finalidade, número de núcleos de processador e quantidade de RAM",
+          "en": "Size, including purpose, number of processor cores, and amount of RAM"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Discos de armazenamento, como discos rígidos e unidades de estado sólido",
+          "en": "Storage disks, such as hard disk drives and solid state drives"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um grupo de gerenciamento",
+          "en": "A management group"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Rede, incluindo rede virtual, endereço IP público e configuração de portas",
+          "en": "Networking, including virtual network, public IP address, and port configuration"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Um par de regiões",
+          "en": "A region pair"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "ARCH-02-03-02",
+    "requirement": "A10",
+    "subject": "famílias de VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "A série B é burstable e econômica (desenvolvimento e teste com picos ocasionais de CPU). A série E é otimizada para memória (bancos de dados em memória, análise). A série F é otimizada para computação (camadas com uso intensivo de CPU). A série N tem GPU (IA e gráficos).",
+      "en": "B-series is burstable and cost-efficient (dev/test with occasional CPU spikes). E-series is memory optimized (in-memory databases, analytics). F-series is compute optimized (CPU-intensive tiers). N-series is GPU enabled (AI and graphics)."
+    },
+    "distractors": {
+      "pt": "A série D é o distrator tentador por ser o padrão de uso geral; as letras a memorizar são B (burstable), E (memória), F (computação), N (GPU).",
+      "en": "D-series is the tempting distractor because it is the general-purpose default; the letters to remember are B (burstable), E (memory), F (compute), N (GPU)."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Cargas de trabalho de desenvolvimento e teste com picos ocasionais de CPU",
+          "en": "Dev/test workloads with occasional CPU spikes"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Bancos de dados em memória e cargas de trabalho de análise",
+          "en": "In-memory databases and analytics workloads"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Camadas de aplicativo com uso intensivo de CPU",
+          "en": "CPU-intensive application tiers"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Treinamento e inferência de IA e cargas de trabalho gráficas",
+          "en": "AI training and inference, and graphics workloads"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Série D",
+          "en": "D-series"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Série N",
+          "en": "N-series"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Série B",
+          "en": "B-series"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Série F",
+          "en": "F-series"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Série E",
+          "en": "E-series"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "E",
+      "3": "D",
+      "4": "B"
+    }
+  },
+  {
+    "id": "ARCH-02-03-03",
+    "requirement": "A10",
+    "subject": "famílias de VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "A série M tem grande quantidade de memória (grandes bancos de dados corporativos). A série L é otimizada para armazenamento (armazenamento de alto throughput e processamento de dados). A série D é de uso geral (servidores web e de aplicativos de pequeno a médio porte).",
+      "en": "M-series has a large memory footprint (large enterprise databases). L-series is storage optimized (high-throughput storage and data processing). D-series is general purpose (web servers and small-to-medium app servers)."
+    },
+    "distractors": {
+      "pt": "As séries M e E são o par de memória: E é otimizada para memória em geral, M é para as maiores quantidades de memória.",
+      "en": "M-series and E-series are the memory pair: E is memory optimized in general, M is for the largest memory footprints."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Grandes bancos de dados corporativos que precisam de uma grande quantidade de memória",
+          "en": "Large enterprise databases that need a large memory footprint"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Armazenamento de alto throughput e processamento de dados",
+          "en": "High-throughput storage and data processing"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Servidores web e servidores de aplicativos de pequeno a médio porte",
+          "en": "Web servers and small-to-medium application servers"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Série L",
+          "en": "L-series"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Série M",
+          "en": "M-series"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Série D",
+          "en": "D-series"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Série B",
+          "en": "B-series"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "A",
+      "3": "C"
+    }
+  },
+  {
+    "id": "ARCH-02-03-04",
+    "requirement": "A10",
+    "subject": "famílias de VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma carga de trabalho de análise mantém seus dados de trabalho na memória. Qual família de VM, com base no foco típico, é a mais adequada?",
+      "en": "An analytics workload keeps its working data in memory. Which VM family, based on its typical focus, fits best?"
+    },
+    "explanation": {
+      "pt": "A série E é otimizada para memória, com bancos de dados em memória e cargas de análise como exemplo de uso. A RAM afeta quanto dado de trabalho a VM consegue manter na memória.",
+      "en": "E-series is memory optimized, with in-memory databases and analytics workloads as its example use. RAM affects how much working data the VM can keep in memory."
+    },
+    "distractors": {
+      "pt": "A série D é tentadora porque uso geral soa seguro, mas o fator decisivo da carga de trabalho é a memória.",
+      "en": "D-series is tempting because general purpose sounds safe, but the workload's deciding factor is memory."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Série F (otimizada para computação)",
+          "en": "F-series (compute optimized)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Série D (uso geral)",
+          "en": "D-series (general purpose)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Série E (otimizada para memória)",
+          "en": "E-series (memory optimized)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Série B (burstable)",
+          "en": "B-series (burstable)"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-02-03-05",
+    "requirement": "A10",
+    "subject": "famílias de VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual opção associa corretamente séries de VM ao seu foco típico?",
+      "en": "Which option correctly matches VM series to their typical focus?"
+    },
+    "explanation": {
+      "pt": "A série B é burstable e econômica, e a série N tem GPU. As outras opções trocam F e D, L e N, ou E e F.",
+      "en": "B-series is burstable and cost-efficient, and N-series is GPU enabled. The other options swap F and D, L and N, or E and F."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque troca E e F, as duas letras mais facilmente confundidas (E de memória, F de computação).",
+      "en": "Option D is the most tempting because it swaps E and F, the two letters most easily confused (E for memory, F for compute)."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Série F: uso geral; série D: otimizada para computação",
+          "en": "F-series: general purpose; D-series: compute optimized"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Série B: burstable e econômica; série N: com GPU",
+          "en": "B-series: burstable and cost-efficient; N-series: GPU enabled"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Série L: com GPU; série N: otimizada para armazenamento",
+          "en": "L-series: GPU enabled; N-series: storage optimized"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Série E: otimizada para computação; série F: otimizada para memória",
+          "en": "E-series: compute optimized; F-series: memory optimized"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-02-03-06",
+    "requirement": "A10",
+    "subject": "série B",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. A família ______ é burstable e econômica, adequada a cargas de trabalho de desenvolvimento e teste com picos ocasionais de CPU.",
+      "en": "Complete the sentence. The ______ family is burstable and cost-efficient, suited to dev/test workloads with occasional CPU spikes."
+    },
+    "explanation": {
+      "pt": "A série B é a família burstable e econômica para cargas de desenvolvimento e teste com picos ocasionais de CPU.",
+      "en": "B-series is the burstable, cost-efficient family for dev/test workloads with occasional CPU spikes."
+    },
+    "distractors": {
+      "pt": "A série D é o vizinho tentador por ser de uso geral e parecer barata, mas não é burstable.",
+      "en": "D-series is the tempting neighbor because it is general purpose and cheap-sounding, but it is not burstable."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "série D",
+          "en": "D-series"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "série F",
+          "en": "F-series"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "série E",
+          "en": "E-series"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "série B",
+          "en": "B-series"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-02-03-07",
+    "requirement": "A10",
+    "subject": "nome do tamanho da VM",
+    "level": "detail",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Em D2s_v5: D é a família da VM (uso geral), 2 é o número de vCPUs, s indica suporte a Premium SSD e v5 é a geração de hardware.",
+      "en": "In D2s_v5: D is the VM family (general purpose), 2 is the number of vCPUs, s indicates Premium SSD support, and v5 is the hardware generation."
+    },
+    "distractors": {
+      "pt": "O número 2 é tentador como 'versão' ou 'nível de tamanho', mas é a contagem de vCPUs; a versão é v5.",
+      "en": "The number 2 is tempting as 'version' or 'size tier', but it is the vCPU count; the version is v5."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "D no nome de VM D2s_v5",
+          "en": "D in the VM name D2s_v5"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "2 no nome de VM D2s_v5",
+          "en": "2 in the VM name D2s_v5"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "s no nome de VM D2s_v5",
+          "en": "s in the VM name D2s_v5"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "v5 no nome de VM D2s_v5",
+          "en": "v5 in the VM name D2s_v5"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Geração de hardware",
+          "en": "Hardware generation"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Número de vCPUs",
+          "en": "Number of vCPUs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Suporte a armazenamento Premium SSD",
+          "en": "Support for Premium SSD storage"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Família da VM (uso geral, neste caso)",
+          "en": "VM family (general purpose in this case)"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "B",
+      "3": "C",
+      "4": "A"
+    }
+  },
+  {
+    "id": "ARCH-02-03-08",
+    "requirement": "A10",
+    "subject": "famílias de VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas séries estão associadas corretamente ao seu foco típico? Escolha duas.",
+      "en": "Which two series are matched correctly with their typical focus? Choose two."
+    },
+    "explanation": {
+      "pt": "A série L é otimizada para armazenamento e a série N tem GPU. A série F é otimizada para computação (não memória), a série E é otimizada para memória (não computação) e a série B é burstable (a série D é de uso geral).",
+      "en": "L-series is storage optimized and N-series is GPU enabled. F-series is compute optimized (not memory), E-series is memory optimized (not compute), and B-series is burstable (D-series is general purpose)."
+    },
+    "distractors": {
+      "pt": "As alternativas A e C trocam F e E; a alternativa D troca B e D.",
+      "en": "Options A and C swap F and E; option D swaps B and D."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Série F: otimizada para memória",
+          "en": "F-series: memory optimized"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Série L: otimizada para armazenamento",
+          "en": "L-series: storage optimized"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Série E: otimizada para computação",
+          "en": "E-series: compute optimized"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Série B: uso geral",
+          "en": "B-series: general purpose"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Série N: com GPU",
+          "en": "N-series: GPU enabled"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-02-03-09",
+    "requirement": "A10",
+    "subject": "tamanho da VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O tamanho da VM abrange finalidade, núcleos de processador e RAM, e o s em D2s_v5 indica suporte a Premium SSD. A RAM, e não a contagem de vCPUs, afeta quantos dados de trabalho a VM mantém na memória; as vCPUs afetam a capacidade de computação.",
+      "en": "VM size covers purpose, processor cores, and RAM, and the s in D2s_v5 indicates Premium SSD support. RAM, not vCPU count, affects how much working data the VM can keep in memory; vCPUs affect compute capacity."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque CPU e memória são frequentemente confundidas, mas a memória é a RAM.",
+      "en": "Statement 3 is tempting because CPU and memory are often confused, but memory is the RAM."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O tamanho de uma máquina virtual determina sua finalidade, seu número de núcleos de processador e sua quantidade de RAM.",
+          "en": "The size of a virtual machine determines its purpose, its number of processor cores, and its amount of RAM."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Em um nome de VM como D2s_v5, a letra s indica que o tamanho oferece suporte a armazenamento Premium SSD.",
+          "en": "In a VM name such as D2s_v5, the letter s indicates that the size supports Premium SSD storage."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "A contagem de vCPUs de uma VM determina quantos dados de trabalho a VM pode manter na memória.",
+          "en": "The vCPU count of a VM determines how much working data the VM can keep in memory."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-02-03-10",
+    "requirement": "A10",
+    "subject": "rede da VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma máquina virtual deve ser acessível pela Internet em uma porta específica. Qual grupo de recursos de rede você escolhe ao provisionar a VM?",
+      "en": "A virtual machine must be reachable from the internet on a specific port. Which group of networking resources do you choose when you provision the VM?"
+    },
+    "explanation": {
+      "pt": "A rede de uma VM inclui a rede virtual, um endereço IP público e a configuração de portas.",
+      "en": "Networking for a VM includes the virtual network, a public IP address, and port configuration."
+    },
+    "distractors": {
+      "pt": "A alternativa D é tentadora porque descreve a nomenclatura do tamanho, uma categoria de recurso diferente da VM.",
+      "en": "Option D is tempting because it describes size naming, a different VM resource category."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Rede virtual, endereço IP público e configuração de portas",
+          "en": "Virtual network, public IP address, and port configuration"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Assinatura, grupo de recursos e grupo de gerenciamento",
+          "en": "Subscription, resource group, and management group"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Domínio de atualização, domínio de falha e conjunto de dimensionamento",
+          "en": "Update domain, fault domain, and scale set"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Família, série e geração de hardware",
+          "en": "Family, series, and hardware generation"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

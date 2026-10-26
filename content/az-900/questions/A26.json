@@ -1,0 +1,435 @@
+[
+  {
+    "id": "ARCH-04-07-01",
+    "requirement": "A26",
+    "subject": "finalidade defesa em profundidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma estratégia de segurança usa uma série de mecanismos para retardar o avanço de um ataque. Se uma camada for violada, uma camada subsequente já está em vigor para impedir maior exposição. Qual estratégia é essa?",
+      "en": "A security strategy uses a series of mechanisms to slow the advance of an attack. If one layer is breached, a subsequent layer is already in place to prevent further exposure. Which strategy is this?"
+    },
+    "explanation": {
+      "pt": "A defesa em profundidade usa camadas de proteção (segurança física, identidade e acesso, perímetro, rede, computação, aplicativo e dados), de modo que a abordagem remove a dependência de uma única camada.",
+      "en": "Defense-in-depth uses layers of protection (physical security, identity and access, perimeter, network, compute, application, and data) so that the approach removes reliance on any single layer."
+    },
+    "distractors": {
+      "pt": "O Zero Trust é o vizinho tentador porque também presume ataques, mas é construído em torno de verificar cada solicitação, e não de camadas.",
+      "en": "Zero Trust is the tempting neighbor because it also assumes attacks, but it is built around verifying each request and not around layers."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/8-describe-defense-depth",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Role-based access control",
+          "en": "Role-based access control"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Zero Trust",
+          "en": "Zero Trust"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Defense-in-depth",
+          "en": "Defense-in-depth"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Shared responsibility",
+          "en": "Shared responsibility"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-04-07-02",
+    "requirement": "A26",
+    "subject": "camadas da defesa em profundidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "A segurança física é a primeira linha de defesa. A camada de perímetro usa proteção contra DDoS. A camada de rede limita a comunicação (negação por padrão). A camada de identidade e acesso usa SSO e MFA e audita eventos e alterações.",
+      "en": "Physical security is the first line of defense. The perimeter layer uses DDoS protection. The network layer limits communication (deny by default). The identity and access layer uses SSO and MFA and audits events and changes."
+    },
+    "distractors": {
+      "pt": "Perímetro e rede são o par mais próximo: o perímetro filtra ataques em larga escala, a rede limita a movimentação entre recursos.",
+      "en": "Perimeter and network are the closest pair: perimeter filters large-scale attacks, network limits movement between resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/8-describe-defense-depth",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A primeira linha de defesa, protegendo o hardware de computação no datacenter",
+          "en": "The first line of defense, protecting computing hardware in the datacenter"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Usa proteção contra DDoS (negação de serviço distribuída) para filtrar ataques em larga escala",
+          "en": "Uses distributed denial of service (DDoS) protection to filter large-scale attacks"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Limita a comunicação entre recursos por segmentação e controles de acesso, com negação por padrão",
+          "en": "Limits communication between resources through segmentation and access controls, with deny by default"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Usa logon único e autenticação multifator e audita eventos e alterações",
+          "en": "Uses single sign-on and multifactor authentication and audits events and changes"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Rede",
+          "en": "Network"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Identidade e acesso",
+          "en": "Identity and access"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Perímetro",
+          "en": "Perimeter"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Segurança física",
+          "en": "Physical security"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Computação",
+          "en": "Compute"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "C",
+      "3": "A",
+      "4": "B"
+    }
+  },
+  {
+    "id": "ARCH-04-07-03",
+    "requirement": "A26",
+    "subject": "camadas da defesa em profundidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "A camada de computação protege VMs e mantém os sistemas corrigidos. A camada de aplicativo mantém os aplicativos seguros e armazena segredos no Azure Key Vault. A camada de dados protege os dados com criptografia em repouso e em trânsito.",
+      "en": "The compute layer secures VMs and keeps systems patched. The application layer keeps apps secure and stores secrets in Azure Key Vault. The data layer protects data with encryption at rest and in transit."
+    },
+    "distractors": {
+      "pt": "Aplicativo e dados são o par mais próximo: o Key Vault aparece na camada de aplicativo para segredos, enquanto a criptografia pertence à camada de dados.",
+      "en": "Application and data are the closest pair: Key Vault appears in the application layer for secrets, while encryption belongs to the data layer."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/8-describe-defense-depth",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Protege o acesso às máquinas virtuais, implementa proteção de endpoint e mantém os sistemas corrigidos",
+          "en": "Secures access to virtual machines, implements endpoint protection, and keeps systems patched"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Garante que os aplicativos estejam livres de vulnerabilidades e armazena segredos em um meio seguro, como o Azure Key Vault",
+          "en": "Ensures applications are free of vulnerabilities and stores secrets in a secure medium such as Azure Key Vault"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Protege os dados com criptografia em repouso e em trânsito e controla o acesso a dados operacionais e de clientes",
+          "en": "Protects data with encryption at rest and in transit and controls access to operational and customer data"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Dados",
+          "en": "Data"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Aplicativo",
+          "en": "Application"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Computação",
+          "en": "Compute"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Perímetro",
+          "en": "Perimeter"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "B",
+      "3": "A"
+    }
+  },
+  {
+    "id": "ARCH-04-07-04",
+    "requirement": "A26",
+    "subject": "camada de perímetro",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer filtrar ataques de negação de serviço distribuída (DDoS) em larga escala antes que eles afetem a disponibilidade de um sistema para os usuários. Qual camada da defesa em profundidade trata disso?",
+      "en": "A company wants to filter large-scale distributed denial of service (DDoS) attacks before they can affect the availability of a system for users. Which defense-in-depth layer addresses this?"
+    },
+    "explanation": {
+      "pt": "A camada de perímetro usa proteção contra DDoS para filtrar ataques em larga escala antes que causem negação de serviço para os usuários, e firewalls de perímetro para identificar e alertar sobre ataques mal-intencionados.",
+      "en": "The perimeter layer uses DDoS protection to filter large-scale attacks before they can cause a denial of service for users, and perimeter firewalls to identify and alert on malicious attacks."
+    },
+    "distractors": {
+      "pt": "A rede é o vizinho tentador porque DDoS é tráfego de rede, mas a camada de rede limita a conectividade entre recursos.",
+      "en": "Network is the tempting neighbor because DDoS is network traffic, but the network layer limits connectivity between resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/8-describe-defense-depth",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Perimeter",
+          "en": "Perimeter"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Network",
+          "en": "Network"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Compute",
+          "en": "Compute"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Application",
+          "en": "Application"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-04-07-05",
+    "requirement": "A26",
+    "subject": "Key Vault",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual serviço do Azure foi projetado para armazenar com segurança segredos, certificados e chaves de criptografia para aplicativos?",
+      "en": "Which Azure service is designed to securely store secrets, certificates, and encryption keys for applications?"
+    },
+    "explanation": {
+      "pt": "O Azure Key Vault armazena com segurança e controla o acesso a segredos (como cadeias de conexão e senhas), chaves de criptografia e certificados. Isso corresponde à avaliação deste módulo.",
+      "en": "Azure Key Vault securely stores and controls access to secrets (such as connection strings and passwords), encryption keys, and certificates. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "O Microsoft Defender for Cloud é tentador porque é um serviço de segurança, mas avalia e protege a postura em vez de armazenar segredos.",
+      "en": "Microsoft Defender for Cloud is tempting because it is a security service, but it assesses and protects posture rather than storing secrets."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9a-describe-encryption-key-management",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Defender for Cloud",
+          "en": "Microsoft Defender for Cloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Key Vault",
+          "en": "Azure Key Vault"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-04-07-06",
+    "requirement": "A26",
+    "subject": "Key Vault e camadas",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A criptografia em repouso protege os dados armazenados; a criptografia em trânsito protege os dados enquanto se movem. O Key Vault armazena segredos, chaves de criptografia e certificados. A defesa em profundidade remove a dependência de uma única camada.",
+      "en": "Encryption at rest protects stored data; encryption in transit protects data while it moves. Key Vault stores secrets, encryption keys, and certificates. Defense-in-depth removes reliance on any single layer."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 troca as duas formas de criptografia.",
+      "en": "Statement 1 swaps the two forms of encryption."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9a-describe-encryption-key-management",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A criptografia em trânsito protege os dados enquanto eles estão armazenados em bancos de dados, discos e contas de armazenamento.",
+          "en": "Encryption in transit protects data while it is stored in databases, disks, and storage accounts."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure Key Vault pode armazenar apenas certificados, e não segredos ou chaves.",
+          "en": "Azure Key Vault can store only certificates, not secrets or keys."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "A defesa em profundidade remove a dependência de qualquer camada única de proteção.",
+          "en": "Defense-in-depth removes reliance on any single layer of protection."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-04-07-07",
+    "requirement": "A26",
+    "subject": "camada identidade e acesso",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas ações pertencem à camada de identidade e acesso da defesa em profundidade? Escolha duas.",
+      "en": "Which two actions belong to the identity and access layer of defense-in-depth? Choose two."
+    },
+    "explanation": {
+      "pt": "Na camada de identidade e acesso você controla o acesso à infraestrutura e o controle de alterações, usa SSO e MFA e audita eventos e alterações. A proteção contra DDoS é do perímetro, negar por padrão é da rede e aplicar patches é da computação.",
+      "en": "At the identity and access layer you control access to infrastructure and change control, use SSO and MFA, and audit events and changes. DDoS protection is perimeter, deny by default is network, and patching is compute."
+    },
+    "distractors": {
+      "pt": "As alternativas A, B e D são tentadoras por serem controles de segurança, mas pertencem a outras camadas.",
+      "en": "Options A, B, and D are tempting because they are security controls, but they belong to other layers."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/8-describe-defense-depth",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Implantar proteção contra DDoS (negação de serviço distribuída)",
+          "en": "Deploy distributed denial of service (DDoS) protection"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Negar o tráfego de rede por padrão",
+          "en": "Deny network traffic by default"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Usar logon único e autenticação multifator",
+          "en": "Use single sign-on and multifactor authentication"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Manter as máquinas virtuais corrigidas e atualizadas",
+          "en": "Keep virtual machines patched and current"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Auditar eventos e alterações",
+          "en": "Audit events and changes"
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "E"
+    ]
+  }
+]

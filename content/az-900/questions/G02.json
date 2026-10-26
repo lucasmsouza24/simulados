@@ -1,0 +1,342 @@
+[
+  {
+    "id": "GOV-01-02-01",
+    "requirement": "G02",
+    "subject": "calculadora antes de implantar",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual ferramenta ajuda a estimar o custo de implantar serviços do Azure antes da implementação?",
+      "en": "Which tool helps estimate the cost of deploying Azure services before implementation?"
+    },
+    "explanation": {
+      "pt": "A calculadora de preços fornece uma estimativa de custo para provisionar recursos no Azure antes da implantação. Isso corresponde à avaliação deste módulo.",
+      "en": "The pricing calculator gives an estimated cost for provisioning resources in Azure before deployment. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "A análise de custos é o vizinho tentador porque também trata de custo, mas mostra os custos do que já está em execução.",
+      "en": "Cost analysis is the tempting neighbor because it is also about cost, but it shows costs of what is already running."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Análise de Custos do Azure (Cost Analysis)",
+          "en": "Azure Cost Analysis"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Calculadora de Preços do Azure (Pricing Calculator)",
+          "en": "Azure Pricing Calculator"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Service Health",
+          "en": "Azure Service Health"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-01-02-02",
+    "requirement": "G02",
+    "subject": "estimativa sem provisionar",
+    "level": "detail",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Nada é provisionado nem cobrado quando você adiciona recursos à calculadora de preços, e os preços são estimativas. A calculadora de TCO foi desativada.",
+      "en": "Nothing is provisioned and nothing is charged when you add resources to the pricing calculator, and prices are estimates. The TCO calculator has been retired."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque a calculadora de TCO foi por muito tempo associada ao planejamento de custos do Azure, mas o Learn informa que ela foi desativada.",
+      "en": "Statement 2 is tempting because the TCO calculator was long associated with Azure cost planning, but Learn states it has been retired."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Adicionar recursos à calculadora de preços os provisiona e gera cobranças pelos serviços selecionados.",
+          "en": "Adding resources to the pricing calculator provisions them and incurs charges for the selected services."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "A calculadora de Custo Total de Propriedade (TCO) é a ferramenta atual da Microsoft para estimar gastos no Azure.",
+          "en": "The Total Cost of Ownership (TCO) calculator is the current Microsoft tool for estimating Azure spend."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Os preços na calculadora de preços são estimativas apenas para fins informativos.",
+          "en": "Prices in the pricing calculator are estimates for information purposes only."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "GOV-01-02-03",
+    "requirement": "G02",
+    "subject": "calculadora de TCO desativada",
+    "level": "detail",
+    "stem": {
+      "pt": "Qual afirmação sobre a calculadora de preços do Azure e a calculadora de Custo Total de Propriedade (TCO) está correta?",
+      "en": "Which statement about the Azure pricing calculator and the Total Cost of Ownership (TCO) calculator is correct?"
+    },
+    "explanation": {
+      "pt": "A calculadora de preços ajuda a estimar possíveis despesas no Azure. A calculadora de TCO foi desativada. Nada é provisionado quando você usa a calculadora de preços.",
+      "en": "The pricing calculator helps you estimate potential Azure expenses. The TCO calculator has been retired. Nothing is provisioned when you use the pricing calculator."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque materiais de estudo mais antigos apresentam as duas ferramentas como atuais.",
+      "en": "Option A is tempting because older study material presents both tools as current."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "A calculadora de TCO e a calculadora de preços são ambas ferramentas atuais que comparam o custo local com o Azure.",
+          "en": "The TCO calculator and the pricing calculator are both current tools that compare on-premises cost with Azure."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A calculadora de preços acompanha o gasto real de uma assinatura, enquanto a calculadora de TCO estima novas implantações.",
+          "en": "The pricing calculator tracks actual spending of a subscription, while the TCO calculator estimates new deployments."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A calculadora de preços provisiona os recursos selecionados, enquanto a calculadora de TCO apenas estima.",
+          "en": "The pricing calculator provisions the resources you select, while the TCO calculator only estimates."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A calculadora de preços estima os custos do Azure, e a calculadora de TCO foi desativada.",
+          "en": "The pricing calculator estimates Azure costs, and the TCO calculator has been retired."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-01-02-04",
+    "requirement": "G02",
+    "subject": "modelar solução na calculadora",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe está planejando um novo aplicativo web. Ela quer modelar um plano do App Service, um banco de dados gerenciado e armazenamento e depois comparar estimativas mensais entre regiões, camadas de serviço e opções de redundância antes da implantação. Qual ferramenta se encaixa?",
+      "en": "A team is planning a new web application. It wants to model one App Service plan, a managed database, and storage, then compare monthly estimates across regions, service tiers, and redundancy options before deployment. Which tool fits?"
+    },
+    "explanation": {
+      "pt": "A calculadora de preços pode modelar recursos como um plano do App Service, um banco de dados gerenciado e opções de armazenamento, e comparar estimativas mensais entre regiões, camadas de serviço e opções de redundância antes da implantação.",
+      "en": "The pricing calculator can model resources such as an App Service plan, a managed database, and storage options, and compare monthly estimates across regions, service tiers, and redundancy options before deployment."
+    },
+    "distractors": {
+      "pt": "A análise de custos é o vizinho tentador porque também mostra o custo por região e serviço, mas apenas para recursos que já existem.",
+      "en": "Cost analysis is the tempting neighbor because it also shows cost by region and service, but only for resources that already exist."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Análise de custos no Gerenciamento de Custos",
+          "en": "Cost analysis in Cost Management"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Calculadora de preços",
+          "en": "Pricing calculator"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Marcas (tags) de recurso",
+          "en": "Resource tags"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Alertas de orçamento",
+          "en": "Budget alerts"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-01-02-05",
+    "requirement": "G02",
+    "subject": "calculadora vs análise de custos vs orçamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "A calculadora de preços estima custos antes da implantação. A análise de custos (no Gerenciamento de Custos) explora os custos reais. Os alertas de orçamento notificam quando o gasto atinge um limite.",
+      "en": "The pricing calculator estimates costs before deployment. Cost analysis (in Cost Management) explores actual costs. Budget alerts notify when spending reaches a threshold."
+    },
+    "distractors": {
+      "pt": "Calculadora de preços e análise de custos são o par mais trocado: estimar antes versus analisar depois.",
+      "en": "Pricing calculator and cost analysis are the most swapped pair: estimate before versus analyze after."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Estimar o custo de provisionar recursos antes de implantá-los",
+          "en": "Estimate the cost of provisioning resources before deploying them"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Visualizar e analisar os custos reais do que já está em execução, por assinatura, grupo de recursos ou serviço",
+          "en": "View and analyze the actual costs of what is already running, by subscription, resource group, or service"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Notificar você quando o gasto atingir ou exceder um limite que você definir",
+          "en": "Notify you when spending reaches or exceeds a threshold you define"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Análise de custos (cost analysis)",
+          "en": "Cost analysis"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Alerta de orçamento (budget alert)",
+          "en": "Budget alert"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Calculadora de preços (pricing calculator)",
+          "en": "Pricing calculator"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Marcas (tags) de recurso",
+          "en": "Resource tags"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B"
+    }
+  },
+  {
+    "id": "GOV-01-02-06",
+    "requirement": "G02",
+    "subject": "o que configurar na calculadora",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois itens você pode considerar ao usar a calculadora de preços? Escolha dois.",
+      "en": "Which two items can you account for when you use the pricing calculator? Choose two."
+    },
+    "explanation": {
+      "pt": "Com a calculadora de preços, você pode estimar custos de computação, armazenamento e rede associados, e considerar opções de armazenamento, como tipo, camada de acesso e redundância.",
+      "en": "With the pricing calculator you can estimate compute, storage, and associated network costs, and account for storage options such as type, access tier, and redundancy."
+    },
+    "distractors": {
+      "pt": "As alternativas A e E pertencem ao Gerenciamento de Custos, e não à calculadora de preços.",
+      "en": "Options A and E belong to Cost Management, not to the pricing calculator."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O gasto real de uma assinatura existente",
+          "en": "The actual spending of an existing subscription"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O provisionamento automático dos recursos que você adiciona",
+          "en": "Automatic provisioning of the resources you add"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Custos de computação, armazenamento e rede associados",
+          "en": "Compute, storage, and associated network costs"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Opções de armazenamento, como tipo de armazenamento, camada de acesso e redundância",
+          "en": "Storage options such as storage type, access tier, and redundancy"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Alertas de orçamento em tempo real",
+          "en": "Real-time budget alerts"
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "D"
+    ]
+  }
+]

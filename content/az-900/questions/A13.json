@@ -1,0 +1,284 @@
+[
+  {
+    "id": "ARCH-02-06-01",
+    "requirement": "A13",
+    "subject": "endpoint privado",
+    "level": "essential",
+    "stem": {
+      "pt": "Um recurso do Azure existe dentro de uma rede virtual e tem um endereço IP privado do espaço de endereços dessa rede virtual. Como se chama o ponto de acesso desse recurso?",
+      "en": "An Azure resource exists within a virtual network and has a private IP address from within the address space of that virtual network. What is this resource's access point called?"
+    },
+    "explanation": {
+      "pt": "Pontos de extremidade privados existem dentro de uma rede virtual e têm um endereço IP privado do espaço de endereços dessa rede virtual. Pontos de extremidade públicos têm um endereço IP público e podem ser acessados de qualquer lugar do mundo.",
+      "en": "Private endpoints exist within a virtual network and have a private IP address from within the address space of that virtual network. Public endpoints have a public IP address and can be accessed from anywhere in the world."
+    },
+    "distractors": {
+      "pt": "Ponto de extremidade público é o oposto tentador; o IP privado do espaço de endereços da rede virtual é a pista decisiva.",
+      "en": "Public endpoint is the tempting opposite; the private IP from the virtual network address space is the deciding clue."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ponto de extremidade público (public endpoint)",
+          "en": "Public endpoint"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ponto de extremidade privado (private endpoint)",
+          "en": "Private endpoint"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Circuito do ExpressRoute",
+          "en": "ExpressRoute circuit"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Link de emparelhamento",
+          "en": "Peering link"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-02-06-02",
+    "requirement": "A13",
+    "subject": "endpoints públicos e privados",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Pontos de extremidade públicos têm um endereço IP público e são acessíveis de qualquer lugar do mundo. Pontos de extremidade privados existem dentro de uma rede virtual e usam um IP privado do espaço de endereços dessa rede.",
+      "en": "Public endpoints have a public IP address and are reachable from anywhere in the world. Private endpoints exist within a virtual network and use a private IP from that network's address space."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 troca as duas definições.",
+      "en": "Statement 1 swaps the two definitions."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Um ponto de extremidade público existe dentro de uma rede virtual e tem um endereço IP privado.",
+          "en": "A public endpoint exists within a virtual network and has a private IP address."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um ponto de extremidade privado tem um endereço IP privado do espaço de endereços da sua rede virtual.",
+          "en": "A private endpoint has a private IP address from within the address space of its virtual network."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Um ponto de extremidade público tem um endereço IP público e pode ser acessado de qualquer lugar do mundo.",
+          "en": "A public endpoint has a public IP address and can be accessed from anywhere in the world."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-02-06-03",
+    "requirement": "A13",
+    "subject": "endpoint público vs privado vs de serviço",
+    "level": "detail",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Pontos de extremidade públicos usam um IP público. Pontos de extremidade privados usam um IP privado do espaço de endereços da rede virtual. Pontos de extremidade de serviço conectam redes virtuais a outros tipos de recurso do Azure, como bancos de dados SQL do Azure e contas de armazenamento.",
+      "en": "Public endpoints use a public IP. Private endpoints use a private IP from the virtual network's address space. Service endpoints connect virtual networks to other Azure resource types, such as Azure SQL databases and storage accounts."
+    },
+    "distractors": {
+      "pt": "Ponto de extremidade privado e ponto de extremidade de serviço são o par tentador: ambos melhoram a segurança, mas só o privado é um IP privado dentro da rede virtual.",
+      "en": "Private endpoint and service endpoint are the tempting pair: both improve security, but only the private endpoint is a private IP inside the virtual network."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Tem um endereço IP público e pode ser acessado de qualquer lugar do mundo",
+          "en": "Has a public IP address and can be accessed from anywhere in the world"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Tem um endereço IP privado do espaço de endereços da rede virtual",
+          "en": "Has a private IP address from within the address space of the virtual network"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Conecta uma rede virtual a tipos de recurso do Azure, como bancos de dados SQL do Azure e contas de armazenamento, para melhor segurança e roteamento ideal",
+          "en": "Connects a virtual network to Azure resource types such as Azure SQL databases and storage accounts for better security and optimal routing"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ponto de extremidade privado (private endpoint)",
+          "en": "Private endpoint"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ponto de extremidade de serviço (service endpoint)",
+          "en": "Service endpoint"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ponto de extremidade público (public endpoint)",
+          "en": "Public endpoint"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B"
+    }
+  },
+  {
+    "id": "ARCH-02-06-04",
+    "requirement": "A13",
+    "subject": "endpoint privado",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer que os recursos se comuniquem com um recurso interno usando um endereço IP privado do espaço de endereços da rede virtual, em vez de um endereço IP público acessível de qualquer lugar. Qual opção se encaixa?",
+      "en": "A company wants resources to communicate with an internal resource by using a private IP address from within the virtual network's address space, instead of a public IP address reachable from anywhere. Which option fits?"
+    },
+    "explanation": {
+      "pt": "Pontos de extremidade privados existem dentro de uma rede virtual e têm um endereço IP privado do espaço de endereços dessa rede virtual, o que permite a comunicação com recursos internos.",
+      "en": "Private endpoints exist within a virtual network and have a private IP address from within the address space of that virtual network, which enables communication with internal resources."
+    },
+    "distractors": {
+      "pt": "O ponto de extremidade público com balanceador de carga público é a opção tentadora porque permite a conectividade, mas expõe um IP público.",
+      "en": "The public endpoint with a public load balancer is the tempting option because it enables connectivity, but it exposes a public IP."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um ponto de extremidade público com um balanceador de carga público",
+          "en": "A public endpoint with a public load balancer"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Uma conexão VPN site a site",
+          "en": "A site-to-site VPN connection"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um registro de alias no Azure DNS",
+          "en": "An alias record in Azure DNS"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Um ponto de extremidade privado",
+          "en": "A private endpoint"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-02-06-05",
+    "requirement": "A13",
+    "subject": "endpoints públicos e privados",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre pontos de extremidade estão corretas? Escolha duas.",
+      "en": "Which two statements about endpoints are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "Um ponto de extremidade público tem um endereço IP público, e um ponto de extremidade privado tem um endereço IP privado do espaço de endereços da sua rede virtual. As alternativas A e C trocam as definições, e nenhum circuito do ExpressRoute é exigido.",
+      "en": "A public endpoint has a public IP address, and a private endpoint has a private IP address from the address space of its virtual network. Options A and C swap the definitions, and no ExpressRoute circuit is required."
+    },
+    "distractors": {
+      "pt": "A alternativa E é tentadora porque o ExpressRoute é uma conexão privada, mas é outro recurso.",
+      "en": "Option E is tempting because ExpressRoute is a private connection, but it is a different feature."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um ponto de extremidade privado pode ser acessado de qualquer lugar do mundo.",
+          "en": "A private endpoint can be accessed from anywhere in the world."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um ponto de extremidade público tem um endereço IP público.",
+          "en": "A public endpoint has a public IP address."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um ponto de extremidade público existe dentro de uma rede virtual e tem um endereço IP privado.",
+          "en": "A public endpoint exists within a virtual network and has a private IP address."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Um ponto de extremidade privado tem um endereço IP privado do espaço de endereços da sua rede virtual.",
+          "en": "A private endpoint has a private IP address from the address space of its virtual network."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Um ponto de extremidade privado exige um circuito do ExpressRoute.",
+          "en": "A private endpoint requires an ExpressRoute circuit."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ]
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "id": "CLOUD-02-01-01",
+    "requirement": "N08",
+    "subject": "alta disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa implanta um aplicativo que deve permanecer disponível independentemente de interrupções ou eventos que possam ocorrer. Os arquitetos planejam com base em garantias de tempo de atividade definidas por serviço. Em qual benefício da nuvem esse requisito se concentra e onde essas garantias são descritas?",
+      "en": "A company deploys an application that must stay available regardless of disruptions or events that may occur. The architects plan around uptime guarantees that are defined per service. Which cloud benefit does this requirement focus on, and where are those guarantees described?"
+    },
+    "explanation": {
+      "pt": "A alta disponibilidade se concentra em garantir a disponibilidade máxima, independentemente de interrupções ou eventos. O Azure é um ambiente de nuvem altamente disponível, com garantias de tempo de atividade que dependem do serviço e fazem parte dos SLAs (contratos de nível de serviço).",
+      "en": "High availability focuses on ensuring maximum availability regardless of disruptions or events. Azure is a highly available cloud environment, with uptime guarantees that depend on the service and are part of the service-level agreements (SLAs)."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a mais tentadora porque confiabilidade soa como manter sistemas no ar, mas confiabilidade é a capacidade de recuperar-se de falhas e continuar funcionando. A alternativa B combina o benefício certo com a fonte errada: a Calculadora de Preços estima custos.",
+      "en": "Option A is the most tempting because reliability sounds like keeping systems up, but reliability is the ability to recover from failures and continue to function. Option B pairs the right benefit with the wrong source: the Pricing Calculator estimates cost."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Confiabilidade (reliability), com garantias de tempo de atividade descritas em SLAs (service-level agreements, contratos de nível de serviço)",
+          "en": "Reliability, with uptime guarantees described in service-level agreements (SLAs)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Alta disponibilidade (high availability), com garantias de tempo de atividade descritas pela Calculadora de Preços do Azure (Azure Pricing Calculator)",
+          "en": "High availability, with uptime guarantees described by the Azure Pricing Calculator"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Alta disponibilidade (high availability), com garantias de tempo de atividade descritas em SLAs (service-level agreements, contratos de nível de serviço)",
+          "en": "High availability, with uptime guarantees described in service-level agreements (SLAs)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Escalabilidade (scalability), com garantias de tempo de atividade descritas em SLAs (service-level agreements, contratos de nível de serviço)",
+          "en": "Scalability, with uptime guarantees described in service-level agreements (SLAs)"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-02-01-02",
+    "requirement": "N08",
+    "subject": "escalabilidade horizontal",
+    "level": "essential",
+    "stem": {
+      "pt": "Durante um aumento acentuado na demanda, uma equipe adiciona mais máquinas virtuais e contêineres, de forma automática ou manual. Depois, quando a demanda cai significativamente, ela os remove. Qual abordagem e quais termos descrevem isso?",
+      "en": "During a steep jump in demand, a team adds more virtual machines and containers, either automatically or manually. Later, when demand drops significantly, it removes them. Which approach and terms describe this?"
+    },
+    "explanation": {
+      "pt": "A escalabilidade horizontal adiciona ou remove a quantidade de recursos: você faz scale out adicionando VMs ou contêineres e scale in removendo-os. A escalabilidade vertical altera as capacidades de um recurso, como CPU ou RAM, usando scale up e scale down.",
+      "en": "Horizontal scaling adds or subtracts the number of resources: you scale out by adding VMs or containers and scale in by removing them. Vertical scaling changes the capabilities of a resource, such as CPU or RAM, using scale up and scale down."
+    },
+    "distractors": {
+      "pt": "As alternativas C e D misturam os pares de termos: scale up e scale down pertencem à escala vertical, e scale out e scale in pertencem à escala horizontal.",
+      "en": "Options C and D mix the pairs of terms: scale up and scale down belong to vertical scaling, and scale out and scale in belong to horizontal scaling."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Escalabilidade horizontal (horizontal scaling): scale out e depois scale in",
+          "en": "Horizontal scaling: scale out and then scale in"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Escalabilidade vertical (vertical scaling): scale up e depois scale down",
+          "en": "Vertical scaling: scale up and then scale down"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Escalabilidade horizontal (horizontal scaling): scale up e depois scale down",
+          "en": "Horizontal scaling: scale up and then scale down"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Escalabilidade vertical (vertical scaling): scale out e depois scale in",
+          "en": "Vertical scaling: scale out and then scale in"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-02-01-03",
+    "requirement": "N08",
+    "subject": "escalabilidade e SLA",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A afirmação 1 descreve a escalabilidade vertical; a horizontal altera a quantidade de recursos. As garantias de tempo de atividade dependem do serviço. A escalabilidade permite reduzir recursos quando a demanda cai e, assim, reduzir custos.",
+      "en": "Statement 1 describes vertical scaling; horizontal scaling changes the number of resources. Uptime guarantees depend on the service. Scalability lets you reduce resources when demand drops and so reduce costs."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é a troca clássica: horizontal significa mais ou menos recursos, vertical significa recursos maiores ou menores.",
+      "en": "Statement 1 is the classic swap: horizontal means more or fewer resources, vertical means bigger or smaller resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A escalabilidade horizontal aumenta ou diminui as capacidades de um recurso, como a CPU ou a RAM de uma máquina virtual.",
+          "en": "Horizontal scaling increases or decreases the capabilities of a resource, such as the CPU or RAM of a virtual machine."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "As garantias de tempo de atividade do Azure são as mesmas para todos os serviços.",
+          "en": "The uptime guarantees of Azure are the same for every service."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Como a nuvem é um modelo baseado em consumo, a escalabilidade ajuda a evitar gastos excessivos: você pode reduzir recursos quando a demanda cai.",
+          "en": "Because the cloud is a consumption-based model, scalability helps you avoid overpaying: you can reduce resources when demand drops."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "CLOUD-02-01-04",
+    "requirement": "N08",
+    "subject": "vertical vs horizontal",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Vertical: scale up adiciona CPU ou RAM a um recurso, scale down os reduz. Horizontal: scale out adiciona mais recursos, como VMs ou contêineres, scale in os remove.",
+      "en": "Vertical: scale up adds CPU or RAM to a resource, scale down lowers them. Horizontal: scale out adds more resources such as VMs or containers, scale in removes them."
+    },
+    "distractors": {
+      "pt": "Scale down e scale in são o par mais confundido: scale down reduz um recurso; scale in remove recursos.",
+      "en": "Scale down and scale in are the most confused pair: scale down shrinks one resource; scale in removes resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Adicionar mais CPUs e RAM a uma máquina virtual que precisa de mais poder de processamento.",
+          "en": "Add more CPUs and RAM to a virtual machine that needs more processing power."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Reduzir as especificações de CPU e RAM depois de descobrir que uma máquina virtual estava superdimensionada.",
+          "en": "Lower the CPU and RAM specifications after discovering that a virtual machine was over-specified."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Adicionar máquinas virtuais ou contêineres após um aumento acentuado na demanda.",
+          "en": "Add additional virtual machines or containers after a steep jump in demand."
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Remover recursos implantados após uma queda significativa na demanda.",
+          "en": "Remove deployed resources after a significant drop in demand."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Scale out horizontal",
+          "en": "Horizontal scale out"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Scale down vertical",
+          "en": "Vertical scale down"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Scale in horizontal",
+          "en": "Horizontal scale in"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Scale up vertical",
+          "en": "Vertical scale up"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "B",
+      "3": "A",
+      "4": "C"
+    }
+  },
+  {
+    "id": "CLOUD-02-01-05",
+    "requirement": "N08",
+    "subject": "benefícios da escalabilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações descrevem benefícios da escalabilidade na nuvem? Escolha duas.",
+      "en": "Which two statements describe benefits of scalability in the cloud? Choose two."
+    },
+    "explanation": {
+      "pt": "Escalabilidade é a capacidade de ajustar recursos para atender à demanda: adicionar recursos para lidar com picos de tráfego e reduzi-los quando a demanda cai, para não pagar demais.",
+      "en": "Scalability is the ability to adjust resources to meet demand: add resources to handle peak traffic and reduce them when demand drops, so you don't overpay."
+    },
+    "distractors": {
+      "pt": "A alternativa A é alta disponibilidade, a C é confiabilidade e a E é previsibilidade de custos; todas soam como benefícios gerais da nuvem.",
+      "en": "Option A is high availability, option C is reliability, and option E is cost predictability; all sound like general cloud benefits."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Garantir que os recursos permaneçam disponíveis independentemente de qualquer interrupção",
+          "en": "Guaranteeing that resources stay available regardless of any disruption"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Adicionar recursos para lidar melhor com o aumento da demanda quando os sistemas estão sobrecarregados por picos de tráfego",
+          "en": "Adding resources to better handle increased demand when systems are overwhelmed by peak traffic"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Recuperar-se automaticamente de um evento catastrófico em uma região",
+          "en": "Automatically recovering from a catastrophic event in one region"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Reduzir recursos quando a demanda cai para não pagar demais pelos serviços",
+          "en": "Reducing resources when demand drops so you aren't overpaying for services"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Prever o gasto futuro na nuvem aplicando análise de dados",
+          "en": "Forecasting future cloud spend by applying data analytics"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "CLOUD-02-01-06",
+    "requirement": "N08",
+    "subject": "escalar no pico",
+    "level": "essential",
+    "stem": {
+      "pt": "Os sistemas de uma loja online ficam sobrecarregados durante picos de tráfego. A empresa quer adicionar recursos apenas para o pico e reduzir seus custos quando a demanda cai, porque paga apenas pelo que usa. Qual benefício da nuvem melhor atende a todas essas necessidades?",
+      "en": "An online store's systems are overwhelmed during peak traffic. The company wants to add resources only for the peak and reduce its costs when demand drops, because it pays only for what it uses. Which cloud benefit best meets all of these needs?"
+    },
+    "explanation": {
+      "pt": "Escalabilidade é a capacidade de ajustar recursos para atender à demanda. Como a nuvem é baseada em consumo, reduzir recursos quando a demanda cai reduz custos.",
+      "en": "Scalability is the ability to adjust resources to meet demand. Because the cloud is consumption-based, reducing resources when demand drops reduces costs."
+    },
+    "distractors": {
+      "pt": "Previsibilidade de custos é o vizinho tentador porque custos são citados, mas ela trata de prever gastos, e não de ajustar recursos à demanda.",
+      "en": "Cost predictability is the tempting neighbor because costs are mentioned, but it is about forecasting spend, not adjusting resources to demand."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Alta disponibilidade (high availability)",
+          "en": "High availability"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Confiabilidade (reliability)",
+          "en": "Reliability"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Previsibilidade de custos (cost predictability)",
+          "en": "Cost predictability"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Escalabilidade (scalability)",
+          "en": "Scalability"
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

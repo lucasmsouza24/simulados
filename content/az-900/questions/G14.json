@@ -1,0 +1,454 @@
+[
+  {
+    "id": "GOV-04-02-01",
+    "requirement": "G14",
+    "subject": "o que a Integridade do Serviço mostra",
+    "level": "essential",
+    "stem": {
+      "pt": "Você recebe uma notificação por email de que máquinas virtuais em uma região do Azure em que você tem VMs implantadas estão passando por uma interrupção. Qual componente do Azure Service Health informará se o seu aplicativo é afetado?",
+      "en": "You receive an email notification that virtual machines in an Azure region where you have VMs deployed are experiencing an outage. Which component of Azure Service Health will let you know whether your application is impacted?"
+    },
+    "explanation": {
+      "pt": "O Service Health se concentra nos serviços e regiões do Azure que você realmente usa. Como você está conectado, ele sabe quais serviços são importantes para você e mostra interrupções, manutenções planejadas e avisos de integridade relevantes ao seu ambiente.",
+      "en": "Service Health focuses on the Azure services and regions you actually use. Because you are signed in, it knows which services matter to you and shows outages, planned maintenance, and health advisories relevant to your environment."
+    },
+    "distractors": {
+      "pt": "O Azure Status é o vizinho tentador porque informa interrupções, mas dá um quadro global, e não um filtrado para os seus serviços e regiões.",
+      "en": "Azure Status is the tempting neighbor because it reports outages, but it gives a global picture rather than one filtered to your services and regions."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Status",
+          "en": "Azure Status"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Resource Health",
+          "en": "Resource Health"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Service Health",
+          "en": "Service Health"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-04-02-02",
+    "requirement": "G14",
+    "subject": "Status vs Integridade do Serviço vs Recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure Status é a visão global. O Service Health é personalizado para seus serviços e regiões e oferece suporte a alertas. O Resource Health se concentra em um recurso individual e informa se o problema está do lado do Azure ou do seu.",
+      "en": "Azure Status is the global view. Service Health is personalized to your services and regions and supports alerts. Resource Health zooms in on an individual resource and tells you whether the issue is on Azure's side or yours."
+    },
+    "distractors": {
+      "pt": "As três visões reduzem o escopo de global para recursos individuais, então a armadilha é escolher o nível de escopo errado.",
+      "en": "The three views narrow in scope from global to individual resources, so the trap is picking the wrong level of scope."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Dá um quadro global da integridade do Azure em todos os serviços e regiões",
+          "en": "Gives a global picture of Azure health across all services and regions"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Mostra interrupções, manutenções planejadas e avisos de integridade relevantes aos serviços e regiões que você usa",
+          "en": "Shows outages, planned maintenance, and health advisories relevant to the services and regions you use"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Informa se uma máquina virtual específica está em execução normal e se o problema está do lado do Azure ou do seu",
+          "en": "Tells you whether a specific virtual machine is running normally and whether an issue is on Azure's side or yours"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "É a página a consultar quando você ouve falar de uma interrupção generalizada e quer saber se ela afeta o Azure",
+          "en": "Is the page to check when you hear about a widespread outage and want to know whether it affects Azure"
+        }
+      },
+      {
+        "key": "5",
+        "text": {
+          "pt": "Permite configurar alertas para ser notificado automaticamente sobre eventos no seu ambiente",
+          "en": "Lets you set up alerts so you are notified automatically about events in your environment"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Resource Health",
+          "en": "Resource Health"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Status",
+          "en": "Azure Status"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Service Health",
+          "en": "Service Health"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A",
+      "4": "B",
+      "5": "C"
+    }
+  },
+  {
+    "id": "GOV-04-02-03",
+    "requirement": "G14",
+    "subject": "Integridade de Recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma máquina virtual em produção para de responder. A equipe de operações quer saber se o problema dessa única VM está do lado do Azure ou do lado deles. Qual componente do Azure Service Health eles devem verificar?",
+      "en": "A virtual machine in production stops responding. The operations team wants to know whether the problem for this single VM is on Azure's side or on their own side. Which Azure Service Health component should they check?"
+    },
+    "explanation": {
+      "pt": "O Resource Health se concentra em recursos individuais, como uma máquina virtual específica. Ele informa se o recurso está em execução normal ou com problema e se a questão está do lado do Azure ou do seu.",
+      "en": "Resource Health zooms in on individual resources, such as a specific virtual machine. It tells you whether the resource is running normally or experiencing a problem, and whether the issue is on Azure's side or yours."
+    },
+    "distractors": {
+      "pt": "O Service Health é o vizinho tentador porque é personalizado, mas atua no nível de serviços e regiões, e não de um único recurso.",
+      "en": "Service Health is the tempting neighbor because it is personalized, but it works at the level of services and regions, not a single resource."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Resource Health",
+          "en": "Resource Health"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Status",
+          "en": "Azure Status"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Service Health",
+          "en": "Service Health"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-04-02-04",
+    "requirement": "G14",
+    "subject": "alertas da Integridade do Serviço",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador conectado quer ser notificado automaticamente sobre manutenções planejadas que afetam apenas os serviços e as regiões do Azure que a empresa realmente usa. Qual componente ele deve usar?",
+      "en": "An administrator who is signed in wants to be notified automatically about planned maintenance that affects only the Azure services and regions the company actually uses. Which component should the administrator use?"
+    },
+    "explanation": {
+      "pt": "O Service Health sabe quais serviços e regiões são importantes para você porque você está conectado. Ele mostra interrupções, manutenções planejadas e avisos de integridade relevantes ao seu ambiente, e você pode configurar alertas para ser notificado automaticamente.",
+      "en": "Service Health knows which services and regions matter to you because you are signed in. It shows outages, planned maintenance, and health advisories relevant to your environment, and you can set up alerts to be notified automatically."
+    },
+    "distractors": {
+      "pt": "O Azure Status é o vizinho tentador porque é público e global, portanto não é filtrado pelo que você usa.",
+      "en": "Azure Status is the tempting neighbor because it is public and global, so it is not filtered to what you use."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Status",
+          "en": "Azure Status"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Resource Health",
+          "en": "Resource Health"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Service Health",
+          "en": "Service Health"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-04-02-05",
+    "requirement": "G14",
+    "subject": "Status vs Integridade do Serviço vs Recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Azure Status é um quadro global de todos os serviços e regiões. O Service Health é personalizado porque você está conectado. O Resource Health informa se um recurso está em execução normal e se o problema está do lado do Azure ou do seu.",
+      "en": "Azure Status is a global picture across all services and regions. Service Health is personalized because you are signed in. Resource Health tells you whether a resource is running normally and whether an issue is on Azure's side or yours."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 troca o escopo do Azure Status e do Service Health.",
+      "en": "Statement 1 swaps the scope of Azure Status and Service Health."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure Status mostra apenas os serviços e as regiões que sua organização usa.",
+          "en": "Azure Status shows only the services and regions that your organization uses."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Service Health sabe quais serviços são importantes para você porque você está conectado.",
+          "en": "Service Health knows which services matter to you because you are signed in."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Resource Health informa se um problema com um recurso está do lado do Azure ou do seu.",
+          "en": "Resource Health tells you whether an issue with a resource is on Azure's side or yours."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "GOV-04-02-06",
+    "requirement": "G14",
+    "subject": "o que a Integridade do Serviço mostra",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três tipos de eventos o Service Health mostra para os serviços e as regiões do Azure que você usa? Escolha três.",
+      "en": "Which three types of events does Service Health show for the Azure services and regions you use? Choose three."
+    },
+    "explanation": {
+      "pt": "O Service Health mostra interrupções, manutenções planejadas e avisos de integridade relevantes ao seu ambiente. Recomendações de gastos vêm do Azure Advisor, e taxas de solicitação e tempos de resposta vêm do Application Insights.",
+      "en": "Service Health shows outages, planned maintenance, and health advisories relevant to your environment. Spending recommendations come from Azure Advisor, and request rates and response times come from Application Insights."
+    },
+    "distractors": {
+      "pt": "As duas opções erradas pertencem ao Azure Advisor e ao Application Insights.",
+      "en": "The two wrong options belong to Azure Advisor and Application Insights."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Recomendações para reduzir seus gastos com o Azure",
+          "en": "Recommendations to reduce your Azure spending"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Interrupções (outages)",
+          "en": "Outages"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Manutenção planejada (planned maintenance)",
+          "en": "Planned maintenance"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Taxas de solicitação e tempos de resposta de seus aplicativos Web",
+          "en": "Request rates and response times of your web applications"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Avisos de integridade (health advisories)",
+          "en": "Health advisories"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-04-02-07",
+    "requirement": "G14",
+    "subject": "Status vs Integridade do Serviço vs Recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação descreve corretamente como as três visões do Azure Service Health se relacionam?",
+      "en": "Which statement correctly describes how the three views of Azure Service Health relate to each other?"
+    },
+    "explanation": {
+      "pt": "As três visões reduzem o escopo de global (Azure Status), para os serviços e regiões que você usa (Service Health), até recursos individuais (Resource Health). Usadas em conjunto, dão visibilidade de eventos amplos de serviço até um único recurso.",
+      "en": "The three views narrow in scope from global (Azure Status), to the services and regions you use (Service Health), to individual resources (Resource Health). Used together, they give visibility from broad service events down to a single resource."
+    },
+    "distractors": {
+      "pt": "Cada distrator embaralha os escopos das três visões.",
+      "en": "Each distractor scrambles the scopes of the three views."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O Resource Health mostra o quadro global, o Service Health mostra recursos individuais, e o Azure Status mostra as regiões que você usa.",
+          "en": "Resource Health shows the global picture, Service Health shows individual resources, and Azure Status shows the regions you use."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O Azure Status mostra a integridade global de todos os serviços e regiões, o Service Health se restringe aos serviços e regiões que você usa, e o Resource Health se restringe a recursos individuais.",
+          "en": "Azure Status shows global health across all services and regions, Service Health narrows to the services and regions you use, and Resource Health narrows to individual resources."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O Azure Status é personalizado para suas assinaturas, o Service Health é global, e o Resource Health mostra manutenções planejadas.",
+          "en": "Azure Status is personalized to your subscriptions, Service Health is global, and Resource Health shows planned maintenance."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "As três visões mostram os mesmos dados globais e diferem apenas na forma como os alertas são entregues.",
+          "en": "All three views show the same global data and differ only in how alerts are delivered."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-04-02-08",
+    "requirement": "G14",
+    "subject": "links para suporte",
+    "level": "detail",
+    "stem": {
+      "pt": "Quando um evento afeta uma de suas cargas de trabalho, o Azure Service Health fornece ______ para que você possa responder rapidamente.",
+      "en": "When an event affects one of your workloads, Azure Service Health provides ______ so you can respond quickly."
+    },
+    "explanation": {
+      "pt": "Quando um evento afeta uma de suas cargas de trabalho, o Azure Service Health fornece links para o suporte para que você possa responder rapidamente. Os alertas históricos também são mantidos para que você identifique tendências recorrentes.",
+      "en": "When an event affects one of your workloads, Azure Service Health provides links to support so you can respond quickly. Historical alerts are also retained so you can spot recurring trends."
+    },
+    "distractors": {
+      "pt": "Os distratores descrevem correção automática, que o Service Health não executa; ele informa você e leva ao suporte.",
+      "en": "The distractors describe automatic remediation, which Service Health does not perform; it informs you and links you to support."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "failover automático para outra região",
+          "en": "automatic failover to another region"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "uma reversão automática de implantações recentes",
+          "en": "an automatic rollback of recent deployments"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "links para o suporte",
+          "en": "links to support"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "um bloqueio de recurso nos recursos afetados",
+          "en": "a resource lock on the affected resources"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

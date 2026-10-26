@@ -1,0 +1,445 @@
+[
+  {
+    "id": "GOV-01-03-01",
+    "requirement": "G03",
+    "subject": "análise de custo",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador quer uma visualização rápida dos custos do Azure que mostre o custo total por ciclo de cobrança, região ou recurso, e agregado por assinatura, grupo de recursos ou serviço. Qual recurso do Gerenciamento de Custos se encaixa?",
+      "en": "An administrator wants a quick visual of Azure costs that shows the total cost by billing cycle, region, or resource, and aggregated by subscription, resource group, or service. Which Cost Management feature fits?"
+    },
+    "explanation": {
+      "pt": "A análise de custos é um recurso do Gerenciamento de Custos que fornece uma visualização rápida dos custos do Azure, por ciclo de cobrança, região, recurso, assinatura, grupo de recursos ou serviço, e custos acumulados ao longo do tempo em relação a um orçamento.",
+      "en": "Cost analysis is a Cost Management feature that provides a quick visual of Azure costs, viewable by billing cycle, region, resource, subscription, resource group, or service, and as accumulated costs over time against a budget."
+    },
+    "distractors": {
+      "pt": "Os alertas de orçamento são o vizinho tentador porque também estão no Gerenciamento de Custos, mas notificam em vez de visualizar.",
+      "en": "Budget alerts are the tempting neighbor because they are also in Cost Management, but they notify instead of visualizing."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Calculadora de preços",
+          "en": "Pricing calculator"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Alertas de orçamento",
+          "en": "Budget alerts"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Alertas de crédito",
+          "en": "Credit alerts"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Análise de custos",
+          "en": "Cost analysis"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-01-03-02",
+    "requirement": "G03",
+    "subject": "alerta de orçamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe quer ser notificada quando o gasto mensal de uma assinatura de desenvolvimento e teste atingir 80% de um limite que ela definiu, para ajustar o tamanho dos recursos antes que os custos excedam a meta. Qual recurso se encaixa?",
+      "en": "A team wants to be notified when monthly spending on a dev/test subscription reaches 80% of a threshold it defined, so it can right-size resources before costs exceed the target. Which feature fits?"
+    },
+    "explanation": {
+      "pt": "Um orçamento define um limite de gastos, e os alertas de orçamento notificam quando o gasto atinge ou excede o limite que você definir. Os alertas aparecem em alertas de custo e podem ser enviados por e-mail aos destinatários.",
+      "en": "A budget sets a spending limit, and budget alerts notify you when spending reaches or exceeds the threshold you define. Alerts appear in cost alerts and can be emailed to the recipients list."
+    },
+    "distractors": {
+      "pt": "Os alertas de crédito são tentadores porque também se baseiam em limites, mas acompanham o saldo de um Azure Prepayment, e não um orçamento.",
+      "en": "Credit alerts are tempting because they are also threshold-based, but they track an Azure Prepayment balance, not a budget."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um alerta de orçamento",
+          "en": "A budget alert"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um alerta de crédito",
+          "en": "A credit alert"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um alerta de cota de gastos do departamento",
+          "en": "A department spending quota alert"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Análise de custos",
+          "en": "Cost analysis"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-01-03-03",
+    "requirement": "G03",
+    "subject": "tipos de alerta de custo",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Os três tipos de alerta de custo são alertas de orçamento, alertas de crédito (Azure Prepayment, 90% e 100%) e alertas de cota de gastos do departamento (clientes do Enterprise Agreement). A análise de custos é um recurso de visualização, e não um alerta.",
+      "en": "The three cost alert types are budget alerts, credit alerts (Azure Prepayment, 90% and 100%), and department spending quota alerts (Enterprise Agreement customers). Cost analysis is a visualization feature, not an alert."
+    },
+    "distractors": {
+      "pt": "Alertas de crédito e de cota de gastos do departamento são o par mais próximo: ambos são recursos do Enterprise Agreement, mas o crédito acompanha o saldo do prepayment e a cota acompanha o gasto do departamento.",
+      "en": "Credit and department spending quota alerts are the closest pair: both are Enterprise Agreement features, but credit tracks the prepayment balance and quota tracks department spending."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Notifica quando seu Azure Prepayment é consumido, gerado automaticamente em 90% e 100% do saldo de crédito",
+          "en": "Notifies you when your Azure Prepayment is consumed, generated automatically at 90% and 100% of the credit balance"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Notifica quando o gasto do departamento atinge um limite fixo da cota, como 50% ou 75%, para clientes do Enterprise Agreement",
+          "en": "Notifies you when department spending reaches a fixed threshold of the quota, such as 50% or 75%, for Enterprise Agreement customers"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Notifica quando o gasto atinge ou excede um limite que você define em um orçamento",
+          "en": "Notifies you when spending reaches or exceeds a threshold you define in a budget"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Alerta de orçamento",
+          "en": "Budget alert"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Alerta de crédito",
+          "en": "Credit alert"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Alerta de cota de gastos do departamento",
+          "en": "Department spending quota alert"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Análise de custos",
+          "en": "Cost analysis"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A"
+    }
+  },
+  {
+    "id": "GOV-01-03-04",
+    "requirement": "G03",
+    "subject": "escopo do orçamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Os orçamentos podem ter escopo por assinatura, grupo de recursos, tipo de serviço ou outros critérios, e podem disparar automações, como desligar recursos de não produção. Os alertas de crédito se aplicam ao Azure Prepayment, que é para clientes do Enterprise Agreement.",
+      "en": "Budgets can be scoped by subscription, resource group, service type, or other criteria, and can trigger automation such as shutting down nonproduction resources. Credit alerts apply to Azure Prepayment, which is for Enterprise Agreement customers."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque alertas soam genéricos, mas os alertas de crédito estão ligados ao Azure Prepayment.",
+      "en": "Statement 3 is tempting because alerts sound generic, but credit alerts are tied to Azure Prepayment."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Você pode definir um orçamento com base em uma assinatura, um grupo de recursos, um tipo de serviço ou outros critérios.",
+          "en": "You can set a budget based on a subscription, a resource group, a service type, or other criteria."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os orçamentos podem ser configurados para disparar automações que suspendem ou modificam recursos quando um limite de gastos é atingido.",
+          "en": "Budgets can be configured to trigger automation that suspends or modifies resources when a spending threshold is reached."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Os alertas de crédito estão disponíveis para todos os tipos de assinatura.",
+          "en": "Credit alerts are available to all subscription types."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-01-03-05",
+    "requirement": "G03",
+    "subject": "orçamento com automação",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer desligar automaticamente recursos de não produção quando o gasto atingir um limite definido. Qual recurso do Gerenciamento de Custos se encaixa?",
+      "en": "A company wants to automatically shut down nonproduction resources when spending reaches a defined threshold. Which Cost Management capability fits?"
+    },
+    "explanation": {
+      "pt": "Você pode configurar orçamentos para disparar automações que suspendem ou modificam recursos quando um limite de gastos é atingido, por exemplo, desligando recursos de não produção.",
+      "en": "You can configure budgets to trigger automation that suspends or modifies resources when a spending threshold is reached, for example shutting down nonproduction resources."
+    },
+    "distractors": {
+      "pt": "Uma exibição de análise de custos é tentadora porque mostra o aumento, mas não age sobre recursos.",
+      "en": "A cost analysis view is tempting because it shows the spike, but it doesn't act on resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma estimativa da calculadora de preços",
+          "en": "A pricing calculator estimate"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um orçamento configurado para disparar automação em um limite de gastos",
+          "en": "A budget configured to trigger automation at a spending threshold"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma marca (tag) de recurso",
+          "en": "A resource tag"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma exibição de análise de custos",
+          "en": "A cost analysis view"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-01-03-06",
+    "requirement": "G03",
+    "subject": "tipos de alerta de custo",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três tipos de alerta podem aparecer nos alertas de custo do Gerenciamento de Custos? Escolha três.",
+      "en": "Which three alert types can appear in Cost Management cost alerts? Choose three."
+    },
+    "explanation": {
+      "pt": "Os alertas de custo mostram alertas de orçamento, alertas de crédito e alertas de cota de gastos do departamento.",
+      "en": "Cost alerts show budget alerts, credit alerts, and department spending quota alerts."
+    },
+    "distractors": {
+      "pt": "Os alertas de segurança e do Service Health são tentadores por serem alertas do Azure, mas vêm de outros serviços.",
+      "en": "Security and Service Health alerts are tempting because they are Azure alerts, but they come from other services."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Alertas de crédito",
+          "en": "Credit alerts"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Alertas de segurança",
+          "en": "Security alerts"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Alertas de orçamento",
+          "en": "Budget alerts"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Alertas do Service Health",
+          "en": "Service Health alerts"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Alertas de cota de gastos do departamento",
+          "en": "Department spending quota alerts"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-01-03-07",
+    "requirement": "G03",
+    "subject": "orçamento por uso",
+    "level": "detail",
+    "stem": {
+      "pt": "No portal do Azure, os orçamentos são definidos por custo. Como uma equipe também pode definir um orçamento com base no uso de consumo?",
+      "en": "In the Azure portal, budgets are defined by cost. How can a team also define a budget based on consumption usage?"
+    },
+    "explanation": {
+      "pt": "Você pode criar orçamentos no portal do Azure ou pela API de Consumo do Azure. No portal, os orçamentos são definidos por custo; com a API de Consumo do Azure, você também pode definir orçamentos por uso de consumo.",
+      "en": "You can create budgets in the Azure portal or through the Azure Consumption API. In the portal budgets are defined by cost; with the Azure Consumption API you can also define budgets by consumption usage."
+    },
+    "distractors": {
+      "pt": "Os alertas de crédito são tentadores porque se relacionam ao uso de um saldo, mas não são definições de orçamento.",
+      "en": "Credit alerts are tempting because they relate to usage of a balance, but they are not budget definitions."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Usando a API de Consumo do Azure (Azure Consumption API)",
+          "en": "By using the Azure Consumption API"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Usando a calculadora de preços",
+          "en": "By using the pricing calculator"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Aplicando marcas (tags) de recurso",
+          "en": "By applying resource tags"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Habilitando alertas de crédito",
+          "en": "By enabling credit alerts"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-01-03-08",
+    "requirement": "G03",
+    "subject": "finalidade do Cost Management",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação descreve melhor a finalidade do Gerenciamento de Custos (Cost Management)?",
+      "en": "Which statement best describes the purpose of Cost Management?"
+    },
+    "explanation": {
+      "pt": "O Gerenciamento de Custos é um conjunto de ferramentas que ajuda as organizações a analisar, monitorar e gerenciar os custos do Azure, incluindo verificar custos de recursos, criar alertas com base no gasto e criar orçamentos que podem automatizar o gerenciamento de recursos.",
+      "en": "Cost Management is a set of tools that helps organizations analyze, monitor, and manage Azure costs, including checking resource costs, creating alerts based on spend, and creating budgets that can automate management of resources."
+    },
+    "distractors": {
+      "pt": "A alternativa B descreve a calculadora de preços, a confusão clássica.",
+      "en": "Option B describes the pricing calculator, the classic mix-up."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Permite provisionar recursos mais rapidamente usando modelos.",
+          "en": "It lets you provision resources faster by using templates."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Estima o custo de recursos que você ainda não implantou.",
+          "en": "It estimates the cost of resources that you have not yet deployed."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Atribui funções que controlam quem pode criar recursos.",
+          "en": "It assigns roles that control who can create resources."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "É um conjunto de ferramentas que ajuda a analisar, monitorar e gerenciar os custos do Azure, verificar custos de recursos, criar alertas e definir orçamentos.",
+          "en": "It is a set of tools that helps you analyze, monitor, and manage Azure costs, check resource costs, create alerts, and set budgets."
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

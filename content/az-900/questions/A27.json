@@ -1,0 +1,342 @@
+[
+  {
+    "id": "ARCH-04-08-01",
+    "requirement": "A27",
+    "subject": "capacidades do Defender",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe de segurança precisa de um serviço de gerenciamento de postura e proteção contra ameaças que monitore recursos de nuvem, locais, híbridos e multicloud e forneça recomendações e alertas para melhorar a postura de segurança. Qual serviço se encaixa?",
+      "en": "A security team needs a posture management and threat protection service that monitors cloud, on-premises, hybrid, and multicloud resources, and provides recommendations and alerts to improve security posture. Which service fits?"
+    },
+    "explanation": {
+      "pt": "O Microsoft Defender for Cloud é um serviço de gerenciamento de postura de segurança e proteção contra ameaças que monitora recursos de nuvem, locais, híbridos e multicloud e fornece recomendações e alertas.",
+      "en": "Microsoft Defender for Cloud is a security posture management and threat protection service that monitors cloud, on-premises, hybrid, and multicloud resources and provides recommendations and alerts."
+    },
+    "distractors": {
+      "pt": "O Azure Monitor é o vizinho tentador porque também observa recursos, mas se concentra em telemetria, e não em postura de segurança e ameaças.",
+      "en": "Azure Monitor is the tempting neighbor because it also observes resources, but it focuses on telemetry rather than security posture and threats."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Defender for Cloud",
+          "en": "Microsoft Defender for Cloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Key Vault",
+          "en": "Azure Key Vault"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-04-08-02",
+    "requirement": "A27",
+    "subject": "pilares do Defender",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Defender for Cloud atende a três necessidades: avaliar continuamente (conhecer a postura e as vulnerabilidades), proteger (reforçar recursos com o Microsoft cloud security benchmark) e defender (detectar e resolver ameaças).",
+      "en": "Defender for Cloud fills three needs: continuously assess (know posture and vulnerabilities), secure (harden resources with the Microsoft cloud security benchmark), and defend (detect and resolve threats)."
+    },
+    "distractors": {
+      "pt": "Proteger e defender são o par mais próximo: proteger reforça antecipadamente, defender reage às ameaças.",
+      "en": "Secure and defend are the closest pair: secure hardens in advance, defend reacts to threats."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Conhecer a postura de segurança e identificar e acompanhar vulnerabilidades, incluindo avaliação de vulnerabilidades para VMs, registros de contêineres e servidores SQL",
+          "en": "Know your security posture and identify and track vulnerabilities, including vulnerability assessment for VMs, container registries, and SQL servers"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Proteger recursos e serviços seguindo recomendações alinhadas ao Microsoft cloud security benchmark",
+          "en": "Harden resources and services by following recommendations that align with the Microsoft cloud security benchmark"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Detectar e resolver ameaças por meio de alertas de segurança e proteção avançada contra ameaças",
+          "en": "Detect and resolve threats through security alerts and advanced threat protection"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Defender (defend)",
+          "en": "Defend"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Proteger (secure)",
+          "en": "Secure"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Avaliar continuamente (continuously assess)",
+          "en": "Continuously assess"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Arquivar",
+          "en": "Archive"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "B",
+      "3": "A"
+    }
+  },
+  {
+    "id": "ARCH-04-08-03",
+    "requirement": "A27",
+    "subject": "Defender híbrido com Arc",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Defender for Cloud cobre Azure, ambientes híbridos e outras nuvens, incluindo AWS e GCP. Para estender a proteção a máquinas locais, você implanta o Azure Arc e habilita os recursos de segurança aprimorados do Defender for Cloud.",
+      "en": "Defender for Cloud covers Azure, hybrid, and other clouds including AWS and GCP. To extend protection to on-premises machines, you deploy Azure Arc and enable Defender for Cloud's enhanced security features."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque o Defender for Cloud é nativo do Azure, mas se estende a ambientes híbridos e multicloud.",
+      "en": "Statement 1 is tempting because Defender for Cloud is Azure-native, but it extends to hybrid and multicloud."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Microsoft Defender for Cloud se limita a proteger recursos executados no Azure.",
+          "en": "Microsoft Defender for Cloud is limited to protecting resources that run in Azure."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Microsoft Defender for Cloud também pode proteger recursos executados em outras nuvens, como AWS e GCP.",
+          "en": "Microsoft Defender for Cloud can also protect resources that run in other clouds, such as AWS and GCP."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Para estender a proteção a máquinas locais, você implanta o Azure Arc e habilita os recursos de segurança aprimorados.",
+          "en": "To extend protection to on-premises machines, you deploy Azure Arc and enable the enhanced security features."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-04-08-04",
+    "requirement": "A27",
+    "subject": "pontuação segura",
+    "level": "essential",
+    "stem": {
+      "pt": "O Defender for Cloud agrupa recomendações em controles de segurança e calcula um único valor que ajuda as equipes a entender rapidamente sua postura e priorizar melhorias. Como esse valor se chama?",
+      "en": "Defender for Cloud groups recommendations into security controls and calculates a single value that helps teams quickly understand their posture and prioritize improvements. What is this value called?"
+    },
+    "explanation": {
+      "pt": "O Defender for Cloud agrupa recomendações em controles de segurança e calcula uma pontuação de segurança (secure score) para que as equipes entendam rapidamente a postura e priorizem melhorias.",
+      "en": "Defender for Cloud groups recommendations into security controls and calculates a secure score so teams can quickly understand posture and prioritize improvements."
+    },
+    "distractors": {
+      "pt": "Os alertas de segurança são tentadores porque também são saídas, mas descrevem ameaças detectadas, e não a postura.",
+      "en": "Security alerts are tempting because they are also outputs, but alerts describe detected threats, not posture."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Security alerts",
+          "en": "Security alerts"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Secure score",
+          "en": "Secure score"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Kill-chain analysis",
+          "en": "Kill-chain analysis"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Just-in-time VM access",
+          "en": "Just-in-time VM access"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-04-08-05",
+    "requirement": "A27",
+    "subject": "acesso JIT a VMs",
+    "level": "detail",
+    "stem": {
+      "pt": "Qual controle do Defender for Cloud ajuda a reduzir a exposição a ataques de força bruta contra máquinas virtuais ao limitar quando as portas de gerenciamento ficam abertas?",
+      "en": "Which Defender for Cloud control helps reduce brute-force exposure against virtual machines by limiting when management ports are open?"
+    },
+    "explanation": {
+      "pt": "O Defender for Cloud ajuda a reduzir a exposição a ataques de força bruta em redes por meio de controles como acesso just-in-time a VMs e políticas de portas restritivas.",
+      "en": "Defender for Cloud helps reduce brute-force exposure on networks through controls such as just-in-time VM access and restrictive port policies."
+    },
+    "distractors": {
+      "pt": "O Azure Arc é tentador porque aparece na mesma unidade, mas estende a proteção a máquinas fora do Azure.",
+      "en": "Azure Arc is tempting because it appears in the same unit, but it extends protection to non-Azure machines."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Secure score",
+          "en": "Secure score"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Just-in-time VM access",
+          "en": "Just-in-time VM access"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Security alerts",
+          "en": "Security alerts"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-04-08-06",
+    "requirement": "A27",
+    "subject": "capacidades do Defender",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre o Microsoft Defender for Cloud estão corretas? Escolha duas.",
+      "en": "Which two statements about Microsoft Defender for Cloud are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "O Defender for Cloud se baseia no Azure Policy e define controles nos escopos de grupo de gerenciamento, assinatura ou locatário. Os alertas de segurança descrevem os recursos afetados e sugerem correções. A análise de kill-chain correlaciona alertas relacionados; não exclui recursos.",
+      "en": "Defender for Cloud builds on Azure Policy and scopes controls at management group, subscription, or tenant level. Security alerts describe affected resources and suggest remediation. Kill-chain analysis correlates related alerts; it doesn't delete resources."
+    },
+    "distractors": {
+      "pt": "A alternativa D é tentadora porque soa como defesa automatizada, mas a análise de kill-chain correlaciona alertas para mostrar a história completa de um ataque.",
+      "en": "Option D is tempting because it sounds like automated defense, but kill-chain analysis correlates alerts to show the full story of an attack."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ele oferece suporte apenas a serviços PaaS do Azure.",
+          "en": "It supports only Azure PaaS services."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ele se baseia no Azure Policy, então os controles podem ser definidos no escopo de grupo de gerenciamento, assinatura ou locatário.",
+          "en": "It builds on Azure Policy, so controls can be scoped at the management group, subscription, or tenant level."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ele exige o ExpressRoute para monitorar máquinas locais.",
+          "en": "It requires ExpressRoute to monitor on-premises machines."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Sua análise de cadeia de ataque (kill-chain) exclui automaticamente os recursos afetados.",
+          "en": "Its kill-chain analysis automatically deletes the affected resources."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Os alertas de segurança descrevem os recursos afetados e sugerem etapas de correção.",
+          "en": "Security alerts describe the affected resources and suggest remediation steps."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  }
+]

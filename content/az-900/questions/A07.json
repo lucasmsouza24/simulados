@@ -1,0 +1,401 @@
+[
+  {
+    "id": "ARCH-01-07-01",
+    "requirement": "A07",
+    "subject": "ordem dos escopos",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual opção lista os escopos de gerenciamento do Azure do mais amplo para o mais restrito?",
+      "en": "Which option lists Azure management scopes from the broadest to the narrowest?"
+    },
+    "explanation": {
+      "pt": "Recursos ficam em grupos de recursos, grupos de recursos ficam em assinaturas e grupos de gerenciamento ficam acima das assinaturas: grupo de gerenciamento, assinatura, grupo de recursos, recurso.",
+      "en": "Resources go into resource groups, resource groups go into subscriptions, and management groups sit above subscriptions: management group, subscription, resource group, resource."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a tentadora porque assinaturas são bem conhecidas, mas grupos de gerenciamento ficam acima delas.",
+      "en": "Option A is the tempting one because subscriptions are well known, but management groups sit above them."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Assinatura, grupo de gerenciamento, grupo de recursos, recurso",
+          "en": "Subscription, management group, resource group, resource"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Grupo de gerenciamento, assinatura, grupo de recursos, recurso",
+          "en": "Management group, subscription, resource group, resource"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Grupo de gerenciamento, grupo de recursos, assinatura, recurso",
+          "en": "Management group, resource group, subscription, resource"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Grupo de recursos, grupo de gerenciamento, assinatura, recurso",
+          "en": "Resource group, management group, subscription, resource"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-01-07-02",
+    "requirement": "A07",
+    "subject": "níveis da hierarquia",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Grupos de gerenciamento ficam acima das assinaturas e repassam condições de governança. Uma assinatura é uma unidade de gerenciamento, cobrança e escala. Um grupo de recursos agrupa recursos e excluí-lo exclui tudo. Um recurso é o bloco de construção básico.",
+      "en": "Management groups sit above subscriptions and pass governance conditions down. A subscription is a unit of management, billing, and scale. A resource group groups resources and deleting it deletes everything in it. A resource is the basic building block."
+    },
+    "distractors": {
+      "pt": "Assinatura e grupo de gerenciamento são o par clássico: uma cobra e escala, o outro governa várias delas.",
+      "en": "Subscription and management group are the classic pair: one bills and scales, the other governs several of them."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Agrupa assinaturas para que condições de governança sejam herdadas por todas elas",
+          "en": "Groups subscriptions so that governance conditions are inherited by all of them"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Uma unidade de gerenciamento, cobrança e escala",
+          "en": "A unit of management, billing, and scale"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Um agrupamento de recursos; excluí-lo exclui tudo que está nele",
+          "en": "A grouping of resources; deleting it deletes everything in it"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "O bloco de construção básico do Azure: tudo o que você cria, provisiona ou implanta",
+          "en": "The basic building block of Azure: anything you create, provision, or deploy"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Grupo de recursos (resource group)",
+          "en": "Resource group"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Grupo de gerenciamento (management group)",
+          "en": "Management group"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Recurso (resource)",
+          "en": "Resource"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Assinatura (subscription)",
+          "en": "Subscription"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "D",
+      "3": "A",
+      "4": "C"
+    }
+  },
+  {
+    "id": "ARCH-01-07-03",
+    "requirement": "A07",
+    "subject": "hierarquia e herança",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A herança flui para baixo: grupo de gerenciamento, assinatura, grupo de recursos, recurso. Grupos de recursos ficam abaixo das assinaturas, e tanto políticas quanto atribuições de Azure RBAC em um grupo de gerenciamento são herdadas por tudo que está abaixo.",
+      "en": "Inheritance flows down: management group, subscription, resource group, resource. Resource groups sit below subscriptions, and both policies and Azure RBAC assignments on a management group are inherited by everything underneath."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque grupos de recursos costumam ser discutidos primeiro.",
+      "en": "Statement 1 is tempting because resource groups are often discussed first."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Grupos de recursos ficam acima das assinaturas na hierarquia.",
+          "en": "Resource groups sit above subscriptions in the hierarchy."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Uma política aplicada a um grupo de gerenciamento é herdada por todas as assinaturas sob ele.",
+          "en": "A policy applied to a management group is inherited by all subscriptions under it."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma atribuição de Azure RBAC feita em um grupo de gerenciamento é herdada pelos grupos de recursos e recursos abaixo dele.",
+          "en": "An Azure RBAC assignment made on a management group is inherited by the resource groups and resources underneath it."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-01-07-04",
+    "requirement": "A07",
+    "subject": "hierarquia e herança",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador atribui uma função do Azure RBAC em um grupo de gerenciamento. Quais escopos herdam essas permissões?",
+      "en": "An administrator assigns an Azure RBAC role on a management group. Which scopes inherit these permissions?"
+    },
+    "explanation": {
+      "pt": "Todos os subgrupos de gerenciamento, assinaturas, grupos de recursos e recursos abaixo de um grupo de gerenciamento herdam a atribuição de Azure RBAC.",
+      "en": "All sub-management groups, subscriptions, resource groups, and resources underneath a management group inherit the Azure RBAC assignment."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a tentadora porque subestima até onde a herança chega.",
+      "en": "Option B is the tempting one because it understates how far inheritance reaches."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Todos os subgrupos de gerenciamento, assinaturas, grupos de recursos e recursos abaixo dele",
+          "en": "All sub-management groups, subscriptions, resource groups, and resources underneath it"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Somente as assinaturas que são filhas diretas do grupo de gerenciamento",
+          "en": "Only the subscriptions that are direct children of the management group"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Somente os grupos de recursos, porque as assinaturas não herdam permissões",
+          "en": "Only the resource groups, because subscriptions don't inherit permissions"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Somente o próprio grupo de gerenciamento",
+          "en": "Only the management group itself"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-01-07-05",
+    "requirement": "A07",
+    "subject": "herança de política",
+    "level": "essential",
+    "stem": {
+      "pt": "Um grupo de gerenciamento Production aplica uma política que limita as VMs à região US West. O proprietário de uma assinatura sob o Production quer implantar uma VM em outra região. Qual é o resultado?",
+      "en": "A Production management group applies a policy that limits VMs to the US West region. A subscription owner under Production wants to deploy a VM in another region. What is the outcome?"
+    },
+    "explanation": {
+      "pt": "Uma política aplicada em um grupo de gerenciamento é herdada por todas as assinaturas sob ele e se aplica a todas as VMs nelas. O proprietário do recurso ou da assinatura não pode substituí-la, o que fortalece a governança.",
+      "en": "A policy applied at a management group is inherited by all subscriptions under it and applies to all VMs in them. The resource or subscription owner can't override it, which strengthens governance."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a mais tentadora porque proprietários normalmente controlam o seu próprio escopo.",
+      "en": "Option A is the most tempting because owners normally control their own scope."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O proprietário pode substituir a política no nível da assinatura.",
+          "en": "The owner can override the policy at the subscription level."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O proprietário do recurso pode substituir a política no nível do recurso.",
+          "en": "The resource owner can override the policy at the resource level."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A política se aplica apenas a assinaturas criadas antes de ela ser atribuída.",
+          "en": "The policy applies only to subscriptions created before it was assigned."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A política continua valendo, porque o proprietário do recurso ou da assinatura não pode substituí-la.",
+          "en": "The policy still applies, because the resource or subscription owner can't override it."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-01-07-06",
+    "requirement": "A07",
+    "subject": "níveis da hierarquia",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Recursos ficam em grupos de recursos, grupos de recursos ficam em assinaturas, e as assinaturas podem ser organizadas em ______ para gerenciar acesso e políticas em um nível mais alto.",
+      "en": "Complete the sentence. Resources go into resource groups, resource groups go into subscriptions, and subscriptions can be organized into ______ to manage access and policies at a higher level."
+    },
+    "explanation": {
+      "pt": "Grupos de gerenciamento ficam acima das assinaturas; você organiza assinaturas em grupos de gerenciamento e aplica condições de governança que todas as assinaturas herdam.",
+      "en": "Management groups sit above subscriptions; you organize subscriptions into management groups and apply governance conditions that all subscriptions inherit."
+    },
+    "distractors": {
+      "pt": "Regiões e zonas de disponibilidade são tentadoras porque são a outra metade do tópico de arquitetura, mas são construções físicas, e não de gerenciamento.",
+      "en": "Regions and availability zones are tempting because they are the other half of the architecture topic, but they are physical, not management, constructs."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "regiões",
+          "en": "regions"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "zonas de disponibilidade",
+          "en": "availability zones"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "grupos de gerenciamento",
+          "en": "management groups"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "pares de regiões",
+          "en": "region pairs"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-01-07-07",
+    "requirement": "A07",
+    "subject": "hierarquia e herança",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre a hierarquia de gerenciamento do Azure estão corretas? Escolha duas.",
+      "en": "Which two statements about the Azure management hierarchy are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "Cada grupo de gerenciamento e assinatura pode ter apenas um pai, e todo locatário do Microsoft Entra tem um único Tenant Root Group de nível superior. Grupos de recursos não podem ser aninhados, e um recurso pertence a apenas um grupo de recursos.",
+      "en": "Each management group and subscription can have only one parent, and every Microsoft Entra tenant has a single top-level Tenant Root Group. Resource groups can't be nested, and a resource belongs to only one resource group."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque soa flexível, mas cada assinatura tem apenas um pai.",
+      "en": "Option D is the most tempting because it sounds flexible, but each subscription has only one parent."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Cada grupo de gerenciamento e cada assinatura tem apenas um pai.",
+          "en": "Each management group and each subscription has only one parent."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Grupos de recursos podem ser aninhados dentro de outros grupos de recursos.",
+          "en": "Resource groups can be nested inside other resource groups."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Todo locatário do Microsoft Entra tem um único Tenant Root Group de nível superior.",
+          "en": "Every Microsoft Entra tenant has a single top-level Tenant Root Group."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma assinatura pode ficar sob dois grupos de gerenciamento ao mesmo tempo.",
+          "en": "A subscription can sit under two management groups at the same time."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Um recurso pode pertencer a dois grupos de recursos ao mesmo tempo.",
+          "en": "A resource can belong to two resource groups at the same time."
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ]
+  }
+]

@@ -1,0 +1,358 @@
+[
+  {
+    "id": "GOV-04-01-01",
+    "requirement": "G13",
+    "subject": "categorias do Advisor",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual dos itens a seguir não é uma das categorias de recomendação do Azure Advisor?",
+      "en": "Which of the following is not one of the recommendation categories for Azure Advisor?"
+    },
+    "explanation": {
+      "pt": "As recomendações do Azure Advisor se dividem em cinco categorias: Confiabilidade, Segurança, Desempenho, Excelência operacional e Custo. Capacidade não é uma categoria.",
+      "en": "Azure Advisor recommendations fall into five categories: Reliability, Security, Performance, Operational Excellence, and Cost. Capacity is not a category."
+    },
+    "distractors": {
+      "pt": "Capacidade soa como uma preocupação natural de infraestrutura, e por isso funciona como armadilha entre categorias reais.",
+      "en": "Capacity sounds like a natural infrastructure concern, which is why it works as the trap among real categories."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Confiabilidade (Reliability)",
+          "en": "Reliability"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Capacidade (Capacity)",
+          "en": "Capacity"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Excelência operacional (Operational Excellence)",
+          "en": "Operational Excellence"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Desempenho (Performance)",
+          "en": "Performance"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-04-01-02",
+    "requirement": "G13",
+    "subject": "finalidade do Advisor",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer orientação personalizada de melhores práticas, integrada ao portal do Azure, que avalie seus próprios recursos em todas as suas assinaturas e sugira ações que ela pode executar imediatamente, adiar ou ignorar. Qual serviço se encaixa?",
+      "en": "A company wants personalized best-practice guidance, built into the Azure portal, that evaluates its own resources across all its subscriptions and suggests actions it can take right away, postpone, or dismiss. Which service fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Advisor avalia seus recursos do Azure e faz recomendações para melhorar confiabilidade, segurança, desempenho e eficiência de custos. Funciona como um guia personalizado de melhores práticas, e cada recomendação traz uma ação sugerida que você pode executar, adiar ou ignorar.",
+      "en": "Azure Advisor evaluates your Azure resources and makes recommendations to improve reliability, security, performance, and cost efficiency. It works like a personalized best-practices guide, and each recommendation has a suggested action you can take, postpone, or dismiss."
+    },
+    "distractors": {
+      "pt": "O Azure Monitor é o vizinho tentador porque também observa recursos, mas coleta e analisa telemetria em vez de recomendar melhores práticas.",
+      "en": "Azure Monitor is the tempting neighbor because it also watches resources, but it collects and analyzes telemetry instead of recommending best practices."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Service Health",
+          "en": "Azure Service Health"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Advisor (Assistente do Azure)",
+          "en": "Azure Advisor"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-04-01-03",
+    "requirement": "G13",
+    "subject": "categorias do Advisor",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Confiabilidade sinaliza riscos de configuração, Segurança detecta ameaças e vulnerabilidades, Excelência operacional sugere melhorias de fluxo de trabalho e de implantação, e Custo encontra maneiras de reduzir gastos. Desempenho, que identifica mudanças que aceleram aplicativos, é a opção não usada.",
+      "en": "Reliability flags configuration risks, Security detects threats and vulnerabilities, Operational Excellence suggests workflow and deployment improvements, and Cost finds ways to reduce spending. Performance, which identifies changes that speed up applications, is the unused option."
+    },
+    "distractors": {
+      "pt": "Desempenho é a opção não usada: cobre mudanças que aceleram aplicativos, o que nenhum dos quatro itens descreve.",
+      "en": "Performance is the unused option: it covers changes that speed up applications, which none of the four items describe."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Sinaliza riscos de configuração para ajudar a manter seus aplicativos em execução",
+          "en": "Flags configuration risks to help keep your applications running"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Detecta ameaças e vulnerabilidades que podem levar a violações",
+          "en": "Detects threats and vulnerabilities that could lead to breaches"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Sugere melhorias de fluxo de trabalho e de implantação",
+          "en": "Suggests workflow and deployment improvements"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Encontra maneiras de reduzir seus gastos com o Azure",
+          "en": "Finds ways to reduce your Azure spending"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Desempenho (Performance)",
+          "en": "Performance"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Custo (Cost)",
+          "en": "Cost"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Excelência operacional (Operational Excellence)",
+          "en": "Operational Excellence"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Confiabilidade (Reliability)",
+          "en": "Reliability"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Segurança (Security)",
+          "en": "Security"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "E",
+      "3": "C",
+      "4": "B"
+    }
+  },
+  {
+    "id": "GOV-04-01-04",
+    "requirement": "G13",
+    "subject": "painel do Advisor",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O painel do Advisor abrange todas as suas assinaturas e pode ser filtrado por assinatura, grupo de recursos ou serviço. As recomendações abrangem cinco categorias, e você pode configurar notificações para novas recomendações, mas interrupções e manutenções planejadas são informadas pelo Azure Service Health.",
+      "en": "The Advisor dashboard covers all your subscriptions and can be filtered by subscription, resource group, or service. Recommendations span five categories, and you can set up notifications for new recommendations, but outages and planned maintenance are reported by Azure Service Health."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque o Advisor pode enviar notificações, mas elas tratam de novas recomendações, e não de interrupções.",
+      "en": "Statement 3 is tempting because Advisor can send notifications, but those are about new recommendations, not about outages."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O painel do Advisor exibe recomendações de todas as suas assinaturas, e você pode filtrar por assinatura, grupo de recursos ou serviço.",
+          "en": "The Advisor dashboard displays recommendations for all your subscriptions, and you can filter by subscription, resource group, or service."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "As recomendações do Azure Advisor se limitam às categorias de custo e segurança.",
+          "en": "Azure Advisor recommendations are limited to the cost and security categories."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Azure Advisor notifica você sobre interrupções que a Microsoft detecta nas regiões do Azure que você usa.",
+          "en": "Azure Advisor notifies you about outages that Microsoft detects in the Azure regions you use."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-04-01-05",
+    "requirement": "G13",
+    "subject": "ações sobre recomendações",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três ações você pode executar em uma recomendação do Azure Advisor? Escolha três.",
+      "en": "Which three actions can you take on an Azure Advisor recommendation? Choose three."
+    },
+    "explanation": {
+      "pt": "Cada recomendação do Azure Advisor inclui uma ação sugerida que você pode executar imediatamente, adiar ou ignorar.",
+      "en": "Each Azure Advisor recommendation includes a suggested action that you can take right away, postpone, or dismiss."
+    },
+    "distractors": {
+      "pt": "Bloqueios e Azure Policy são ferramentas de governança de outro tema; as recomendações do Advisor não são convertidas neles.",
+      "en": "Locks and Azure Policy are governance tools from another tema; Advisor recommendations are not converted into them."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Executar a ação sugerida imediatamente",
+          "en": "Take the suggested action right away"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Adiar a recomendação",
+          "en": "Postpone the recommendation"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Converter a recomendação em um bloqueio de recurso (resource lock)",
+          "en": "Convert the recommendation into a resource lock"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Converter a recomendação em uma atribuição do Azure Policy",
+          "en": "Convert the recommendation into an Azure Policy assignment"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Ignorar a recomendação",
+          "en": "Dismiss the recommendation"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-04-01-06",
+    "requirement": "G13",
+    "subject": "finalidade do Advisor",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre o Azure Advisor está correta?",
+      "en": "Which statement about Azure Advisor is correct?"
+    },
+    "explanation": {
+      "pt": "O Azure Advisor avalia seus recursos e faz recomendações de confiabilidade, segurança, desempenho, excelência operacional e custo. Cada recomendação inclui uma ação sugerida.",
+      "en": "Azure Advisor evaluates your resources and makes recommendations across reliability, security, performance, operational excellence, and cost. Each recommendation includes a suggested action."
+    },
+    "distractors": {
+      "pt": "Os distratores descrevem o Azure Service Health, o Log Analytics e o Azure Policy.",
+      "en": "The distractors describe Azure Service Health, Log Analytics, and Azure Policy."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ele avalia seus recursos e recomenda melhorias de confiabilidade, segurança, desempenho e eficiência de custos, com uma ação sugerida para cada recomendação.",
+          "en": "It evaluates your resources and recommends improvements for reliability, security, performance, and cost efficiency, with a suggested action for each recommendation."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ele mostra interrupções, manutenções planejadas e avisos de integridade que afetam os serviços e as regiões do Azure que você usa.",
+          "en": "It shows outages, planned maintenance, and health advisories that affect the Azure services and regions you use."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ele permite escrever e executar consultas nos dados coletados dos recursos.",
+          "en": "It lets you write and run queries against the data collected from your resources."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ele impede que recursos fora de conformidade sejam criados, impondo regras à configuração de recursos.",
+          "en": "It prevents noncompliant resources from being created by enforcing rules on resource configuration."
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

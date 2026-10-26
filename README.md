@@ -1,78 +1,57 @@
-# React + TypeScript + Vite
+# Simulados
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simulados para certificações, com prova cronometrada seguindo os pesos oficiais e consulta de questões comentadas. Publicado em [simulados.lucasmesquita.dev.br](https://simulados.lucasmesquita.dev.br).
 
-Currently, two official plugins are available:
+Projeto pessoal e não oficial. As questões foram geradas com IA a partir do Microsoft Learn e podem conter erros.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- **Simulado:** questões sorteadas dentro das faixas de peso de cada domínio e espalhadas entre os tópicos; cronômetro; marcar para revisão; confiança por questão; desistir; resultado em porcentagem e na escala da prova, revisão com tipo de erro e export em CSV.
+- **Questões:** consulta com busca e filtros na URL (domínio, tópico, formato, nível), modo estudo, ordem embaralhada e link direto para cada questão.
+- Cinco formatos da prova real: escolha única, múltipla escolha, Sim/Não, completar e associação.
+- PT/EN, modo escuro, atalhos de teclado (`?` mostra a lista).
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Detalhes em [docs/funcionalidades.md](docs/funcionalidades.md) (comportamento de referência) e [docs/plano.md](docs/plano.md) (arquitetura e decisões).
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Desenvolvimento
 
-## Expanding the ESLint configuration
+Requer Node 22.18 ou mais recente (os scripts de conteúdo são TypeScript executado direto pelo Node).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm ci
+npm run dev        # gera public/data/ e sobe o Vite
+npm test           # valida o conteúdo e roda os testes
+npm run lint
+npm run build      # conteúdo + typecheck + build (dist/, com 404.html para o GitHub Pages)
+npm run preview    # serve o build de produção
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Conteúdo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+As questões ficam no repositório, versionadas, e são validadas no build:
 
 ```
+content/<prova>/exam.json             outline, pesos, tempo, nota de corte
+content/<prova>/questions/<req>.json  questões e gabarito de cada requisito
+```
+
+`npm run content` valida tudo com o schema de `src/content/schema.ts` (IDs únicos, gabarito apontando para opções existentes, lacunas do "completar", requisitos do outline etc.) e gera `public/data/`. Qualquer erro interrompe o build.
+
+Para importar questões no formato CSV do gerador:
+
+```bash
+npm run content:import -- --exam az-900 --questions questoes.csv --answers gabarito.csv
+```
+
+## Segurança
+
+- Todo o conteúdo é renderizado como texto (nenhum `dangerouslySetInnerHTML`).
+- Content Security Policy via `<meta>` no build (`default-src 'self'`, sem scripts ou estilos inline).
+- Links externos restritos a `https://learn.microsoft.com`, com `rel="noopener noreferrer"`.
+- Dados do `localStorage` validados com schema; dados inválidos são descartados.
+- Export de CSV protegido contra injeção de fórmula.
+- CI com `npm ci`, `npm audit`, lint, testes e permissões mínimas; Dependabot para npm e actions.
+
+## Deploy
+
+Cada push na `main` roda o workflow `.github/workflows/deploy.yaml` (lint, testes, build) e publica no GitHub Pages. Pull requests rodam as mesmas verificações, sem publicar.

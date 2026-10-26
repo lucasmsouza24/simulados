@@ -1,0 +1,342 @@
+[
+  {
+    "id": "ARCH-03-05-01",
+    "requirement": "A18",
+    "subject": "Sincronização de Arquivos do Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual ferramenta mantém automaticamente os arquivos sincronizados nos dois sentidos entre um servidor Windows local e um ambiente de nuvem do Azure?",
+      "en": "Which tool automatically keeps files bi-directionally synchronized between an on-premises Windows server and an Azure cloud environment?"
+    },
+    "explanation": {
+      "pt": "O Azure File Sync centraliza os compartilhamentos de arquivos no Azure Files e mantém um servidor Windows local sincronizado automaticamente e nos dois sentidos com os arquivos no Azure. Isso corresponde à avaliação deste módulo.",
+      "en": "Azure File Sync centralizes file shares in Azure Files and keeps a local Windows server automatically and bi-directionally synced with the files in Azure. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "O AzCopy é o vizinho tentador porque tem um comando de sincronização, mas essa sincronização é em um único sentido.",
+      "en": "AzCopy is the tempting neighbor because it has a sync command, but that synchronization is one-direction."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Storage Explorer",
+          "en": "Azure Storage Explorer"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Data Box",
+          "en": "Azure Data Box"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure File Sync",
+          "en": "Azure File Sync"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-03-05-02",
+    "requirement": "A18",
+    "subject": "AzCopy",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador precisa de um utilitário de linha de comando para carregar e baixar arquivos, copiar blobs entre contas de armazenamento e até mover arquivos de ou para outros provedores de nuvem. Qual ferramenta se encaixa?",
+      "en": "An administrator needs a command-line utility to upload and download files, copy blobs between storage accounts, and even move files to or from other cloud providers. Which tool fits?"
+    },
+    "explanation": {
+      "pt": "O AzCopy é um utilitário de linha de comando que copia blobs ou arquivos para ou de uma conta de armazenamento, entre contas de armazenamento, e pode ser configurado para trabalhar com outros provedores de nuvem.",
+      "en": "AzCopy is a command-line utility that copies blobs or files to or from a storage account, between storage accounts, and can be configured to work with other cloud providers."
+    },
+    "distractors": {
+      "pt": "O Azure Storage Explorer é tentador porque também move arquivos, mas é um aplicativo gráfico, e não um utilitário de linha de comando.",
+      "en": "Azure Storage Explorer is tempting because it moves files too, but it is a graphical application, not a command-line utility."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure File Sync",
+          "en": "Azure File Sync"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Storage Explorer",
+          "en": "Azure Storage Explorer"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Migrate",
+          "en": "Azure Migrate"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-03-05-03",
+    "requirement": "A18",
+    "subject": "Gerenciador de Armazenamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Um usuário quer um aplicativo independente com interface gráfica, que execute no Windows, macOS e Linux, para gerenciar arquivos e blobs em uma conta do Armazenamento do Azure. Qual ferramenta se encaixa?",
+      "en": "A user wants a standalone application with a graphical interface that runs on Windows, macOS, and Linux to manage files and blobs in an Azure Storage account. Which tool fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Storage Explorer é um aplicativo gráfico independente para Windows, macOS e Linux para gerenciar arquivos e blobs. Ele usa o AzCopy no back-end.",
+      "en": "Azure Storage Explorer is a standalone graphical app for Windows, macOS, and Linux to manage files and blobs. It uses AzCopy on the backend."
+    },
+    "distractors": {
+      "pt": "O AzCopy é o vizinho tentador porque o Storage Explorer o executa no back-end, mas o AzCopy não tem interface gráfica.",
+      "en": "AzCopy is the tempting neighbor because Storage Explorer runs it on the backend, but AzCopy has no graphical interface."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Storage Explorer",
+          "en": "Azure Storage Explorer"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure File Sync",
+          "en": "Azure File Sync"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Data Box",
+          "en": "Azure Data Box"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-03-05-04",
+    "requirement": "A18",
+    "subject": "AzCopy vs Gerenciador vs File Sync",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O AzCopy é de linha de comando e unidirecional ao sincronizar. O Storage Explorer é um aplicativo gráfico que usa o AzCopy. O Azure File Sync mantém um servidor Windows sincronizado nos dois sentidos com o Azure Files e oferece suporte a cloud tiering.",
+      "en": "AzCopy is command-line and one-direction when synchronizing. Storage Explorer is a graphical app that uses AzCopy. Azure File Sync keeps a Windows server bi-directionally synced with Azure Files and supports cloud tiering."
+    },
+    "distractors": {
+      "pt": "O Azure Data Box é a opção distratora: é um dispositivo físico de migração, e não uma ferramenta de movimentação de arquivos.",
+      "en": "Azure Data Box is the distractor option: it is a physical migration device, not a file-movement tool."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Um utilitário de linha de comando cuja sincronização é em um único sentido, da origem para o destino",
+          "en": "A command-line utility whose synchronization is one-direction, from source to destination"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um aplicativo gráfico independente que usa o AzCopy no back-end",
+          "en": "A standalone graphical app that uses AzCopy on the backend"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Mantém um servidor de arquivos Windows sincronizado nos dois sentidos com o Azure Files e oferece suporte a camadas de nuvem (cloud tiering)",
+          "en": "Keeps a Windows file server bi-directionally synced with Azure Files and supports cloud tiering"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure File Sync",
+          "en": "Azure File Sync"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "AzCopy",
+          "en": "AzCopy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Storage Explorer",
+          "en": "Azure Storage Explorer"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Data Box",
+          "en": "Azure Data Box"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A"
+    }
+  },
+  {
+    "id": "ARCH-03-05-05",
+    "requirement": "A18",
+    "subject": "AzCopy vs Gerenciador vs File Sync",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A sincronização do AzCopy é unidirecional: você define origem e destino. O Storage Explorer usa o AzCopy no back-end. O Azure File Sync oferece cloud tiering, mantendo localmente os arquivos acessados com frequência e na nuvem os acessados com pouca frequência.",
+      "en": "AzCopy synchronization is one-direction: you designate a source and destination. Storage Explorer uses AzCopy on the backend. Azure File Sync supports cloud tiering, keeping frequently accessed files local and infrequently accessed ones in the cloud."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque 'sync' sugere duas vias, mas o AzCopy só vai na direção que você designa.",
+      "en": "Statement 1 is tempting because 'sync' suggests two-way, but AzCopy only goes in the direction you designate."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Ao sincronizar com o AzCopy, a sincronização é bidirecional com base em carimbos de data/hora ou em outros metadados.",
+          "en": "When you synchronize with AzCopy, it synchronizes bi-directionally based on timestamps or other metadata."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure Storage Explorer usa o AzCopy no back-end para executar as tarefas de gerenciamento de arquivos e blobs.",
+          "en": "Azure Storage Explorer uses AzCopy on the backend to perform file and blob management tasks."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Com o Azure File Sync, você pode configurar a camada de nuvem (cloud tiering) para que os arquivos acessados com mais frequência sejam replicados localmente.",
+          "en": "With Azure File Sync, you can configure cloud tiering so frequently accessed files are replicated locally."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-03-05-06",
+    "requirement": "A18",
+    "subject": "Sincronização de Arquivos do Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre o Azure File Sync estão corretas? Escolha duas.",
+      "en": "Which two statements about Azure File Sync are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "O Azure File Sync permanece sincronizado nos dois sentidos e oferece cloud tiering. Você pode usar localmente qualquer protocolo disponível no Windows Server, incluindo SMB, NFS e FTPS.",
+      "en": "Azure File Sync stays bi-directionally synced and supports cloud tiering. You can use any protocol available on Windows Server locally, including SMB, NFS, and FTPS."
+    },
+    "distractors": {
+      "pt": "A alternativa B descreve a sincronização unidirecional do AzCopy.",
+      "en": "Option B describes AzCopy's one-direction sync."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Depois de instalado em um servidor Windows local, ele permanece sincronizado nos dois sentidos com os arquivos no Azure.",
+          "en": "Once installed on a local Windows server, it stays bi-directionally synced with the files in Azure."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ele sincroniza apenas em um sentido, do servidor para o Azure.",
+          "en": "It synchronizes only in one direction, from the server to Azure."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O cloud tiering mantém localmente os arquivos acessados com mais frequência, enquanto os acessados com pouca frequência ficam na nuvem até serem solicitados.",
+          "en": "Cloud tiering keeps the most frequently accessed files local, while infrequently accessed files stay in the cloud until requested."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ele exige um dispositivo Azure Data Box para iniciar a sincronização.",
+          "en": "It requires an Azure Data Box device to start the sync."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Ele oferece suporte apenas ao protocolo SMB para acesso local.",
+          "en": "It supports only the SMB protocol for local access."
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ]
+  }
+]

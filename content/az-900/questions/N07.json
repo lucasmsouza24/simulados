@@ -1,0 +1,342 @@
+[
+  {
+    "id": "CLOUD-01-07-01",
+    "requirement": "N07",
+    "subject": "Azure Functions orientado a eventos",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe de desenvolvimento quer executar código em resposta a eventos, como um arquivo carregado no Blob Storage, sem implantar nem manter servidores. Qual serviço do Azure é uma solução serverless para essa necessidade?",
+      "en": "A development team wants to run code in response to events, such as a file being uploaded to Blob Storage, without deploying or maintaining servers. Which Azure service is a serverless solution for this need?"
+    },
+    "explanation": {
+      "pt": "O Azure Functions é uma solução serverless com gatilhos orientados a eventos; ele pode executar código quando um arquivo é carregado ou alterado no armazenamento de blobs, e você não se preocupa em implantar e manter servidores.",
+      "en": "Azure Functions is a serverless solution with event-driven triggers; it can run code when a file is uploaded or changed in blob storage, and you don't worry about deploying and maintaining servers."
+    },
+    "distractors": {
+      "pt": "O Azure App Service é tentador por ser gerenciado, mas é um serviço de hospedagem de aplicativos web, e não o serviço de funções serverless orientado a eventos.",
+      "en": "Azure App Service is tempting because it is managed, but it is a hosting service for web apps, not the event-driven serverless function service."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Virtual Machines",
+          "en": "Azure Virtual Machines"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Functions",
+          "en": "Azure Functions"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Kubernetes Service (AKS)",
+          "en": "Azure Kubernetes Service (AKS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure App Service",
+          "en": "Azure App Service"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-01-07-02",
+    "requirement": "N07",
+    "subject": "gatilhos do Azure Functions",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Azure Functions oferece gatilhos e associações orientados a eventos, por exemplo alterações em blobs, temporizadores e filas, além de gatilhos HTTP. A plataforma cuida dos servidores, e você se concentra no código.",
+      "en": "Azure Functions provides event-driven triggers and bindings, for example blob changes, timers, and queues, in addition to HTTP triggers. The platform handles servers, so you focus on code."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque os gatilhos HTTP são o cenário mais conhecido, mas são apenas um dos vários.",
+      "en": "Statement 3 is tempting because HTTP triggers are the best-known scenario, but they are only one of many."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure Functions pode executar código quando um arquivo é carregado ou alterado no Blob Storage.",
+          "en": "Azure Functions can run code when a file is uploaded or changed in Blob Storage."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Com o Azure Functions, você é responsável por implantar e manter os servidores que executam seu código.",
+          "en": "With Azure Functions, you're responsible for deploying and maintaining the servers that run your code."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Azure Functions só pode ser iniciado por solicitações HTTP.",
+          "en": "Azure Functions can only be started by HTTP requests."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-01-07-03",
+    "requirement": "N07",
+    "subject": "Functions é FaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Nos modelos de hospedagem de computação do Azure, o Azure Functions é classificado como qual modelo?",
+      "en": "In the Azure compute hosting models, Azure Functions is classified as which model?"
+    },
+    "explanation": {
+      "pt": "Functions as a service (FaaS) permite implantar seu código no serviço, que o executa automaticamente. O Azure Functions é um serviço FaaS e uma oferta de computação serverless do Azure.",
+      "en": "Functions as a service (FaaS) lets you deploy your code to the service, which automatically runs it. Azure Functions is a FaaS service and an Azure serverless compute offering."
+    },
+    "distractors": {
+      "pt": "PaaS é o vizinho: App Service e Container Apps são PaaS, enquanto Functions é o exemplo de FaaS.",
+      "en": "PaaS is the neighbor: App Service and Container Apps are PaaS, while Functions is the FaaS example."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Functions as a service (FaaS)",
+          "en": "Functions as a service (FaaS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Infrastructure as a service (IaaS)",
+          "en": "Infrastructure as a service (IaaS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Platform as a service (PaaS)",
+          "en": "Platform as a service (PaaS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Software as a service (SaaS)",
+          "en": "Software as a service (SaaS)"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-01-07-04",
+    "requirement": "N07",
+    "subject": "serviços serverless",
+    "level": "detail",
+    "stem": {
+      "pt": "Quais dois serviços de computação do Azure são descritos como serverless? Escolha dois.",
+      "en": "Which two Azure compute services are described as serverless? Choose two."
+    },
+    "explanation": {
+      "pt": "O Azure Container Apps simplifica a implantação de aplicativos em contêineres em um ambiente serverless, e o Azure Functions é uma oferta de computação serverless do Azure.",
+      "en": "Azure Container Apps simplifies deployment of containerized applications in a serverless environment, and Azure Functions is an Azure serverless compute offering."
+    },
+    "distractors": {
+      "pt": "O AKS é tentador porque também executa contêineres, mas oferece acesso direto ao plano de controle do Kubernetes e não é descrito como serverless.",
+      "en": "AKS is tempting because it also runs containers, but it provides direct access to the Kubernetes control plane and is not described as serverless."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Virtual Machines",
+          "en": "Azure Virtual Machines"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Kubernetes Service (AKS)",
+          "en": "Azure Kubernetes Service (AKS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Container Apps",
+          "en": "Azure Container Apps"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Batch",
+          "en": "Azure Batch"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Azure Functions",
+          "en": "Azure Functions"
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-01-07-05",
+    "requirement": "N07",
+    "subject": "IaaS vs PaaS vs FaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "IaaS: você provisiona VMs e gerencia o que roda nelas. PaaS: um ambiente de hospedagem gerenciado sem gerenciar VMs. FaaS: você implanta código e o serviço o executa automaticamente. SaaS não é usado.",
+      "en": "IaaS: you provision VMs and manage what runs on them. PaaS: a managed hosting environment without managing VMs. FaaS: you deploy code and the service runs it automatically. SaaS is not used."
+    },
+    "distractors": {
+      "pt": "PaaS e FaaS são o par vizinho: ambos são gerenciados, mas FaaS executa funções individuais em resposta a eventos.",
+      "en": "PaaS and FaaS are the neighbor pair: both are managed, but FaaS runs individual functions on events."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Você provisiona máquinas virtuais com a rede e o armazenamento associados e implanta qualquer software nelas.",
+          "en": "You provision virtual machines with the associated networking and storage and deploy any software on them."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um ambiente de hospedagem gerenciado em que você implanta seu aplicativo sem gerenciar máquinas virtuais, como o App Service ou o Container Apps.",
+          "en": "A managed hosting environment where you deploy your application without managing virtual machines, such as App Service or Container Apps."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Você implanta código no serviço, que o executa automaticamente, como no Azure Functions.",
+          "en": "You deploy code to the service, which automatically runs it, as with Azure Functions."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Functions as a service (FaaS)",
+          "en": "Functions as a service (FaaS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Infrastructure as a service (IaaS)",
+          "en": "Infrastructure as a service (IaaS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Software as a service (SaaS)",
+          "en": "Software as a service (SaaS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Platform as a service (PaaS)",
+          "en": "Platform as a service (PaaS)"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "D",
+      "3": "A"
+    }
+  },
+  {
+    "id": "CLOUD-01-07-06",
+    "requirement": "N07",
+    "subject": "controle vs facilidade de gerenciamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe compara uma máquina virtual (IaaS) com uma oferta de functions as a service, como o Azure Functions. Qual afirmação descreve corretamente o trade-off?",
+      "en": "A team compares a virtual machine (IaaS) with a functions-as-a-service offering such as Azure Functions. Which statement correctly describes the trade-off?"
+    },
+    "explanation": {
+      "pt": "Há um trade-off entre controle e facilidade de gerenciamento: IaaS dá o maior controle, mas você gerencia VMs e componentes de rede; FaaS gerencia automaticamente quase todos os aspectos da execução de um aplicativo.",
+      "en": "There is a trade-off between control and ease of management: IaaS provides the most control but you manage VMs and network components; FaaS automatically manages nearly all aspects of running an application."
+    },
+    "distractors": {
+      "pt": "A alternativa A inverte o trade-off, a principal armadilha de leitura.",
+      "en": "Option A inverts the trade-off, the main reading trap."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "FaaS dá a você o maior controle, flexibilidade e portabilidade, mas você precisa provisionar e gerenciar as máquinas virtuais subjacentes.",
+          "en": "FaaS gives you the most control, flexibility, and portability, but you must provision and manage the underlying virtual machines."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "IaaS dá a você o maior controle, flexibilidade e portabilidade, mas você precisa provisionar, configurar e gerenciar as VMs; o FaaS gerencia automaticamente quase todos os aspectos da execução de um aplicativo.",
+          "en": "IaaS gives you the most control, flexibility, and portability, but you must provision, set up, and manage the VMs; FaaS automatically manages nearly all aspects of running an application."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ambos dão o mesmo nível de controle; diferem apenas na forma de cobrança.",
+          "en": "Both give you the same level of control; they differ only in how they are billed."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "FaaS exige que você aplique patches no sistema operacional, enquanto IaaS cuida dos patches para você.",
+          "en": "FaaS requires you to patch the operating system, while IaaS handles patching for you."
+        }
+      }
+    ],
+    "answer": "B"
+  }
+]

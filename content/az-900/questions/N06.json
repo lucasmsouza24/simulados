@@ -1,0 +1,264 @@
+[
+  {
+    "id": "CLOUD-01-06-01",
+    "requirement": "N06",
+    "subject": "pay-as-you-go",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer planejar e gerenciar custos operacionais, executar a infraestrutura com mais eficiência e escalar conforme as necessidades da carga de trabalho mudam, pagando apenas pelos serviços que consome. Qual modelo de preços os provedores de nuvem normalmente usam para atender a essa necessidade?",
+      "en": "A company wants to plan and manage operating costs, run infrastructure more efficiently, and scale as workload needs change, paying only for the services it consumes. Which pricing model do cloud providers typically use to meet this need?"
+    },
+    "explanation": {
+      "pt": "Os provedores de nuvem usam um modelo de preços pay-as-you-go: você normalmente paga apenas pelos serviços que consome, o que ajuda a planejar e gerenciar custos operacionais, executar a infraestrutura com eficiência e escalar conforme as cargas mudam.",
+      "en": "Cloud providers use a pay-as-you-go pricing model: you typically pay only for the services you consume, which helps plan and manage operating costs, run infrastructure efficiently, and scale as workloads change."
+    },
+    "distractors": {
+      "pt": "As alternativas A e B são a abordagem tradicional estilo CapEx; planejam custos, mas não acompanham o consumo.",
+      "en": "Options A and B are the traditional CapEx-style approach; they plan costs but don't follow consumption."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Comprar antecipadamente hardware dimensionado para o pico de demanda",
+          "en": "Purchasing hardware sized for peak demand in advance"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Pagar antecipadamente pelo espaço do datacenter",
+          "en": "Prepaying for datacenter space"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Preço pago conforme o uso (pay-as-you-go)",
+          "en": "Pay-as-you-go pricing"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma licença fixa, independentemente do uso",
+          "en": "A fixed license regardless of usage"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-01-06-02",
+    "requirement": "N06",
+    "subject": "custos pública vs privada",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A nuvem pública não tem despesas de capital para escalar e cobra pelo que você usa. A nuvem privada exige compra de hardware para a inicialização e a manutenção.",
+      "en": "The public cloud has no capital expenditures to scale up and charges for what you use. The private cloud requires hardware purchases for startup and maintenance."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora se você pensa na nuvem como 'hardware de outra pessoa', mas você não compra esse hardware.",
+      "en": "Statement 1 is tempting if you think of the cloud as 'someone's hardware', but you don't buy that hardware."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Em uma nuvem pública, você precisa de despesas de capital para escalar.",
+          "en": "In a public cloud, you need capital expenditures to scale up."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Em uma nuvem privada, é necessário comprar hardware para a inicialização e a manutenção.",
+          "en": "In a private cloud, hardware must be purchased for startup and maintenance."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Em uma nuvem pública, você paga apenas pelo que usa.",
+          "en": "In a public cloud, you pay only for what you use."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "CLOUD-01-06-03",
+    "requirement": "N06",
+    "subject": "custos pública vs privada",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação compara corretamente os custos das nuvens pública e privada?",
+      "en": "Which statement correctly compares public and private cloud costs?"
+    },
+    "explanation": {
+      "pt": "Nuvem pública: sem despesas de capital para escalar e pagamento pelo que se usa. Nuvem privada: compra de hardware e responsabilidade pela manutenção e pelas atualizações.",
+      "en": "Public cloud: no capital expenditures to scale up and pay for what you use. Private cloud: hardware purchase and responsibility for maintenance and updates."
+    },
+    "distractors": {
+      "pt": "As alternativas A e C trocam os modelos.",
+      "en": "Options A and C swap the models."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Nuvem pública: é necessário comprar hardware para a inicialização. Nuvem privada: você paga apenas pelo que usa.",
+          "en": "Public cloud: hardware must be purchased for startup. Private cloud: you pay only for what you use."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Os dois modelos exigem despesas de capital para escalar, mas somente a nuvem pública cobra pelo uso.",
+          "en": "Both models require capital expenditures to scale up, but only the public cloud charges for usage."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Nuvem privada: sem despesas de capital para escalar. Nuvem pública: você é responsável pela manutenção e pelas atualizações do hardware.",
+          "en": "Private cloud: no capital expenditures to scale up. Public cloud: you're responsible for hardware maintenance and updates."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nuvem pública: sem despesas de capital para escalar e você paga apenas pelo que usa. Nuvem privada: é necessário comprar hardware e você é responsável pela manutenção e pelas atualizações.",
+          "en": "Public cloud: no capital expenditures to scale up and you pay only for what you use. Private cloud: hardware must be purchased and you're responsible for maintenance and updates."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-01-06-04",
+    "requirement": "N06",
+    "subject": "foco no negócio",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Como o provedor de nuvem mantém a infraestrutura subjacente, incluindo energia, resfriamento, hardware e rede, você pode se concentrar em ______.",
+      "en": "Complete the sentence. Because the cloud provider maintains the underlying infrastructure, including power, cooling, hardware, and networking, you can focus on ______."
+    },
+    "explanation": {
+      "pt": "O Learn afirma que o provedor mantém energia, resfriamento, hardware e rede para que você se concentre em resolver problemas de negócios e entregar novos recursos.",
+      "en": "Learn says the provider maintains power, cooling, hardware, and networking so you can focus on solving business problems and delivering new capabilities."
+    },
+    "distractors": {
+      "pt": "As alternativas B e D são responsabilidades do provedor na nuvem.",
+      "en": "Options B and D are provider responsibilities in the cloud."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "adquirir e instalar hardware para a demanda de pico",
+          "en": "procuring and installing hardware for peak demand"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "manter energia e resfriamento para os seus racks",
+          "en": "maintaining power and cooling for your racks"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "resolver problemas de negócios e entregar novos recursos aos seus usuários",
+          "en": "solving business problems and delivering new capabilities to your users"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "aplicar patches nos hosts físicos",
+          "en": "patching the physical hosts"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-01-06-05",
+    "requirement": "N06",
+    "subject": "benefícios do pay-as-you-go",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois benefícios o preço pay-as-you-go oferece? Escolha dois.",
+      "en": "Which two benefits does pay-as-you-go pricing provide? Choose two."
+    },
+    "explanation": {
+      "pt": "O pay-as-you-go ajuda você a planejar e gerenciar custos operacionais, executar a infraestrutura com mais eficiência e escalar conforme as necessidades da carga de trabalho mudam.",
+      "en": "Pay-as-you-go helps you plan and manage operating costs, run infrastructure more efficiently, and scale as workload needs change."
+    },
+    "distractors": {
+      "pt": "A alternativa A inverte o sentido: a nuvem desloca o gasto de CapEx para OpEx.",
+      "en": "Option A inverts the direction: cloud shifts spending from CapEx to OpEx."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Converte custos operacionais em despesas de capital.",
+          "en": "It converts operating costs into capital expenditures."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Cobra uma taxa fixa, independentemente do uso.",
+          "en": "It charges a fixed fee regardless of usage."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ajuda você a planejar e gerenciar custos operacionais.",
+          "en": "It helps you plan and manage operating costs."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ajuda você a executar a infraestrutura com mais eficiência.",
+          "en": "It helps you run infrastructure more efficiently."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Oferece compras de hardware com desconto para a demanda de pico.",
+          "en": "It provides discounted hardware purchases for peak demand."
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "D"
+    ]
+  }
+]

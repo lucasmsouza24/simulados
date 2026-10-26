@@ -1,0 +1,394 @@
+[
+  {
+    "id": "CLOUD-01-02-01",
+    "requirement": "N02",
+    "subject": "sempre responsabilidade do cliente",
+    "level": "essential",
+    "stem": {
+      "pt": "Independentemente de a empresa usar IaaS, PaaS ou SaaS, qual dos itens a seguir é sempre responsabilidade do cliente?",
+      "en": "Regardless of whether a company uses IaaS, PaaS, or SaaS, which of the following is always the customer's responsibility?"
+    },
+    "explanation": {
+      "pt": "Informações e dados, dispositivos autorizados a se conectar e contas e identidades no seu ambiente sempre ficam com o cliente. Hosts físicos são sempre do provedor, enquanto sistemas operacionais e controles de rede dependem do tipo de serviço.",
+      "en": "Information and data, the devices allowed to connect, and the accounts and identities in your environment always stay with the customer. Physical hosts always belong to the provider, while operating systems and network controls depend on the service type."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a mais tentadora porque o cliente aplica patches no SO de uma máquina virtual, mas isso é específico do IaaS: em PaaS e SaaS o provedor cuida disso, então não vale para qualquer tipo de serviço.",
+      "en": "Option B is the most tempting because the customer patches the OS on a virtual machine, but that is IaaS-specific: in PaaS and SaaS the provider handles it, so it does not hold regardless of service type."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Hosts físicos",
+          "en": "Physical hosts"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Aplicação de patches no sistema operacional",
+          "en": "Operating system patching"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Controles de rede",
+          "en": "Network controls"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "As contas e identidades das pessoas, dos serviços e dos dispositivos no ambiente",
+          "en": "The accounts and identities of the people, services, and devices in the environment"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-01-02-02",
+    "requirement": "N02",
+    "subject": "o que é sempre de cada parte",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Datacenter, rede e hosts físicos sempre pertencem ao provedor. Informações e dados sempre pertencem ao cliente. Sistemas operacionais, controles de rede, aplicativos e identidade e acesso dependem de o serviço ser IaaS, PaaS ou SaaS.",
+      "en": "Physical datacenter, network, and hosts always belong to the provider. Information and data always belong to the customer. Operating systems, network controls, applications, and identity and access depend on whether the service is IaaS, PaaS, or SaaS."
+    },
+    "distractors": {
+      "pt": "A opção 'Sempre dividido igualmente' nunca é usada: o modelo define o que sempre fica com cada parte e o que depende do tipo de serviço, não uma divisão fixa de 50/50.",
+      "en": "The option 'Always shared equally' is never used: the model defines what always stays with each party and what depends on service type, not a fixed 50/50 split."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Hosts físicos que executam as cargas de trabalho",
+          "en": "Physical hosts that run the workloads"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Sistemas operacionais que executam a carga de trabalho",
+          "en": "Operating systems that run the workload"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Informações e dados armazenados na nuvem",
+          "en": "Information and data stored in the cloud"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Sempre o cliente",
+          "en": "Always the customer"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Depende do tipo de serviço de nuvem",
+          "en": "Depends on the cloud service type"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Sempre o provedor de nuvem",
+          "en": "Always the cloud provider"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Sempre dividido igualmente entre o provedor e o cliente",
+          "en": "Always shared equally between the provider and the customer"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "B",
+      "3": "A"
+    }
+  },
+  {
+    "id": "CLOUD-01-02-03",
+    "requirement": "N02",
+    "subject": "SQL gerenciado vs SQL em VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Com um banco de dados gerenciado, o provedor mantém o banco e você continua responsável pelos seus dados. Com um banco SQL instalado em uma máquina virtual, você é responsável pelos patches e atualizações do banco e pelos dados. Segurança física, energia, resfriamento e conectividade são do provedor.",
+      "en": "With a managed database the provider maintains the database and you keep responsibility for your data. With a SQL database installed on a virtual machine you are responsible for database patches and updates and for the data. Physical security, power, cooling, and connectivity belong to the provider."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque a VM roda no datacenter do provedor, mas instalar um software nela torna esse software responsabilidade sua.",
+      "en": "Statement 3 is tempting because the VM runs in the provider's datacenter, but installing software on it makes the software your responsibility."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Quando você usa um banco de dados SQL gerenciado na nuvem, o provedor de nuvem é responsável por manter o banco de dados, mas você continua responsável pelos dados que ingere nele.",
+          "en": "When you use a managed cloud SQL database, the cloud provider is responsible for maintaining the database, but you remain responsible for the data you ingest into it."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Como o consumidor não está no mesmo local do datacenter, a segurança física, a energia, o resfriamento e a conectividade de rede são responsabilidade do provedor de nuvem.",
+          "en": "Because the consumer is not collocated with the datacenter, physical security, power, cooling, and network connectivity are the cloud provider's responsibility."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Se você implanta uma máquina virtual e instala um banco de dados SQL nela, o provedor de nuvem é responsável pelos patches e atualizações do banco de dados.",
+          "en": "If you deploy a virtual machine and install a SQL database on it, the cloud provider is responsible for the database patches and updates."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-01-02-04",
+    "requirement": "N02",
+    "subject": "SQL gerenciado vs SQL em VM",
+    "level": "essential",
+    "stem": {
+      "pt": "A Empresa A usa um serviço de banco de dados SQL gerenciado na nuvem. A Empresa B implanta uma máquina virtual e instala um banco de dados SQL nela. Qual afirmação descreve corretamente as responsabilidades?",
+      "en": "Company A uses a managed cloud SQL database service. Company B deploys a virtual machine and installs a SQL database on it. Which statement correctly describes the responsibilities?"
+    },
+    "explanation": {
+      "pt": "No serviço gerenciado, o provedor mantém o banco de dados e o cliente é dono dos dados. Em uma VM, o cliente também é responsável pelo software do banco de dados, incluindo patches e atualizações.",
+      "en": "In the managed service the provider maintains the database and the customer owns the data. On a VM, the customer is also responsible for the database software, including patches and updates."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque trata os dois casos igualmente, mas o modelo de responsabilidade compartilhada muda conforme o tipo de serviço: no caso da VM, o software do banco é seu.",
+      "en": "Option D is the most tempting because it treats both cases the same, but the shared responsibility model shifts with the service type: the VM case gives you the database software."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Serviço gerenciado: o cliente mantém o banco de dados e os dados. Máquina virtual: o provedor mantém o banco de dados, e o cliente é responsável pelos dados.",
+          "en": "Managed service: the customer maintains the database and the data. Virtual machine: the provider maintains the database, and the customer is responsible for the data."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Serviço gerenciado: o provedor mantém o banco de dados e também é responsável pelos dados. Máquina virtual: o cliente é responsável pelos patches e atualizações do banco de dados, e o provedor, pelos dados.",
+          "en": "Managed service: the provider maintains the database and is also responsible for the data. Virtual machine: the customer is responsible for database patches and updates, and the provider for the data."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Serviço gerenciado: o provedor mantém o banco de dados, e o cliente é responsável pelos dados. Máquina virtual: o cliente é responsável pelos patches e atualizações do banco de dados e pelos dados.",
+          "en": "Managed service: the provider maintains the database, and the customer is responsible for the data. Virtual machine: the customer is responsible for database patches and updates and for the data."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nos dois casos, o provedor mantém o banco de dados, e o cliente é responsável apenas pelos dados.",
+          "en": "In both cases, the provider maintains the database, and the customer is responsible only for the data."
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-01-02-05",
+    "requirement": "N02",
+    "subject": "sempre responsabilidade do provedor",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três itens são sempre responsabilidade do provedor de nuvem, independentemente do tipo de serviço de nuvem? Escolha três.",
+      "en": "Which three items are always the responsibility of the cloud provider, regardless of the cloud service type? Choose three."
+    },
+    "explanation": {
+      "pt": "O provedor de nuvem é sempre responsável pelo datacenter físico, pela rede física, pelos hosts físicos e pela infraestrutura. Aplicativos dependem do tipo de serviço, e os dispositivos que se conectam são sempre do cliente.",
+      "en": "The cloud provider is always responsible for the physical datacenter, the physical network, the physical hosts, and the infrastructure. Applications depend on the service type, and connecting devices are always the customer's."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque os dispositivos se conectam à rede do provedor, mas os dispositivos em si ficam sempre do lado do cliente no modelo.",
+      "en": "Option C is tempting because devices connect to the provider's network, but the devices themselves always belong to the customer's side of the model."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Rede física",
+          "en": "Physical network"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Aplicativos",
+          "en": "Applications"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Dispositivos autorizados a se conectar à nuvem",
+          "en": "Devices that are allowed to connect to the cloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Hosts físicos",
+          "en": "Physical hosts"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Datacenter físico",
+          "en": "Physical datacenter"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-01-02-06",
+    "requirement": "N02",
+    "subject": "responsabilidade por tipo de serviço",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. No modelo de responsabilidade compartilhada, ______ coloca a maior responsabilidade no provedor de nuvem, e ______ coloca a maior responsabilidade no cliente.",
+      "en": "Complete the sentence. In the shared responsibility model, ______ places the most responsibility on the cloud provider, and ______ places the most responsibility on the customer."
+    },
+    "explanation": {
+      "pt": "SaaS coloca a maior parte da responsabilidade no provedor, IaaS coloca a maior no consumidor e PaaS fica no meio.",
+      "en": "SaaS places most of the responsibility on the provider, IaaS places the most on the consumer, and PaaS sits in the middle."
+    },
+    "distractors": {
+      "pt": "A alternativa B inverte a resposta, um erro comum de leitura; a alternativa C é tentadora porque PaaS é 'gerenciado', mas PaaS é o meio-termo.",
+      "en": "Option B inverts the answer, a common reading error; option C is tempting because PaaS is 'managed', but PaaS is the middle ground."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "SaaS; IaaS",
+          "en": "SaaS; IaaS"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "IaaS; SaaS",
+          "en": "IaaS; SaaS"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "PaaS; IaaS",
+          "en": "PaaS; IaaS"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "SaaS; PaaS",
+          "en": "SaaS; PaaS"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-01-02-07",
+    "requirement": "N02",
+    "subject": "identidade em PaaS e SaaS",
+    "level": "detail",
+    "stem": {
+      "pt": "Uma empresa usa uma oferta PaaS ou SaaS. Qual afirmação sobre identidade e acesso está correta?",
+      "en": "A company uses a PaaS or SaaS offering. Which statement about identity and access is correct?"
+    },
+    "explanation": {
+      "pt": "O Learn informa que identidade e acesso é compartilhado em PaaS e SaaS: você gerencia seus próprios usuários, funções e políticas, enquanto o provedor executa a plataforma de autenticação.",
+      "en": "Learn notes that identity and access is shared in PaaS and SaaS: you manage your own users, roles, and policies, while the provider runs the authentication platform."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque 'serviço gerenciado' sugere que o provedor cuida de tudo, mas contas e identidades sempre ficam com o cliente.",
+      "en": "Option D is the most tempting because 'managed service' suggests the provider handles everything, but accounts and identities always stay with the customer."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O provedor gerencia os usuários, funções e políticas da empresa, e a empresa executa a plataforma de autenticação.",
+          "en": "The provider manages the company's users, roles, and policies, and the company runs the authentication platform."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A empresa gerencia seus próprios usuários, funções e políticas, enquanto o provedor executa a plataforma de autenticação, como o Microsoft Entra ID.",
+          "en": "The company manages its own users, roles, and policies, while the provider runs the authentication platform, such as Microsoft Entra ID."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A empresa constrói e executa a plataforma de autenticação e também gerencia seus usuários, funções e políticas.",
+          "en": "The company builds and runs the authentication platform and also manages its users, roles, and policies."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Identidade e acesso são sempre inteiramente responsabilidade do provedor em PaaS e SaaS.",
+          "en": "Identity and access are always entirely the provider's responsibility in PaaS and SaaS."
+        }
+      }
+    ],
+    "answer": "B"
+  }
+]

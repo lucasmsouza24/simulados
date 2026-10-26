@@ -1,0 +1,350 @@
+[
+  {
+    "id": "CLOUD-01-03-01",
+    "requirement": "N03",
+    "subject": "nuvem híbrida",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma organização mantém alguns datacenters que oferecem serviços de nuvem a qualquer pessoa interessada e outros dedicados a um único cliente, e os ambientes são interconectados. Qual é esse modelo de nuvem e por quê?",
+      "en": "An organization runs some datacenters that provide cloud services to anyone who wants them and others that are dedicated to a single customer, and the environments are interconnected. Which cloud model is this, and why?"
+    },
+    "explanation": {
+      "pt": "Uma nuvem híbrida usa nuvens públicas e privadas em um ambiente interconectado. Isso corresponde à questão da avaliação do módulo do Learn para esta unidade.",
+      "en": "A hybrid cloud uses both public and private clouds in an interconnected environment. This matches the Learn module assessment question for this unit."
+    },
+    "distractors": {
+      "pt": "Multicloud é o vizinho: combina vários provedores de nuvem pública, e não pública mais privada.",
+      "en": "Multicloud is the neighbor: it combines multiple public cloud providers, not public plus private."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud), porque usa nuvens públicas e privadas em um ambiente interconectado.",
+          "en": "Hybrid cloud, because it uses both public and private clouds in an interconnected environment."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Multicloud, porque usa dois ou mais provedores de nuvem pública.",
+          "en": "Multicloud, because it uses two or more public cloud providers."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Nuvem pública (public cloud), porque parte do ambiente está disponível para qualquer pessoa que queira comprar serviços.",
+          "en": "Public cloud, because part of the environment is available to anyone who wants to purchase services."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nuvem privada (private cloud), porque parte do ambiente é dedicada a um único cliente.",
+          "en": "Private cloud, because part of the environment is dedicated to a single customer."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-01-03-02",
+    "requirement": "N03",
+    "subject": "pública vs privada vs multicloud",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Uma nuvem pública está aberta a qualquer pessoa que queira comprar serviços. Multicloud significa usar vários provedores de nuvem pública; pública mais privada é híbrida. Uma nuvem privada atende uma única entidade e pode ser local ou em um datacenter dedicado externo, até operada por terceiros.",
+      "en": "A public cloud is open to anyone who wants to purchase services. Multicloud means using multiple public cloud providers; public plus private is hybrid. A private cloud serves a single entity and may be on-site or in a dedicated offsite datacenter, even run by a third party."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque multicloud soa como 'misturar ambientes', mas isso descreve a nuvem híbrida.",
+      "en": "Statement 2 is tempting because multicloud sounds like 'mixing environments', but that describes hybrid cloud."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Em uma nuvem pública, somente clientes que já possuem hardware local podem comprar e usar recursos.",
+          "en": "In a public cloud, only customers that already own on-premises hardware can purchase and use resources."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um cenário multicloud combina uma nuvem pública e uma nuvem privada em um ambiente interconectado.",
+          "en": "A multicloud scenario combines one public cloud and one private cloud in an interconnected environment."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma nuvem privada é usada por uma única entidade e pode ser hospedada em um datacenter local ou em um datacenter dedicado externo, possivelmente por terceiros.",
+          "en": "A private cloud is used by a single entity and can be hosted in an on-site datacenter or in a dedicated offsite datacenter, potentially by a third party."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "CLOUD-01-03-03",
+    "requirement": "N03",
+    "subject": "pública vs privada vs multicloud",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Pública: provedor terceirizado, aberta a qualquer pessoa. Privada: entidade única, evoluída do datacenter tradicional. Híbrida: pública mais privada interconectadas. Multicloud: vários provedores de nuvem pública.",
+      "en": "Public: third-party provider, open to anyone. Private: single entity, evolved from the traditional datacenter. Hybrid: public plus private interconnected. Multicloud: multiple public cloud providers."
+    },
+    "distractors": {
+      "pt": "Híbrida e multicloud são o par mais trocado: híbrida mistura pública e privada, multicloud mistura provedores públicos.",
+      "en": "Hybrid and multicloud are the pair most often swapped: hybrid mixes public and private, multicloud mixes public providers."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Construída, controlada e mantida por um provedor terceirizado e disponível para qualquer pessoa que queira comprar serviços",
+          "en": "Built, controlled, and maintained by a third-party provider, and available to anyone who wants to purchase services"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Usada por uma única entidade e evoluída a partir do modelo tradicional de datacenter",
+          "en": "Used by a single entity and evolved from the traditional datacenter model"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Usa nuvens públicas e privadas em um ambiente interconectado",
+          "en": "Uses both public and private clouds in an interconnected environment"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Usa dois ou mais provedores de nuvem pública",
+          "en": "Uses two or more public cloud providers"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud)",
+          "en": "Hybrid cloud"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Multicloud",
+          "en": "Multicloud"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Nuvem privada (private cloud)",
+          "en": "Private cloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nuvem pública (public cloud)",
+          "en": "Public cloud"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "C",
+      "3": "A",
+      "4": "B"
+    }
+  },
+  {
+    "id": "CLOUD-01-03-04",
+    "requirement": "N03",
+    "subject": "nuvem pública",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações descrevem uma nuvem pública? Escolha duas.",
+      "en": "Which two statements describe a public cloud? Choose two."
+    },
+    "explanation": {
+      "pt": "A tabela comparativa do Learn lista para a nuvem pública: sem despesas de capital para escalar, provisionamento e desprovisionamento rápidos e pagamento apenas pelo que usa. Controle total, compra de hardware e isolamento dos dados de outros locatários descrevem a nuvem privada.",
+      "en": "The Learn comparison table lists for public cloud: no capital expenditures to scale up, rapid provisioning and deprovisioning, and paying only for what you use. Complete control, hardware purchase, and data isolation from other tenants describe the private cloud."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a mais tentadora porque controle soa desejável, mas na nuvem pública você não tem controle total sobre recursos e segurança.",
+      "en": "Option B is the most tempting because control sounds desirable, but with a public cloud you don't have complete control over resources and security."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Sem despesas de capital para escalar",
+          "en": "No capital expenditures to scale up"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Controle total sobre recursos e segurança",
+          "en": "Complete control over resources and security"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "É necessário comprar hardware para a inicialização e a manutenção",
+          "en": "Hardware must be purchased for startup and maintenance"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os dados não ficam no mesmo local que os dados de outros locatários",
+          "en": "Data isn't collocated with other tenants' data"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Você paga apenas pelo que usa",
+          "en": "You pay only for what you use"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-01-03-05",
+    "requirement": "N03",
+    "subject": "multicloud",
+    "level": "detail",
+    "stem": {
+      "pt": "Complete a frase. Uma empresa começou com um provedor de nuvem pública e está migrando para outro provedor de nuvem pública, gerenciando recursos e segurança nos dois ambientes. Esse cenário é um exemplo de ______.",
+      "en": "Complete the sentence. A company started with one public cloud provider and is migrating to a different public cloud provider, managing resources and security in both environments. This scenario is an example of ______."
+    },
+    "explanation": {
+      "pt": "Em um cenário multicloud você usa vários provedores de nuvem pública, seja para recursos diferentes ou durante a migração de um provedor para outro, e gerencia recursos e segurança em cada ambiente.",
+      "en": "In a multicloud scenario you use multiple public cloud providers, whether for different features or while migrating from one provider to another, and you manage resources and security in each environment."
+    },
+    "distractors": {
+      "pt": "A nuvem híbrida é o vizinho tentador porque há dois ambientes envolvidos, mas aqui ambos são nuvens públicas.",
+      "en": "Hybrid cloud is the tempting neighbor because two environments are involved, but both here are public clouds."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "nuvem híbrida (hybrid cloud)",
+          "en": "hybrid cloud"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "multicloud",
+          "en": "multicloud"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "nuvem privada (private cloud)",
+          "en": "private cloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "uma nuvem pública com um único provedor",
+          "en": "a public cloud with a single provider"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-01-03-06",
+    "requirement": "N03",
+    "subject": "nuvem privada",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa exige controle total sobre recursos e segurança para todas as suas cargas de trabalho e exige que seus dados não fiquem no mesmo local que os dados de outros locatários. Ela aceita comprar e manter hardware. Qual modelo de nuvem melhor atende a esses requisitos?",
+      "en": "A company requires complete control over resources and security for all of its workloads, and requires that its data isn't collocated with other tenants' data. It accepts buying and maintaining hardware. Which cloud model best meets these requirements?"
+    },
+    "explanation": {
+      "pt": "Uma nuvem privada dá controle total sobre recursos e segurança, mantém os dados separados de outros locatários e exige que você compre e mantenha o hardware.",
+      "en": "A private cloud gives complete control over resources and security, keeps data away from other tenants, and requires you to buy hardware and maintain it."
+    },
+    "distractors": {
+      "pt": "A nuvem híbrida é tentadora porque inclui uma parte privada, mas o requisito cobre todas as cargas de trabalho, o que um componente público não satisfaria.",
+      "en": "Hybrid cloud is tempting because it includes a private part, but the requirement covers all workloads, which a public component would not satisfy."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Nuvem pública (public cloud)",
+          "en": "Public cloud"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud)",
+          "en": "Hybrid cloud"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Nuvem privada (private cloud)",
+          "en": "Private cloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Multicloud",
+          "en": "Multicloud"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

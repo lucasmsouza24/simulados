@@ -1,0 +1,284 @@
+[
+  {
+    "id": "ARCH-01-05-01",
+    "requirement": "A05",
+    "subject": "assinaturas separadas",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer relatórios de cobrança e faturas separados para suas cargas de trabalho de desenvolvimento e produção, e quer limites de gastos e regras de acesso diferentes para cada uma. O que ela deve usar?",
+      "en": "A company wants separate billing reports and invoices for its development and production workloads, and wants different spending limits and access rules for each. What should it use?"
+    },
+    "explanation": {
+      "pt": "Uma assinatura é uma unidade de gerenciamento, cobrança e escala. Ela é tanto um limite de cobrança (relatórios e faturas separados) quanto um limite de controle de acesso (políticas de gerenciamento de acesso aplicadas no nível da assinatura), então assinaturas separadas para desenvolvimento e produção atendem.",
+      "en": "A subscription is a unit of management, billing, and scale. It is both a billing boundary (separate reports and invoices) and an access control boundary (access-management policies applied at the subscription level), so separate subscriptions for development and production fit."
+    },
+    "distractors": {
+      "pt": "Grupos de recursos são o vizinho tentador porque separam recursos, mas cobrança e limites de gastos são limites de assinatura.",
+      "en": "Resource groups are the tempting neighbor because they separate resources, but billing and spending limits are subscription boundaries."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Grupos de recursos separados dentro de uma única assinatura",
+          "en": "Separate resource groups inside a single subscription"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Regiões do Azure separadas",
+          "en": "Separate Azure regions"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Assinaturas separadas",
+          "en": "Separate subscriptions"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Zonas de disponibilidade separadas",
+          "en": "Separate availability zones"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-01-05-02",
+    "requirement": "A05",
+    "subject": "limites da assinatura",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Uma conta pode ter várias assinaturas, mas apenas uma é obrigatória. O Azure gera relatórios de cobrança e faturas separados para cada assinatura, e uma assinatura é tanto um limite de cobrança quanto de controle de acesso.",
+      "en": "An account can have multiple subscriptions, but only one is required. Azure generates separate billing reports and invoices for each subscription, and a subscription is both a billing and an access control boundary."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque uma conta agrupa suas assinaturas, mas a cobrança é por assinatura.",
+      "en": "Statement 2 is tempting because an account groups its subscriptions, but billing is per subscription."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Uma conta do Azure deve ter pelo menos duas assinaturas.",
+          "en": "An Azure account must have at least two subscriptions."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure gera um único relatório de cobrança e uma única fatura combinados para todas as assinaturas de uma conta.",
+          "en": "Azure generates one combined billing report and invoice for all subscriptions of an account."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma assinatura é tanto um limite de cobrança quanto um limite de controle de acesso.",
+          "en": "A subscription is both a billing boundary and an access control boundary."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-01-05-03",
+    "requirement": "A05",
+    "subject": "assinaturas separadas",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois são motivos para criar assinaturas adicionais do Azure? Escolha dois.",
+      "en": "Which two are reasons to create additional Azure subscriptions? Choose two."
+    },
+    "explanation": {
+      "pt": "O Learn lista motivos para criar assinaturas: separar ambientes (sandbox, desenvolvimento, teste, produção), separar limites de equipe e de carga de trabalho e acompanhar a cobrança separadamente.",
+      "en": "Learn lists reasons to create subscriptions: separate environments (sandbox, development, test, production), separate team and workload boundaries, and track billing separately."
+    },
+    "distractors": {
+      "pt": "As alternativas A e D são limitações de grupos de recursos, uma confusão tentadora com o tópico anterior.",
+      "en": "Options A and D are resource group limitations, a tempting mix-up with the previous topic."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Para aninhar grupos de recursos uns dentro dos outros",
+          "en": "To nest resource groups inside each other"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Para aumentar o número de zonas de disponibilidade em uma região",
+          "en": "To increase the number of availability zones in a region"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Para separar ambientes como sandbox, desenvolvimento, teste e produção",
+          "en": "To separate environments such as sandbox, development, test, and production"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Para renomear um grupo de recursos existente",
+          "en": "To rename an existing resource group"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Para acompanhar custos separadamente para cargas de trabalho diferentes",
+          "en": "To track costs separately for different workloads"
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-01-05-04",
+    "requirement": "A05",
+    "subject": "conta do Azure e Entra ID",
+    "level": "detail",
+    "stem": {
+      "pt": "Complete a frase. Uma assinatura do Azure está vinculada a uma conta do Azure, que é uma identidade no ______.",
+      "en": "Complete the sentence. An Azure subscription links to an Azure account, which is an identity in ______."
+    },
+    "explanation": {
+      "pt": "Uma assinatura do Azure está vinculada a uma conta do Azure, que é uma identidade no Microsoft Entra ID ou em um diretório em que o Microsoft Entra ID confia.",
+      "en": "An Azure subscription links to an Azure account, which is an identity in Microsoft Entra ID or in a directory that Microsoft Entra ID trusts."
+    },
+    "distractors": {
+      "pt": "Um grupo de gerenciamento é tentador porque fica ao lado das assinaturas, mas é um contêiner, e não uma identidade.",
+      "en": "A management group is tempting because it sits next to subscriptions, but it is a container, not an identity."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "um grupo de gerenciamento",
+          "en": "a management group"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "um grupo de recursos",
+          "en": "a resource group"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Entra ID ou em um diretório em que o Microsoft Entra ID confia",
+          "en": "Microsoft Entra ID or in a directory that Microsoft Entra ID trusts"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "uma zona de disponibilidade",
+          "en": "an availability zone"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-01-05-05",
+    "requirement": "A05",
+    "subject": "limites da assinatura",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Uma assinatura tem dois limites: cobrança (relatórios e faturas separados) e controle de acesso (políticas de gerenciamento de acesso no nível da assinatura). O limite de isolamento pertence às zonas de disponibilidade.",
+      "en": "A subscription has two boundaries: billing (separate reports and invoices) and access control (access-management policies at the subscription level). The isolation boundary belongs to availability zones."
+    },
+    "distractors": {
+      "pt": "Limite de isolamento é o distrator tentador porque aparece na unidade de infraestrutura física.",
+      "en": "Isolation boundary is the tempting distractor because it appears in the physical infrastructure unit."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure gera relatórios de cobrança e faturas separados para cada um.",
+          "en": "Azure generates separate billing reports and invoices for each one."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure aplica políticas de gerenciamento de acesso nesse nível, por exemplo regras diferentes para desenvolvimento e produção.",
+          "en": "Azure applies access-management policies at this level, for example different rules for development and production."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Você cria assinaturas para acompanhar separadamente os custos de produção e de desenvolvimento e teste.",
+          "en": "You create subscriptions to track the costs of production and of development and testing separately."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Limite de controle de acesso (access control boundary)",
+          "en": "Access control boundary"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Limite de cobrança (billing boundary)",
+          "en": "Billing boundary"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Limite de isolamento (isolation boundary)",
+          "en": "Isolation boundary"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "A",
+      "3": "B"
+    }
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "id": "ARCH-04-04-01",
+    "requirement": "A23",
+    "subject": "acesso condicional",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual ferramenta do Microsoft Entra pode variar as credenciais necessárias para entrar, por exemplo, exigindo um segundo fator apenas quando o usuário está fora de locais de rede confiáveis?",
+      "en": "Which Microsoft Entra tool can vary the credentials needed to sign in, for example by requiring a second factor only when the user is outside trusted network locations?"
+    },
+    "explanation": {
+      "pt": "O Acesso Condicional permite ou nega o acesso com base em sinais de identidade e oferece uma experiência de MFA mais granular: um usuário pode não ser desafiado em um local conhecido, mas é desafiado quando os sinais são incomuns. Isso corresponde à avaliação deste módulo.",
+      "en": "Conditional Access allows or denies access based on identity signals, and gives a more granular MFA experience: a user might not be challenged at a known location but is challenged when signals are unusual. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "A autenticação sem senha é tentadora porque altera as credenciais, mas não as varia com base em sinais.",
+      "en": "Passwordless is tempting because it changes credentials, but it doesn't vary them based on signals."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure role-based access control",
+          "en": "Azure role-based access control"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Passwordless authentication",
+          "en": "Passwordless authentication"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Conditional Access",
+          "en": "Conditional Access"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-04-04-02",
+    "requirement": "A23",
+    "subject": "sinal decisão imposição",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Acesso Condicional coleta sinais (localização, dispositivo, aplicativo), toma uma decisão com base neles e impõe essa decisão permitindo ou negando o acesso ou exigindo MFA.",
+      "en": "Conditional Access collects signals (location, device, application), makes a decision based on them, and enforces that decision by allowing or denying access or challenging for MFA."
+    },
+    "distractors": {
+      "pt": "Decisão e imposição são o par mais trocado: a decisão é a avaliação, a imposição é a ação.",
+      "en": "Decision and enforcement are the most swapped pair: the decision is the evaluation, enforcement is the action."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A localização do usuário, o dispositivo ou o aplicativo que está sendo acessado",
+          "en": "The user's location, device, or the application being accessed"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Avaliar os sinais para escolher entre permitir o acesso, bloqueá-lo ou exigir um segundo fator",
+          "en": "Evaluating the signals to choose between allowing access, blocking it, or requiring a second factor"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Executar a decisão, por exemplo, exigindo que o usuário forneça uma segunda forma de autenticação",
+          "en": "Carrying out the decision, for example by requiring the user to provide a second form of authentication"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Decisão",
+          "en": "Decision"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Sinal",
+          "en": "Signal"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Imposição (enforcement)",
+          "en": "Enforcement"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Autorização",
+          "en": "Authorization"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "A",
+      "3": "C"
+    }
+  },
+  {
+    "id": "ARCH-04-04-03",
+    "requirement": "A23",
+    "subject": "acesso condicional",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação descreve corretamente o Acesso Condicional do Microsoft Entra?",
+      "en": "Which statement correctly describes Microsoft Entra Conditional Access?"
+    },
+    "explanation": {
+      "pt": "O Acesso Condicional é uma ferramenta que o Microsoft Entra ID usa para permitir (ou negar) o acesso a recursos com base em sinais de identidade: quem é o usuário, onde ele está e de qual dispositivo solicita o acesso.",
+      "en": "Conditional Access is a tool that Microsoft Entra ID uses to allow (or deny) access to resources based on identity signals: who the user is, where the user is, and what device the user is requesting access from."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a mais tentadora porque descreve o Azure RBAC, que controla quais ações são permitidas em recursos, e não se um logon é permitido.",
+      "en": "Option B is the most tempting because it describes Azure RBAC, which controls what actions are allowed on resources rather than whether a sign-in is allowed."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ele permite ou nega o acesso a recursos com base em sinais de identidade, como quem é o usuário, onde ele está e qual dispositivo é usado.",
+          "en": "It allows or denies access to resources based on identity signals such as who the user is, where the user is, and which device is used."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ele atribui funções do Azure a usuários no escopo de grupo de gerenciamento, assinatura, grupo de recursos ou recurso.",
+          "en": "It assigns Azure roles to users at a management group, subscription, resource group, or resource scope."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ele armazena segredos, certificados e chaves de criptografia para aplicativos.",
+          "en": "It stores secrets, certificates, and encryption keys for applications."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ele sincroniza identidades entre o Active Directory local e o Microsoft Entra ID.",
+          "en": "It synchronizes identities between on-premises Active Directory and Microsoft Entra ID."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-04-04-04",
+    "requirement": "A23",
+    "subject": "casos de uso",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são cenários em que você pode usar o Acesso Condicional? Escolha três.",
+      "en": "Which three are scenarios in which you can use Conditional Access? Choose three."
+    },
+    "explanation": {
+      "pt": "O Acesso Condicional pode exigir MFA conforme a função, o local ou a rede, exigir acesso apenas por aplicativos cliente aprovados ou de dispositivos gerenciados e bloquear o acesso de fontes não confiáveis.",
+      "en": "Conditional Access can require MFA depending on role, location, or network, require access only through approved client apps or from managed devices, and block access from untrusted sources."
+    },
+    "distractors": {
+      "pt": "A alternativa A é Azure RBAC e a D é criptografia; nenhuma avalia sinais de logon.",
+      "en": "Option A is Azure RBAC and option D is encryption; neither evaluates sign-in signals."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Conceder a função de Proprietário (Owner) no escopo da assinatura",
+          "en": "Granting the Owner role at the subscription scope"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Exigir autenticação multifator para administradores",
+          "en": "Requiring multifactor authentication for administrators"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Bloquear o acesso de locais desconhecidos ou inesperados",
+          "en": "Blocking access from unknown or unexpected locations"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Criptografar discos de máquinas virtuais em repouso",
+          "en": "Encrypting virtual machine disks at rest"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Exigir que o acesso a um serviço ocorra somente por aplicativos cliente aprovados",
+          "en": "Requiring access to a service only through approved client applications"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-04-04-05",
+    "requirement": "A23",
+    "subject": "recursos do acesso condicional",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Acesso Condicional pode exigir MFA quando há sinais incomuns e pode exigir dispositivos gerenciados. É uma ferramenta do Microsoft Entra ID, e não parte do Azure RBAC.",
+      "en": "Conditional Access can challenge for MFA on unusual signals and can require managed devices. It is a Microsoft Entra ID tool, not part of Azure RBAC."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque ambos controlam acesso, mas o RBAC concede funções em um escopo.",
+      "en": "Statement 3 is tempting because both control access, but RBAC grants roles at a scope."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Acesso Condicional pode exigir de um usuário um segundo fator de autenticação quando os sinais de logon são incomuns ou o usuário está em um local inesperado.",
+          "en": "Conditional Access can challenge a user for a second authentication factor when sign-in signals are unusual or the user is at an unexpected location."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Acesso Condicional pode exigir que os usuários acessem um aplicativo somente de dispositivos gerenciados que atendam aos padrões de segurança e conformidade.",
+          "en": "Conditional Access can require users to access an application only from managed devices that meet security and compliance standards."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Acesso Condicional é um recurso do controle de acesso baseado em função do Azure que concede funções em um escopo.",
+          "en": "Conditional Access is a feature of Azure role-based access control that grants roles at a scope."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-04-04-06",
+    "requirement": "A23",
+    "subject": "acesso condicional vs RBAC",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação distingue corretamente o Acesso Condicional do controle de acesso baseado em função do Azure (Azure RBAC)?",
+      "en": "Which statement correctly distinguishes Conditional Access from Azure role-based access control (Azure RBAC)?"
+    },
+    "explanation": {
+      "pt": "O Acesso Condicional usa sinais de identidade para permitir, negar ou desafiar logons. O Azure RBAC concede permissões de função em um escopo e é imposto sobre ações que passam pelo Azure Resource Manager.",
+      "en": "Conditional Access uses identity signals to allow, deny, or challenge sign-ins. Azure RBAC grants role permissions at a scope and is enforced on actions that pass through Azure Resource Manager."
+    },
+    "distractors": {
+      "pt": "A alternativa B troca os dois recursos.",
+      "en": "Option B swaps the two features."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os dois recursos atribuem funções no escopo de grupo de gerenciamento, assinatura, grupo de recursos ou recurso.",
+          "en": "Both features assign roles at the management group, subscription, resource group, or resource scope."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O Azure RBAC decide se um logon é bloqueado com base na localização; o Acesso Condicional atribui as funções Proprietário e Leitor.",
+          "en": "Azure RBAC decides whether a sign-in is blocked based on location; Conditional Access assigns Owner and Reader roles."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O Acesso Condicional decide se um logon é permitido ou desafiado com base em sinais; o Azure RBAC decide quais ações um usuário pode executar em recursos do Azure em um escopo.",
+          "en": "Conditional Access decides whether a sign-in is allowed or challenged based on signals; Azure RBAC decides which actions a user can perform on Azure resources at a scope."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O Acesso Condicional é imposto pelo Azure Resource Manager em toda ação contra um recurso.",
+          "en": "Conditional Access is enforced by Azure Resource Manager on every action against a resource."
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

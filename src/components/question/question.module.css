@@ -1,0 +1,366 @@
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 2px 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tag[data-kind='id'] {
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+.tag[data-kind='ai'] {
+  display: inline-flex;
+  gap: var(--space-1);
+  align-items: center;
+  border-color: var(--ai);
+  background: var(--ai-soft);
+  color: var(--ai);
+  font-weight: 600;
+  cursor: help;
+}
+
+.aiIcon {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.tag[data-kind='format'] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tag[data-kind='detail'] {
+  border-color: var(--warn);
+  color: var(--warn);
+}
+
+.tag[data-kind='subject'] {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.crumbs {
+  margin: 0 0 var(--space-2);
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.stem {
+  margin: var(--space-2) 0 var(--space-5);
+  font-size: var(--text-lg);
+}
+
+.stem:focus {
+  outline: none;
+}
+
+.blank {
+  display: inline-block;
+  min-width: 90px;
+  padding: 0 var(--space-2);
+  border-bottom: 2px dashed var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  text-align: center;
+}
+
+.hint {
+  margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.options {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.option {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: 11px 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+
+.option:hover {
+  border-color: var(--accent);
+}
+
+.option:has(input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.option:has(input:disabled) {
+  cursor: default;
+}
+
+.option:has(input:disabled):hover {
+  border-color: var(--border);
+}
+
+.key {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--border);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.option[data-kind='radio'] .key {
+  border-radius: 50%;
+}
+
+.option[data-kind='checkbox'] .key {
+  border-radius: 6px;
+}
+
+.option[data-state='selected'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.option[data-state='selected'] .key {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.option[data-state='correct'],
+.option[data-state='correct']:hover {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+}
+
+.option[data-state='correct'] .key {
+  background: var(--ok);
+  border-color: var(--ok);
+  color: #fff;
+}
+
+.option[data-state='wrong'],
+.option[data-state='wrong']:hover {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.option[data-state='wrong'] .key {
+  background: var(--bad);
+  border-color: var(--bad);
+  color: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table th {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.table td.n {
+  width: 28px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.table td.control {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.table tr[data-state='correct'] td {
+  background: var(--ok-soft);
+}
+
+.table tr[data-state='wrong'] td {
+  background: var(--bad-soft);
+}
+
+.yesNo {
+  display: inline-flex;
+  gap: var(--space-2);
+}
+
+.yesNoOption {
+  position: relative;
+  min-width: 64px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  text-align: center;
+  cursor: pointer;
+}
+
+.yesNoOption:has(input:checked) {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.yesNoOption:has(input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.yesNoOption:has(input:disabled) {
+  cursor: default;
+}
+
+.yesNoOption[data-answer='true'] {
+  box-shadow: 0 0 0 2px var(--ok);
+}
+
+.select {
+  min-width: 240px;
+  max-width: 100%;
+  padding: 6px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.matchAnswer {
+  display: block;
+  margin-top: var(--space-1);
+  color: var(--ok);
+  font-size: var(--text-sm);
+}
+
+.legend {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3) 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.legend h3 {
+  margin: 0 0 var(--space-2);
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.legend ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legend b {
+  display: inline-block;
+  width: 24px;
+  color: var(--accent);
+}
+
+.verdict {
+  margin: var(--space-5) 0 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.verdict[data-tone='ok'] {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+.verdict[data-tone='bad'] {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+.verdict[data-tone='neutral'] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.explain {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.explain section {
+  padding: 14px var(--space-4);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.explain h3 {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.explain p {
+  margin: 0;
+}
+
+.answerKey {
+  color: var(--ok);
+  font-family: var(--font-mono);
+}
+
+.learnLink {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .select {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .table td.control {
+    width: 45%;
+    white-space: normal;
+  }
+
+  .table th,
+  .table td {
+    padding: var(--space-2);
+  }
+}

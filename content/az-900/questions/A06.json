@@ -1,0 +1,315 @@
+[
+  {
+    "id": "ARCH-01-06-01",
+    "requirement": "A06",
+    "subject": "política em grupo de gerenciamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa tem muitas assinaturas em várias equipes e quer limitar os locais de VM à região US West para todas as assinaturas de produção com uma única política que os proprietários das assinaturas não possam substituir. Qual abordagem se encaixa melhor?",
+      "en": "A company has many subscriptions across multiple teams and wants to limit VM locations to the US West region for all production subscriptions with a single policy that the subscription owners can't override. Which approach fits best?"
+    },
+    "explanation": {
+      "pt": "Grupos de gerenciamento ficam acima das assinaturas. Uma política aplicada a um grupo de gerenciamento, como limitar locais de VM a US West em um grupo Production, é herdada por todas as assinaturas sob ele, e o proprietário do recurso ou da assinatura não pode substituí-la.",
+      "en": "Management groups sit above subscriptions. A policy applied to a management group, such as limiting VM locations to US West in a Production group, is inherited by all subscriptions under it, and the resource or subscription owner can't override it."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque grupos de recursos também herdam, mas exige uma atribuição por assinatura e não cobre o conjunto de uma vez.",
+      "en": "Option A is tempting because resource groups also inherit, but it needs one assignment per subscription and doesn't cover the whole set at once."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Aplicar a política a um grupo de recursos em cada assinatura",
+          "en": "Apply the policy to a resource group in each subscription"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Colocar as assinaturas de produção em um grupo de gerenciamento e aplicar a política ao grupo",
+          "en": "Place the production subscriptions in a management group and apply the policy to the group"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Criar uma nova assinatura e mover todos os recursos para ela",
+          "en": "Create one new subscription and move all the resources into it"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Aplicar a política a cada máquina virtual individualmente",
+          "en": "Apply the policy to each virtual machine individually"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-01-06-02",
+    "requirement": "A06",
+    "subject": "regras dos grupos de gerenciamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Grupos de gerenciamento ficam acima das assinaturas, e cada grupo de gerenciamento e cada assinatura têm apenas um pai. Uma política herdada de um grupo de gerenciamento não pode ser substituída pelo proprietário do recurso ou da assinatura.",
+      "en": "Management groups sit above subscriptions, and each management group and subscription has only one parent. A policy inherited from a management group can't be overridden by the resource or subscription owner."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque proprietários geralmente controlam sua assinatura, mas a governança herdada não pode ser substituída.",
+      "en": "Statement 3 is tempting because owners usually control their subscription, but inherited governance can't be overridden."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Grupos de gerenciamento ficam acima das assinaturas.",
+          "en": "Management groups sit above subscriptions."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Cada grupo de gerenciamento e cada assinatura podem ter apenas um pai.",
+          "en": "Each management group and each subscription can have only one parent."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O proprietário de uma assinatura pode substituir uma política que a assinatura herda do seu grupo de gerenciamento.",
+          "en": "The owner of a subscription can override a policy that the subscription inherits from its management group."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-01-06-03",
+    "requirement": "A06",
+    "subject": "benefícios dos grupos de gerenciamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois benefícios os grupos de gerenciamento oferecem? Escolha dois.",
+      "en": "Which two benefits do management groups provide? Choose two."
+    },
+    "explanation": {
+      "pt": "Grupos de gerenciamento permitem aplicar uma política em várias assinaturas e conceder acesso a muitas assinaturas com uma única atribuição de Azure RBAC no grupo; todos os subgrupos de gerenciamento, assinaturas, grupos de recursos e recursos abaixo herdam essa atribuição.",
+      "en": "Management groups let you apply a policy across subscriptions and grant access to many subscriptions with one Azure RBAC assignment on the group; all sub-management groups, subscriptions, resource groups, and resources underneath inherit it."
+    },
+    "distractors": {
+      "pt": "A alternativa A é um recurso das assinaturas, o vizinho tentador.",
+      "en": "Option A is a subscription feature, the tempting neighbor."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Eles geram faturas de cobrança separadas para cada assinatura.",
+          "en": "They generate separate billing invoices for each subscription."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Eles permitem aplicar uma política em várias assinaturas.",
+          "en": "They let you apply a policy across multiple subscriptions."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Eles replicam recursos entre regiões.",
+          "en": "They replicate resources across regions."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Eles permitem aninhar grupos de recursos.",
+          "en": "They let you nest resource groups."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Eles permitem conceder acesso a várias assinaturas com uma única atribuição de Azure RBAC no grupo.",
+          "en": "They let you grant access to multiple subscriptions with a single Azure RBAC assignment on the group."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-01-06-04",
+    "requirement": "A06",
+    "subject": "grupo de gerenciamento raiz",
+    "level": "essential",
+    "stem": {
+      "pt": "Todo locatário do Microsoft Entra tem um único grupo de gerenciamento de nível superior. Todos os outros grupos de gerenciamento e assinaturas se reúnem nele, de modo que você pode aplicar políticas de governança globalmente. Como ele se chama?",
+      "en": "Every Microsoft Entra tenant has a single top-level management group. All other management groups and subscriptions fold up to it, so you can apply governance policies globally. What is it called?"
+    },
+    "explanation": {
+      "pt": "Todo locatário do Microsoft Entra tem um único Tenant Root Group de nível superior. Todos os outros grupos de gerenciamento e assinaturas se reúnem nesse grupo raiz.",
+      "en": "Every Microsoft Entra tenant has a single top-level Tenant Root Group. All other management groups and subscriptions fold up to this root group."
+    },
+    "distractors": {
+      "pt": "Assinatura raiz é tentadora porque as assinaturas são o nível logo abaixo, mas a raiz é um grupo de gerenciamento.",
+      "en": "Root subscription is tempting because subscriptions are the next level down, but the root is a management group."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Grupo Raiz do Locatário (Tenant Root Group)",
+          "en": "Tenant Root Group"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Assinatura raiz",
+          "en": "Root subscription"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Grupo de recursos padrão",
+          "en": "Default resource group"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Região global",
+          "en": "Global region"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-01-06-05",
+    "requirement": "A06",
+    "subject": "regras dos grupos de gerenciamento",
+    "level": "detail",
+    "stem": {
+      "pt": "Qual afirmação sobre grupos de gerenciamento está correta de acordo com o Microsoft Learn?",
+      "en": "Which statement about management groups is correct according to Microsoft Learn?"
+    },
+    "explanation": {
+      "pt": "Cada grupo de gerenciamento e assinatura pode ter apenas um pai. Grupos de gerenciamento podem ser aninhados em até seis níveis, sem contar o nível raiz nem o nível da assinatura, e um diretório oferece suporte a até 10.000 grupos de gerenciamento.",
+      "en": "Each management group and subscription can have only one parent. Management groups can be nested up to six levels deep, not counting the root level or the subscription level, and a directory supports up to 10,000 management groups."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque mistura o limite de seis níveis com uma regra de contagem errada; o Learn diz que os níveis raiz e de assinatura não são contados.",
+      "en": "Option D is the most tempting because it mixes the six-level limit with a wrong counting rule; Learn says root and subscription levels are not counted."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Cada assinatura pode ser colocada sob vários grupos de gerenciamento ao mesmo tempo.",
+          "en": "Each subscription can be placed under several management groups at the same time."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Grupos de gerenciamento podem ser aninhados sem nenhum limite de profundidade.",
+          "en": "Management groups can be nested without any depth limit."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Cada grupo de gerenciamento e assinatura pode ter apenas um pai.",
+          "en": "Each management group and subscription can have only one parent."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Grupos de gerenciamento podem ser aninhados em até seis níveis, contando o nível raiz e o nível da assinatura.",
+          "en": "Management groups can be nested up to six levels deep, counting the root level and the subscription level."
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-01-06-06",
+    "requirement": "A06",
+    "subject": "RBAC em grupo de gerenciamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador precisa dar a uma equipe o mesmo acesso a 20 assinaturas sem criar scripts de atribuições do Azure RBAC em cada assinatura individualmente. O que o administrador deve fazer?",
+      "en": "An administrator must give a team the same access to 20 subscriptions without scripting Azure RBAC assignments across each subscription individually. What should the administrator do?"
+    },
+    "explanation": {
+      "pt": "Ao colocar assinaturas sob um grupo de gerenciamento, você cria uma única atribuição de Azure RBAC no grupo; todos os subgrupos de gerenciamento, assinaturas, grupos de recursos e recursos abaixo herdam essas permissões.",
+      "en": "By placing subscriptions under a management group, you create one Azure RBAC assignment on the group; all sub-management groups, subscriptions, resource groups, and resources underneath inherit those permissions."
+    },
+    "distractors": {
+      "pt": "A alternativa A também funciona tecnicamente, mas é o script manual por escopo que o Learn diz que os grupos de gerenciamento eliminam.",
+      "en": "Option A also works technically but is the manual per-scope scripting that Learn says management groups remove."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Criar uma atribuição de Azure RBAC em cada grupo de recursos de cada assinatura",
+          "en": "Create an Azure RBAC assignment on each resource group in every subscription"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Criar uma nova zona de disponibilidade para a equipe",
+          "en": "Create a new availability zone for the team"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Criar uma única atribuição de Azure RBAC no grupo de gerenciamento que contém as 20 assinaturas",
+          "en": "Create one Azure RBAC assignment on the management group that contains the 20 subscriptions"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Criar uma nova assinatura e mover a equipe para ela",
+          "en": "Create a new subscription and move the team into it"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

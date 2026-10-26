@@ -1,0 +1,409 @@
+[
+  {
+    "id": "GOV-01-04-01",
+    "requirement": "G04",
+    "subject": "finalidade das tags",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual recurso do Azure ajuda você a se manter organizado e a acompanhar o uso com base em metadados associados aos recursos?",
+      "en": "Which Azure feature helps you stay organized and track usage based on metadata associated with resources?"
+    },
+    "explanation": {
+      "pt": "As marcas (tags) fornecem informações extras, ou metadados, sobre os recursos. Ajudam no gerenciamento de recursos, de custos, de operações, na segurança, na governança e na automação. Isso corresponde à avaliação deste módulo.",
+      "en": "Tags provide extra information, or metadata, about resources. They help with resource management, cost management, operations, security, governance, and automation. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "Os bloqueios são o vizinho tentador porque também são recursos no nível do recurso, mas impedem alterações e não carregam metadados.",
+      "en": "Locks are the tempting neighbor because they are also resource-level features, but they prevent changes and don't carry metadata."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Marcas (tags)",
+          "en": "Tags"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Rastreadores (tracers)",
+          "en": "Tracers"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Valores (values)",
+          "en": "Values"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Bloqueios (locks)",
+          "en": "Locks"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-01-04-02",
+    "requirement": "G04",
+    "subject": "tags não herdam",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador aplica a marca (tag) CostCenter=1234 a um grupo de recursos. O que acontece com os recursos dentro do grupo de recursos?",
+      "en": "An administrator applies the tag CostCenter=1234 to a resource group. What happens to the resources inside the resource group?"
+    },
+    "explanation": {
+      "pt": "Os recursos não herdam marcas de assinaturas e grupos de recursos. Você pode aplicar marcas em um nível sem que elas apareçam automaticamente em outro nível.",
+      "en": "Resources don't inherit tags from subscriptions and resource groups. You can apply tags at one level without them automatically appearing at another level."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a suposição tentadora porque o RBAC e os bloqueios são herdados, mas as marcas não.",
+      "en": "Option A is the tempting assumption because RBAC and locks are inherited, but tags are not."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Eles herdam a marca automaticamente.",
+          "en": "They automatically inherit the tag."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Eles herdam a marca automaticamente apenas se foram criados antes da marca.",
+          "en": "They automatically inherit the tag only if they were created before the tag."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Eles não herdam a marca; os recursos não herdam marcas de assinaturas ou grupos de recursos.",
+          "en": "They don't inherit the tag; resources don't inherit tags from subscriptions or resource groups."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Eles ficam impedidos de ser excluídos.",
+          "en": "They are blocked from being deleted."
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-01-04-03",
+    "requirement": "G04",
+    "subject": "estrutura da tag",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Uma marca é um par de nome e valor, e um recurso pode ter uma ou mais. As marcas não são herdadas, e você não precisa exigir uma marca específica em todos os recursos; por exemplo, somente recursos de missão crítica podem ter a marca Impact.",
+      "en": "A tag is a name and value pair, and a resource can have one or more. Tags aren't inherited, and you don't need to require a specific tag on all resources; for example, only mission-critical resources might carry the Impact tag."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque consistência soa ideal, mas a marcação é flexível.",
+      "en": "Statement 3 is tempting because consistency sounds ideal, but tagging is flexible."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Uma marca (tag) de recurso consiste em um nome e um valor, e você pode atribuir uma ou mais marcas a cada recurso do Azure.",
+          "en": "A resource tag consists of a name and a value, and you can assign one or more tags to each Azure resource."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os recursos herdam automaticamente as marcas de seu grupo de recursos e de sua assinatura.",
+          "en": "Resources automatically inherit the tags of their resource group and subscription."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Você deve impor que cada marca específica esteja presente em todos os seus recursos.",
+          "en": "You must enforce that every specific tag is present on all of your resources."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-01-04-04",
+    "requirement": "G04",
+    "subject": "usos de tags",
+    "level": "essential",
+    "stem": {
+      "pt": "Para quais três finalidades as marcas (tags) são úteis? Escolha três.",
+      "en": "Which three are purposes for which tags are useful? Choose three."
+    },
+    "explanation": {
+      "pt": "As marcas dão suporte ao gerenciamento de recursos, ao gerenciamento e otimização de custos, ao gerenciamento de operações, à classificação de segurança, à governança e conformidade regulatória e à otimização e automação de cargas de trabalho.",
+      "en": "Tags support resource management, cost management and optimization, operations management, security classification, governance and regulatory compliance, and workload optimization and automation."
+    },
+    "distractors": {
+      "pt": "Desempenho e criptografia são tentadores porque soam técnicos, mas as marcas são metadados e não alteram o comportamento de um recurso.",
+      "en": "Performance and encryption are tempting because they sound technical, but tags are metadata and don't change a resource's behavior."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Aumentar o desempenho das máquinas virtuais",
+          "en": "Increasing the performance of virtual machines"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Agrupar recursos para relatar custos e alocar centros de custo internos",
+          "en": "Grouping resources so you can report on costs and allocate internal cost centers"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Criptografar dados em repouso",
+          "en": "Encrypting data at rest"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Classificar dados por nível de segurança, como público ou confidencial",
+          "en": "Classifying data by security level, such as public or confidential"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Localizar e agir em recursos associados a cargas de trabalho, ambientes, equipes e proprietários específicos",
+          "en": "Locating and acting on resources associated with specific workloads, environments, teams, and owners"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-01-04-05",
+    "requirement": "G04",
+    "subject": "exemplos de tags",
+    "level": "detail",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Na estrutura de marcação de exemplo: Impact (importância para as operações), CostCenter (código do centro de custo interno), Owner (proprietário técnico ou do serviço), Environment (Prod, Dev, Test) e AppName (aplicativo ao qual o recurso pertence).",
+      "en": "In the example tagging structure: Impact (importance to operations), CostCenter (internal cost center code), Owner (technical or service owner), Environment (Prod, Dev, Test), and AppName (application the resource belongs to)."
+    },
+    "distractors": {
+      "pt": "AppName é a opção distratora: nomeia o aplicativo, e não o proprietário nem o ambiente.",
+      "en": "AppName is the distractor option: it names the application, not the owner or the environment."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A importância do recurso para as operações, como Mission-critical, High-impact ou Low-impact",
+          "en": "How important the resource is to operations, such as Mission-critical, High-impact, or Low-impact"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O código do centro de custo interno",
+          "en": "The internal cost center code"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O nome do proprietário técnico ou do serviço responsável pelo recurso",
+          "en": "The name of the technical or service owner who is responsible for the resource"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Um nome de ambiente, como Prod, Dev ou Test",
+          "en": "An environment name, such as Prod, Dev, or Test"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Impact",
+          "en": "Impact"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "CostCenter",
+          "en": "CostCenter"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Environment",
+          "en": "Environment"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Owner",
+          "en": "Owner"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "AppName",
+          "en": "AppName"
+        }
+      }
+    ],
+    "answer": {
+      "1": "A",
+      "2": "B",
+      "3": "D",
+      "4": "C"
+    }
+  },
+  {
+    "id": "GOV-01-04-06",
+    "requirement": "G04",
+    "subject": "Azure Policy para tags",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer exigir que certas marcas (tags) sejam adicionadas a novos recursos conforme são provisionados e reaplicar marcas que foram removidas. Qual recurso do Azure ela deve usar?",
+      "en": "A company wants to require that certain tags be added to new resources as they are provisioned, and to reapply tags that were removed. Which Azure feature should it use?"
+    },
+    "explanation": {
+      "pt": "Você pode usar o Azure Policy para impor regras e convenções de marcação, como exigir certas marcas em novos recursos e reaplicar marcas removidas.",
+      "en": "You can use Azure Policy to enforce tagging rules and conventions, such as requiring certain tags on new resources and reapplying tags that have been removed."
+    },
+    "distractors": {
+      "pt": "Bloqueios de recursos e RBAC são vizinhos de governança tentadores, mas nenhum impõe regras de marcação.",
+      "en": "Resource locks and RBAC are tempting governance neighbors, but neither enforces tag rules."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Bloqueios de recursos (resource locks)",
+          "en": "Resource locks"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Controle de acesso baseado em função do Azure",
+          "en": "Azure role-based access control"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Análise de custos",
+          "en": "Cost analysis"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-01-04-07",
+    "requirement": "G04",
+    "subject": "tags para rateio de custo",
+    "level": "essential",
+    "stem": {
+      "pt": "O financeiro quer um relatório de custos por departamento. Os recursos pertencem a vários grupos de recursos e assinaturas. Qual recurso do Azure permite agrupar esses recursos por departamento independentemente de onde estejam?",
+      "en": "Finance wants a cost report by department. The resources belong to several resource groups and subscriptions. Which Azure feature lets the company group these resources by department regardless of where they are placed?"
+    },
+    "explanation": {
+      "pt": "As marcas (tags) de recurso são outra forma de organizar recursos, além de assinaturas e grupos de recursos, e permitem agrupar recursos para relatar custos e alocar centros de custo internos.",
+      "en": "Resource tags are another way to organize resources, in addition to subscriptions and resource groups, and let you group resources to report on costs and allocate internal cost centers."
+    },
+    "distractors": {
+      "pt": "Grupos de recursos são a alternativa tentadora para organização, mas um recurso pertence a apenas um grupo, e as marcas podem atravessar grupos e assinaturas.",
+      "en": "Resource groups are the tempting alternative for organization, but a resource belongs to only one group, and tags can cross groups and subscriptions."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Bloqueios de recursos",
+          "en": "Resource locks"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Zonas de disponibilidade",
+          "en": "Availability zones"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Marcas (tags) de recurso",
+          "en": "Resource tags"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Pares de regiões",
+          "en": "Region pairs"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

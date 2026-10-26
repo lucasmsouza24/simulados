@@ -1,0 +1,437 @@
+[
+  {
+    "id": "CLOUD-03-04-01",
+    "requirement": "N15",
+    "subject": "IaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer migrar cargas de trabalho locais para a nuvem configurando recursos de nuvem semelhantes ao seu datacenter e depois movendo as cargas de trabalho. Qual tipo de serviço é mais adequado e por quê?",
+      "en": "A company wants to migrate on-premises workloads to the cloud by setting up cloud resources similar to its datacenter and then moving the workloads. Which service type is most suited, and why?"
+    },
+    "explanation": {
+      "pt": "A migração lift-and-shift é um cenário comum de IaaS: você configura recursos de nuvem semelhantes ao seu datacenter local e depois move suas cargas de trabalho para a infraestrutura IaaS. Também corresponde à avaliação do módulo desta unidade.",
+      "en": "Lift-and-shift migration is a common IaaS scenario: you set up cloud resources similar to your on-premises datacenter and then move your workloads to the IaaS infrastructure. It also matches the module assessment of this unit."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a tentadora porque plataformas gerenciadas soam mais fáceis, mas o PaaS muda o que a plataforma fornece e não replica o datacenter.",
+      "en": "Option B is the tempting one because managed platforms sound easier, but PaaS changes what the platform provides and does not replicate the datacenter."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "SaaS, porque é o mais fácil de colocar em funcionamento",
+          "en": "SaaS, because it is the easiest to get up and running"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "PaaS, porque o provedor mantém os sistemas operacionais e o middleware, então as cargas de trabalho não precisam de alterações",
+          "en": "PaaS, because the provider maintains the operating systems and middleware, so the workloads need no changes"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "IaaS, porque você pode configurar recursos de nuvem semelhantes ao seu datacenter e depois mover suas cargas de trabalho",
+          "en": "IaaS, because you can set up cloud resources similar to your datacenter and then move your workloads"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "PaaS, porque inclui uma estrutura de desenvolvimento para migrar aplicativos",
+          "en": "PaaS, because it includes a development framework for migrating applications"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-03-04-02",
+    "requirement": "N15",
+    "subject": "SaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa de uma solução de finanças e controle de despesas que sua equipe possa começar a usar rapidamente, sem conhecimento técnico. Em qual tipo de serviço de nuvem isso normalmente se enquadra?",
+      "en": "A company needs a finance and expense tracking solution that its staff can start using quickly, without technical expertise. Which cloud service type does this typically fall under?"
+    },
+    "explanation": {
+      "pt": "Finanças e controle de despesas é um cenário típico de SaaS, junto com email e mensagens e aplicativos de produtividade. Corresponde à avaliação do módulo desta unidade.",
+      "en": "Finance and expense tracking is a typical SaaS scenario, alongside email and messaging and productivity applications. It matches the module assessment of this unit."
+    },
+    "distractors": {
+      "pt": "O PaaS é tentador porque poderia hospedar esse aplicativo, mas a empresa quer usar um aplicativo pronto, e não construir um.",
+      "en": "PaaS is tempting because it could host such an application, but the company wants to use a finished application, not build one."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/4-describe-software-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Software como serviço (SaaS)",
+          "en": "Software as a service (SaaS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Plataforma como serviço (PaaS)",
+          "en": "Platform as a service (PaaS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Infraestrutura como serviço (IaaS)",
+          "en": "Infrastructure as a service (IaaS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud)",
+          "en": "Hybrid cloud"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-03-04-03",
+    "requirement": "N15",
+    "subject": "IaaS para dev e teste",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe precisa replicar rapidamente configurações já estabelecidas para ambientes de desenvolvimento e teste, iniciar ou desligar rapidamente ambientes diferentes e manter controle total. Qual tipo de serviço se encaixa melhor e por quê?",
+      "en": "A team must rapidly replicate established configurations for development and test environments, start up or shut down different environments quickly, and keep complete control. Which service type best fits, and why?"
+    },
+    "explanation": {
+      "pt": "Teste e desenvolvimento é um cenário comum de IaaS: você pode replicar rapidamente configurações estabelecidas e iniciar ou desligar ambientes mantendo controle total.",
+      "en": "Testing and development is a common IaaS scenario: you can rapidly replicate established configurations and start up or shut down environments while maintaining complete control."
+    },
+    "distractors": {
+      "pt": "As alternativas A e D são as tentadoras porque o PaaS também é associado a desenvolvimento, mas a restrição principal é o controle total.",
+      "en": "Options A and D are the tempting ones because PaaS is also associated with development, but the key constraint is complete control."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "PaaS, porque oferece um ambiente de desenvolvimento completo sem a necessidade de manter a infraestrutura de desenvolvimento",
+          "en": "PaaS, because it provides a complete development environment without maintaining the development infrastructure"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "IaaS, porque você pode iniciar ou desligar ambientes rapidamente mantendo controle total",
+          "en": "IaaS, because you can start up or shut down environments rapidly while maintaining complete control"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "SaaS, porque é um aplicativo totalmente desenvolvido",
+          "en": "SaaS, because it is a fully developed application"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "PaaS, porque o provedor cuida do licenciamento e dos patches dos sistemas operacionais",
+          "en": "PaaS, because the provider handles the licensing and patching of operating systems"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-03-04-04",
+    "requirement": "N15",
+    "subject": "PaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Desenvolvedores querem uma estrutura para criar ou personalizar aplicativos baseados em nuvem usando componentes de software integrados, com escalabilidade, alta disponibilidade e capacidade multilocatário incluídas para reduzir a quantidade de codificação. Qual tipo de serviço se encaixa e por quê?",
+      "en": "Developers want a framework to build or customize cloud-based applications using built-in software components, with scalability, high availability, and multitenant capability included to reduce the amount of coding. Which service type fits, and why?"
+    },
+    "explanation": {
+      "pt": "Uma estrutura de desenvolvimento é um cenário comum de PaaS: os desenvolvedores constroem sobre uma estrutura com componentes de software integrados, e recursos como escalabilidade, alta disponibilidade e capacidade multilocatário são incluídos.",
+      "en": "A development framework is a common PaaS scenario: developers build on a framework with built-in software components, and features such as scalability, high availability, and multitenant capability are included."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque descreve o que o IaaS deixa para você, que é justamente por que o PaaS é a melhor resposta.",
+      "en": "Option C is tempting because it describes what IaaS leaves to you, which is exactly why PaaS is the better answer."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "IaaS, porque os desenvolvedores têm o máximo de controle sobre os sistemas operacionais",
+          "en": "IaaS, because developers get maximum control over operating systems"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "SaaS, porque o provedor entrega um aplicativo totalmente desenvolvido",
+          "en": "SaaS, because the provider delivers a fully developed application"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "IaaS, porque escalabilidade e alta disponibilidade devem ser criadas pelos desenvolvedores",
+          "en": "IaaS, because scalability and high availability must be built by the developers"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "PaaS, porque fornece uma estrutura com componentes integrados que reduz a codificação que os desenvolvedores precisam fazer",
+          "en": "PaaS, because it provides a framework with built-in components that reduces the coding developers must do"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-03-04-05",
+    "requirement": "N15",
+    "subject": "casos de uso por tipo de serviço",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Email e mensagens é um cenário de SaaS. Ferramentas de análise ou business intelligence fornecidas como serviço são um cenário de PaaS. A migração lift-and-shift é um cenário de IaaS.",
+      "en": "Email and messaging is a SaaS scenario. Analytics or business intelligence tools provided as a service are a PaaS scenario. Lift-and-shift migration is an IaaS scenario."
+    },
+    "distractors": {
+      "pt": "O cenário de análise é o tentador para SaaS por ser uma ferramenta, mas o Learn coloca análise e business intelligence em PaaS.",
+      "en": "The analytics scenario is the tempting one for SaaS because it is a tool, but Learn places analytics and business intelligence under PaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Email e mensagens",
+          "en": "Email and messaging"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Ferramentas fornecidas como serviço para analisar e minerar dados, encontrar insights e padrões e prever resultados",
+          "en": "Tools provided as a service to analyze and mine data, find insights and patterns, and predict outcomes"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Migração lift-and-shift",
+          "en": "Lift-and-shift migration"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "PaaS",
+          "en": "PaaS"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "SaaS",
+          "en": "SaaS"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "IaaS",
+          "en": "IaaS"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "A",
+      "3": "C"
+    }
+  },
+  {
+    "id": "CLOUD-03-04-06",
+    "requirement": "N15",
+    "subject": "casos de uso por tipo de serviço",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Lift-and-shift e teste e desenvolvimento são cenários de IaaS; email e mensagens é SaaS. O SaaS é o menos flexível, então o controle total não é seu ponto forte.",
+      "en": "Lift-and-shift and testing and development are IaaS scenarios; email and messaging is SaaS. SaaS is the least flexible, so complete control is not its strength."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque o SaaS é o mais fácil de começar, mas o controle total é o ponto forte do IaaS.",
+      "en": "Statement 3 is tempting because SaaS is the easiest to start, but complete control is the IaaS strength."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O IaaS é uma escolha comum para migração lift-and-shift.",
+          "en": "IaaS is a common choice for lift-and-shift migration."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O PaaS é normalmente o tipo de serviço para email e mensagens.",
+          "en": "PaaS is typically the service type for email and messaging."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O SaaS é adequado para ambientes de desenvolvimento e teste nos quais você precisa de controle total.",
+          "en": "SaaS is well suited to development and test environments in which you need complete control."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-03-04-07",
+    "requirement": "N15",
+    "subject": "PaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois são cenários comuns para o PaaS? Escolha dois.",
+      "en": "Which two are common scenarios for PaaS? Choose two."
+    },
+    "explanation": {
+      "pt": "O Learn lista uma estrutura de desenvolvimento e análise ou business intelligence como cenários comuns de PaaS. Lift-and-shift e teste e desenvolvimento são IaaS; email e mensagens é SaaS.",
+      "en": "Learn lists a development framework and analytics or business intelligence as common PaaS scenarios. Lift-and-shift and test-and-development are IaaS; email and messaging is SaaS."
+    },
+    "distractors": {
+      "pt": "A alternativa E é a mais tentadora porque cita teste e desenvolvimento, mas o requisito de controle total aponta para IaaS.",
+      "en": "Option E is the most tempting because it mentions testing and development, but the complete-control requirement points to IaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Migração lift-and-shift",
+          "en": "Lift-and-shift migration"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Análise ou business intelligence",
+          "en": "Analytics or business intelligence"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Email e mensagens",
+          "en": "Email and messaging"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma estrutura de desenvolvimento com componentes de software integrados",
+          "en": "A development framework with built-in software components"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Replicar rapidamente ambientes de teste mantendo controle total",
+          "en": "Rapidly replicating test environments while maintaining complete control"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "CLOUD-03-04-08",
+    "requirement": "N15",
+    "subject": "flexibilidade por tipo de serviço",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual opção lista os tipos de serviço de nuvem da maior flexibilidade para a menor flexibilidade?",
+      "en": "Which option lists the cloud service types from the most flexibility to the least flexibility?"
+    },
+    "explanation": {
+      "pt": "O IaaS é a categoria mais flexível, com o máximo de controle, o PaaS é um meio-termo e o SaaS pode ser o menos flexível, embora seja o mais fácil de colocar em funcionamento.",
+      "en": "IaaS is the most flexible category with the maximum control, PaaS is a middle ground, and SaaS may be the least flexible while being the easiest to get running."
+    },
+    "distractors": {
+      "pt": "A alternativa A é exatamente o inverso e é tentadora se você ordena por quão completo é o produto, e não pela flexibilidade.",
+      "en": "Option A is the exact reverse and is tempting if you order by how complete the product is instead of by flexibility."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/4-describe-software-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "SaaS, PaaS, IaaS",
+          "en": "SaaS, PaaS, IaaS"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "PaaS, IaaS, SaaS",
+          "en": "PaaS, IaaS, SaaS"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "IaaS, PaaS, SaaS",
+          "en": "IaaS, PaaS, SaaS"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "IaaS, SaaS, PaaS",
+          "en": "IaaS, SaaS, PaaS"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

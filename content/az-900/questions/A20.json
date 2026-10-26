@@ -1,0 +1,394 @@
+[
+  {
+    "id": "ARCH-04-01-01",
+    "requirement": "A20",
+    "subject": "Entra ID",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer um serviço de gerenciamento de identidade e acesso baseado em nuvem que permita que os usuários entrem e acessem aplicativos de nuvem da Microsoft e aplicativos de nuvem desenvolvidos pela própria empresa. Qual serviço se encaixa?",
+      "en": "A company wants a cloud-based identity and access management service that lets users sign in and access Microsoft cloud applications and cloud applications that the company develops. Which service fits?"
+    },
+    "explanation": {
+      "pt": "O Microsoft Entra ID é o serviço de gerenciamento de identidade e acesso baseado em nuvem da Microsoft, usado para entrar e acessar aplicativos de nuvem da Microsoft e aplicativos de nuvem que você desenvolve.",
+      "en": "Microsoft Entra ID is Microsoft's cloud-based identity and access management service for signing in to and accessing Microsoft cloud applications and cloud applications that you develop."
+    },
+    "distractors": {
+      "pt": "O Microsoft Entra Domain Services é o vizinho tentador porque também está relacionado a diretório, mas fornece serviços de domínio gerenciados para aplicativos legados.",
+      "en": "Microsoft Entra Domain Services is the tempting neighbor because it is also directory-related, but it provides managed domain services for legacy applications."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Microsoft Entra Domain Services",
+          "en": "Microsoft Entra Domain Services"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Microsoft Entra ID",
+          "en": "Microsoft Entra ID"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure role-based access control",
+          "en": "Azure role-based access control"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-04-01-02",
+    "requirement": "A20",
+    "subject": "Entra Connect",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa tem um Active Directory local e um locatário do Microsoft Entra ID e não quer manter dois conjuntos separados de identidades. Qual serviço sincroniza as identidades de usuário entre os dois?",
+      "en": "A company has an on-premises Active Directory and a Microsoft Entra ID tenant, and doesn't want to maintain two separate sets of identities. Which service synchronizes user identities between the two?"
+    },
+    "explanation": {
+      "pt": "O Microsoft Entra Connect sincroniza identidades de usuário entre o Active Directory local e o Microsoft Entra ID, de modo que os usuários tenham uma experiência consistente, incluindo SSO, autenticação multifator e redefinição de senha self-service.",
+      "en": "Microsoft Entra Connect synchronizes user identities between on-premises Active Directory and Microsoft Entra ID, so users get a consistent experience, including SSO, multifactor authentication, and self-service password reset."
+    },
+    "distractors": {
+      "pt": "O Microsoft Entra Domain Services é o vizinho tentador porque também envolve recursos do Active Directory, mas não faz a ponte com o seu diretório local.",
+      "en": "Microsoft Entra Domain Services is the tempting neighbor because it also touches Active Directory features, but it does not bridge your on-premises directory."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Microsoft Entra Domain Services",
+          "en": "Microsoft Entra Domain Services"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Key Vault",
+          "en": "Azure Key Vault"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-04-01-03",
+    "requirement": "A20",
+    "subject": "Entra Domain Services",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer fazer lift and shift de um aplicativo legado que não consegue usar autenticação moderna. O aplicativo precisa de ingresso no domínio, política de grupo, LDAP e autenticação Kerberos/NTLM, e a empresa não quer implantar nem manter controladores de domínio na nuvem. Qual serviço se encaixa?",
+      "en": "A company wants to lift and shift a legacy application that can't use modern authentication. The application needs domain join, group policy, LDAP, and Kerberos/NTLM authentication, and the company doesn't want to deploy or maintain domain controllers in the cloud. Which service fits?"
+    },
+    "explanation": {
+      "pt": "O Microsoft Entra Domain Services fornece serviços de domínio gerenciados (ingresso no domínio, política de grupo, LDAP, Kerberos/NTLM) sem implantar nem manter controladores de domínio, o que atende a aplicativos legados que não usam autenticação moderna.",
+      "en": "Microsoft Entra Domain Services provides managed domain services (domain join, group policy, LDAP, Kerberos/NTLM) without deploying or maintaining domain controllers, which suits legacy applications that can't use modern authentication."
+    },
+    "distractors": {
+      "pt": "O Microsoft Entra ID sozinho é tentador, mas não oferece ingresso no domínio, política de grupo, LDAP nem Kerberos/NTLM.",
+      "en": "Microsoft Entra ID alone is tempting, but it doesn't provide domain join, group policy, LDAP, or Kerberos/NTLM."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Microsoft Entra Domain Services",
+          "en": "Microsoft Entra Domain Services"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Microsoft Entra ID alone",
+          "en": "Microsoft Entra ID alone"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Entra External ID",
+          "en": "Microsoft Entra External ID"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-04-01-04",
+    "requirement": "A20",
+    "subject": "Entra ID vs Connect vs Domain Services",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Microsoft Entra ID cobre os recursos de autenticação. O Microsoft Entra Connect sincroniza identidades entre o Active Directory local e o Microsoft Entra ID. O Microsoft Entra Domain Services oferece serviços de domínio gerenciados para aplicativos legados.",
+      "en": "Microsoft Entra ID covers authentication features. Microsoft Entra Connect synchronizes identities between on-premises Active Directory and Microsoft Entra ID. Microsoft Entra Domain Services offers managed domain services for legacy applications."
+    },
+    "distractors": {
+      "pt": "Entra Connect e Entra Domain Services são o par mais trocado: um sincroniza identidades, o outro hospeda serviços de domínio gerenciados.",
+      "en": "Entra Connect and Entra Domain Services are the most swapped pair: one syncs identities, the other hosts managed domain services."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Fornece recursos de autenticação, como redefinição de senha self-service, autenticação multifator, listas de senhas banidas e bloqueio inteligente (smart lockout)",
+          "en": "Provides authentication features such as self-service password reset, multifactor authentication, banned password lists, and smart lockout"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Faz a ponte entre um Active Directory local e o diretório na nuvem sincronizando identidades de usuário",
+          "en": "Bridges an on-premises Active Directory and the cloud directory by synchronizing user identities"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Fornece ingresso no domínio, política de grupo, LDAP e Kerberos/NTLM gerenciados, sem implantar controladores de domínio",
+          "en": "Provides managed domain join, group policy, LDAP, and Kerberos/NTLM without deploying domain controllers"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Microsoft Entra ID",
+          "en": "Microsoft Entra ID"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Entra Domain Services",
+          "en": "Microsoft Entra Domain Services"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Controle de acesso baseado em função do Azure",
+          "en": "Azure role-based access control"
+        }
+      }
+    ],
+    "answer": {
+      "1": "A",
+      "2": "B",
+      "3": "C"
+    }
+  },
+  {
+    "id": "ARCH-04-01-05",
+    "requirement": "A20",
+    "subject": "sincronização do Domain Services",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O domínio gerenciado faz sincronização unidirecional a partir do Microsoft Entra ID, e os usuários entram com credenciais existentes. Você pode criar recursos diretamente no domínio gerenciado, mas eles não são sincronizados de volta ao Microsoft Entra ID.",
+      "en": "The managed domain performs one-way synchronization from Microsoft Entra ID, and users sign in with existing credentials. You can create resources directly in the managed domain, but they aren't synchronized back to Microsoft Entra ID."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque o Microsoft Entra Connect sincroniza nos dois sentidos, mas o domínio gerenciado não.",
+      "en": "Statement 3 is tempting because Microsoft Entra Connect syncs in both directions, but the managed domain does not."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Um domínio gerenciado do Microsoft Entra Domain Services é configurado para sincronização unidirecional do Microsoft Entra ID para o Microsoft Entra Domain Services.",
+          "en": "A Microsoft Entra Domain Services managed domain is configured for one-way synchronization from Microsoft Entra ID to Microsoft Entra Domain Services."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os usuários podem entrar em um domínio gerenciado do Microsoft Entra Domain Services com suas credenciais existentes do Microsoft Entra.",
+          "en": "Users can sign in to a Microsoft Entra Domain Services managed domain with their existing Microsoft Entra credentials."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Os recursos criados diretamente no domínio gerenciado são sincronizados de volta para o Microsoft Entra ID.",
+          "en": "Resources created directly in the managed domain are synchronized back to Microsoft Entra ID."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-04-01-06",
+    "requirement": "A20",
+    "subject": "serviços do Entra ID",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são serviços fornecidos pelo Microsoft Entra ID? Escolha três.",
+      "en": "Which three are services that Microsoft Entra ID provides? Choose three."
+    },
+    "explanation": {
+      "pt": "O Microsoft Entra ID fornece autenticação, logon único, gerenciamento de aplicativos e gerenciamento de dispositivos (por exemplo, com o Microsoft Intune, habilitando o Acesso Condicional baseado em dispositivo).",
+      "en": "Microsoft Entra ID provides authentication, single sign-on, application management, and device management (for example with Microsoft Intune, enabling device-based Conditional Access)."
+    },
+    "distractors": {
+      "pt": "As alternativas B e E pertencem a serviços de computação e rede, e não ao serviço de identidade.",
+      "en": "Options B and E belong to compute and networking services, not to the identity service."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Autenticação, incluindo redefinição de senha self-service e autenticação multifator",
+          "en": "Authentication, including self-service password reset and multifactor authentication"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Hospedagem de conjuntos de dimensionamento de máquinas virtuais",
+          "en": "Hosting of virtual machine scale sets"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Logon único (SSO), que permite que uma identidade acesse vários aplicativos",
+          "en": "Single sign-on (SSO) that lets one identity access multiple applications"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Gerenciamento de aplicativos, incluindo Application Proxy, integração de aplicativos SaaS e o portal Meus Aplicativos (My Apps)",
+          "en": "Application management, including Application Proxy, SaaS app integration, and the My Apps portal"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Gerenciamento de regras de grupos de segurança de rede",
+          "en": "Management of network security group rules"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "ARCH-04-01-07",
+    "requirement": "A20",
+    "subject": "detecção de logins suspeitos",
+    "level": "detail",
+    "stem": {
+      "pt": "Que proteção adicional você obtém ao conectar um Active Directory local ao Microsoft Entra ID?",
+      "en": "What additional protection do you get when you connect an on-premises Active Directory to Microsoft Entra ID?"
+    },
+    "explanation": {
+      "pt": "Por si só, o Active Directory local não monitora o comportamento de logon. Depois de conectado ao Microsoft Entra ID, a Microsoft pode detectar tentativas de logon suspeitas sem custo extra.",
+      "en": "On its own, on-premises Active Directory doesn't monitor sign-in behavior. Once connected to Microsoft Entra ID, Microsoft can detect suspicious sign-in attempts at no extra cost."
+    },
+    "distractors": {
+      "pt": "A alternativa B é tentadora porque o Entra ID oferece suporte a logon sem senha, mas conectar os diretórios não remove credenciais.",
+      "en": "Option B is tempting because Entra ID supports passwordless sign-in, but connecting the directories doesn't remove credentials."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "A Microsoft substitui automaticamente os controladores de domínio locais por máquinas virtuais no Azure.",
+          "en": "Microsoft replaces the on-premises domain controllers with virtual machines in Azure automatically."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Os logons deixam de precisar de qualquer credencial.",
+          "en": "Sign-ins no longer need any credentials."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A Microsoft pode detectar tentativas de logon suspeitas, como logons de locais inesperados ou de dispositivos desconhecidos, sem custo extra.",
+          "en": "Microsoft can detect suspicious sign-in attempts, such as sign-ins from unexpected locations or unknown devices, at no extra cost."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O Active Directory local é desligado.",
+          "en": "On-premises Active Directory is turned off."
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

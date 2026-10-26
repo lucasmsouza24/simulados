@@ -1,0 +1,213 @@
+[
+  {
+    "id": "CLOUD-01-01-01",
+    "requirement": "N01",
+    "subject": "definição de computação em nuvem",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa de varejo espera um grande pico de tráfego durante um lançamento sazonal. Ela quer adicionar capacidade rapidamente e não quer esperar meses para comprar e instalar servidores físicos. Qual afirmação melhor descreve como a computação em nuvem (cloud computing) atende a essa necessidade?",
+      "en": "A retail company expects a large traffic spike during a seasonal launch. It wants to add capacity quickly and does not want to wait months to buy and install physical servers. Which statement best describes how cloud computing meets this need?"
+    },
+    "explanation": {
+      "pt": "A computação em nuvem é a entrega de serviços de computação (máquinas virtuais, armazenamento, bancos de dados, rede e mais) pela Internet. Como não é limitada pela infraestrutura física, você expande rapidamente sua pegada de TI em vez de construir um datacenter ou esperar por compras.",
+      "en": "Cloud computing is the delivery of computing services (virtual machines, storage, databases, networking, and more) over the internet. Because it is not constrained by physical infrastructure, you can expand your IT footprint rapidly instead of building a datacenter or waiting on procurement."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a mais tentadora por ser um serviço de nuvem real, mas armazenamento é apenas um dos serviços de computação; a definição é mais ampla. A alternativa D descreve colocation, em que o cliente continua dono do hardware.",
+      "en": "Option A is the most tempting because it is a true cloud service, but storage is only one of the computing services; the definition is broader. Option D describes colocation, in which the customer still owns the hardware."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Entrega apenas serviços de armazenamento pela Internet, de modo que a empresa possa arquivar os dados do lançamento sem comprar discos.",
+          "en": "It delivers only storage services over the internet, so the company can archive launch data without buying disks."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Entrega sites acessíveis pela Internet, de modo que a empresa publique suas páginas de lançamento no site de um provedor.",
+          "en": "It delivers websites that are accessible via the internet, so the company publishes its launch pages on a provider's site."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Entrega serviços de computação, como máquinas virtuais, armazenamento, bancos de dados e rede, pela Internet, de modo que a capacidade possa crescer sem construir um novo datacenter.",
+          "en": "It delivers computing services, such as virtual machines, storage, databases, and networking, over the internet, so capacity can expand without building a new datacenter."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Transfere os servidores físicos existentes da empresa para a instalação de um provedor, onde a empresa continua sendo dona do hardware e o mantém.",
+          "en": "It relocates the company's existing physical servers to a provider's facility, where the company keeps owning and maintaining the hardware."
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-01-01-02",
+    "requirement": "N01",
+    "subject": "características da nuvem",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A afirmação 1 é falsa: usar a Internet para entregar serviços significa que a nuvem não fica limitada pela infraestrutura física como um datacenter tradicional. As afirmações 2 e 3 são verdadeiras: a nuvem inclui IoT, ML e IA e oferece alcance global para resiliência regional.",
+      "en": "Statement 1 is false: using the internet to deliver services means the cloud is not constrained by physical infrastructure the way a traditional datacenter is. Statements 2 and 3 are true: cloud adds IoT, ML, and AI, and offers global reach for regional resilience."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque parece um limite natural de qualquer ambiente de TI, mas o ponto central da computação em nuvem é o oposto.",
+      "en": "Statement 1 is tempting because it sounds like a natural limit of any IT environment, but the defining point of cloud computing is the opposite."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Como a computação em nuvem entrega serviços pela Internet, ela é limitada pela infraestrutura física da mesma forma que um datacenter tradicional.",
+          "en": "Because cloud computing delivers services over the internet, it is constrained by physical infrastructure in the same way as a traditional datacenter."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os serviços de nuvem ampliam as ofertas tradicionais de TI para incluir itens como Internet das Coisas (IoT), machine learning (ML) e inteligência artificial (IA).",
+          "en": "Cloud services extend traditional IT offerings to include things like Internet of Things (IoT), machine learning (ML), and artificial intelligence (AI)."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "As plataformas de nuvem podem permitir que as equipes posicionem serviços mais perto dos usuários e projetem resiliência regional sem construir vários datacenters físicos.",
+          "en": "Cloud platforms can let teams place services closer to users and design for regional resilience without building multiple physical datacenters."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "CLOUD-01-01-03",
+    "requirement": "N01",
+    "subject": "provisionamento sob demanda",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. A computação em nuvem muda o planejamento de infraestrutura de longos ciclos de aquisição para ______.",
+      "en": "Complete the sentence. Cloud computing changes infrastructure planning from long procurement cycles to ______."
+    },
+    "explanation": {
+      "pt": "O Microsoft Learn afirma que a computação em nuvem muda o planejamento de infraestrutura de longos ciclos de aquisição para provisionamento sob demanda, permitindo testar, recuperar e adaptar a capacidade mais rápido.",
+      "en": "Microsoft Learn states that cloud computing shifts infrastructure planning from long procurement cycles to on-demand provisioning, so teams can test, recover, and adapt capacity faster."
+    },
+    "distractors": {
+      "pt": "A alternativa C é a mais próxima porque colocation move o hardware para outra instalação, mas a capacidade continua fixa e adquirida com antecedência.",
+      "en": "Option C is the closest neighbor because colocation moves hardware to another facility, but the capacity is still fixed and procured in advance."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "previsão de capacidade concluída com anos de antecedência",
+          "en": "capacity forecasting that is completed years in advance"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "ciclos programados de renovação de hardware",
+          "en": "scheduled hardware refresh cycles"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "contratos de colocation com capacidade fixa",
+          "en": "colocation contracts with fixed capacity"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "provisionamento sob demanda",
+          "en": "on-demand provisioning"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-01-01-04",
+    "requirement": "N01",
+    "subject": "nuvem para pico sazonal",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa de varejo está se preparando para um lançamento sazonal pontual. Quais duas afirmações descrevem como a computação em nuvem ajuda nessa situação? Escolha duas.",
+      "en": "A retail company is preparing for a one-time seasonal launch. Which two statements describe how cloud computing helps in this situation? Choose two."
+    },
+    "explanation": {
+      "pt": "O exemplo prático do Learn implanta capacidade extra para o período do lançamento e reduz depois, alinhando o gasto à demanda. Ele também cita que o alcance global permite posicionar serviços mais perto dos usuários sem construir vários datacenters físicos.",
+      "en": "Learn's practical example deploys extra capacity for the launch period and scales down afterward, aligning spending to demand. It also notes that global reach lets teams place services closer to users without building multiple physical datacenters."
+    },
+    "distractors": {
+      "pt": "As alternativas A e D são as abordagens tradicionais (construir ou comprar antes) que a nuvem busca substituir; a alternativa C ignora a capacidade de reduzir.",
+      "en": "Options A and D are the traditional approaches (build or buy ahead) that cloud computing is meant to replace; option C ignores the ability to scale down."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Construir um segundo datacenter para posicionar serviços mais perto dos usuários.",
+          "en": "Build a second datacenter to place services closer to users."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Implantar capacidade de computação adicional para o período do lançamento e reduzi-la depois.",
+          "en": "Deploy additional compute capacity for the launch period and scale down afterward."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Manter a capacidade fixa o ano todo para que o gasto permaneça constante.",
+          "en": "Keep capacity fixed all year so that spending stays constant."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Encomendar servidores físicos extras com meses de antecedência para evitar atrasos.",
+          "en": "Order extra physical servers months in advance to avoid delays."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Posicionar serviços mais perto dos usuários sem construir vários datacenters físicos.",
+          "en": "Place services closer to users without building multiple physical datacenters."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  }
+]

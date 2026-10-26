@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ARCH-02-02-01",
+    "requirement": "A09",
+    "subject": "conjuntos de disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer reduzir a chance de que todas as suas máquinas virtuais em uma região sejam afetadas por um único evento de manutenção planejada ou falha de hardware. Qual recurso agrupa as VMs por domínio de atualização e domínio de falha para isso?",
+      "en": "A company wants to reduce the chance that all of its virtual machines in a region are affected by a single planned maintenance event or hardware failure. Which feature groups VMs by update domain and fault domain to achieve this?"
+    },
+    "explanation": {
+      "pt": "Os conjuntos de disponibilidade melhoram a resiliência das VMs dentro de uma região e agrupam as VMs por domínio de atualização (reiniciadas juntas durante a manutenção planejada) e domínio de falha (compartilham um possível ponto de falha de energia ou rede). Isso corresponde à avaliação do módulo desta unidade.",
+      "en": "Availability sets improve VM resiliency inside a region and group VMs by update domain (rebooted together during planned maintenance) and fault domain (share a potential power or network failure point). This matches the module assessment of this unit."
+    },
+    "distractors": {
+      "pt": "As zonas de disponibilidade são o vizinho tentador porque também isolam falhas, mas são datacenters fisicamente separados, e não agrupamentos por domínio de atualização e de falha.",
+      "en": "Availability zones are the tempting neighbor because they also isolate failures, but they are physically separate datacenters, not update-domain and fault-domain groupings."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Conjuntos de dimensionamento de máquinas virtuais (scale sets)",
+          "en": "Virtual machine scale sets"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Conjuntos de disponibilidade (availability sets)",
+          "en": "Availability sets"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Virtual Desktop",
+          "en": "Azure Virtual Desktop"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Zonas de disponibilidade (availability zones)",
+          "en": "Availability zones"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-02-02-02",
+    "requirement": "A09",
+    "subject": "conjuntos de dimensionamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa de um grupo de máquinas virtuais idênticas e com balanceamento de carga que escalem automaticamente (scale out e scale in) com base na demanda ou em um agendamento, com configuração centralizada. Qual recurso do Azure se encaixa?",
+      "en": "A company needs a group of identical, load-balanced virtual machines that automatically scale out or in based on demand or a schedule, with centralized configuration. Which Azure feature fits?"
+    },
+    "explanation": {
+      "pt": "Os conjuntos de dimensionamento de máquinas virtuais criam e gerenciam grupos de VMs idênticas com balanceamento de carga, centralizam a configuração e podem escalar automaticamente com base na demanda ou em agendamentos.",
+      "en": "Virtual machine scale sets create and manage groups of identical, load-balanced VMs, centralize configuration, and can automatically scale out or in based on demand or schedules."
+    },
+    "distractors": {
+      "pt": "Os conjuntos de disponibilidade são o vizinho tentador porque também agrupam VMs, mas oferecem redundância, e não dimensionamento automático.",
+      "en": "Availability sets are the tempting neighbor because they also group VMs, but they provide redundancy, not automatic scaling."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Conjuntos de disponibilidade (availability sets)",
+          "en": "Availability sets"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Virtual Desktop",
+          "en": "Azure Virtual Desktop"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Container Instances",
+          "en": "Azure Container Instances"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Conjuntos de dimensionamento de máquinas virtuais (scale sets)",
+          "en": "Virtual machine scale sets"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-02-02-03",
+    "requirement": "A09",
+    "subject": "domínios de falha e atualização e AVD",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Domínios de atualização agrupam VMs que podem ser reiniciadas juntas durante a manutenção planejada; domínios de falha agrupam VMs que compartilham um possível ponto de falha de energia ou rede. Os scale sets gerenciam VMs idênticas com balanceamento de carga. O Azure Virtual Desktop entrega desktops e aplicativos Windows.",
+      "en": "Update domains group VMs that can be rebooted together during planned maintenance; fault domains group VMs that share a potential power or network failure point. Scale sets manage identical load-balanced VMs. Azure Virtual Desktop delivers Windows desktops and apps."
+    },
+    "distractors": {
+      "pt": "Domínio de atualização e domínio de falha são o par mais trocado: um trata de manutenção planejada, o outro de pontos de falha compartilhados.",
+      "en": "Update domain and fault domain are the most swapped pair: one is about planned maintenance, the other about shared failure points."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Máquinas virtuais que podem ser reiniciadas juntas durante a manutenção planejada",
+          "en": "Virtual machines that can be rebooted together during planned maintenance"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Máquinas virtuais que compartilham um possível ponto de falha de energia ou rede",
+          "en": "Virtual machines that share a potential power or network failure point"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Um grupo de máquinas virtuais idênticas e com balanceamento de carga que podem escalar automaticamente",
+          "en": "A group of identical, load-balanced virtual machines that can scale automatically"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Um serviço de virtualização de desktops e aplicativos que entrega desktops e aplicativos Windows a partir da nuvem",
+          "en": "A desktop and application virtualization service that delivers Windows desktops and apps from the cloud"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Domínio de falha (fault domain)",
+          "en": "Fault domain"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Conjunto de dimensionamento de máquinas virtuais (scale set)",
+          "en": "Virtual machine scale set"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Virtual Desktop",
+          "en": "Azure Virtual Desktop"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Domínio de atualização (update domain)",
+          "en": "Update domain"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "A",
+      "3": "B",
+      "4": "C"
+    }
+  },
+  {
+    "id": "ARCH-02-02-04",
+    "requirement": "A09",
+    "subject": "conjuntos de disponibilidade e de dimensionamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Os próprios conjuntos de disponibilidade não adicionam custo; você paga pelas instâncias de VM. Os scale sets podem escalar automaticamente por demanda ou agendamento. Em regiões com zonas de disponibilidade, designs baseados em zonas costumam ser preferidos por oferecerem isolamento de falhas mais amplo.",
+      "en": "Availability sets themselves don't add cost; you pay for the VM instances. Scale sets can scale automatically on demand or schedules. In regions with availability zones, zone-based designs are often preferred for broader failure isolation."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque recursos de redundância costumam custar a mais, mas os conjuntos de disponibilidade são gratuitos.",
+      "en": "Statement 1 is tempting because redundancy features usually cost extra, but availability sets are free."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Os conjuntos de disponibilidade adicionam uma cobrança além do custo das instâncias de máquinas virtuais.",
+          "en": "Availability sets add a charge on top of the cost of the virtual machine instances."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os conjuntos de dimensionamento de máquinas virtuais podem escalar automaticamente (scale out e scale in) com base na demanda ou em agendamentos.",
+          "en": "Virtual machine scale sets can automatically scale out or in based on demand or schedules."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Em regiões que oferecem suporte a zonas de disponibilidade, designs baseados em zonas costumam ser preferidos aos conjuntos de disponibilidade porque oferecem isolamento de falhas mais amplo.",
+          "en": "In regions that support availability zones, zone-based designs are often preferred over availability sets because they provide broader failure isolation."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-02-02-05",
+    "requirement": "A09",
+    "subject": "Área de Trabalho Virtual",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe de suporte trabalha em turnos a partir de locais diferentes. Ela precisa de desktops Windows padronizados hospedados na nuvem, com gerenciamento centralizado e integração com o Microsoft Entra ID, e quer que os dados permaneçam no Azure e não em dispositivos locais. Qual serviço do Azure se encaixa melhor?",
+      "en": "A support team works in shifts from different locations. It needs standardized cloud-hosted Windows desktops with centralized management and Microsoft Entra ID integration, and it wants data to stay in Azure rather than on local devices. Which Azure service fits best?"
+    },
+    "explanation": {
+      "pt": "O Azure Virtual Desktop é um serviço de virtualização de desktops e aplicativos. Ele centraliza a entrega de desktops e aplicativos, integra-se ao Microsoft Entra ID e ajuda a reduzir a exposição de dados em dispositivos locais, pois aplicativos e dados podem permanecer em sessões hospedadas no Azure.",
+      "en": "Azure Virtual Desktop is a desktop and application virtualization service. It centralizes desktop and app delivery, integrates with Microsoft Entra ID, and helps reduce data exposure on local devices because apps and data can remain in Azure-hosted sessions."
+    },
+    "distractors": {
+      "pt": "Os scale sets são o vizinho tentador porque executam muitas VMs, mas servem para VMs de servidor idênticas e com balanceamento de carga, e não para desktops de usuários.",
+      "en": "Scale sets are the tempting neighbor because they run many VMs, but they are for identical load-balanced server VMs, not user desktops."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/4-virtual-desktop",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Virtual Desktop",
+          "en": "Azure Virtual Desktop"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Conjuntos de dimensionamento de máquinas virtuais (scale sets)",
+          "en": "Virtual machine scale sets"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure App Service",
+          "en": "Azure App Service"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Container Apps",
+          "en": "Azure Container Apps"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-02-02-06",
+    "requirement": "A09",
+    "subject": "casos de uso de VMs",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são casos de uso comuns para máquinas virtuais do Azure? Escolha três.",
+      "en": "Which three are common use cases for Azure virtual machines? Choose three."
+    },
+    "explanation": {
+      "pt": "O Learn lista estes casos de uso de VM: teste e desenvolvimento, hospedagem de aplicativos na nuvem, extensão do datacenter, recuperação de desastres e migração lift-and-shift.",
+      "en": "Learn lists these VM use cases: testing and development, cloud application hosting, datacenter extension, disaster recovery, and lift-and-shift migration."
+    },
+    "distractors": {
+      "pt": "As alternativas B e C descrevem o Azure Functions e o App Service, os vizinhos que eliminam a necessidade de gerenciar servidores ou o SO.",
+      "en": "Options B and C describe Azure Functions and App Service, the neighbors that remove the need to manage servers or the OS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Migração lift-and-shift com redesenho mínimo do aplicativo",
+          "en": "Lift-and-shift migration with minimal application redesign"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Executar código orientado a eventos sem gerenciar nenhuma infraestrutura",
+          "en": "Running event-driven code without managing any infrastructure"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Hospedar aplicativos web sem gerenciar o sistema operacional",
+          "en": "Hosting web apps without managing the operating system"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Estender uma rede local para o Azure como extensão do datacenter",
+          "en": "Extending an on-premises network into Azure as a datacenter extension"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Manter capacidade de failover no Azure para recuperação de desastres",
+          "en": "Keeping failover capacity in Azure for disaster recovery"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-02-02-07",
+    "requirement": "A09",
+    "subject": "conjuntos de disponibilidade vs dimensionamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação compara corretamente os conjuntos de disponibilidade e os conjuntos de dimensionamento de máquinas virtuais?",
+      "en": "Which statement correctly compares availability sets and virtual machine scale sets?"
+    },
+    "explanation": {
+      "pt": "Os conjuntos de disponibilidade tratam de redundância no nível da VM dentro de uma região e não têm custo além das VMs. Os scale sets tratam de gerenciar VMs idênticas com balanceamento de carga que podem escalar automaticamente.",
+      "en": "Availability sets are about VM-level redundancy inside a region and have no cost beyond the VMs. Scale sets are about managing identical, load-balanced VMs that can automatically scale out or in."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a mais tentadora porque troca as capacidades dos dois recursos.",
+      "en": "Option B is the most tempting because it swaps the two features' capabilities."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os conjuntos de disponibilidade adicionam uma cobrança além das VMs, enquanto os scale sets são gratuitos.",
+          "en": "Availability sets add a charge on top of the VMs, while scale sets are free."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Os scale sets oferecem redundância no nível da VM por meio de domínios de atualização e de falha, enquanto os conjuntos de disponibilidade escalam automaticamente.",
+          "en": "Scale sets provide VM-level redundancy through update and fault domains, while availability sets scale automatically."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Os conjuntos de disponibilidade melhoram a resiliência das VMs dentro de uma região e não adicionam custo além das instâncias de VM; os scale sets gerenciam VMs idênticas com balanceamento de carga e podem escalar automaticamente.",
+          "en": "Availability sets improve VM resiliency inside a region and add no cost beyond the VM instances; scale sets manage identical load-balanced VMs and can scale automatically."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os dois recursos são usados apenas para máquinas virtuais Windows.",
+          "en": "Both features are used only for Windows virtual machines."
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

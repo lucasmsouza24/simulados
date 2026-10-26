@@ -1,0 +1,607 @@
+[
+  {
+    "id": "GOV-04-03-01",
+    "requirement": "G15",
+    "subject": "o que o Monitor coleta",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe quer uma plataforma que colete logs e métricas de seus aplicativos, sistemas operacionais e camadas de rede, em ambientes do Azure, locais e multicloud, armazene os dados centralmente e os exponha por painéis, consultas e alertas. Qual serviço se encaixa?",
+      "en": "A team wants one platform that collects logs and metrics from its applications, operating systems, and network layers, in Azure, on-premises, and multicloud environments, stores the data centrally, and exposes it through dashboards, queries, and alerts. Which service fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Monitor é uma plataforma para coletar, analisar e agir com base em dados de seus recursos e aplicativos do Azure. Funciona com ambientes do Azure, locais e multicloud e disponibiliza os dados por meio de painéis, consultas e alertas.",
+      "en": "Azure Monitor is a platform for collecting, analyzing, and acting on data from your Azure resources and applications. It works with Azure, on-premises, and multicloud environments, and makes the data available through dashboards, queries, and alerts."
+    },
+    "distractors": {
+      "pt": "O Azure Arc é o vizinho tentador porque também abrange ambientes híbridos e multicloud, mas projeta recursos no ARM em vez de coletar telemetria.",
+      "en": "Azure Arc is the tempting neighbor because it also spans hybrid and multicloud, but it projects resources into ARM rather than collecting telemetry."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Service Health",
+          "en": "Azure Service Health"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-04-03-02",
+    "requirement": "G15",
+    "subject": "Log Analytics vs alertas vs Application Insights",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Log Analytics é onde você escreve e executa consultas. Os alertas do Azure Monitor notificam você quando uma condição definida é atendida e usam grupos de ações. O Application Insights monitora o desempenho e o uso de aplicativos Web e executa testes de disponibilidade com solicitações sintéticas.",
+      "en": "Log Analytics is where you write and run queries. Azure Monitor alerts notify you when a defined condition is met and use action groups. Application Insights monitors web application performance and usage, and runs availability tests with synthetic requests."
+    },
+    "distractors": {
+      "pt": "Os três pertencem ao Azure Monitor, então a armadilha é atribuir um recurso ao vizinho.",
+      "en": "All three belong to Azure Monitor, so the trap is assigning a capability to the neighbor feature."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Escrever e executar consultas nos dados que o Azure Monitor coleta",
+          "en": "Write and run queries against the data that Azure Monitor collects"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Notifica você quando uma condição definida por você é atendida",
+          "en": "Notifies you when a condition you defined has been met"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Monitora o desempenho e o uso de aplicativos Web, inclusive os executados no ambiente local ou em outra nuvem",
+          "en": "Monitors the performance and usage of web applications, including those running on-premises or in another cloud"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Envia solicitações sintéticas para você saber que o aplicativo está respondendo, mesmo em períodos de baixo tráfego",
+          "en": "Sends synthetic requests so you know the application is responding even during low-traffic periods"
+        }
+      },
+      {
+        "key": "5",
+        "text": {
+          "pt": "Usa um grupo de ações para controlar quem é notificado e o que acontece em seguida",
+          "en": "Uses an action group to control who is notified and what happens next"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Application Insights",
+          "en": "Application Insights"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Log Analytics",
+          "en": "Log Analytics"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Alertas do Azure Monitor (Azure Monitor alerts)",
+          "en": "Azure Monitor alerts"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A",
+      "4": "A",
+      "5": "C"
+    }
+  },
+  {
+    "id": "GOV-04-03-03",
+    "requirement": "G15",
+    "subject": "Log Analytics para consultas",
+    "level": "essential",
+    "stem": {
+      "pt": "Um analista precisa encontrar todos os erros registrados na última hora nos dados que o Azure Monitor coleta e depois executar análises avançadas para visualizar tendências ao longo do tempo. Qual ferramenta ele deve usar?",
+      "en": "An analyst needs to find all errors recorded in the last hour in the data Azure Monitor collects, and then run advanced analytics to visualize trends over time. Which tool should the analyst use?"
+    },
+    "explanation": {
+      "pt": "O Log Analytics é a ferramenta no portal do Azure em que você escreve e executa consultas nos dados que o Azure Monitor coleta, de uma filtragem simples, como todos os erros na última hora, a análises avançadas que visualizam tendências ao longo do tempo.",
+      "en": "Log Analytics is the tool in the Azure portal where you write and run queries against the data Azure Monitor collects, from simple filtering such as all errors in the last hour to advanced analytics that visualize trends over time."
+    },
+    "distractors": {
+      "pt": "O Application Insights é o vizinho tentador porque também é um recurso do Monitor, mas se concentra no desempenho e no uso de aplicativos Web.",
+      "en": "Application Insights is the tempting neighbor because it is also a Monitor feature, but it focuses on the performance and usage of web applications."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Application Insights",
+          "en": "Application Insights"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Status",
+          "en": "Azure Status"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Log Analytics",
+          "en": "Log Analytics"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-04-03-04",
+    "requirement": "G15",
+    "subject": "alerta de métrica",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe de operações quer receber um email quando a CPU de uma máquina virtual permanecer acima de 80%. O que ela deve configurar no Azure Monitor?",
+      "en": "An operations team wants to receive an email when the CPU of a virtual machine stays above 80%. What must they set up in Azure Monitor?"
+    },
+    "explanation": {
+      "pt": "Você cria uma regra de alerta que especifica a condição e um grupo de ações que controla quem é notificado e o que acontece em seguida. Um alerta de métrica, como a CPU da VM permanecendo acima de 80%, pode enviar um email.",
+      "en": "You create an alert rule that specifies the condition and an action group that controls who gets notified and what happens next. A metric alert, such as VM CPU staying above 80%, can send an email."
+    },
+    "distractors": {
+      "pt": "Uma consulta apenas filtra dados e um teste de disponibilidade verifica a capacidade de resposta; nenhum envia notificação quando uma condição de CPU é atendida.",
+      "en": "A query only filters data and an availability test checks responsiveness; neither sends a notification when a CPU condition is met."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um teste de disponibilidade do Application Insights",
+          "en": "An Application Insights availability test"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Uma regra de alerta que especifica a condição, junto com um grupo de ações que controla quem é notificado",
+          "en": "An alert rule that specifies the condition, together with an action group that controls who is notified"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma consulta do Log Analytics que apenas filtra os dados",
+          "en": "A Log Analytics query that only filters the data"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma recomendação do Azure Advisor para a máquina virtual",
+          "en": "An Azure Advisor recommendation for the virtual machine"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-04-03-05",
+    "requirement": "G15",
+    "subject": "tipos de alerta e grupo de ações",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Os alertas podem ser baseados em métricas ou em logs. Um alerta de log pode observar um padrão de erro específico em vários recursos. Os grupos de ações são reutilizáveis no Azure Monitor, no Service Health e no Azure Advisor.",
+      "en": "Alerts can be metric-based or log-based. A log alert can watch for a specific error pattern across multiple resources. Action groups are reusable across Azure Monitor, Service Health, and Azure Advisor."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque grupos de ações são apresentados com o Azure Monitor, mas são reutilizáveis em três serviços.",
+      "en": "Statement 3 is tempting because action groups are introduced with Azure Monitor, but they are reusable across three services."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Os alertas do Azure Monitor podem ser baseados em métricas ou em logs.",
+          "en": "Azure Monitor alerts can be metric-based or log-based."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um alerta de log pode observar um padrão de erro específico em vários recursos.",
+          "en": "A log alert can watch for a specific error pattern across multiple resources."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Grupos de ações criados para alertas do Azure Monitor não podem ser reutilizados pelo Azure Service Health nem pelo Azure Advisor.",
+          "en": "Action groups created for Azure Monitor alerts cannot be reused by Azure Service Health or Azure Advisor."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-04-03-06",
+    "requirement": "G15",
+    "subject": "Application Insights fora do Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa hospeda um aplicativo Web no ambiente local e quer monitorar suas taxas de solicitação, tempos de resposta e taxas de falha sem movê-lo para o Azure. Qual recurso do Azure Monitor se encaixa?",
+      "en": "A company hosts a web application on-premises and wants to monitor its request rates, response times, and failure rates without moving it to Azure. Which Azure Monitor feature fits?"
+    },
+    "explanation": {
+      "pt": "O Application Insights é um recurso do Azure Monitor que monitora o desempenho e o uso de aplicativos Web, estejam eles no Azure, no ambiente local ou em outra nuvem. Ele pode monitorar taxas de solicitação, tempos de resposta e taxas de falha.",
+      "en": "Application Insights is an Azure Monitor feature that monitors the performance and usage of web applications, whether they run in Azure, on-premises, or in another cloud. It can monitor request rates, response times, and failure rates."
+    },
+    "distractors": {
+      "pt": "O Log Analytics é o vizinho tentador porque consulta dados, mas não monitora o aplicativo em si.",
+      "en": "Log Analytics is the tempting neighbor because it queries data, but it does not monitor the application itself."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Log Analytics",
+          "en": "Log Analytics"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Advisor",
+          "en": "Azure Advisor"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Application Insights",
+          "en": "Application Insights"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Resource Health",
+          "en": "Resource Health"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-04-03-07",
+    "requirement": "G15",
+    "subject": "o que o Application Insights monitora",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três dos itens a seguir o Application Insights pode monitorar? Escolha três.",
+      "en": "Which three of the following can Application Insights monitor? Choose three."
+    },
+    "explanation": {
+      "pt": "O Application Insights monitora taxas de solicitação, tempos de resposta, taxas de falha, chamadas de dependência e seu desempenho, tempos de carregamento de página, contagem de usuários, tendências de sessão e contadores de desempenho do servidor, como uso de CPU, memória e rede.",
+      "en": "Application Insights monitors request rates, response times, failure rates, dependency calls and their performance, page load times, user counts, session trends, and server performance counters such as CPU, memory, and network usage."
+    },
+    "distractors": {
+      "pt": "A manutenção planejada pertence ao Service Health e as recomendações de gastos pertencem ao Azure Advisor.",
+      "en": "Planned maintenance belongs to Service Health and spending recommendations belong to Azure Advisor."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Taxas de solicitação, tempos de resposta e taxas de falha",
+          "en": "Request rates, response times, and failure rates"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Eventos de manutenção planejada nas regiões do Azure que você usa",
+          "en": "Planned maintenance events in the Azure regions you use"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Chamadas de dependência e seu desempenho",
+          "en": "Dependency calls and their performance"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Recomendações para reduzir seus gastos com o Azure",
+          "en": "Recommendations to reduce your Azure spending"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Tempos de carregamento de página, contagem de usuários e tendências de sessão",
+          "en": "Page load times, user counts, and session trends"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-04-03-08",
+    "requirement": "G15",
+    "subject": "Application Insights sem alterar código",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe quer habilitar o Application Insights para um aplicativo Web existente, mas não tem permissão para alterar o código do aplicativo. O que a equipe pode fazer?",
+      "en": "A team wants to enable Application Insights for an existing web application, but it is not allowed to change the application code. What can the team do?"
+    },
+    "explanation": {
+      "pt": "Você pode configurar o Application Insights adicionando um SDK ao código do aplicativo ou habilitando o agente do Application Insights sem alterações de código. Com o código congelado, o agente é a opção.",
+      "en": "You can set up Application Insights either by adding an SDK to your application code or by enabling the Application Insights agent without code changes. With a code freeze, the agent is the option."
+    },
+    "distractors": {
+      "pt": "O SDK é uma forma válida de configurar o Application Insights, mas exige alterar o código, o que o cenário proíbe.",
+      "en": "The SDK is a valid way to set up Application Insights, but it requires changing the code, which the scenario forbids."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Adicionar o SDK do Application Insights ao código do aplicativo",
+          "en": "Add the Application Insights SDK to the application code"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Criar um grupo de ações que aponte para o endpoint do aplicativo",
+          "en": "Create an action group that points to the application endpoint"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Escrever uma consulta do Log Analytics que instrumente o aplicativo",
+          "en": "Write a Log Analytics query that instruments the application"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Habilitar o agente do Application Insights",
+          "en": "Enable the Application Insights agent"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-04-03-09",
+    "requirement": "G15",
+    "subject": "testes de disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe quer saber se seu aplicativo Web está respondendo mesmo em períodos de baixo tráfego, quando usuários reais raramente enviam solicitações. Qual recurso ela deve usar?",
+      "en": "A team wants to know that its web application is responding even during low-traffic periods, when real users rarely send requests. Which capability should it use?"
+    },
+    "explanation": {
+      "pt": "Os testes de disponibilidade do Application Insights enviam solicitações sintéticas ao seu aplicativo, para você saber que ele está respondendo mesmo em períodos de baixo tráfego.",
+      "en": "Application Insights availability tests send synthetic requests to your application, so you know it is responding even during low-traffic periods."
+    },
+    "distractors": {
+      "pt": "O Resource Health é tentador porque informa integridade, mas informa a integridade de recursos do Azure, e não se o seu aplicativo responde a solicitações.",
+      "en": "Resource Health is tempting because it reports health, but it reports the health of Azure resources, not whether your application answers requests."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Testes de disponibilidade do Application Insights que enviam solicitações sintéticas",
+          "en": "Application Insights availability tests that send synthetic requests"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Recomendações de confiabilidade do Azure Advisor",
+          "en": "Azure Advisor reliability recommendations"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Resource Health",
+          "en": "Resource Health"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Status",
+          "en": "Azure Status"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-04-03-10",
+    "requirement": "G15",
+    "subject": "Log Analytics para consultas",
+    "level": "essential",
+    "stem": {
+      "pt": "O Log Analytics é a ferramenta no portal do Azure em que você escreve e executa ______ nos dados que o Azure Monitor coleta.",
+      "en": "Log Analytics is the tool in the Azure portal where you write and run ______ against the data Azure Monitor collects."
+    },
+    "explanation": {
+      "pt": "O Log Analytics é onde você escreve e executa consultas nos dados que o Azure Monitor coleta, da filtragem simples a análises avançadas.",
+      "en": "Log Analytics is where you write and run queries against the data Azure Monitor collects, from simple filtering to advanced analytics."
+    },
+    "distractors": {
+      "pt": "Regras de alerta e grupos de ações pertencem aos alertas do Azure Monitor, e modelos do ARM pertencem à implantação de recursos.",
+      "en": "Alert rules and action groups belong to Azure Monitor alerts, and ARM templates belong to resource deployment."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "regras de alerta (alert rules)",
+          "en": "alert rules"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "consultas (queries)",
+          "en": "queries"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "modelos do ARM (ARM templates)",
+          "en": "ARM templates"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "grupos de ações (action groups)",
+          "en": "action groups"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-04-03-11",
+    "requirement": "G15",
+    "subject": "reutilizar grupo de ações",
+    "level": "detail",
+    "stem": {
+      "pt": "Um administrador criou um grupo de ações para enviar email à equipe de plantão em alertas do Azure Monitor. Onde mais o mesmo grupo de ações pode ser reutilizado?",
+      "en": "An administrator created an action group to email the on-call team for Azure Monitor alerts. Where else can the same action group be reused?"
+    },
+    "explanation": {
+      "pt": "Os grupos de ações são reutilizáveis no Azure Monitor, no Service Health e no Azure Advisor.",
+      "en": "Action groups are reusable across Azure Monitor, Service Health, and Azure Advisor."
+    },
+    "distractors": {
+      "pt": "Cada distrator limita a reutilização a um único serviço, enquanto o Learn diz que os grupos de ações são reutilizáveis nos três.",
+      "en": "Each distractor limits reuse to a single service, while Learn says action groups are reusable across all three."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Somente no Azure Monitor, porque cada serviço precisa de seus próprios grupos de ações",
+          "en": "Only in Azure Monitor, because each service needs its own action groups"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Somente no Azure Service Health",
+          "en": "Only in Azure Service Health"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "No Azure Service Health e no Azure Advisor",
+          "en": "In Azure Service Health and Azure Advisor"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Somente no Azure Advisor",
+          "en": "Only in Azure Advisor"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

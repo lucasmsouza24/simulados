@@ -1,0 +1,157 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  height: var(--header-height);
+  padding: 0 var(--space-5);
+  background: rgba(13, 17, 23, 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand small {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-1);
+  margin-left: var(--space-3);
+}
+
+.navLink {
+  padding: 16px var(--space-3) 14px;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--text);
+}
+
+.navLink[aria-current='page'] {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-left: auto;
+}
+
+.timer {
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer[data-low='true'] {
+  border-color: var(--bad);
+  color: var(--bad);
+}
+
+.lang {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lang button {
+  padding: 5px 12px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lang button[aria-pressed='true'] {
+  background: var(--accent-strong);
+  color: #fff;
+}
+
+.footer {
+  padding: var(--space-5);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer p {
+  max-width: 720px;
+  margin: 0 auto var(--space-2);
+}
+
+.message {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px var(--space-5);
+  text-align: center;
+}
+
+.message h1 {
+  margin: 0 0 var(--space-3);
+}
+
+.message p {
+  color: var(--muted);
+}
+
+.loading {
+  padding: var(--space-6);
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .header {
+    gap: var(--space-2);
+    padding: 0 var(--space-3);
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  .nav {
+    margin-left: 0;
+  }
+
+  .navLink {
+    padding: 16px var(--space-2) 14px;
+  }
+}

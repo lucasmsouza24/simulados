@@ -1,0 +1,350 @@
+[
+  {
+    "id": "ARCH-02-04-01",
+    "requirement": "A11",
+    "subject": "App Service",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe quer hospedar um aplicativo web e uma API REST acessados por HTTP, com dimensionamento automático, alta disponibilidade integrada e implantações automatizadas a partir do GitHub, sem gerenciar a infraestrutura subjacente. Qual serviço do Azure se encaixa melhor?",
+      "en": "A team wants to host a web application and a REST API accessed over HTTP, with automatic scaling, built-in high availability, and automated deployments from GitHub, without managing the underlying infrastructure. Which Azure service fits best?"
+    },
+    "explanation": {
+      "pt": "O Azure App Service é um serviço baseado em HTTP para hospedar aplicativos web, APIs REST e back-ends móveis sem gerenciar infraestrutura. Oferece dimensionamento automático, alta disponibilidade e implantações automatizadas a partir do GitHub, Azure DevOps ou qualquer repositório Git.",
+      "en": "Azure App Service is an HTTP-based service for hosting web apps, REST APIs, and mobile back ends without managing infrastructure. It offers automatic scaling, high availability, and automated deployments from GitHub, Azure DevOps, or any Git repo."
+    },
+    "distractors": {
+      "pt": "O Azure Container Instances é tentador porque também evita gerenciar VMs, mas o App Service é a escolha ideal para aplicativos orientados à web.",
+      "en": "Azure Container Instances is tempting because it also avoids managing VMs, but App Service is the ideal choice for web-oriented applications."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Virtual Machines",
+          "en": "Azure Virtual Machines"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure App Service",
+          "en": "Azure App Service"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Container Instances",
+          "en": "Azure Container Instances"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Kubernetes Service (AKS)",
+          "en": "Azure Kubernetes Service (AKS)"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-02-04-02",
+    "requirement": "A11",
+    "subject": "tipos de app do App Service",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O App Service hospeda web apps, API apps, WebJobs (programas ou scripts em segundo plano) e mobile apps (back-ends para iOS e Android).",
+      "en": "App Service hosts web apps, API apps, WebJobs (background programs or scripts), and mobile apps (back ends for iOS and Android)."
+    },
+    "distractors": {
+      "pt": "Web apps e API apps são o par mais próximo: ambos são HTTP, mas os API apps expõem APIs REST com suporte a Swagger.",
+      "en": "Web apps and API apps are the closest pair: both are HTTP, but API apps expose REST APIs with Swagger support."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Executar um programa ou script no mesmo contexto de um aplicativo web, de forma agendada ou por gatilho, para tarefas em segundo plano",
+          "en": "Run a program or script in the same context as a web app, on a schedule or by a trigger, to perform background tasks"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Criar um back-end para aplicativos iOS e Android com notificações por push e entrada com provedores sociais",
+          "en": "Build a back end for iOS and Android apps with push notifications and social sign-in"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Criar APIs web baseadas em REST com suporte a Swagger na linguagem de sua escolha",
+          "en": "Build REST-based web APIs with Swagger support in your choice of language"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Hospedar um site em ASP.NET, Java, Node.js, PHP ou Python no Windows ou Linux",
+          "en": "Host a website in ASP.NET, Java, Node.js, PHP, or Python on Windows or Linux"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "API apps",
+          "en": "API apps"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "WebJobs",
+          "en": "WebJobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Web apps",
+          "en": "Web apps"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Mobile apps",
+          "en": "Mobile apps"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "D",
+      "3": "A",
+      "4": "C"
+    }
+  },
+  {
+    "id": "ARCH-02-04-03",
+    "requirement": "A11",
+    "subject": "VM para hospedagem",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe nova na nuvem quer o máximo de controle do ambiente de hospedagem e quer configurá-lo exatamente como deseja. Qual opção de hospedagem se encaixa melhor?",
+      "en": "A team that is new to the cloud wants maximum control of the hosting environment and wants to configure it exactly as it wants. Which hosting option fits best?"
+    },
+    "explanation": {
+      "pt": "As VMs dão o máximo de controle do ambiente de hospedagem e permitem configurá-lo exatamente como você quiser. Também podem ser o método de hospedagem mais familiar se você é novo na nuvem.",
+      "en": "VMs give you maximum control of the hosting environment and let you configure it exactly as you want. They may also be the most familiar hosting method if you are new to the cloud."
+    },
+    "distractors": {
+      "pt": "Os contêineres são tentadores porque isolam e gerenciam aspectos da solução de hospedagem, mas o máximo de controle pertence às VMs.",
+      "en": "Containers are tempting because they isolate and manage aspects of the hosting solution, but the maximum control belongs to VMs."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure App Service",
+          "en": "Azure App Service"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Container Apps",
+          "en": "Azure Container Apps"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Functions",
+          "en": "Azure Functions"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Virtual Machines",
+          "en": "Azure Virtual Machines"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-02-04-04",
+    "requirement": "A11",
+    "subject": "App Service",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O App Service oferece suporte a Windows e Linux e permite hospedar aplicativos sem gerenciar infraestrutura. Os WebJobs podem ser agendados ou executados por um gatilho e costumam ser usados para tarefas em segundo plano.",
+      "en": "App Service supports Windows and Linux and lets you host apps without managing infrastructure. WebJobs can be scheduled or run by a trigger and are often used to run background tasks."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque hospedagem soa como infraestrutura, mas o App Service elimina essa tarefa.",
+      "en": "Statement 2 is tempting because hosting sounds like infrastructure, but App Service removes that task."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O App Service oferece suporte somente ao Windows como sistema operacional de host.",
+          "en": "App Service supports only Windows as the host operating system."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Com o App Service, você precisa gerenciar a infraestrutura subjacente que hospeda seu aplicativo.",
+          "en": "With App Service, you must manage the underlying infrastructure that hosts your app."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Os WebJobs podem ser agendados ou executados por um gatilho.",
+          "en": "WebJobs can be scheduled or run by a trigger."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-02-04-05",
+    "requirement": "A11",
+    "subject": "espectro de hospedagem",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre opções de hospedagem de aplicativos estão corretas? Escolha duas.",
+      "en": "Which two statements about application hosting options are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "As VMs dão o máximo de controle do ambiente de hospedagem, e os contêineres podem isolar e gerenciar individualmente diferentes aspectos da solução. O App Service oferece dimensionamento automático e elimina o gerenciamento de infraestrutura.",
+      "en": "VMs give maximum control of the hosting environment, and containers can isolate and individually manage different aspects of the hosting solution. App Service offers automatic scaling and removes infrastructure management."
+    },
+    "distractors": {
+      "pt": "A alternativa E é tentadora porque contêineres são flexíveis, mas com contêineres você não gerencia o sistema operacional.",
+      "en": "Option E is tempting because containers are flexible, but with containers you don't manage the operating system."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O App Service não tem dimensionamento automático.",
+          "en": "App Service has no automatic scaling."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "As máquinas virtuais dão a você o máximo de controle do ambiente de hospedagem.",
+          "en": "Virtual machines give you maximum control of the hosting environment."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Os contêineres podem isolar e gerenciar individualmente diferentes aspectos da solução de hospedagem.",
+          "en": "Containers can isolate and individually manage different aspects of the hosting solution."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O App Service exige que você gerencie a infraestrutura que hospeda seu aplicativo.",
+          "en": "App Service requires you to manage the infrastructure that hosts your app."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Os contêineres dão mais controle sobre o sistema operacional do que as máquinas virtuais.",
+          "en": "Containers give you more control over the operating system than virtual machines."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "ARCH-02-04-06",
+    "requirement": "A11",
+    "subject": "Mobile Apps",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa de um back-end para aplicativos iOS e Android que armazene dados em um banco de dados SQL na nuvem, autentique clientes em provedores sociais e envie notificações por push. Qual recurso de serviço do Azure se encaixa?",
+      "en": "A company needs a back end for iOS and Android apps that stores data in a cloud-based SQL database, authenticates customers against social providers, and sends push notifications. Which Azure service feature fits?"
+    },
+    "explanation": {
+      "pt": "O recurso Mobile Apps do App Service permite criar um back-end para aplicativos iOS e Android, armazenar dados em um banco de dados SQL na nuvem, autenticar clientes em provedores sociais, enviar notificações por push e executar lógica de back-end personalizada.",
+      "en": "The Mobile Apps feature of App Service lets you build a back end for iOS and Android apps, store data in a cloud-based SQL database, authenticate customers against social providers, send push notifications, and run custom back-end logic."
+    },
+    "distractors": {
+      "pt": "Os API apps são tentadores porque um back-end móvel costuma expor uma API, mas os recursos específicos para dispositivos móveis pertencem ao Mobile Apps.",
+      "en": "API apps are tempting because a mobile back end often exposes an API, but the mobile-specific features belong to Mobile Apps."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "API apps do App Service",
+          "en": "App Service API apps"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "WebJobs do App Service",
+          "en": "App Service WebJobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Mobile Apps do App Service",
+          "en": "App Service Mobile Apps"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Virtual Desktop",
+          "en": "Azure Virtual Desktop"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

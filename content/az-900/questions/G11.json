@@ -1,0 +1,343 @@
+[
+  {
+    "id": "GOV-03-04-01",
+    "requirement": "G11",
+    "subject": "definição de IaC",
+    "level": "essential",
+    "stem": {
+      "pt": "O que significa infraestrutura como código (infrastructure as code, IaC)?",
+      "en": "What does infrastructure as code (IaC) mean?"
+    },
+    "explanation": {
+      "pt": "Infraestrutura como código significa gerenciar a infraestrutura por meio de código e modelos em vez de configuração manual. Pode começar com a CLI do Azure ou o Azure PowerShell e evoluir para implantações repetíveis de ambientes com modelos do ARM e Bicep.",
+      "en": "Infrastructure as code means managing infrastructure through code and templates instead of manual configuration. It can start with Azure CLI or Azure PowerShell and grow into repeatable environment deployments with ARM templates and Bicep."
+    },
+    "distractors": {
+      "pt": "Documentar etapas manuais é tentador porque parece repetível, mas continua sendo configuração manual.",
+      "en": "Documenting manual steps is tempting because it sounds repeatable, but it is still manual configuration."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Configurar cada recurso manualmente no portal do Azure e documentar as etapas em uma wiki",
+          "en": "Configuring each resource manually in the Azure portal and documenting the steps in a wiki"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Gerenciar a infraestrutura por meio de código e modelos em vez de configuração manual",
+          "en": "Managing infrastructure through code and templates instead of manual configuration"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Escrever código de aplicativo que é executado em máquinas virtuais do Azure",
+          "en": "Writing application code that runs on Azure virtual machines"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Estender a governança do Azure a servidores hospedados em outras nuvens",
+          "en": "Extending Azure governance to servers hosted in other clouds"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-03-04-02",
+    "requirement": "G11",
+    "subject": "ferramentas de IaC",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois componentes você pode usar para implementar uma implantação de infraestrutura como código? Escolha dois.",
+      "en": "Which two components can you use to implement an infrastructure as code deployment? Choose two."
+    },
+    "explanation": {
+      "pt": "Bicep e os modelos do ARM são as opções declarativas para implementar infraestrutura como código no Azure.",
+      "en": "Bicep and ARM templates are the declarative options to implement infrastructure as code on Azure."
+    },
+    "distractors": {
+      "pt": "O Azure Policy, o Azure Arc e o Azure Monitor são serviços de governança, de gerenciamento híbrido e de monitoramento, e não formas de definir infraestrutura em código.",
+      "en": "Azure Policy, Azure Arc, and Azure Monitor are governance, hybrid management, and monitoring services, not ways to define infrastructure in code."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Bicep",
+          "en": "Bicep"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Modelos do ARM (ARM templates)",
+          "en": "ARM templates"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-03-04-03",
+    "requirement": "G11",
+    "subject": "declarativo vs imperativo",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A IaC substitui a configuração manual por código e modelos. Os modelos do ARM e o Bicep são declarativos: você define o que implantar. O Azure PowerShell implanta infraestrutura a partir de código imperativo.",
+      "en": "IaC replaces manual configuration with code and templates. ARM templates and Bicep are declarative: you define what to deploy. Azure PowerShell deploys infrastructure from imperative code."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é uma pegadinha de leitura: ela troca declarativo e imperativo entre as duas abordagens.",
+      "en": "Statement 3 is a reading trap: it swaps declarative and imperative between the two approaches."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A infraestrutura como código pode começar com scripts da CLI do Azure ou do Azure PowerShell e evoluir para implantações repetíveis de ambientes com modelos do ARM e Bicep.",
+          "en": "Infrastructure as code can start with Azure CLI or Azure PowerShell scripts and grow into repeatable environment deployments with ARM templates and Bicep."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Infraestrutura como código significa que cada recurso é configurado manualmente pelo portal do Azure para que o processo seja documentado.",
+          "en": "Infrastructure as code means each resource is configured manually through the Azure portal so that the process is documented."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Os modelos do ARM são escritos como scripts imperativos passo a passo, enquanto as implantações com Azure PowerShell são declarativas.",
+          "en": "ARM templates are written as imperative step-by-step scripts, whereas Azure PowerShell deployments are declarative."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-03-04-04",
+    "requirement": "G11",
+    "subject": "declarativo vs imperativo",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe quer descrever o estado final desejado de um ambiente em vez de escrever comandos passo a passo, reutilizar a mesma definição em desenvolvimento, teste e produção e deixar o Azure determinar a ordem de criação dos recursos. Qual abordagem atende aos requisitos?",
+      "en": "A team wants to describe the desired end state of an environment instead of writing step-by-step commands, reuse the same definition across development, test, and production, and have Azure determine the order of resource creation. Which approach meets the requirements?"
+    },
+    "explanation": {
+      "pt": "Arquivos Bicep e modelos do ARM são declarativos: você define o estado final desejado, reutiliza a definição em vários ambientes para resultados repetíveis, e o Azure Resource Manager cuida da ordem das dependências e da implantação em paralelo.",
+      "en": "Bicep files and ARM templates are declarative: you define the desired end state, reuse it across environments for repeatable results, and Azure Resource Manager handles dependency order and parallel deployment."
+    },
+    "distractors": {
+      "pt": "Uma série de comandos da CLI é tentadora porque pode ser transformada em script, mas é imperativa e você decide a ordem.",
+      "en": "A series of CLI commands is tempting because it is scriptable, but it is imperative and you decide the order."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Executar uma série de comandos da CLI do Azure, um de cada vez e em ordem, no Azure Cloud Shell",
+          "en": "Run a series of Azure CLI commands one at a time, in order, from Azure Cloud Shell"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Recriar os recursos manualmente no portal do Azure em cada ambiente",
+          "en": "Recreate the resources by hand in the Azure portal in each environment"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Usar o Azure Arc para projetar cada ambiente no Azure Resource Manager",
+          "en": "Use Azure Arc to project each environment into Azure Resource Manager"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Implantar um arquivo Bicep ou um modelo do ARM",
+          "en": "Deploy a Bicep file or an ARM template"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-03-04-05",
+    "requirement": "G11",
+    "subject": "Bicep",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre o Bicep está correta?",
+      "en": "Which statement about Bicep is correct?"
+    },
+    "explanation": {
+      "pt": "O Bicep é uma linguagem declarativa para implantar recursos do Azure por meio do Azure Resource Manager. Em comparação com os modelos ARM em JSON, é em geral mais simples e concisa, acompanha os tipos de recurso e as versões de API atuais e oferece suporte a módulos.",
+      "en": "Bicep is a declarative language for deploying Azure resources through Azure Resource Manager. Compared to JSON ARM templates, it is generally simpler and more concise, tracks current resource types and API versions, and supports modules."
+    },
+    "distractors": {
+      "pt": "A opção dos cmdlets imperativos descreve o Azure PowerShell, e a opção do shell descreve o Azure Cloud Shell.",
+      "en": "The imperative-cmdlet option describes Azure PowerShell, and the shell option describes Azure Cloud Shell."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "É uma linguagem declarativa para implantar recursos do Azure por meio do Azure Resource Manager e, em geral, é mais simples e concisa que os modelos ARM em JSON.",
+          "en": "It is a declarative language for deploying Azure resources through Azure Resource Manager and is generally simpler and more concise than JSON ARM templates."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "É uma linguagem de script imperativa que executa cmdlets diretamente na API REST do Azure, ignorando o Azure Resource Manager.",
+          "en": "It is an imperative scripting language that runs cmdlets directly against the Azure REST API, bypassing Azure Resource Manager."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "É um dialeto JSON mais longo que os modelos do ARM, mas com suporte a mais tipos de recursos.",
+          "en": "It is a JSON dialect that is longer than ARM templates but supports more resource types."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "É um shell baseado em navegador para executar comandos da CLI do Azure.",
+          "en": "It is a browser-based shell for running Azure CLI commands."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-03-04-06",
+    "requirement": "G11",
+    "subject": "Bicep vs modelo do ARM vs PowerShell",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Um modelo do ARM é um JSON declarativo e oferece modularidade por meio de modelos aninhados. O Bicep é a linguagem declarativa mais simples que reutiliza lógica por meio de módulos. O Azure PowerShell implanta infraestrutura a partir de código imperativo com cmdlets.",
+      "en": "An ARM template is declarative JSON and supports modularity through nested templates. Bicep is the simpler declarative language that reuses logic through modules. Azure PowerShell deploys infrastructure from imperative code with cmdlets."
+    },
+    "distractors": {
+      "pt": "Modelos aninhados pertencem aos modelos do ARM, enquanto módulos pertencem ao Bicep; a redação é a armadilha.",
+      "en": "Nested templates belong to ARM templates, while modules belong to Bicep; the wording is the trap."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Um arquivo JSON declarativo que define os recursos a implantar",
+          "en": "A declarative JSON file that defines the resources to deploy"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Uma linguagem declarativa em geral mais simples e concisa, com reutilização por meio de módulos",
+          "en": "A declarative language that is generally simpler and more concise, with reuse through modules"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Cmdlets que podem ser combinados para implantar uma infraestrutura inteira a partir de código imperativo",
+          "en": "Cmdlets that can be combined to deploy an entire infrastructure from imperative code"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Pode ser dividido em componentes reutilizáveis e modelos aninhados",
+          "en": "Can be split into reusable components and nested templates"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Bicep",
+          "en": "Bicep"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure PowerShell",
+          "en": "Azure PowerShell"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Modelo do ARM (ARM template)",
+          "en": "ARM template"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B",
+      "4": "C"
+    }
+  }
+]

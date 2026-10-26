@@ -1,0 +1,547 @@
+[
+  {
+    "id": "ARCH-03-03-01",
+    "requirement": "A16",
+    "subject": "LRS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer a opção de redundância de menor custo, que protege contra falhas de rack de servidores e de unidades em um datacenter. Ela aceita que um desastre em nível de datacenter ainda possa causar perda de dados. Qual opção se encaixa?",
+      "en": "A company wants the lowest-cost redundancy option, which protects against server rack and drive failures in one datacenter. It accepts that a datacenter-level disaster can still cause data loss. Which option fits?"
+    },
+    "explanation": {
+      "pt": "O LRS replica os dados três vezes dentro de um único datacenter da região primária. É a opção de menor custo e, como todas as réplicas ficam nesse datacenter, um desastre em nível de datacenter ainda pode causar perda de dados.",
+      "en": "LRS replicates data three times within a single datacenter in the primary region. It is the lowest-cost option, and because all replicas stay in that datacenter, a datacenter-level disaster can still cause data loss."
+    },
+    "distractors": {
+      "pt": "O ZRS é o vizinho tentador porque também fica na região primária, mas espalha as cópias por três zonas de disponibilidade e custa mais.",
+      "en": "ZRS is the tempting neighbor because it is also in the primary region, but it spreads copies across three availability zones and costs more."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Zone-redundant storage (ZRS)",
+          "en": "Zone-redundant storage (ZRS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Geo-redundant storage (GRS)",
+          "en": "Geo-redundant storage (GRS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Geo-zone-redundant storage (GZRS)",
+          "en": "Geo-zone-redundant storage (GZRS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Locally redundant storage (LRS)",
+          "en": "Locally redundant storage (LRS)"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-03-03-02",
+    "requirement": "A16",
+    "subject": "durabilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual opção de redundância de armazenamento oferece o maior grau de durabilidade, de pelo menos 16 noves, entre estas escolhas?",
+      "en": "Which storage redundancy option provides the highest degree of durability, at least 16 nines, among these choices?"
+    },
+    "explanation": {
+      "pt": "O GZRS foi projetado para pelo menos 16 noves de durabilidade, em comparação com pelo menos 11 noves do LRS e pelo menos 12 noves do ZRS. O GRS também oferece pelo menos 16 noves.",
+      "en": "GZRS is designed for at least 16 nines of durability, compared with at least 11 nines for LRS and at least 12 nines for ZRS. GRS also provides at least 16 nines."
+    },
+    "distractors": {
+      "pt": "O ZRS é tentador porque zonas soam altamente duráveis, mas 12 noves ainda é menos que as opções geográficas.",
+      "en": "ZRS is tempting because zones sound highly durable, but 12 nines is still lower than the geo options."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Locally redundant storage",
+          "en": "Locally redundant storage"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Zone-redundant storage",
+          "en": "Zone-redundant storage"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Geo-zone-redundant storage",
+          "en": "Geo-zone-redundant storage"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "All options provide the same durability",
+          "en": "All options provide the same durability"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-03-03-03",
+    "requirement": "A16",
+    "subject": "LRS vs ZRS vs GRS vs GZRS",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "LRS = três cópias em um datacenter. ZRS = síncrono entre três zonas de disponibilidade. GRS = LRS na primária mais LRS assíncrono na secundária. GZRS = ZRS na primária mais LRS assíncrono na secundária.",
+      "en": "LRS = three copies in one datacenter. ZRS = synchronous across three availability zones. GRS = LRS in primary plus asynchronous LRS in secondary. GZRS = ZRS in primary plus asynchronous LRS in secondary."
+    },
+    "distractors": {
+      "pt": "GRS e GZRS são o par mais próximo: a diferença é LRS versus ZRS na região primária.",
+      "en": "GRS and GZRS are the closest pair: the difference is LRS versus ZRS in the primary region."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Três cópias em um único datacenter na região primária",
+          "en": "Three copies in a single datacenter in the primary region"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Replicação síncrona entre três zonas de disponibilidade na região primária",
+          "en": "Synchronous replication across three availability zones in the primary region"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "LRS na região primária, depois cópia assíncrona para LRS em uma região secundária emparelhada",
+          "en": "LRS in the primary region, then asynchronous copy to LRS in a paired secondary region"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "ZRS na região primária, depois cópia assíncrona para LRS em uma região secundária emparelhada",
+          "en": "ZRS in the primary region, then asynchronous copy to LRS in a paired secondary region"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "GZRS",
+          "en": "GZRS"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "LRS",
+          "en": "LRS"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "GRS",
+          "en": "GRS"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "ZRS",
+          "en": "ZRS"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "D",
+      "3": "C",
+      "4": "A"
+    }
+  },
+  {
+    "id": "ARCH-03-03-04",
+    "requirement": "A16",
+    "subject": "ZRS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma carga de trabalho deve manter a disponibilidade de leitura e gravação se uma zona de disponibilidade ficar indisponível. A política da empresa também exige que a replicação permaneça no país ou na região, sem região secundária. Qual opção de redundância se encaixa melhor?",
+      "en": "A workload must keep read and write availability if one availability zone becomes unavailable. Company policy also requires that replication stay within the country or region, with no secondary region. Which redundancy option fits best?"
+    },
+    "explanation": {
+      "pt": "O ZRS replica os dados de forma síncrona entre três zonas de disponibilidade na região primária, mantém os dados disponíveis para leitura e gravação se uma zona ficar indisponível e mantém a replicação dentro de um país ou região.",
+      "en": "ZRS replicates data synchronously across three availability zones in the primary region, keeps data available for reads and writes if one zone is unavailable, and keeps replication within a country or region."
+    },
+    "distractors": {
+      "pt": "O GZRS é o vizinho tentador porque inclui zonas, mas também replica para uma região secundária, o que a política não permite.",
+      "en": "GZRS is the tempting neighbor because it includes zones, but it also replicates to a secondary region, which the policy does not allow."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Zone-redundant storage (ZRS)",
+          "en": "Zone-redundant storage (ZRS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Locally redundant storage (LRS)",
+          "en": "Locally redundant storage (LRS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Geo-redundant storage (GRS)",
+          "en": "Geo-redundant storage (GRS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Geo-zone-redundant storage (GZRS)",
+          "en": "Geo-zone-redundant storage (GZRS)"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-03-03-05",
+    "requirement": "A16",
+    "subject": "RA-GZRS",
+    "level": "essential",
+    "stem": {
+      "pt": "Um aplicativo crítico precisa de redundância de zona na região primária e da capacidade de ler dados na região secundária antes de qualquer failover. Qual opção de redundância deve ser escolhida?",
+      "en": "A critical application needs zone redundancy in the primary region and the ability to read data in the secondary region before any failover happens. Which redundancy option should be chosen?"
+    },
+    "explanation": {
+      "pt": "O RA-GZRS combina resiliência em nível de zona na região primária com replicação geográfica e acesso de leitura à região secundária. O GZRS simples não é legível na secundária antes do failover, e o RA-GRS usa LRS na região primária.",
+      "en": "RA-GZRS combines zone-level resilience in the primary region with geo-replication and read access to the secondary region. Plain GZRS isn't readable in the secondary before failover, and RA-GRS uses LRS in the primary region."
+    },
+    "distractors": {
+      "pt": "O RA-GRS é o vizinho tentador porque tem acesso de leitura, mas sua região primária usa LRS, sem redundância de zona.",
+      "en": "RA-GRS is the tempting neighbor because it has read access, but its primary region uses LRS, with no zone redundancy."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Geo-zone-redundant storage (GZRS)",
+          "en": "Geo-zone-redundant storage (GZRS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Read-access geo-zone-redundant storage (RA-GZRS)",
+          "en": "Read-access geo-zone-redundant storage (RA-GZRS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Read-access geo-redundant storage (RA-GRS)",
+          "en": "Read-access geo-redundant storage (RA-GRS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Zone-redundant storage (ZRS)",
+          "en": "Zone-redundant storage (ZRS)"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-03-03-06",
+    "requirement": "A16",
+    "subject": "replicação assíncrona e RPO",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A replicação para a região secundária é assíncrona, então uma falha regional pode perder gravações recentes. O RPO costuma ser menor que 15 minutos, sem SLA. Por padrão, os dados secundários não são legíveis, a menos que ocorra failover; o acesso de leitura exige RA-GRS ou RA-GZRS.",
+      "en": "Replication to the secondary region is asynchronous, so a regional failure may lose recent writes. RPO is typically under 15 minutes with no SLA. By default secondary data isn't readable unless failover occurs; read access needs RA-GRS or RA-GZRS."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque o GRS soa totalmente protegido, mas a cópia geográfica é assíncrona.",
+      "en": "Statement 1 is tempting because GRS sounds fully protected, but the geo copy is asynchronous."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O GRS replica os dados de forma síncrona para a região secundária, então o objetivo de ponto de recuperação (RPO) é sempre zero.",
+          "en": "GRS replicates data synchronously to the secondary region, so the recovery point objective (RPO) is always zero."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Armazenamento do Azure normalmente tem um RPO de menos de 15 minutos para a região secundária, mas não há SLA sobre o tempo que a replicação leva.",
+          "en": "Azure Storage typically has an RPO of less than 15 minutes for the secondary region, but there is no SLA on how long replication takes."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Com o GRS, os dados da região secundária são legíveis por padrão, sem habilitar o acesso de leitura.",
+          "en": "With GRS, the data in the secondary region is readable by default, without enabling read access."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-03-03-07",
+    "requirement": "A16",
+    "subject": "região secundária",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas opções de redundância replicam dados para uma região secundária emparelhada? Escolha duas.",
+      "en": "Which two redundancy options replicate data to a paired secondary region? Choose two."
+    },
+    "explanation": {
+      "pt": "As opções com região secundária são GRS e GZRS. LRS e ZRS replicam apenas dentro da região primária.",
+      "en": "Secondary-region options are GRS and GZRS. LRS and ZRS replicate only within the primary region."
+    },
+    "distractors": {
+      "pt": "O ZRS é tentador porque é um nível acima do LRS, mas permanece em uma região.",
+      "en": "ZRS is tempting because it is a higher tier than LRS, but it stays in one region."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Armazenamento com redundância local (LRS)",
+          "en": "Locally redundant storage (LRS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Armazenamento com redundância de zona (ZRS)",
+          "en": "Zone-redundant storage (ZRS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Armazenamento com redundância geográfica (GRS)",
+          "en": "Geo-redundant storage (GRS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Armazenamento com redundância de zona geográfica (GZRS)",
+          "en": "Geo-zone-redundant storage (GZRS)"
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "ARCH-03-03-08",
+    "requirement": "A16",
+    "subject": "GRS vs GZRS",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação descreve corretamente a diferença entre GRS e GZRS?",
+      "en": "Which statement correctly describes the difference between GRS and GZRS?"
+    },
+    "explanation": {
+      "pt": "O GRS usa LRS na região primária. O GZRS usa ZRS na região primária. Ambos replicam de forma assíncrona para a região secundária emparelhada usando LRS.",
+      "en": "GRS uses LRS in the primary region. GZRS uses ZRS in the primary region. Both replicate asynchronously to the paired secondary region using LRS."
+    },
+    "distractors": {
+      "pt": "A alternativa A troca a redundância da região primária das duas.",
+      "en": "Option A swaps the primary-region redundancy of the two."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O GRS usa ZRS na região primária; o GZRS usa LRS na região primária.",
+          "en": "GRS uses ZRS in the primary region; GZRS uses LRS in the primary region."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O GRS replica apenas dentro de uma região; o GZRS replica para uma segunda região.",
+          "en": "GRS replicates only within one region; GZRS replicates to a second region."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O GRS torna a secundária legível por padrão; o GZRS nunca faz isso.",
+          "en": "GRS makes the secondary readable by default; GZRS never does."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O GRS usa LRS na região primária; o GZRS usa ZRS na região primária. Ambos copiam de forma assíncrona para LRS na região secundária.",
+          "en": "GRS uses LRS in the primary region; GZRS uses ZRS in the primary region. Both copy asynchronously to LRS in the secondary region."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-03-03-09",
+    "requirement": "A16",
+    "subject": "durabilidade",
+    "level": "detail",
+    "stem": {
+      "pt": "Complete a frase. O armazenamento com redundância de zona (ZRS) oferece durabilidade para objetos de armazenamento de pelo menos ______ noves em um determinado ano.",
+      "en": "Complete the sentence. Zone-redundant storage (ZRS) offers durability for storage objects of at least ______ nines over a given year."
+    },
+    "explanation": {
+      "pt": "O LRS oferece pelo menos 11 noves de durabilidade, o ZRS pelo menos 12 noves, e o GRS e o GZRS pelo menos 16 noves.",
+      "en": "LRS provides at least 11 nines of durability, ZRS at least 12 nines, and GRS and GZRS at least 16 nines."
+    },
+    "distractors": {
+      "pt": "11 é tentador por ser o valor do LRS, e 16 é o valor das opções geográficas.",
+      "en": "11 is tempting because it is the LRS figure, and 16 is the geo figure."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "9",
+          "en": "9"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "11",
+          "en": "11"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "12",
+          "en": "12"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "16",
+          "en": "16"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-03-03-10",
+    "requirement": "A16",
+    "subject": "GZRS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa executa uma carga de trabalho que precisa de máxima consistência, disponibilidade e resiliência de recuperação de desastres. Qual opção de redundância a Microsoft recomenda?",
+      "en": "A company runs a workload that needs maximum consistency, availability, and disaster recovery resilience. Which redundancy option does Microsoft recommend?"
+    },
+    "explanation": {
+      "pt": "A Microsoft recomenda o GZRS para cargas de trabalho que precisam de máxima consistência, disponibilidade e resiliência de recuperação de desastres, pois combina resiliência em nível de zona na região primária com replicação geográfica.",
+      "en": "Microsoft recommends GZRS for workloads that need maximum consistency, availability, and disaster recovery resilience, because it combines zone-level resilience in the primary region with geo-replication."
+    },
+    "distractors": {
+      "pt": "O GRS é o vizinho tentador porque também protege contra desastres regionais, mas não tem redundância de zona na região primária.",
+      "en": "GRS is the tempting neighbor because it also protects against regional disasters, but it has no zone redundancy in the primary region."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "GZRS",
+          "en": "GZRS"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "GRS",
+          "en": "GRS"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "ZRS",
+          "en": "ZRS"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "LRS",
+          "en": "LRS"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

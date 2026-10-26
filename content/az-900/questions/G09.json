@@ -1,0 +1,394 @@
+[
+  {
+    "id": "GOV-03-02-01",
+    "requirement": "G09",
+    "subject": "Cloud Shell sem instalação",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador está trabalhando em um laptop bloqueado no qual nada pode ser instalado. Ele precisa de um shell baseado em navegador, já autenticado com suas credenciais do Azure, que permita escolher entre o Azure PowerShell e a CLI do Azure. Qual ferramenta atende aos requisitos?",
+      "en": "An administrator is working from a locked-down laptop on which nothing can be installed. The administrator needs a browser-based shell that is already authenticated with their Azure credentials and lets them choose between Azure PowerShell and the Azure CLI. Which tool meets the requirements?"
+    },
+    "explanation": {
+      "pt": "O Azure Cloud Shell é um shell baseado em navegador que não exige instalação nem configuração local. Ele é autenticado com suas credenciais do Azure, portanto sabe quem você é e quais permissões tem, e oferece suporte ao Azure PowerShell e à CLI do Azure (Bash).",
+      "en": "Azure Cloud Shell is a browser-based shell with no local installation or configuration required. It is authenticated with your Azure credentials, so it knows who you are and what permissions you have, and it supports both Azure PowerShell and the Azure CLI (Bash)."
+    },
+    "distractors": {
+      "pt": "O portal do Azure é o vizinho tentador porque o Cloud Shell é aberto a partir dele, mas o portal é um console gráfico, e não um shell.",
+      "en": "The Azure portal is the tempting neighbor because Cloud Shell is opened from it, but the portal is a graphical console, not a shell."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Portal do Azure",
+          "en": "Azure portal"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Cloud Shell",
+          "en": "Azure Cloud Shell"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Resource Manager",
+          "en": "Azure Resource Manager"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-03-02-02",
+    "requirement": "G09",
+    "subject": "CLI vs PowerShell vs Cloud Shell",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "A CLI do Azure usa comandos Bash. O Azure PowerShell executa cmdlets que chamam a API REST do Azure. O Azure Cloud Shell é o shell baseado em navegador que oferece suporte a ambos, não exige instalação local e é autenticado com suas credenciais do Azure.",
+      "en": "The Azure CLI uses Bash commands. Azure PowerShell runs cmdlets that call the Azure REST API. Azure Cloud Shell is the browser-based shell that supports both, needs no local installation, and is authenticated with your Azure credentials."
+    },
+    "distractors": {
+      "pt": "O Cloud Shell não é uma terceira linguagem: ele hospeda as outras duas, e por isso se encaixa nos dois últimos itens.",
+      "en": "Cloud Shell is not a third language: it hosts the two others, which is why it fits the last two items."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Usa comandos Bash para criar e gerenciar recursos do Azure",
+          "en": "Uses Bash commands to create and manage Azure resources"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Executa comandos chamados cmdlets que chamam a API REST do Azure",
+          "en": "Runs commands called cmdlets that call the Azure REST API"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Fornece um shell baseado em navegador, sem instalação local, com suporte ao Azure PowerShell e à CLI do Azure",
+          "en": "Provides a browser-based shell with no local installation and supports both Azure PowerShell and the Azure CLI"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Já está autenticado com suas credenciais do Azure, portanto sabe quem você é e quais permissões tem",
+          "en": "Is already authenticated with your Azure credentials, so it knows who you are and what permissions you have"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Cloud Shell",
+          "en": "Azure Cloud Shell"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "CLI do Azure (Azure CLI)",
+          "en": "Azure CLI"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure PowerShell",
+          "en": "Azure PowerShell"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A",
+      "4": "A"
+    }
+  },
+  {
+    "id": "GOV-03-02-03",
+    "requirement": "G09",
+    "subject": "CLI vs PowerShell",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Azure PowerShell também pode ser instalado no Windows, no Linux e no Mac. A CLI do Azure é funcionalmente equivalente, com sintaxe Bash em vez de PowerShell, e oferece os mesmos benefícios para tarefas isoladas ou para orquestrar operações complexas por meio de código.",
+      "en": "Azure PowerShell can also be installed on Windows, Linux, and Mac. The Azure CLI is functionally equivalent, with Bash syntax instead of PowerShell syntax, and offers the same benefits for discrete tasks or for orchestrating complex operations through code."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque a CLI costuma ser associada a comandos rápidos, mas ela orquestra operações complexas assim como o Azure PowerShell.",
+      "en": "Statement 3 is tempting because the CLI is often associated with quick commands, but it orchestrates complex operations just like Azure PowerShell."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure PowerShell só pode ser usado a partir do Azure Cloud Shell.",
+          "en": "Azure PowerShell can be used only from Azure Cloud Shell."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "A CLI do Azure e o Azure PowerShell são funcionalmente equivalentes, e a principal diferença é a sintaxe dos comandos.",
+          "en": "Azure CLI and Azure PowerShell are functionally equivalent, and the primary difference is the syntax of the commands."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "A CLI do Azure só consegue lidar com alterações pontuais e não pode ser usada para orquestrar operações complexas por meio de código.",
+          "en": "The Azure CLI can handle only one-off changes and cannot be used to orchestrate complex operations through code."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-03-02-04",
+    "requirement": "G09",
+    "subject": "CLI do Azure com Bash",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe que trabalha principalmente no Linux e é familiarizada com Bash quer capturar seus comandos de gerenciamento do Azure em scripts, para que a configuração, a remoção e a manutenção de recursos conectados sejam repetíveis e automatizáveis, e executá-los em suas próprias estações de trabalho. Qual ferramenta é a mais natural?",
+      "en": "A team that works mostly on Linux and is comfortable with Bash wants to capture its Azure management commands in scripts, so that the setup, teardown, and maintenance of connected resources are repeatable and automatable, and to run them from their own workstations. Which tool is the most natural fit?"
+    },
+    "explanation": {
+      "pt": "A CLI do Azure usa comandos Bash, pode ser instalada no Windows, no Linux e no Mac e permite capturar comandos em scripts para tornar processos repetíveis e automatizáveis. Como a CLI e o Azure PowerShell são funcionalmente equivalentes, a escolha depende principalmente da linguagem que você conhece melhor.",
+      "en": "The Azure CLI uses Bash commands, can be installed on Windows, Linux, and Mac, and lets you capture commands in scripts to make processes repeatable and automatable. Because the CLI and Azure PowerShell are functionally equivalent, the choice mainly comes down to the language you know best."
+    },
+    "distractors": {
+      "pt": "O Azure PowerShell é o vizinho tentador porque é equivalente e também roda no Linux, mas a familiaridade da equipe é com a sintaxe Bash.",
+      "en": "Azure PowerShell is the tempting neighbor because it is equivalent and also runs on Linux, but the team's familiarity is with Bash syntax."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Portal do Azure",
+          "en": "Azure portal"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure PowerShell",
+          "en": "Azure PowerShell"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "CLI do Azure (Azure CLI)",
+          "en": "Azure CLI"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-03-02-05",
+    "requirement": "G09",
+    "subject": "recursos do Cloud Shell",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais dois recursos descrevem o Azure Cloud Shell? Escolha dois.",
+      "en": "Which two features describe Azure Cloud Shell? Choose two."
+    },
+    "explanation": {
+      "pt": "O Azure Cloud Shell funciona no navegador, não exige instalação nem configuração local e é autenticado com suas credenciais do Azure. Ele oferece suporte ao Azure PowerShell e à CLI do Azure, então você escolhe o shell que conhece melhor.",
+      "en": "Azure Cloud Shell is browser-based, needs no local installation or configuration, and is authenticated with your Azure credentials. It supports both Azure PowerShell and the Azure CLI, so you choose the shell you know best."
+    },
+    "distractors": {
+      "pt": "A opção só com a CLI está errada porque o Cloud Shell oferece suporte aos dois shells; a linguagem declarativa é o Bicep, e estender o gerenciamento a outras nuvens é o Azure Arc.",
+      "en": "The CLI-only option is wrong because Cloud Shell supports both shells; the declarative language is Bicep, and extending management to other clouds is Azure Arc."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Oferece suporte apenas à CLI do Azure, portanto usuários do PowerShell precisam instalar um shell local.",
+          "en": "It supports only the Azure CLI, so PowerShell users must install a local shell."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "É uma experiência de shell baseada em navegador, sem necessidade de instalação ou configuração local.",
+          "en": "It is a browser-based shell experience, with no local installation or configuration required."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "É uma linguagem declarativa para implantar recursos do Azure por meio do Azure Resource Manager.",
+          "en": "It is a declarative language for deploying Azure resources through Azure Resource Manager."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "É autenticado com suas credenciais do Azure, portanto sabe quem você é e quais permissões tem.",
+          "en": "It is authenticated with your Azure credentials, so it knows who you are and what permissions you have."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Estende o gerenciamento do Azure a servidores hospedados em outras nuvens.",
+          "en": "It extends Azure management to servers hosted in other clouds."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "GOV-03-02-06",
+    "requirement": "G09",
+    "subject": "cmdlets",
+    "level": "essential",
+    "stem": {
+      "pt": "O Azure PowerShell executa comandos chamados ______ que chamam a API REST do Azure para realizar tarefas de gerenciamento no Azure.",
+      "en": "Azure PowerShell runs commands called ______ that call the Azure REST API to perform management tasks in Azure."
+    },
+    "explanation": {
+      "pt": "O Azure PowerShell permite que desenvolvedores, profissionais de DevOps e de TI executem comandos chamados cmdlets (command-lets). Os cmdlets podem ser executados de forma independente para alterações pontuais ou combinados para orquestrar ações complexas.",
+      "en": "Azure PowerShell lets developers, DevOps, and IT professionals run commands called cmdlets (command-lets). Cmdlets can run independently for one-off changes or be combined to orchestrate complex actions."
+    },
+    "distractors": {
+      "pt": "Os modelos são o distrator tentador porque também implantam recursos, mas são arquivos declarativos, e não comandos do PowerShell.",
+      "en": "Templates are the tempting distractor because they also deploy resources, but they are declarative files, not PowerShell commands."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "cmdlets",
+          "en": "cmdlets"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "painéis (dashboards)",
+          "en": "dashboards"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "modelos (templates)",
+          "en": "templates"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "políticas (policies)",
+          "en": "policies"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-03-02-07",
+    "requirement": "G09",
+    "subject": "CLI vs PowerShell",
+    "level": "essential",
+    "stem": {
+      "pt": "Um desenvolvedor precisa implantar uma infraestrutura inteira com centenas de recursos a partir de código e está decidindo entre o Azure PowerShell e a CLI do Azure. Qual afirmação é precisa?",
+      "en": "A developer must deploy an entire infrastructure of several hundred resources from code and is deciding between Azure PowerShell and the Azure CLI. Which statement is accurate?"
+    },
+    "explanation": {
+      "pt": "O Azure PowerShell e a CLI do Azure oferecem os mesmos benefícios para tarefas isoladas e para orquestrar operações complexas, inclusive a implantação de uma infraestrutura inteira a partir de código. Ambos podem ser instalados no Windows, no Linux e no Mac, e ambos estão disponíveis no Cloud Shell.",
+      "en": "Azure PowerShell and the Azure CLI offer the same benefits for discrete tasks and for orchestrating complex operations, including the deployment of an entire infrastructure from code. Both can be installed on Windows, Linux, and Mac, and both are available in Cloud Shell."
+    },
+    "distractors": {
+      "pt": "As duas primeiras opções inventam uma diferença de capacidade entre as ferramentas; a opção do portal ignora que scripts são o caminho repetível.",
+      "en": "The first two options invent a capability gap between the tools; the portal option ignores that scripts are the repeatable path."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Somente o Azure PowerShell pode orquestrar implantações complexas; a CLI do Azure lida apenas com tarefas pontuais.",
+          "en": "Only Azure PowerShell can orchestrate complex deployments; the Azure CLI handles only one-off tasks."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Somente a CLI do Azure pode ser instalada no Linux e no Mac; o Azure PowerShell se limita ao Windows.",
+          "en": "Only the Azure CLI can be installed on Linux and Mac; Azure PowerShell is limited to Windows."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ambos podem orquestrar a implantação; a principal diferença é a sintaxe dos comandos, então a escolha depende principalmente da linguagem que a equipe conhece melhor.",
+          "en": "Both can orchestrate the deployment; the main difference is the command syntax, so the choice mainly comes down to which language the team knows best."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nenhum dos dois pode ser usado para isso; implantações grandes exigem o portal do Azure.",
+          "en": "Neither can be used for this; large deployments require the Azure portal."
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

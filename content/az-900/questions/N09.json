@@ -1,0 +1,402 @@
+[
+  {
+    "id": "CLOUD-02-02-01",
+    "requirement": "N09",
+    "subject": "confiabilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação define a confiabilidade (reliability) na nuvem?",
+      "en": "Which statement defines reliability in the cloud?"
+    },
+    "explanation": {
+      "pt": "Confiabilidade é a capacidade de um sistema de se recuperar de falhas e continuar funcionando. Ela também é um dos pilares do Microsoft Azure Well-Architected Framework.",
+      "en": "Reliability is the ability of a system to recover from failures and continue to function. It is also one of the pillars of the Microsoft Azure Well-Architected Framework."
+    },
+    "distractors": {
+      "pt": "A alternativa C é a definição de alta disponibilidade, o vizinho mais próximo: disponibilidade é estar no ar apesar de interrupções, confiabilidade é recuperar-se e continuar funcionando.",
+      "en": "Option C is the high availability definition, the closest neighbor: availability is about being up regardless of disruption, reliability is about recovering and continuing to function."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "A capacidade de um sistema de se recuperar de falhas e continuar funcionando.",
+          "en": "The ability of a system to recover from failures and continue to function."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A capacidade de ajustar recursos para atender à demanda.",
+          "en": "The ability to adjust resources to meet demand."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Garantir a disponibilidade máxima, independentemente de interrupções ou eventos.",
+          "en": "Ensuring maximum availability regardless of disruptions or events."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Prever o custo do gasto na nuvem.",
+          "en": "Forecasting the cost of cloud spend."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-02-02-02",
+    "requirement": "N09",
+    "subject": "confiabilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Um evento catastrófico derruba uma região do Azure, mas o aplicativo de uma empresa continua em execução a partir de outras regiões. Qual benefício da nuvem e qual característica de projeto isso ilustra?",
+      "en": "A catastrophic event takes one Azure region offline, but a company's application keeps running from other regions. Which cloud benefit and design characteristic does this illustrate?"
+    },
+    "explanation": {
+      "pt": "O design descentralizado da nuvem permite implantar recursos em regiões do mundo todo. Com essa escala global, mesmo que uma região tenha um evento catastrófico, as outras continuam em execução. Isso é confiabilidade.",
+      "en": "The cloud's decentralized design lets you deploy resources in regions around the world. With that global scale, even if one region has a catastrophic event, other regions keep running. This is reliability."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque o aplicativo continuou disponível, mas o Learn não diz que SLAs garantem 100% de tempo de atividade; as garantias dependem do serviço.",
+      "en": "Option C is tempting because the application stayed available, but Learn does not say that SLAs guarantee 100 percent uptime; uptime guarantees depend on the service."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Escalabilidade (scalability), porque os recursos fizeram scale out dentro da mesma região",
+          "en": "Scalability, because resources scaled out within the same region"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Previsibilidade (predictability), porque o desempenho foi previsto com antecedência",
+          "en": "Predictability, because performance was forecasted in advance"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Alta disponibilidade (high availability), porque o SLA garante 100% de tempo de atividade",
+          "en": "High availability, because the SLA guarantees 100 percent uptime"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Confiabilidade (reliability), porque o design descentralizado permite implantar recursos em regiões do mundo todo",
+          "en": "Reliability, because the decentralized design lets resources be deployed in regions around the world"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-02-02-03",
+    "requirement": "N09",
+    "subject": "confiabilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A confiabilidade é um pilar do Well-Architected Framework, e o design descentralizado da nuvem permite implantar recursos em várias regiões; às vezes o ambiente muda automaticamente para outra região.",
+      "en": "Reliability is a Well-Architected Framework pillar, and the cloud's decentralized design lets you deploy resources across regions; sometimes the environment shifts to another region automatically."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é a ideia invertida: a confiabilidade vem de recursos em regiões do mundo todo, e não de uma única região.",
+      "en": "Statement 3 is the reversed idea: reliability comes from resources in regions around the world, not from one region."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A confiabilidade é um dos pilares do Microsoft Azure Well-Architected Framework.",
+          "en": "Reliability is one of the pillars of the Microsoft Azure Well-Architected Framework."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Em alguns casos, o próprio ambiente de nuvem muda automaticamente para uma região diferente, sem nenhuma ação necessária da sua parte.",
+          "en": "In some cases, the cloud environment itself automatically shifts to a different region, with no action needed on your part."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Para se beneficiar da confiabilidade da nuvem, todos os recursos devem ser implantados em uma única região.",
+          "en": "To benefit from the cloud's reliability, all resources must be deployed in a single region."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-02-02-04",
+    "requirement": "N09",
+    "subject": "confiabilidade vs previsibilidade vs HA",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Escalabilidade ajusta recursos à demanda. Confiabilidade recupera-se de falhas e continua funcionando. Previsibilidade, de desempenho ou custo, permite avançar com confiança. Alta disponibilidade garante a disponibilidade máxima apesar de interrupções.",
+      "en": "Scalability adjusts resources to demand. Reliability recovers from failures and keeps functioning. Predictability, in performance or cost, lets you move forward with confidence. High availability ensures maximum availability regardless of disruptions."
+    },
+    "distractors": {
+      "pt": "Confiabilidade e alta disponibilidade são os vizinhos mais trocados.",
+      "en": "Reliability and high availability are the neighbors most often swapped."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Ajustar recursos para atender à demanda",
+          "en": "Adjusting resources to meet demand"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Recuperar-se de falhas e continuar funcionando",
+          "en": "Recovering from failures and continuing to function"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Avançar com confiança prevendo desempenho ou custo",
+          "en": "Moving forward with confidence by predicting performance or cost"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Garantir a disponibilidade máxima, independentemente de interrupções ou eventos",
+          "en": "Ensuring maximum availability regardless of disruptions or events"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Confiabilidade (reliability)",
+          "en": "Reliability"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Alta disponibilidade (high availability)",
+          "en": "High availability"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Previsibilidade (predictability)",
+          "en": "Predictability"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Escalabilidade (scalability)",
+          "en": "Scalability"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "A",
+      "3": "C",
+      "4": "B"
+    }
+  },
+  {
+    "id": "CLOUD-02-02-05",
+    "requirement": "N09",
+    "subject": "previsibilidade de custos",
+    "level": "detail",
+    "stem": {
+      "pt": "Uma equipe financeira quer melhorar a previsibilidade de custos na nuvem. Quais três ações a apoiam? Escolha três.",
+      "en": "A finance team wants to improve cost predictability in the cloud. Which three actions support it? Choose three."
+    },
+    "explanation": {
+      "pt": "Previsibilidade de custos é prever o gasto na nuvem: acompanhar o uso em tempo real, monitorar o uso eficiente, aplicar análise de dados a padrões e tendências e estimar com ferramentas como a Calculadora de Preços do Azure.",
+      "en": "Cost predictability is about forecasting cloud spend: track use in real time, monitor efficient use, apply data analytics to patterns and trends, and estimate with tools like the Azure Pricing Calculator."
+    },
+    "distractors": {
+      "pt": "A alternativa B é tentadora porque melhora a previsibilidade, mas apoia a previsibilidade de desempenho, e não a de custos.",
+      "en": "Option B is tempting because it improves predictability, but it supports performance predictability, not cost."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Acompanhar o uso de recursos em tempo real",
+          "en": "Track resource use in real time"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Usar balanceamento de carga para redirecionar a sobrecarga para áreas menos sobrecarregadas",
+          "en": "Use load balancing to redirect overload to less stressed areas"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Aplicar análise de dados para encontrar padrões e tendências que ajudem a planejar implantações de recursos",
+          "en": "Apply data analytics to find patterns and trends that help plan resource deployments"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Usar a Calculadora de Preços do Azure (Azure Pricing Calculator) para estimar o possível gasto na nuvem",
+          "en": "Use the Azure Pricing Calculator to estimate potential cloud spend"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Confiar que o ambiente mude automaticamente para uma região diferente",
+          "en": "Rely on the environment automatically shifting to a different region"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "CLOUD-02-02-06",
+    "requirement": "N09",
+    "subject": "previsibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre a previsibilidade (predictability) na nuvem está correta?",
+      "en": "Which statement about predictability in the cloud is correct?"
+    },
+    "explanation": {
+      "pt": "A previsibilidade pode se concentrar em desempenho ou custo, e ambos são fortemente influenciados pelo Well-Architected Framework.",
+      "en": "Predictability can focus on performance or cost, and both are heavily influenced by the Well-Architected Framework."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque custo é a associação mais comum, mas a previsibilidade de desempenho também existe.",
+      "en": "Option A is tempting because cost is the most common association, but performance predictability also exists."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "A previsibilidade se aplica apenas a custos.",
+          "en": "Predictability applies only to cost."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A previsibilidade pode se concentrar em desempenho ou custo, e ambos são fortemente influenciados pelo Microsoft Azure Well-Architected Framework.",
+          "en": "Predictability can focus on performance or cost, and both are heavily influenced by the Microsoft Azure Well-Architected Framework."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A previsibilidade é a capacidade de se recuperar de falhas e continuar funcionando.",
+          "en": "Predictability is the ability to recover from failures and continue to function."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A previsibilidade de desempenho depende de manter fixa a quantidade de recursos.",
+          "en": "Performance predictability depends on keeping the number of resources fixed."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-02-02-07",
+    "requirement": "N09",
+    "subject": "previsibilidade de desempenho",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. A previsibilidade de desempenho se concentra em ______.",
+      "en": "Complete the sentence. Performance predictability focuses on ______."
+    },
+    "explanation": {
+      "pt": "A previsibilidade de desempenho se concentra em prever os recursos necessários para oferecer uma experiência positiva aos clientes. Dimensionamento automático, balanceamento de carga e alta disponibilidade a apoiam.",
+      "en": "Performance predictability focuses on predicting the resources needed to deliver a positive experience for your customers. Autoscaling, load balancing, and high availability support it."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a previsibilidade de custos, o conceito irmão.",
+      "en": "Option A is cost predictability, the sibling concept."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/3-reliability-predictability-cloud",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "prever o custo do gasto na nuvem",
+          "en": "forecasting the cost of cloud spend"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "recuperar-se de falhas após um evento regional",
+          "en": "recovering from failures after a regional event"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "prever os recursos necessários para oferecer uma experiência positiva aos seus clientes",
+          "en": "predicting the resources needed to deliver a positive experience for your customers"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "acompanhar se os recursos atendem aos requisitos regulatórios",
+          "en": "tracking whether resources meet regulatory requirements"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

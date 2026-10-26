@@ -1,0 +1,203 @@
+[
+  {
+    "id": "ARCH-01-03-01",
+    "requirement": "A03",
+    "subject": "datacenters",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação melhor descreve os datacenters do Azure?",
+      "en": "Which statement best describes Azure datacenters?"
+    },
+    "explanation": {
+      "pt": "Os datacenters do Azure são instalações com servidores dispostos em racks, com energia, resfriamento e rede dedicados, semelhantes a um datacenter local em escala maior.",
+      "en": "Azure datacenters are facilities with servers arranged in racks, with dedicated power, cooling, and networking, similar to an on-premises datacenter at a larger scale."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a região, o agrupamento que você realmente escolhe; os datacenters são as instalações dentro dela.",
+      "en": "Option D is the region, the grouping you actually choose; datacenters are the facilities inside it."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Instâncias isoladas do Azure para fins de conformidade ou legais",
+          "en": "Isolated instances of Azure for compliance or legal purposes"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Agrupamentos lógicos de recursos que você exclui juntos",
+          "en": "Logical groupings of resources that you delete together"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Instalações com servidores dispostos em racks, com infraestrutura dedicada de energia, resfriamento e rede, semelhantes a um datacenter local, mas em escala muito maior",
+          "en": "Facilities with servers arranged in racks, with dedicated power, cooling, and networking infrastructure, similar to an on-premises datacenter but at a much larger scale"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Áreas geográficas do Azure que você escolhe ao implantar um recurso",
+          "en": "Geographical areas of Azure that you choose when you deploy a resource"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-01-03-02",
+    "requirement": "A03",
+    "subject": "datacenters",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Os datacenters do Azure têm energia, resfriamento e rede dedicados e são agrupados em regiões e zonas de disponibilidade. Você não interage diretamente com datacenters individuais.",
+      "en": "Azure datacenters have dedicated power, cooling, and networking, and are grouped into regions and availability zones. You don't interact with individual datacenters directly."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque o datacenter é onde estão os servidores, mas você trabalha com regiões e zonas.",
+      "en": "Statement 3 is tempting because the datacenter is where the servers are, but you work with regions and zones."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Os datacenters do Azure são agrupados em regiões e zonas de disponibilidade que oferecem resiliência e confiabilidade para as suas cargas de trabalho.",
+          "en": "Azure datacenters are grouped into regions and availability zones that provide resiliency and reliability for your workloads."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os datacenters do Azure têm infraestrutura dedicada de energia, resfriamento e rede.",
+          "en": "Azure datacenters have dedicated power, cooling, and networking infrastructure."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Ao implantar recursos, você interage diretamente com datacenters individuais do Azure.",
+          "en": "When you deploy resources, you interact directly with individual Azure datacenters."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-01-03-03",
+    "requirement": "A03",
+    "subject": "regiões e datacenters",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação relaciona corretamente datacenters, regiões e zonas de disponibilidade?",
+      "en": "Which statement correctly relates datacenters, regions, and availability zones?"
+    },
+    "explanation": {
+      "pt": "Uma região contém pelo menos um, possivelmente vários, datacenters. As zonas de disponibilidade são datacenters fisicamente separados dentro de uma região, cada uma composta por um ou mais datacenters com energia, resfriamento e rede independentes.",
+      "en": "A region contains at least one, potentially multiple, datacenters. Availability zones are physically separate datacenters within a region, each made of one or more datacenters with independent power, cooling, and networking."
+    },
+    "distractors": {
+      "pt": "As alternativas A e C invertem a ordem de contenção; datacenters são a menor unidade.",
+      "en": "Options A and C invert the containment order; datacenters are the smallest unit."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um datacenter contém várias regiões, e cada região contém várias zonas de disponibilidade.",
+          "en": "A datacenter contains several regions, and each region contains several availability zones."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Uma região contém pelo menos um datacenter, e uma zona de disponibilidade é composta por um ou mais datacenters com energia, resfriamento e rede independentes dentro de uma região.",
+          "en": "A region contains at least one datacenter, and an availability zone is made up of one or more datacenters with independent power, cooling, and networking inside a region."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma zona de disponibilidade contém várias regiões, e cada região é um único datacenter.",
+          "en": "An availability zone contains several regions, and each region is a single datacenter."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma região é sempre um único datacenter, e as zonas de disponibilidade são cópias dela em outras regiões.",
+          "en": "A region is always a single datacenter, and availability zones are copies of it in other regions."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-01-03-04",
+    "requirement": "A03",
+    "subject": "regiões e datacenters",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Você não interage diretamente com datacenters individuais do Azure. Em vez disso, os datacenters são agrupados em regiões do Azure e ______ que oferecem resiliência e confiabilidade para as suas cargas de trabalho.",
+      "en": "Complete the sentence. You don't interact with individual Azure datacenters directly. Instead, datacenters are grouped into Azure regions and ______ that provide resiliency and reliability for your workloads."
+    },
+    "explanation": {
+      "pt": "Os datacenters são agrupados em Regiões do Azure e Zonas de Disponibilidade do Azure. Grupos de recursos, grupos de gerenciamento e assinaturas pertencem à infraestrutura de gerenciamento.",
+      "en": "Datacenters are grouped into Azure Regions and Azure Availability Zones. Resource groups, management groups, and subscriptions belong to the management infrastructure."
+    },
+    "distractors": {
+      "pt": "Grupos de recursos são a opção tentadora porque também 'agrupam', mas agrupam recursos, e não datacenters.",
+      "en": "Resource groups are the tempting option because they also 'group', but they group resources, not datacenters."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "zonas de disponibilidade",
+          "en": "availability zones"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "grupos de recursos",
+          "en": "resource groups"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "grupos de gerenciamento",
+          "en": "management groups"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "assinaturas",
+          "en": "subscriptions"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

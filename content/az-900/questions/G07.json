@@ -1,0 +1,507 @@
+[
+  {
+    "id": "GOV-02-03-01",
+    "requirement": "G07",
+    "subject": "finalidade do bloqueio",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual é a melhor maneira de impedir a exclusão inadvertida de um recurso?",
+      "en": "What is the best way to prevent the inadvertent deletion of a resource?"
+    },
+    "explanation": {
+      "pt": "Um bloqueio de recurso impede que recursos sejam excluídos ou alterados acidentalmente. Isso corresponde à avaliação deste módulo.",
+      "en": "A resource lock prevents resources from being accidentally deleted or changed. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "O Azure Policy é o vizinho tentador porque também é uma proteção, mas impõe regras de configuração em vez de bloquear a exclusão.",
+      "en": "Azure Policy is the tempting neighbor because it is also a guardrail, but it enforces configuration rules rather than blocking deletion."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Bloqueios de recursos do Azure",
+          "en": "Azure resource locks"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Purview",
+          "en": "Microsoft Purview"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-02-03-02",
+    "requirement": "G07",
+    "subject": "tipos de bloqueio",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer que usuários autorizados continuem lendo e modificando um recurso, mas não o excluam. Qual tipo de bloqueio se encaixa?",
+      "en": "A company wants authorized users to keep reading and modifying a resource, but not delete it. Which lock type fits?"
+    },
+    "explanation": {
+      "pt": "Um bloqueio Delete significa que usuários autorizados ainda podem ler e modificar um recurso, mas não podem excluí-lo. O ReadOnly também bloqueia atualizações.",
+      "en": "A Delete lock means authorized users can still read and modify a resource, but they can't delete it. ReadOnly also blocks updates."
+    },
+    "distractors": {
+      "pt": "O ReadOnly é o vizinho tentador porque é mais rígido, mas também impediria modificações.",
+      "en": "ReadOnly is the tempting neighbor because it is stricter, but it would also stop modifications."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Delete",
+          "en": "Delete"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "ReadOnly",
+          "en": "ReadOnly"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma atribuição da função Leitor (Reader)",
+          "en": "A Reader role assignment"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma iniciativa do Azure Policy",
+          "en": "An Azure Policy initiative"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-02-03-03",
+    "requirement": "G07",
+    "subject": "remover bloqueio antes de alterar",
+    "level": "essential",
+    "stem": {
+      "pt": "O proprietário de um recurso tenta excluí-lo, mas há um bloqueio Delete aplicado. O que o proprietário deve fazer para excluir o recurso?",
+      "en": "The owner of a resource tries to delete it, but a Delete lock is applied. What must the owner do to delete the resource?"
+    },
+    "explanation": {
+      "pt": "Para modificar ou excluir um recurso bloqueado, você deve primeiro remover o bloqueio. Os bloqueios de recursos se aplicam independentemente das permissões de RBAC, então até um proprietário deve remover o bloqueio antes de executar a atividade bloqueada.",
+      "en": "To modify or delete a locked resource, you must first remove the lock. Resource locks apply regardless of RBAC permissions, so even an owner must remove the lock before performing the blocked activity."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque Owner é a função mais alta, mas os bloqueios prevalecem sobre o RBAC.",
+      "en": "Option A is tempting because Owner is the highest role, but locks override RBAC."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Nada; proprietários são isentos de bloqueios de recursos.",
+          "en": "Nothing; owners are exempt from resource locks."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Remover o bloqueio primeiro e depois executar a ação para a qual têm permissão.",
+          "en": "Remove the lock first, and then perform the action that they have permissions to perform."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Pedir ao Azure Policy que conceda uma exceção para a exclusão.",
+          "en": "Ask Azure Policy to grant an exception for the deletion."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Atribuir a si mesmo a função Colaborador (Contributor) e tentar novamente.",
+          "en": "Assign themselves the Contributor role and retry."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-02-03-04",
+    "requirement": "G07",
+    "subject": "regras dos bloqueios",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Os bloqueios se aplicam independentemente das permissões de RBAC, até para proprietários. Os bloqueios de recursos são herdados, então um bloqueio em um grupo de recursos se aplica aos recursos dentro dele. Um bloqueio Delete ainda permite que usuários autorizados leiam e modifiquem um recurso.",
+      "en": "Locks apply regardless of RBAC permissions, even to owners. Resource locks are inherited, so a lock on a resource group applies to the resources in it. A Delete lock still lets authorized users read and modify a resource."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque funções altas geralmente superam restrições, mas os bloqueios se aplicam a todos.",
+      "en": "Statement 1 is tempting because high roles usually override restrictions, but locks apply to everyone."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Proprietários de recursos são isentos de bloqueios de recursos.",
+          "en": "Resource owners are exempt from resource locks."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um bloqueio de recurso colocado em um grupo de recursos também é aplicado aos recursos dentro do grupo de recursos.",
+          "en": "A resource lock placed on a resource group is also applied to the resources within the resource group."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Um bloqueio Delete impede que usuários autorizados leiam o recurso.",
+          "en": "A Delete lock prevents authorized users from reading the resource."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-02-03-05",
+    "requirement": "G07",
+    "subject": "bloqueio vs Policy vs RBAC",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Um bloqueio Delete bloqueia apenas a exclusão. Um bloqueio ReadOnly bloqueia atualização e exclusão, de forma semelhante a restringir todos às permissões de Reader. Impedir a criação em uma região não permitida é função do Azure Policy.",
+      "en": "A Delete lock blocks deletion only. A ReadOnly lock blocks update and delete, similar to restricting everyone to Reader permissions. Preventing creation in a disallowed region is Azure Policy."
+    },
+    "distractors": {
+      "pt": "Delete e ReadOnly são o par mais próximo: o ReadOnly adiciona o bloqueio de atualizações.",
+      "en": "Delete and ReadOnly are the closest pair: ReadOnly adds the block on updates."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Usuários autorizados podem ler e modificar o recurso, mas não podem excluí-lo",
+          "en": "Authorized users can read and modify the resource, but they can't delete it"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Usuários autorizados podem ler o recurso, mas não podem atualizá-lo nem excluí-lo, de forma semelhante à função Leitor (Reader)",
+          "en": "Authorized users can read the resource, but they can't update or delete it, similar to the Reader role"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Impede que uma máquina virtual seja criada em uma região não permitida",
+          "en": "Prevents a virtual machine from being created in a region that isn't allowed"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Bloqueio ReadOnly",
+          "en": "ReadOnly lock"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Bloqueio Delete",
+          "en": "Delete lock"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Controle de acesso baseado em função do Azure",
+          "en": "Azure role-based access control"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "B",
+      "3": "A"
+    }
+  },
+  {
+    "id": "GOV-02-03-06",
+    "requirement": "G07",
+    "subject": "escopos de bloqueio",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são escopos aos quais um bloqueio de recurso pode ser aplicado? Escolha três.",
+      "en": "Which three are scopes to which a resource lock can be applied? Choose three."
+    },
+    "explanation": {
+      "pt": "Os bloqueios de recursos podem ser aplicados a recursos individuais, grupos de recursos ou uma assinatura inteira, e são herdados pelos recursos filhos.",
+      "en": "Resource locks can be applied to individual resources, resource groups, or an entire subscription, and they are inherited by child resources."
+    },
+    "distractors": {
+      "pt": "Uma região e uma conta de usuário são tentadoras por serem conceitos comuns do Azure, mas não são escopos de bloqueio.",
+      "en": "A region and a user account are tempting because they are common Azure concepts, but they aren't lock scopes."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um recurso individual",
+          "en": "An individual resource"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Uma região do Azure",
+          "en": "An Azure region"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma conta de usuário do Microsoft Entra",
+          "en": "A Microsoft Entra user account"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Um grupo de recursos",
+          "en": "A resource group"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Uma assinatura inteira",
+          "en": "An entire subscription"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-02-03-07",
+    "requirement": "G07",
+    "subject": "herança de bloqueio",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador coloca um bloqueio Delete em um grupo de recursos. Mais tarde, um colega adiciona uma nova conta de armazenamento ao grupo de recursos. A nova conta de armazenamento está protegida contra exclusão?",
+      "en": "An administrator places a Delete lock on a resource group. Later, a teammate adds a new storage account to the resource group. Is the new storage account protected from deletion?"
+    },
+    "explanation": {
+      "pt": "Os bloqueios de recursos são herdados: se você colocar um bloqueio em um grupo de recursos, todos os recursos dentro do grupo de recursos também têm o bloqueio aplicado.",
+      "en": "Resource locks are inherited: if you place a lock on a resource group, all the resources within the resource group also have the lock applied."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque funções parecem importar, mas os bloqueios se aplicam independentemente da função.",
+      "en": "Option C is tempting because roles seem to matter, but locks apply regardless of role."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Não; os bloqueios se aplicam apenas aos recursos que existiam quando o bloqueio foi criado.",
+          "en": "No; locks apply only to resources that existed when the lock was created."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Não; o bloqueio deve ser aplicado a cada recurso individualmente.",
+          "en": "No; the lock must be applied to each resource individually."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Sim, mas somente se o colega tiver a função Owner.",
+          "en": "Yes, but only if the teammate has the Owner role."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Sim; os bloqueios de recursos são herdados, então os recursos dentro do grupo de recursos têm o bloqueio aplicado.",
+          "en": "Yes; resource locks are inherited, so resources within the resource group have the lock applied."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-02-03-08",
+    "requirement": "G07",
+    "subject": "ferramentas para bloqueios",
+    "level": "detail",
+    "stem": {
+      "pt": "Quais três ferramentas você pode usar para gerenciar bloqueios de recursos? Escolha três.",
+      "en": "Which three tools can you use to manage resource locks? Choose three."
+    },
+    "explanation": {
+      "pt": "Você pode gerenciar bloqueios de recursos pelo portal do Azure (seção Bloqueios do painel Configurações de um recurso), pelo PowerShell, pela CLI do Azure ou por um modelo do Azure Resource Manager.",
+      "en": "You can manage resource locks from the Azure portal (Locks section of a resource's Settings pane), PowerShell, the Azure CLI, or an Azure Resource Manager template."
+    },
+    "distractors": {
+      "pt": "A calculadora de preços e o Service Trust Portal são tentadores por serem portais ou ferramentas do Azure, mas nenhum gerencia bloqueios.",
+      "en": "The pricing calculator and Service Trust Portal are tempting because they are Azure portals or tools, but neither manages locks."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "CLI do Azure",
+          "en": "Azure CLI"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A calculadora de preços",
+          "en": "The pricing calculator"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O portal do Azure",
+          "en": "The Azure portal"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O Service Trust Portal",
+          "en": "The Service Trust Portal"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Um modelo do Azure Resource Manager (ARM template)",
+          "en": "An Azure Resource Manager template"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-02-03-09",
+    "requirement": "G07",
+    "subject": "bloqueio vs Policy",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação contrasta corretamente os bloqueios de recursos com o Azure Policy?",
+      "en": "Which statement correctly contrasts resource locks with Azure Policy?"
+    },
+    "explanation": {
+      "pt": "Os bloqueios de recursos impedem que recursos sejam excluídos ou atualizados, conforme o tipo de bloqueio, independentemente do RBAC. O Azure Policy impõe regras às configurações de recursos para que permaneçam em conformidade.",
+      "en": "Resource locks prevent resources from being deleted or updated depending on the lock type, regardless of RBAC. Azure Policy enforces rules across resource configurations so they stay compliant."
+    },
+    "distractors": {
+      "pt": "A alternativa D troca os dois recursos.",
+      "en": "Option D swaps the two features."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os bloqueios de recursos impedem que recursos sejam excluídos ou atualizados independentemente das permissões; o Azure Policy impõe regras à configuração de recursos para mantê-la em conformidade.",
+          "en": "Resource locks prevent resources from being deleted or updated regardless of permissions; Azure Policy enforces rules on resource configuration to keep it compliant."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ambos se aplicam apenas a usuários que não têm a função Owner.",
+          "en": "Both only apply to users who don't have the Owner role."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Os bloqueios de recursos classificam dados confidenciais; o Azure Policy bloqueia a exclusão de recursos.",
+          "en": "Resource locks classify sensitive data; Azure Policy blocks resource deletion."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os bloqueios de recursos auditam configurações e podem adicionar marcas ausentes; o Azure Policy impede a exclusão.",
+          "en": "Resource locks audit configurations and can add missing tags; Azure Policy prevents deletion."
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

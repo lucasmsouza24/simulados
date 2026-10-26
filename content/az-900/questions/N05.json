@@ -1,0 +1,351 @@
+[
+  {
+    "id": "CLOUD-01-05-01",
+    "requirement": "N05",
+    "subject": "CapEx vs OpEx",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa deixa de comprar servidores e passa a alugar poder de computação e armazenamento, pagando pelos recursos que usa. Qual afirmação classifica corretamente esse gasto e dá o motivo?",
+      "en": "A company stops buying servers and instead rents compute power and storage, paying for the resources it uses. Which statement correctly classifies this spending and gives the reason?"
+    },
+    "explanation": {
+      "pt": "CapEx é o gasto inicial em infraestrutura física. OpEx é o gasto contínuo em serviços ao longo do tempo. Como os serviços de nuvem são pagos conforme o consumo, a computação em nuvem é classificada como despesa operacional.",
+      "en": "CapEx is up-front spending on physical infrastructure. OpEx is ongoing spending on services over time. Because cloud services are paid for as they are consumed, cloud computing is classified as an operational expense."
+    },
+    "distractors": {
+      "pt": "A alternativa D tem a classificação certa, mas o motivo errado: a nuvem não é fixada antecipadamente, ela segue o consumo.",
+      "en": "Option D has the right classification but the wrong reason: the cloud is not fixed in advance, it follows consumption."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "CapEx (despesa de capital), porque a empresa ainda paga pelo espaço do datacenter.",
+          "en": "CapEx, because the company still pays for datacenter space."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "OpEx (despesa operacional), porque a empresa paga pelos serviços conforme os consome.",
+          "en": "OpEx, because the company pays for services as it consumes them."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "CapEx (despesa de capital), porque alugar computação é um investimento em infraestrutura física.",
+          "en": "CapEx, because renting compute is an investment in physical infrastructure."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "OpEx (despesa operacional), porque o gasto é fixado antecipadamente para o ano todo.",
+          "en": "OpEx, because the spending is fixed in advance for the whole year."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-01-05-02",
+    "requirement": "N05",
+    "subject": "CapEx vs OpEx",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. No orçamento tradicional de TI, ______ se refere ao gasto inicial em infraestrutura física, enquanto ______ se refere ao gasto contínuo em serviços ao longo do tempo.",
+      "en": "Complete the sentence. In traditional IT budgeting, ______ refers to up-front spending on physical infrastructure, while ______ refers to ongoing spending on services over time."
+    },
+    "explanation": {
+      "pt": "CapEx é o gasto inicial em servidores, hardware de rede e espaço de datacenter. OpEx é o gasto contínuo em serviços ao longo do tempo, que é como a computação em nuvem é classificada.",
+      "en": "CapEx is up-front spending on servers, network hardware, and datacenter space. OpEx is ongoing spending on services over time, which is how cloud computing is classified."
+    },
+    "distractors": {
+      "pt": "A alternativa A troca os termos; as alternativas B e C usam pay-as-you-go, que é uma abordagem de preço, e não uma categoria orçamentária.",
+      "en": "Option A swaps the terms; options B and C use pay-as-you-go, which is a pricing approach, not a budgeting category."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "OpEx; CapEx",
+          "en": "OpEx; CapEx"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "pay-as-you-go; OpEx",
+          "en": "pay-as-you-go; OpEx"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "CapEx; pay-as-you-go",
+          "en": "CapEx; pay-as-you-go"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "CapEx; OpEx",
+          "en": "CapEx; OpEx"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-01-05-03",
+    "requirement": "N05",
+    "subject": "modelo baseado em consumo",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O modelo baseado em consumo elimina a necessidade de comprar capacidade que pode ficar subutilizada. Ele é classificado como OpEx, e não CapEx. Estimar necessidades com antecedência é a abordagem do datacenter tradicional; na nuvem você ajusta os recursos à demanda real.",
+      "en": "The consumption-based model removes the need to buy capacity that may go underutilized. It is classified as OpEx, not CapEx. Estimating needs in advance is the traditional datacenter approach; in the cloud you adjust resources to actual demand."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque planejamento de capacidade soa universal, mas na nuvem a capacidade acompanha a demanda.",
+      "en": "Statement 3 is tempting because capacity planning sounds universal, but in the cloud capacity follows demand."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Com o modelo baseado em consumo, não há necessidade de comprar e gerenciar capacidade que pode ficar subutilizada.",
+          "en": "With the consumption-based model, there's no need to purchase and manage capacity that may go underutilized."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "A computação em nuvem é classificada como despesa de capital (CapEx) porque você aluga poder de computação e armazenamento.",
+          "en": "Cloud computing is classified as capital expenditure (CapEx) because you rent compute power and storage."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Com o modelo baseado em consumo, você deve estimar as necessidades futuras de recursos com antecedência para evitar gastar com infraestrutura ociosa.",
+          "en": "With the consumption-based model, you must estimate future resource needs in advance to avoid overspending on idle infrastructure."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-01-05-04",
+    "requirement": "N05",
+    "subject": "benefícios do modelo baseado em consumo",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são benefícios do modelo baseado em consumo? Escolha três.",
+      "en": "Which three are benefits of the consumption-based model? Choose three."
+    },
+    "explanation": {
+      "pt": "O Learn lista estes benefícios: nenhum custo inicial, nenhuma necessidade de gerenciar capacidade subutilizada, adicionar recursos quando a demanda aumenta e liberá-los quando diminui.",
+      "en": "Learn lists these benefits: no upfront costs, no need to manage underutilized capacity, adding resources when demand increases, and releasing them when demand decreases."
+    },
+    "distractors": {
+      "pt": "A alternativa D descreve a abordagem tradicional e a alternativa A contradiz o pagamento pelo que se usa.",
+      "en": "Option D describes the traditional approach and option A contradicts pay-for-what-you-use."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um preço fixo, independentemente de quantos recursos você usa",
+          "en": "A fixed price regardless of how many resources you use"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A capacidade de adicionar recursos quando a demanda aumenta",
+          "en": "The ability to add resources when demand increases"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Nenhum custo inicial com hardware ou infraestrutura de datacenter",
+          "en": "No upfront costs for hardware or datacenter infrastructure"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Capacidade comprada antecipadamente para o pico esperado",
+          "en": "Capacity purchased in advance for the expected peak"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "A capacidade de liberar recursos quando a demanda diminui",
+          "en": "The ability to release resources when demand decreases"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-01-05-05",
+    "requirement": "N05",
+    "subject": "planejamento de capacidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa que opera um datacenter tradicional subestima suas necessidades futuras de recursos. O que acontece e como um modelo baseado em nuvem é diferente?",
+      "en": "A company that runs a traditional datacenter underestimates its future resource needs. What happens, and how does a cloud-based model differ?"
+    },
+    "explanation": {
+      "pt": "Subestimar leva à degradação de desempenho, e a correção significa encomendar, instalar e provisionar mais hardware, energia e resfriamento. Na nuvem você ajusta os recursos para corresponder à demanda.",
+      "en": "Underestimating leads to degraded performance, and the fix means ordering, installing, and provisioning more hardware, power, and cooling. In the cloud you adjust resources to match demand."
+    },
+    "distractors": {
+      "pt": "A alternativa B descreve superestimar, e não subestimar, que é a armadilha de leitura.",
+      "en": "Option B describes overestimating, not underestimating, which is the reading trap."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os aplicativos sofrem degradação de desempenho e a empresa precisa encomendar, instalar e provisionar mais hardware, energia e resfriamento; na nuvem, os recursos são ajustados para corresponder à demanda real.",
+          "en": "Applications suffer degraded performance and the company must order, install, and provision more hardware, power, and cooling; in the cloud, resources are adjusted to match actual demand."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A empresa gasta demais com infraestrutura ociosa; na nuvem, a capacidade ainda precisa ser estimada com antecedência.",
+          "en": "The company overspends on idle infrastructure; in the cloud, capacity must still be estimated in advance."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Os aplicativos continuam com desempenho normal porque datacenters tradicionais adicionam capacidade automaticamente; na nuvem, a capacidade é fixa.",
+          "en": "Applications keep performing normally because traditional datacenters add capacity automatically; in the cloud, capacity is fixed."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A empresa paga apenas pelo que usa; na nuvem, o gasto é uma despesa de capital fixa.",
+          "en": "The company pays only for what it uses; in the cloud, spending is a fixed capital expense."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-01-05-06",
+    "requirement": "N05",
+    "subject": "consumo vs CapEx vs OpEx",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O planejamento de capacidade tradicional corre o risco de capacidade ociosa ou insuficiente. O modelo baseado em consumo cobra apenas pelo que você usa. CapEx é gasto físico inicial; OpEx é gasto contínuo em serviços.",
+      "en": "Traditional capacity planning risks idle or insufficient capacity. The consumption-based model charges only for what you use. CapEx is up-front physical spending; OpEx is ongoing spending on services."
+    },
+    "distractors": {
+      "pt": "O modelo baseado em consumo e o OpEx são vizinhos: um é como você paga, o outro é como o gasto é classificado.",
+      "en": "The consumption-based model and OpEx are neighbors: one is how you pay, the other is how the spending is classified."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Uma empresa estima suas necessidades futuras com antecedência, superestima e paga por uma infraestrutura que fica ociosa.",
+          "en": "A company estimates its future needs in advance, overestimates, and pays for infrastructure that sits idle."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Uma empresa paga pelos recursos de TI que usa e nada mais, e os libera quando termina.",
+          "en": "A company pays for the IT resources it uses and nothing more, and releases them when it's done."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Gasto inicial em servidores, hardware de rede e espaço de datacenter.",
+          "en": "Up-front spending on servers, network hardware, and datacenter space."
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Gasto contínuo em serviços ao longo do tempo.",
+          "en": "Ongoing spending on services over time."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "CapEx (despesa de capital)",
+          "en": "CapEx"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Modelo baseado em consumo",
+          "en": "Consumption-based model"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Planejamento de capacidade tradicional",
+          "en": "Traditional capacity planning"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "OpEx (despesa operacional)",
+          "en": "OpEx"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "B",
+      "3": "A",
+      "4": "D"
+    }
+  }
+]

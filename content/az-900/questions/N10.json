@@ -1,0 +1,264 @@
+[
+  {
+    "id": "CLOUD-02-03-01",
+    "requirement": "N10",
+    "subject": "governança",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer que os recursos atendam aos seus padrões técnicos e requisitos regulatórios no momento da implantação e quer ser alertada depois sobre recursos que saiam da conformidade com a sua linha de base. Qual par de recursos da nuvem apoia isso, respectivamente?",
+      "en": "A company wants resources to meet its technical standards and regulatory requirements when they are deployed, and wants to be alerted later to resources that drift out of compliance with its baseline. Which pair of cloud capabilities supports this, respectively?"
+    },
+    "explanation": {
+      "pt": "Modelos ajudam a garantir que os recursos implantados atendam aos seus padrões técnicos e requisitos regulatórios e permitem atualizar recursos em escala. A auditoria baseada em nuvem sinaliza recursos fora de conformidade com a sua linha de base e oferece estratégias de mitigação.",
+      "en": "Templates help ensure that deployed resources meet your technical standards and regulatory requirements, and let you update resources at scale. Cloud-based auditing flags resources that are out of compliance with your baseline and provides mitigation strategies."
+    },
+    "distractors": {
+      "pt": "A alternativa A inverte a ordem, a armadilha de leitura: modelos atuam na implantação, a auditoria detecta desvios depois.",
+      "en": "Option A reverses the order, the reading trap: templates act at deployment, auditing detects drift afterward."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/4-security-governance-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Auditoria baseada em nuvem; modelos (templates)",
+          "en": "Cloud-based auditing; templates"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Modelos (templates); auditoria baseada em nuvem",
+          "en": "Templates; cloud-based auditing"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Dimensionamento automático (autoscaling); balanceamento de carga",
+          "en": "Autoscaling; load balancing"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Modelos (templates); SLAs (contratos de nível de serviço)",
+          "en": "Templates; service-level agreements (SLAs)"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-02-03-02",
+    "requirement": "N10",
+    "subject": "segurança por tipo de serviço",
+    "level": "essential",
+    "stem": {
+      "pt": "A Equipe A quer o máximo de controle de segurança, gerenciando os sistemas operacionais e o software instalado, incluindo patches e manutenção. A Equipe B quer que patches e manutenção sejam tratados automaticamente. Quais tipos de serviço de nuvem melhor atendem a cada equipe?",
+      "en": "Team A wants maximum control of security, managing the operating systems and installed software, including patches and maintenance. Team B wants patches and maintenance to be taken care of automatically. Which cloud service types best fit each team?"
+    },
+    "explanation": {
+      "pt": "O IaaS fornece recursos físicos, mas permite gerenciar os sistemas operacionais e o software instalado, incluindo patches e manutenção. Implantações PaaS ou SaaS cuidam de patches e manutenção automaticamente.",
+      "en": "IaaS provides physical resources but lets you manage the operating systems and installed software, including patches and maintenance. PaaS or SaaS deployments take care of patches and maintenance automatically."
+    },
+    "distractors": {
+      "pt": "A alternativa A inverte as equipes: mais controle significa mais responsabilidade, ou seja, IaaS.",
+      "en": "Option A reverses the teams: more control means more responsibility, which is IaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/4-security-governance-cloud",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Equipe A: PaaS ou SaaS; Equipe B: IaaS",
+          "en": "Team A: PaaS or SaaS; Team B: IaaS"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Equipe A: SaaS; Equipe B: PaaS",
+          "en": "Team A: SaaS; Team B: PaaS"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Equipe A: IaaS; Equipe B: PaaS ou SaaS",
+          "en": "Team A: IaaS; Team B: PaaS or SaaS"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Equipe A: IaaS; Equipe B: IaaS, porque o provedor aplica patches no sistema operacional",
+          "en": "Team A: IaaS; Team B: IaaS, because the provider patches the operating system"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-02-03-03",
+    "requirement": "N10",
+    "subject": "segurança e governança na nuvem",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Com IaaS você gerencia os sistemas operacionais e o software instalado, incluindo patches. Os provedores de nuvem normalmente são bem adequados para lidar com ataques DDoS. Estabelecer cedo uma boa base de governança mantém sua pegada de nuvem atualizada, segura e bem gerenciada.",
+      "en": "With IaaS you manage the operating systems and installed software, including patches. Cloud providers are typically well suited to handle DDoS attacks. Establishing a good governance footprint early keeps your cloud footprint updated, secure, and well managed."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque a nuvem é associada a atualizações automáticas, mas o Learn diz que o patching automático depende do modelo operacional (PaaS ou SaaS).",
+      "en": "Statement 1 is tempting because the cloud is associated with automatic updates, but Learn says automatic patching depends on the operating model (PaaS or SaaS)."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/4-security-governance-cloud",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Com infraestrutura como serviço (IaaS), o provedor sempre aplica automaticamente patches e atualizações de software no sistema operacional.",
+          "en": "With infrastructure as a service (IaaS), the provider always applies software patches and updates to the operating system automatically."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Os provedores de nuvem normalmente são bem adequados para lidar com ataques de negação de serviço distribuído (DDoS), o que torna sua rede mais robusta e segura.",
+          "en": "Cloud providers are typically well suited to handle distributed denial of service (DDoS) attacks, which makes your network more robust and secure."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "É melhor adiar a governança até que a pegada de nuvem seja grande, para aplicá-la uma única vez.",
+          "en": "It is best to postpone governance until the cloud footprint is large, so it can be applied only once."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-02-03-04",
+    "requirement": "N10",
+    "subject": "governança",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre governança na nuvem estão corretas? Escolha duas.",
+      "en": "Which two statements about governance in the cloud are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "Modelos ajudam os recursos implantados a atender aos padrões, e você pode atualizar recursos em escala. A auditoria baseada em nuvem sinaliza recursos fora de conformidade e oferece estratégias de mitigação. O suporte à governança vale tanto para IaaS quanto para SaaS.",
+      "en": "Templates help deployed resources meet standards, and you can update resources at scale. Cloud-based auditing flags non-compliant resources and provides mitigation strategies. Governance support applies whether you deploy IaaS or SaaS."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque o IaaS é citado, mas o Learn diz que os recursos da nuvem apoiam a governança seja na implantação de IaaS ou de SaaS.",
+      "en": "Option D is the most tempting because IaaS is mentioned, but Learn says cloud features support governance whether deploying IaaS or SaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/4-security-governance-cloud",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "A governança precisa ser reaplicada manualmente, recurso por recurso, quando os padrões mudam.",
+          "en": "Governance must be re-applied manually, resource by resource, as standards change."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Patches de software nunca são aplicados automaticamente na nuvem.",
+          "en": "Software patches are never applied automatically in the cloud."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Modelos ajudam a garantir que os recursos implantados atendam aos padrões técnicos e requisitos regulatórios.",
+          "en": "Templates help ensure that deployed resources meet technical standards and regulatory requirements."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os recursos da nuvem apoiam a governança somente para infraestrutura como serviço (IaaS).",
+          "en": "Cloud features support governance only for infrastructure as a service (IaaS)."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "A auditoria baseada em nuvem ajuda a sinalizar recursos fora de conformidade com a sua linha de base e oferece estratégias de mitigação.",
+          "en": "Cloud-based auditing helps flag resources that are out of compliance with your baseline and provides mitigation strategies."
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-02-03-05",
+    "requirement": "N10",
+    "subject": "patches automáticos",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Dependendo do seu modelo operacional, ______ também podem ser aplicados automaticamente, o que ajuda tanto na governança quanto na segurança.",
+      "en": "Complete the sentence. Depending on your operating model, ______ may also be applied automatically, which helps with both governance and security."
+    },
+    "explanation": {
+      "pt": "O Learn diz que, dependendo do seu modelo operacional, patches e atualizações de software podem ser aplicados automaticamente, o que ajuda tanto na governança quanto na segurança.",
+      "en": "Learn says that, depending on your operating model, software patches and updates may be applied automatically, which helps with both governance and security."
+    },
+    "distractors": {
+      "pt": "O failover regional é tentador porque o ambiente pode mudar de região automaticamente, mas isso é confiabilidade.",
+      "en": "Regional failover is tempting because the environment can shift regions automatically, but that is reliability."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/4-security-governance-cloud",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "patches e atualizações de software",
+          "en": "software patches and updates"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "garantias de tempo de atividade",
+          "en": "uptime guarantees"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "previsões de custo",
+          "en": "cost forecasts"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "failover regional",
+          "en": "regional failover"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

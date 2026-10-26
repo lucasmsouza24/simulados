@@ -1,0 +1,667 @@
+[
+  {
+    "id": "GOV-01-01-01",
+    "requirement": "G01",
+    "subject": "VMs spot",
+    "level": "essential",
+    "stem": {
+      "pt": "Um trabalho de processamento de dados em lote tolera interrupções e pode ser reiniciado depois. A equipe quer executá-lo ao menor custo de computação possível. Qual opção costuma ser a mais adequada?",
+      "en": "A batch data processing job can tolerate interruptions and restart later. The team wants to run it at the lowest possible compute cost. Which option is typically the best fit?"
+    },
+    "explanation": {
+      "pt": "As Azure Spot Virtual Machines usam capacidade não utilizada do Azure a preços menores, mas as cargas de trabalho podem ser removidas (evicted) quando o Azure precisa da capacidade de volta, então servem para trabalhos tolerantes a interrupções. Isso corresponde à avaliação deste módulo.",
+      "en": "Azure Spot Virtual Machines use unused Azure capacity at lower prices, but workloads can be evicted when Azure needs the capacity back, so they suit interruptible, fault-tolerant jobs. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "As Reservations são o vizinho tentador porque reduzem custos, mas comprometem você com capacidade e servem para cargas estáveis e de longa duração.",
+      "en": "Reservations are the tempting neighbor because they lower cost, but they commit you to capacity and suit stable, long-running workloads."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Reservations",
+          "en": "Reservations"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Pay-as-you-go only",
+          "en": "Pay-as-you-go only"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Spot Virtual Machines",
+          "en": "Spot Virtual Machines"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure savings plan for compute",
+          "en": "Azure savings plan for compute"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-01-01-02",
+    "requirement": "G01",
+    "subject": "reservas",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma carga de trabalho de SQL em produção é executada 24 horas por dia, 7 dias por semana, com necessidades de recursos estáveis e previsíveis. A empresa pode se comprometer com recursos específicos por um ou três anos para reduzir custos. Qual opção se encaixa melhor?",
+      "en": "A production SQL workload runs 24/7 with stable, predictable resource needs. The company can commit to specific resources for one or three years to reduce cost. Which option fits best?"
+    },
+    "explanation": {
+      "pt": "As Reservations são ideais para cargas de trabalho estáveis e previsíveis: você se compromete com capacidade de recursos específica por um ano ou três anos e o Azure aplica preço com desconto ao uso correspondente.",
+      "en": "Reservations are best for stable, predictable workloads: you commit to specific resource capacity for a one-year or three-year term and Azure applies discounted pricing to matching usage."
+    },
+    "distractors": {
+      "pt": "O Azure savings plan for compute é o vizinho tentador porque também é um compromisso de um ou três anos, mas se compromete com gasto por hora, e não com recursos específicos.",
+      "en": "Azure savings plan for compute is the tempting neighbor because it is also a one- or three-year commitment, but it commits to hourly spend rather than specific resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Reservations",
+          "en": "Reservations"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure savings plan for compute",
+          "en": "Azure savings plan for compute"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Spot Virtual Machines",
+          "en": "Spot Virtual Machines"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Pay-as-you-go only",
+          "en": "Pay-as-you-go only"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-01-01-03",
+    "requirement": "G01",
+    "subject": "plano de economia",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma carga de trabalho mista de web e API tem uso constante, mas alterna entre serviços de computação. A empresa quer um desconto por um prazo de um ou três anos, comprometendo-se com um valor de gasto por hora em vez de um tipo específico de VM. Qual opção se encaixa melhor?",
+      "en": "A mixed web and API workload has steady usage but shifts among compute services. The company wants a discount for a one- or three-year term, committing to an hourly spend amount instead of a specific VM type. Which option fits best?"
+    },
+    "explanation": {
+      "pt": "Com o Azure savings plan for compute, você se compromete com um valor de gasto por hora em serviços de computação elegíveis por um ou três anos, e o Azure aplica automaticamente o melhor preço disponível conforme o uso. Oferece mais flexibilidade que as Reservations.",
+      "en": "With Azure savings plan for compute you commit to an hourly spend amount on eligible compute services for one or three years, and Azure automatically applies the best available price as usage occurs. It offers more flexibility than Reservations."
+    },
+    "distractors": {
+      "pt": "As Reservations são o vizinho tentador, mas se comprometem com recursos específicos, e não com um gasto por hora entre serviços de computação.",
+      "en": "Reservations are the tempting neighbor, but they commit to specific resources, not to an hourly spend across compute services."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Reservations",
+          "en": "Reservations"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Spot Virtual Machines",
+          "en": "Spot Virtual Machines"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Pay-as-you-go only",
+          "en": "Pay-as-you-go only"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure savings plan for compute",
+          "en": "Azure savings plan for compute"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-01-01-04",
+    "requirement": "G01",
+    "subject": "reservas vs plano de economia vs spot",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "As Reservations se comprometem com capacidade específica. Um savings plan se compromete com gasto por hora. O Spot usa capacidade não utilizada a preços menores, mas pode ser removido. O pay-as-you-go cobra pelo que você usa em um ciclo de cobrança, com máxima flexibilidade.",
+      "en": "Reservations commit to specific capacity. A savings plan commits to hourly spend. Spot uses unused capacity at lower prices but can be evicted. Pay-as-you-go charges for what you use in a billing cycle with maximum flexibility."
+    },
+    "distractors": {
+      "pt": "Reservations e savings plan são o par mais trocado: capacidade versus gasto por hora.",
+      "en": "Reservations and savings plan are the most swapped pair: capacity versus hourly spend."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Comprometer-se com capacidade de recursos específica por um ou três anos",
+          "en": "Commit to specific resource capacity for a one-year or three-year term"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Comprometer-se com um valor de gasto por hora em serviços de computação elegíveis por um ou três anos",
+          "en": "Commit to an hourly spend amount on eligible compute services for one or three years"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Usar capacidade não utilizada do Azure a preços menores, com risco de remoção (eviction)",
+          "en": "Use unused Azure capacity at lower prices, with the risk of eviction"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Pagar pelos recursos usados durante um ciclo de cobrança, sem nenhum compromisso",
+          "en": "Pay for the resources used during a billing cycle, without any commitment"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Preço Spot (Spot pricing)",
+          "en": "Spot pricing"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Pagamento conforme o uso (pay-as-you-go)",
+          "en": "Pay-as-you-go"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Reservations (reservas)",
+          "en": "Reservations"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure savings plan for compute",
+          "en": "Azure savings plan for compute"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "D",
+      "3": "A",
+      "4": "B"
+    }
+  },
+  {
+    "id": "GOV-01-01-05",
+    "requirement": "G01",
+    "subject": "reservas vs plano de economia",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Um savings plan se compromete com um valor de gasto por hora, e não com um tipo específico de VM. A capacidade Spot pode ser recuperada pelo Azure. As Reservations podem ser aplicadas a serviços como VMs, bancos de dados e armazenamento.",
+      "en": "A savings plan commits to an hourly spend amount, not a specific VM type. Spot capacity can be reclaimed by Azure. Reservations can apply to services such as VMs, databases, and storage."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque descreve as Reservations, e não o savings plan.",
+      "en": "Statement 1 is tempting because it describes Reservations, not the savings plan."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure savings plan for compute exige que você se comprometa com um tipo específico de VM por um ou três anos.",
+          "en": "Azure savings plan for compute requires you to commit to a specific VM type for one or three years."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "As Azure Spot Virtual Machines podem ser removidas quando o Azure precisa da capacidade de volta.",
+          "en": "Azure Spot Virtual Machines can be evicted when Azure needs the capacity back."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "As Reservations podem ser aplicadas a serviços como máquinas virtuais, bancos de dados e armazenamento.",
+          "en": "Reservations can apply to services such as virtual machines, databases, and storage."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "GOV-01-01-06",
+    "requirement": "G01",
+    "subject": "fatores de custo",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são fatores que podem afetar os custos no Azure? Escolha três.",
+      "en": "Which three are factors that can affect costs in Azure? Choose three."
+    },
+    "explanation": {
+      "pt": "Os fatores que afetam o custo são tipo de recurso, consumo, manutenção, geografia, tipo de assinatura e Azure Marketplace.",
+      "en": "Factors that affect cost are resource type, consumption, maintenance, geography, subscription type, and Azure Marketplace."
+    },
+    "distractors": {
+      "pt": "Tags e nomes de grupos de recursos são tentadores porque ajudam a organizar custos, mas não alteram o que você paga.",
+      "en": "Tags and resource group names are tempting because they help organize costs, but they don't change what you pay."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O número de marcas (tags) aplicadas a um recurso",
+          "en": "The number of tags applied to a resource"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "A geografia (região) em que um recurso é implantado",
+          "en": "The geography (region) where a resource is deployed"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Compras feitas pelo Azure Marketplace",
+          "en": "Purchases made through Azure Marketplace"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O nome do grupo de recursos",
+          "en": "The name of the resource group"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "O quão bem o ambiente de nuvem é mantido, como remover recursos que não são mais necessários",
+          "en": "How well the cloud environment is maintained, such as removing resources that are no longer needed"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-01-01-07",
+    "requirement": "G01",
+    "subject": "transferência de dados",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre os custos de tráfego de rede no Azure está correta?",
+      "en": "Which statement about network traffic costs in Azure is correct?"
+    },
+    "explanation": {
+      "pt": "O tráfego de rede é afetado pela geografia: é mais barato mover informações dentro da Europa do que da Europa para a Ásia ou a América do Sul. Algumas transferências de entrada são gratuitas e as de saída são precificadas por zona.",
+      "en": "Network traffic is affected by geography: it is less expensive to move information within Europe than from Europe to Asia or South America. Some inbound transfers are free, and outbound transfers are priced by zone."
+    },
+    "distractors": {
+      "pt": "A alternativa D inverte a regra real: algumas transferências de entrada são gratuitas, enquanto as de saída são precificadas por zona.",
+      "en": "Option D inverts the real rule: some inbound transfers are free, while outbound transfers are priced by zone."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Mover dados da Europa para a Ásia é mais barato do que mover dados dentro da Europa.",
+          "en": "Moving data from Europe to Asia is cheaper than moving data within Europe."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Mover dados dentro da Europa é menos caro do que mover dados da Europa para a Ásia ou a América do Sul.",
+          "en": "Moving data within Europe is less expensive than moving data from Europe to Asia or South America."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Todas as transferências de dados de entrada e de saída custam o mesmo, independentemente da região.",
+          "en": "All inbound and outbound data transfers cost the same regardless of region."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "As transferências de dados de saída são gratuitas, enquanto as de entrada são sempre cobradas.",
+          "en": "Outbound data transfers are free, while inbound transfers are always charged."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-01-01-08",
+    "requirement": "G01",
+    "subject": "zona de cobrança vs zona de disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação descreve corretamente uma zona de cobrança (billing zone) no Azure?",
+      "en": "Which statement correctly describes a billing zone in Azure?"
+    },
+    "explanation": {
+      "pt": "Uma zona de cobrança é um agrupamento geográfico de regiões do Azure usado especificamente para a precificação de transferência de dados. É diferente de uma zona de disponibilidade.",
+      "en": "A billing zone is a geographical grouping of Azure regions used specifically for data-transfer pricing. It is different from an availability zone."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a definição de zona de disponibilidade, a confusão clássica.",
+      "en": "Option D is the availability zone definition, the classic mix-up."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma zona de cobrança é a mesma coisa que uma zona de disponibilidade.",
+          "en": "A billing zone is the same thing as an availability zone."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Uma zona de cobrança é um grupo de assinaturas em um Enterprise Agreement.",
+          "en": "A billing zone is a group of subscriptions under an Enterprise Agreement."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma zona de cobrança é um agrupamento geográfico de regiões do Azure usado na precificação de transferência de dados.",
+          "en": "A billing zone is a geographical grouping of Azure regions used for data-transfer pricing."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma zona de cobrança é um datacenter fisicamente separado dentro de uma região.",
+          "en": "A billing zone is a physically separate datacenter within a region."
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-01-01-09",
+    "requirement": "G01",
+    "subject": "manutenção e recursos órfãos",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe desprovisiona uma máquina virtual, mas nunca revisa os outros recursos que foram criados com ela. Qual efeito de custo é mais provável?",
+      "en": "A team deprovisions a virtual machine but never reviews the other resources that were created with it. Which cost effect is most likely?"
+    },
+    "explanation": {
+      "pt": "Quando você provisiona uma VM, recursos adicionais, como armazenamento e rede, também são provisionados. Se você desprovisiona a VM, esses recursos podem não ser desprovisionados ao mesmo tempo, então acompanhar os recursos que não são mais necessários ajuda a controlar o custo (manutenção).",
+      "en": "When you provision a VM, additional resources such as storage and networking are also provisioned. If you deprovision the VM, those resources may not be deprovisioned at the same time, so keeping an eye on resources that are no longer needed helps control cost (maintenance)."
+    },
+    "distractors": {
+      "pt": "A alternativa B é tentadora porque soa organizada, mas os recursos relacionados não são removidos automaticamente.",
+      "en": "Option B is tempting because it sounds tidy, but related resources aren't automatically removed."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os recursos de armazenamento e rede provisionados com a VM podem permanecer e continuar gerando custos.",
+          "en": "The storage and networking resources provisioned with the VM may remain and keep generating costs."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Todos os recursos relacionados são sempre desprovisionados ao mesmo tempo, então os custos param.",
+          "en": "All related resources are always deprovisioned at the same time, so costs stop."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O custo cai a zero porque o Azure cobra apenas por máquinas virtuais.",
+          "en": "The cost drops to zero because Azure bills only for virtual machines."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os recursos restantes são cobrados automaticamente a um preço Spot reduzido.",
+          "en": "The remaining resources are billed at a reduced Spot price automatically."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-01-01-10",
+    "requirement": "G01",
+    "subject": "Azure Marketplace",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa compra, pelo Azure Marketplace, uma máquina virtual pré-configurada com software especializado de um fornecedor terceiro. O que pode afetar o custo?",
+      "en": "A company buys a preconfigured virtual machine with specialized software from a third-party vendor through Azure Marketplace. What can affect the cost?"
+    },
+    "explanation": {
+      "pt": "Ao comprar pelo Azure Marketplace, você pode pagar pelos serviços do Azure usados e pelos serviços ou pela expertise do fornecedor terceiro. As estruturas de cobrança são definidas pelo fornecedor.",
+      "en": "When you purchase through Azure Marketplace you may pay for the Azure services you use and for the services or expertise of the third-party vendor. Billing structures are set by the vendor."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque o Marketplace é um catálogo de terceiros, mas os recursos do Azure continuam rodando no Azure.",
+      "en": "Option C is tempting because Marketplace is a third-party catalog, but the Azure resources still run on Azure."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Apenas os serviços do Azure usados; os serviços do fornecedor são sempre gratuitos.",
+          "en": "Only the Azure services used; the vendor's services are always free."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "As compras do Azure Marketplace são cobradas pela tarifa Spot do Azure.",
+          "en": "Azure Marketplace purchases are billed at the Azure Spot rate."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Apenas o preço do fornecedor; a infraestrutura do Azure nunca é cobrada.",
+          "en": "Only the vendor's price; Azure infrastructure is never charged."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os serviços do Azure usados e os serviços ou a expertise do fornecedor, com estruturas de cobrança definidas pelo fornecedor.",
+          "en": "The Azure services used and the vendor's services or expertise, with billing structures set by the vendor."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-01-01-11",
+    "requirement": "G01",
+    "subject": "fatores de custo de VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas configurações influenciam o custo de uma máquina virtual do Azure? Escolha duas.",
+      "en": "Which two settings influence the cost of an Azure virtual machine? Choose two."
+    },
+    "explanation": {
+      "pt": "Para uma VM, o custo depende do licenciamento do SO ou de outros softwares, do processador e do número de núcleos, do armazenamento anexado e da interface de rede, além da região.",
+      "en": "For a VM, cost depends on licensing for the OS or other software, the processor and number of cores, the attached storage, and the network interface, and also the region."
+    },
+    "distractors": {
+      "pt": "O nome e as tags são tentadores porque aparecem no portal, mas não alteram o preço.",
+      "en": "The name and tags are tempting because they appear in the portal, but they don't change the price."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O licenciamento do sistema operacional ou de outros softwares",
+          "en": "Licensing for the operating system or other software"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O número de marcas (tags) atribuídas à VM",
+          "en": "The number of tags assigned to the VM"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O processador e o número de núcleos",
+          "en": "The processor and number of cores"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O nome de exibição da VM",
+          "en": "The display name of the VM"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "O nome da assinatura",
+          "en": "The name of the subscription"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "GOV-01-01-12",
+    "requirement": "G01",
+    "subject": "conta gratuita",
+    "level": "detail",
+    "stem": {
+      "pt": "Complete a frase. Uma assinatura de avaliação gratuita do Azure inclui crédito para gastar nos primeiros ______ dias após a inscrição.",
+      "en": "Complete the sentence. An Azure free trial subscription includes credit to spend within the first ______ days of sign-up."
+    },
+    "explanation": {
+      "pt": "Uma avaliação gratuita do Azure inclui crédito para gastar nos primeiros 30 dias, acesso a produtos gratuitos por 12 meses e mais de 25 produtos sempre gratuitos.",
+      "en": "An Azure free trial includes credit to spend within the first 30 days, access to products that are free for 12 months, and more than 25 products that are always free."
+    },
+    "distractors": {
+      "pt": "12 é tentador porque é o valor em meses dos produtos gratuitos, e não da janela do crédito.",
+      "en": "12 is tempting because it is the months figure for free products, not the credit window."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "7",
+          "en": "7"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "30",
+          "en": "30"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "60",
+          "en": "60"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "90",
+          "en": "90"
+        }
+      }
+    ],
+    "answer": "B"
+  }
+]

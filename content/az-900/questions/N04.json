@@ -1,0 +1,350 @@
+[
+  {
+    "id": "CLOUD-01-04-01",
+    "requirement": "N04",
+    "subject": "nuvem híbrida",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa executa suas cargas de trabalho em uma nuvem privada. Ocasionalmente ela precisa de capacidade extra para uma demanda maior e temporária, e não quer comprar mais hardware. Qual é a abordagem mais adequada?",
+      "en": "A company runs its workloads in a private cloud. Occasionally it needs extra capacity for increased, temporary demand, and it doesn't want to buy more hardware. What is the most appropriate approach?"
+    },
+    "explanation": {
+      "pt": "Uma nuvem híbrida pode permitir que uma nuvem privada se expanda para uma demanda maior e temporária implantando recursos de nuvem pública, sem compra de hardware.",
+      "en": "A hybrid cloud can let a private cloud surge for increased, temporary demand by deploying public cloud resources, with no hardware purchase."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque resolve o problema de capacidade, mas exige a despesa de capital e a posse de hardware que a empresa quer evitar.",
+      "en": "Option C is tempting because it solves the capacity problem, but it requires the capital expenditure and hardware ownership the company wants to avoid."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Substituir a nuvem privada por um ambiente multicloud de forma permanente.",
+          "en": "Replace the private cloud with a multicloud environment permanently."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Usar uma nuvem híbrida e implantar recursos de nuvem pública para que a nuvem privada possa se expandir durante a demanda temporária.",
+          "en": "Use a hybrid cloud and deploy public cloud resources so that the private cloud can surge during the temporary demand."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Comprar hardware adicional para a nuvem privada e mantê-lo pelo resto do ano.",
+          "en": "Buy additional hardware for the private cloud and keep it for the rest of the year."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Manter a nuvem privada como está e adicionar uma segunda nuvem privada para o pico.",
+          "en": "Keep the private cloud as is and add a second private cloud for the peak."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-01-04-02",
+    "requirement": "N04",
+    "subject": "nuvem pública",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma startup precisa lançar um aplicativo rapidamente. Ela não tem capital para comprar hardware, quer provisionar e desprovisionar aplicativos rapidamente, quer pagar apenas pelo que usa e aceita não ter controle total sobre recursos e segurança. Qual modelo de nuvem é mais adequado?",
+      "en": "A startup must launch an application quickly. It has no capital to buy hardware, wants to provision and deprovision applications quickly, wants to pay only for what it uses, and accepts not having complete control over resources and security. Which cloud model is most appropriate?"
+    },
+    "explanation": {
+      "pt": "A nuvem pública não tem despesas de capital para escalar, provisiona e desprovisiona aplicativos rapidamente, cobra pelo que você usa e não dá controle total sobre recursos e segurança.",
+      "en": "The public cloud has no capital expenditures to scale up, provisions and deprovisions applications quickly, charges for what you use, and does not give complete control over resources and security."
+    },
+    "distractors": {
+      "pt": "A nuvem privada falha na restrição de não ter capital porque é preciso comprar hardware para a inicialização.",
+      "en": "Private cloud fails the no-capital constraint because hardware must be purchased for startup."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Nuvem pública (public cloud)",
+          "en": "Public cloud"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Nuvem privada (private cloud)",
+          "en": "Private cloud"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud)",
+          "en": "Hybrid cloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Multicloud",
+          "en": "Multicloud"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-01-04-03",
+    "requirement": "N04",
+    "subject": "escolha do modelo por requisito",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O controle total pertence à nuvem privada, o pagamento por uso sem despesas de capital pertence à nuvem pública, e escolher onde cada aplicativo é executado é a flexibilidade da nuvem híbrida.",
+      "en": "Complete control belongs to the private cloud, pay-per-use without capital expenditures belongs to the public cloud, and choosing where each application runs is the flexibility of the hybrid cloud."
+    },
+    "distractors": {
+      "pt": "As afirmações 1 e 3 trocam as características de nuvem pública e privada, a pegadinha clássica deste tópico.",
+      "en": "Statements 1 and 3 swap the public and private characteristics, the classic trap in this topic."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Uma empresa que precisa de controle total sobre recursos e segurança deve escolher uma nuvem pública.",
+          "en": "A company that needs complete control over resources and security should choose a public cloud."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Uma empresa que quer determinar onde cada aplicativo é executado, mantendo alguns serviços em uma nuvem privada e outros em uma nuvem pública, pode usar uma nuvem híbrida.",
+          "en": "A company that wants to determine where each application runs, keeping some services in a private cloud and others in a public cloud, can use a hybrid cloud."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma empresa que quer pagar apenas pelo que usa e evitar despesas de capital para escalar deve escolher uma nuvem privada.",
+          "en": "A company that wants to pay only for what it uses and avoid capital expenditures to scale up should choose a private cloud."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-01-04-04",
+    "requirement": "N04",
+    "subject": "Azure Arc e Azure VMware Solution",
+    "level": "detail",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure VMware Solution executa cargas de trabalho VMware no Azure. O Azure Arc ajuda a gerenciar ambientes públicos, privados, híbridos e multicloud. Usar dois provedores públicos é multicloud. Expandir uma nuvem privada com recursos públicos é nuvem híbrida.",
+      "en": "Azure VMware Solution runs VMware workloads in Azure. Azure Arc helps manage public, private, hybrid, and multicloud environments. Using two public providers is multicloud. Surging a private cloud with public resources is hybrid cloud."
+    },
+    "distractors": {
+      "pt": "O Azure Arc gerencia ambientes; ele não é um modelo de nuvem, por isso se encaixa no cenário de gerenciamento e não nos de migração ou expansão.",
+      "en": "Azure Arc manages environments; it is not a cloud model itself, so it fits the management scenario and not the migration or surge ones."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Uma empresa já estabelecida com VMware em uma nuvem privada quer migrar para uma nuvem pública ou híbrida e executar suas cargas de trabalho VMware no Azure.",
+          "en": "A company already established with VMware in a private cloud wants to migrate to a public or hybrid cloud and run its VMware workloads in Azure."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Uma empresa quer gerenciar recursos que são executados no Azure, no próprio datacenter e em outro provedor de nuvem.",
+          "en": "A company wants to manage resources that run on Azure, in its own datacenter, and on another cloud provider."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma empresa está migrando de um provedor de nuvem pública para outro e gerencia recursos e segurança nos dois.",
+          "en": "A company is migrating from one public cloud provider to another and manages resources and security in both."
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Uma empresa permite que sua nuvem privada se expanda para uma demanda temporária implantando recursos de nuvem pública.",
+          "en": "A company lets its private cloud surge for temporary demand by deploying public cloud resources."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud)",
+          "en": "Hybrid cloud"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Multicloud",
+          "en": "Multicloud"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure VMware Solution",
+          "en": "Azure VMware Solution"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "A",
+      "3": "C",
+      "4": "B"
+    }
+  },
+  {
+    "id": "CLOUD-01-04-05",
+    "requirement": "N04",
+    "subject": "nuvem privada",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma agência escolhe uma nuvem privada para que seus dados não fiquem no mesmo local que os dados de outros locatários. Quais duas afirmações são consequências dessa escolha? Escolha duas.",
+      "en": "An agency chooses a private cloud so that its data isn't collocated with other tenants' data. Which two statements are consequences of that choice? Choose two."
+    },
+    "explanation": {
+      "pt": "Uma nuvem privada exige a compra de hardware para a inicialização e a manutenção, e a organização é responsável pela manutenção e pelas atualizações do hardware.",
+      "en": "A private cloud requires buying hardware for startup and maintenance, and the organization is responsible for hardware maintenance and updates."
+    },
+    "distractors": {
+      "pt": "As alternativas A e C são benefícios da nuvem pública; soam como benefícios gerais da nuvem, o que as torna tentadoras.",
+      "en": "Options A and C are benefits of public cloud; they sound like general cloud benefits, which makes them tempting."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ela paga apenas pelo que usa.",
+          "en": "It pays only for what it uses."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "É necessário comprar hardware para a inicialização e a manutenção.",
+          "en": "Hardware must be purchased for startup and maintenance."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ela não tem despesas de capital para escalar.",
+          "en": "It has no capital expenditures to scale up."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ela é responsável pela manutenção e pelas atualizações do hardware.",
+          "en": "It is responsible for hardware maintenance and updates."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Os recursos estão disponíveis para qualquer pessoa que queira comprar serviços de nuvem.",
+          "en": "Resources are available to anyone who wants to purchase cloud services."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "CLOUD-01-04-06",
+    "requirement": "N04",
+    "subject": "multicloud",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual cenário melhor ilustra multicloud?",
+      "en": "Which scenario best illustrates multicloud?"
+    },
+    "explanation": {
+      "pt": "Multicloud significa usar vários provedores de nuvem pública, por exemplo para aproveitar recursos diferentes de cada um.",
+      "en": "Multicloud means using multiple public cloud providers, for example to use different features from each."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a mais tentadora porque envolve dois ambientes, mas é a nuvem híbrida de livro-texto.",
+      "en": "Option A is the most tempting because it involves two environments, but it is the textbook hybrid cloud."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma empresa executa uma nuvem privada local e implanta recursos de nuvem pública quando a demanda aumenta temporariamente.",
+          "en": "A company runs an on-premises private cloud and deploys public cloud resources when demand temporarily increases."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Uma empresa hospeda todos os seus recursos em um único provedor de nuvem pública em várias regiões.",
+          "en": "A company hosts all of its resources in a single public cloud provider across multiple regions."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma empresa executa uma nuvem privada em um datacenter dedicado operado por terceiros.",
+          "en": "A company runs a private cloud in a dedicated datacenter operated by a third party."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma empresa executa aplicativos em dois provedores de nuvem pública diferentes para usar recursos distintos de cada um.",
+          "en": "A company runs applications in two different public cloud providers to use different features from each."
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

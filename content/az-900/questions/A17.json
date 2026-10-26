@@ -1,0 +1,494 @@
+[
+  {
+    "id": "ARCH-03-04-01",
+    "requirement": "A17",
+    "subject": "uso geral v2 Standard",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer o tipo de conta de armazenamento recomendado para a maioria dos cenários e que ofereça suporte a blobs (incluindo Data Lake Storage), filas, tabelas e Azure Files. Qual tipo de conta se encaixa?",
+      "en": "A company wants the storage account type that is recommended for most scenarios and supports blobs (including Data Lake Storage), queues, tables, and Azure Files. Which account type fits?"
+    },
+    "explanation": {
+      "pt": "O Standard general-purpose v2 oferece suporte a Blob Storage (incluindo Data Lake Storage), filas, tabelas e Azure Files, e é recomendado para a maioria dos cenários que usam o Armazenamento do Azure.",
+      "en": "Standard general-purpose v2 supports Blob Storage (including Data Lake Storage), Queue, Table, and Azure Files, and is recommended for most scenarios using Azure Storage."
+    },
+    "distractors": {
+      "pt": "O Premium block blobs é o vizinho tentador porque blobs são o serviço mais comum, mas ele oferece suporte somente a blobs.",
+      "en": "Premium block blobs is the tempting neighbor because blobs are the most common service, but it supports blobs only."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Premium block blobs",
+          "en": "Premium block blobs"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Standard general-purpose v2",
+          "en": "Standard general-purpose v2"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Premium file shares",
+          "en": "Premium file shares"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Premium page blobs",
+          "en": "Premium page blobs"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-03-04-02",
+    "requirement": "A17",
+    "subject": "blobs de blocos Premium",
+    "level": "essential",
+    "stem": {
+      "pt": "Um aplicativo tem altas taxas de transação, usa objetos menores e exige latência de armazenamento consistentemente baixa. Qual tipo de conta de armazenamento é recomendado?",
+      "en": "An application has high transaction rates, uses smaller objects, and requires consistently low storage latency. Which storage account type is recommended?"
+    },
+    "explanation": {
+      "pt": "O Premium block blobs é o tipo de conta premium para blobs de blocos e blobs de acréscimo, recomendado para altas taxas de transação, objetos menores ou latência de armazenamento consistentemente baixa.",
+      "en": "Premium block blobs is the premium account type for block blobs and append blobs, recommended for high transaction rates, smaller objects, or consistently low storage latency."
+    },
+    "distractors": {
+      "pt": "O Standard general-purpose v2 é tentador como recomendação usual, mas não é a opção de baixa latência.",
+      "en": "Standard general-purpose v2 is tempting as the usual recommendation, but it is not the low-latency option."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Standard general-purpose v2",
+          "en": "Standard general-purpose v2"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Premium file shares",
+          "en": "Premium file shares"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Premium page blobs",
+          "en": "Premium page blobs"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Premium block blobs",
+          "en": "Premium block blobs"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-03-04-03",
+    "requirement": "A17",
+    "subject": "tipos de conta de armazenamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Premium file shares oferece SMB e NFS com LRS ou ZRS. O Premium page blobs é somente para blobs de páginas com LRS. O Standard general-purpose v2 oferece blobs, filas, tabelas e arquivos com as seis opções de redundância. O Premium block blobs oferece blobs de blocos e de acréscimo com LRS ou ZRS.",
+      "en": "Premium file shares support SMB and NFS with LRS or ZRS. Premium page blobs are page blobs only with LRS. Standard general-purpose v2 supports blobs, queues, tables, and files with all six redundancy options. Premium block blobs support block and append blobs with LRS or ZRS."
+    },
+    "distractors": {
+      "pt": "Premium block blobs e premium file shares têm as mesmas opções de redundância (LRS ou ZRS), então o serviço compatível é a pista decisiva.",
+      "en": "Premium block blobs and premium file shares share the same redundancy options (LRS or ZRS), so the supported service is the deciding clue."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Conta premium que oferece suporte a compartilhamentos de arquivos SMB e NFS",
+          "en": "Premium account that supports both SMB and NFS file shares"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Conta premium somente para blobs de páginas, com LRS como única opção de redundância",
+          "en": "Premium account for page blobs only, with LRS as the only redundancy option"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Oferece suporte a Blob, Fila, Tabela e Azure Files, com LRS, GRS, RA-GRS, ZRS, GZRS e RA-GZRS",
+          "en": "Supports Blob, Queue, Table, and Azure Files, with LRS, GRS, RA-GRS, ZRS, GZRS, and RA-GZRS"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Conta premium para blobs de blocos e blobs de acréscimo, com LRS ou ZRS",
+          "en": "Premium account for block blobs and append blobs, with LRS or ZRS"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Premium page blobs",
+          "en": "Premium page blobs"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Premium file shares",
+          "en": "Premium file shares"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Standard general-purpose v2",
+          "en": "Standard general-purpose v2"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Premium block blobs",
+          "en": "Premium block blobs"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "A",
+      "3": "C",
+      "4": "D"
+    }
+  },
+  {
+    "id": "ARCH-03-04-04",
+    "requirement": "A17",
+    "subject": "nome da conta",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Os nomes de conta de armazenamento têm de 3 a 24 caracteres, apenas com números e letras minúsculas, e devem ser exclusivos no Azure para que a conta tenha um namespace exclusivo.",
+      "en": "Storage account names are 3 to 24 characters, with numbers and lowercase letters only, and must be unique within Azure so that the account has a unique namespace."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque nomes de outros recursos do Azure permitem hífens e letras maiúsculas.",
+      "en": "Statement 3 is tempting because other Azure resource names allow hyphens and uppercase letters."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O nome de uma conta de armazenamento deve ter entre 3 e 24 caracteres e pode conter apenas números e letras minúsculas.",
+          "en": "A storage account name must be between 3 and 24 characters and can contain numbers and lowercase letters only."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O nome de uma conta de armazenamento deve ser exclusivo no Azure.",
+          "en": "A storage account name must be unique within Azure."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O nome de uma conta de armazenamento pode conter letras maiúsculas e hífens.",
+          "en": "A storage account name can contain uppercase letters and hyphens."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-03-04-05",
+    "requirement": "A17",
+    "subject": "endpoints da conta",
+    "level": "detail",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O endpoint combina o nome da conta e o endpoint do serviço: dfs para Data Lake Storage Gen2, file para Azure Files, queue para Armazenamento de Filas, table para Armazenamento de Tabelas e blob para Armazenamento de Blobs.",
+      "en": "The endpoint combines the account name and the service endpoint: dfs for Data Lake Storage Gen2, file for Azure Files, queue for Queue Storage, table for Table Storage, and blob for Blob Storage."
+    },
+    "distractors": {
+      "pt": "dfs é o único que não se parece com um nome de serviço, e a associação errada tentadora é o Armazenamento de Blobs.",
+      "en": "dfs is the one that doesn't resemble a service name, and the tempting wrong match is Blob Storage."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "https://<storage-account-name>.dfs.core.windows.net",
+          "en": "https://<storage-account-name>.dfs.core.windows.net"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "https://<storage-account-name>.file.core.windows.net",
+          "en": "https://<storage-account-name>.file.core.windows.net"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "https://<storage-account-name>.queue.core.windows.net",
+          "en": "https://<storage-account-name>.queue.core.windows.net"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "https://<storage-account-name>.table.core.windows.net",
+          "en": "https://<storage-account-name>.table.core.windows.net"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Armazenamento de Filas",
+          "en": "Queue Storage"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Data Lake Storage Gen2",
+          "en": "Data Lake Storage Gen2"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Files",
+          "en": "Azure Files"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Armazenamento de Tabelas",
+          "en": "Table Storage"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Armazenamento de Blobs",
+          "en": "Blob Storage"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A",
+      "4": "D"
+    }
+  },
+  {
+    "id": "ARCH-03-04-06",
+    "requirement": "A17",
+    "subject": "redundância por tipo de conta",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas opções de redundância são compatíveis com as contas premium block blobs e premium file shares? Escolha duas.",
+      "en": "Which two redundancy options are supported by both premium block blobs and premium file shares accounts? Choose two."
+    },
+    "explanation": {
+      "pt": "As contas premium block blobs e premium file shares oferecem LRS e ZRS. As opções geográficas estão disponíveis no Standard general-purpose v2.",
+      "en": "Premium block blobs and premium file shares support LRS and ZRS. The geo options are available in Standard general-purpose v2."
+    },
+    "distractors": {
+      "pt": "As opções geográficas são tentadoras porque soam como melhorias, mas as contas premium não as oferecem.",
+      "en": "The geo options are tempting because they sound like upgrades, but premium accounts don't offer them."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Armazenamento com redundância geográfica (GRS)",
+          "en": "Geo-redundant storage (GRS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Armazenamento com redundância local (LRS)",
+          "en": "Locally redundant storage (LRS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Armazenamento com redundância geográfica e acesso de leitura (RA-GRS)",
+          "en": "Read-access geo-redundant storage (RA-GRS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Armazenamento com redundância de zona geográfica (GZRS)",
+          "en": "Geo-zone-redundant storage (GZRS)"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Armazenamento com redundância de zona (ZRS)",
+          "en": "Zone-redundant storage (ZRS)"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-03-04-07",
+    "requirement": "A17",
+    "subject": "compartilhamentos de arquivos Premium",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa de uma conta do Azure Files que ofereça suporte a compartilhamentos de arquivos NFS e quer uma conta premium que ofereça suporte a SMB e NFS. Qual tipo de conta ela deve criar?",
+      "en": "A company needs an Azure Files account that supports NFS file shares, and wants a premium account that supports both SMB and NFS. Which account type should it create?"
+    },
+    "explanation": {
+      "pt": "Se você quer uma conta de armazenamento que ofereça suporte a compartilhamentos de arquivos SMB e NFS, use o tipo de conta premium file shares. O Standard general-purpose v2 é recomendado para a maioria dos cenários, mas NFS no Azure Files exige premium file shares.",
+      "en": "If you want a storage account that supports both SMB and NFS file shares, use the premium file shares account type. Standard general-purpose v2 is recommended for most scenarios, but NFS in Azure Files requires premium file shares."
+    },
+    "distractors": {
+      "pt": "O Standard general-purpose v2 é o padrão tentador para o Azure Files, mas não para NFS.",
+      "en": "Standard general-purpose v2 is the tempting default for Azure Files, but not for NFS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Standard general-purpose v2",
+          "en": "Standard general-purpose v2"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Premium block blobs",
+          "en": "Premium block blobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Premium file shares",
+          "en": "Premium file shares"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Premium page blobs",
+          "en": "Premium page blobs"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-03-04-08",
+    "requirement": "A17",
+    "subject": "namespace da conta",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Uma conta de armazenamento fornece um ______ exclusivo para seus dados do Armazenamento do Azure, acessível de qualquer lugar do mundo por HTTP ou HTTPS.",
+      "en": "Complete the sentence. A storage account provides a unique ______ for your Azure Storage data that is accessible from anywhere in the world over HTTP or HTTPS."
+    },
+    "explanation": {
+      "pt": "Uma conta de armazenamento fornece um namespace exclusivo para os dados do Armazenamento do Azure, acessível de qualquer lugar do mundo por HTTP ou HTTPS.",
+      "en": "A storage account provides a unique namespace for Azure Storage data, accessible from anywhere in the world over HTTP or HTTPS."
+    },
+    "distractors": {
+      "pt": "Região é tentadora porque você escolhe uma para a conta, mas não é o que torna a conta exclusiva.",
+      "en": "Region is tempting because you choose one for the account, but it is not what makes the account unique."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "namespace",
+          "en": "namespace"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "region",
+          "en": "region"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "subscription",
+          "en": "subscription"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "resource group",
+          "en": "resource group"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

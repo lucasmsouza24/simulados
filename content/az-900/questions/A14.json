@@ -1,0 +1,460 @@
+[
+  {
+    "id": "ARCH-03-01-01",
+    "requirement": "A14",
+    "subject": "Blobs",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa de um armazenamento de objetos massivamente escalável para dados não estruturados de texto e binários. Os dados incluem imagens e documentos servidos diretamente a um navegador, vídeo e áudio transmitidos por streaming e backups. Qual serviço do Armazenamento do Azure se encaixa?",
+      "en": "A company needs a massively scalable object store for unstructured text and binary data. The data includes images and documents served directly to a browser, streamed video and audio, and backups. Which Azure Storage service fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Blobs é o armazenamento de objetos não estruturados para grandes volumes de dados de texto ou binários. É ideal para servir imagens ou documentos a um navegador, transmitir vídeo e áudio e para backup, recuperação de desastres e arquivamento.",
+      "en": "Azure Blobs is the unstructured object store for large volumes of text or binary data. It is ideal for serving images or documents to a browser, streaming video and audio, and backup, disaster recovery, and archiving."
+    },
+    "distractors": {
+      "pt": "O Azure Files é o vizinho tentador porque também armazena arquivos, mas expõe compartilhamentos de arquivos gerenciados via SMB ou NFS, e não um armazenamento de objetos.",
+      "en": "Azure Files is the tempting neighbor because it also stores files, but it exposes managed file shares through SMB or NFS rather than an object store."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Files",
+          "en": "Azure Files"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Blobs",
+          "en": "Azure Blobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Tables",
+          "en": "Azure Tables"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Disks",
+          "en": "Azure Disks"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-03-01-02",
+    "requirement": "A14",
+    "subject": "Filas",
+    "level": "essential",
+    "stem": {
+      "pt": "Componentes de um aplicativo precisam de mensagens assíncronas confiáveis. Mensagens de até 64 KB devem ser armazenadas em grande número e, junto com o Azure Functions, acionar ações em segundo plano. Qual serviço do Armazenamento do Azure se encaixa?",
+      "en": "Application components need reliable asynchronous messaging. Messages up to 64 KB must be stored in large numbers and, together with Azure Functions, trigger background actions. Which Azure Storage service fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Queues é um armazenamento de mensagens para troca confiável de mensagens entre componentes de aplicativos. Ele guarda milhões de mensagens (até 64 KB cada) e é comumente combinado com o Azure Functions para acionar ações em segundo plano.",
+      "en": "Azure Queues is a messaging store for reliable messaging between application components. It holds millions of messages (up to 64 KB each) and is commonly paired with Azure Functions to trigger background actions."
+    },
+    "distractors": {
+      "pt": "O Azure Tables é tentador porque também armazena itens pequenos para aplicativos, mas é um armazenamento NoSQL de dados estruturados, e não um armazenamento de mensagens.",
+      "en": "Azure Tables is tempting because it also stores small items for applications, but it is a NoSQL store for structured data, not a messaging store."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Tables",
+          "en": "Azure Tables"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Blobs",
+          "en": "Azure Blobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Files",
+          "en": "Azure Files"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Queues",
+          "en": "Azure Queues"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-03-01-03",
+    "requirement": "A14",
+    "subject": "serviços de armazenamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure Tables é o armazenamento NoSQL para dados estruturados e não relacionais. O Azure Disks fornece volumes em nível de bloco para VMs. O Azure Files oferece compartilhamentos SMB e NFS gerenciados. O Azure Queues armazena mensagens para processamento assíncrono.",
+      "en": "Azure Tables is the NoSQL store for structured, non-relational data. Azure Disks provides block-level volumes for VMs. Azure Files offers managed SMB and NFS file shares. Azure Queues stores messages for asynchronous processing."
+    },
+    "distractors": {
+      "pt": "Azure Disks e Azure Files são o par mais próximo: ambos atendem cargas de VMs, mas os discos são volumes em nível de bloco e os arquivos são compartilhados via SMB ou NFS.",
+      "en": "Azure Disks and Azure Files are the closest pair: both back VM workloads, but disks are block-level volumes and files are shared over SMB or NFS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Um armazenamento NoSQL para grandes quantidades de dados estruturados e não relacionais",
+          "en": "A NoSQL store for large amounts of structured, non-relational data"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Volumes de armazenamento em nível de bloco para máquinas virtuais do Azure",
+          "en": "Block-level storage volumes for Azure virtual machines"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Compartilhamentos de arquivos totalmente gerenciados acessados pelos protocolos SMB ou NFS",
+          "en": "Fully managed file shares accessed through the SMB or NFS protocols"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Um armazenamento de mensagens para troca confiável de mensagens entre componentes de aplicativos",
+          "en": "A messaging store for reliable messaging between application components"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Queues",
+          "en": "Azure Queues"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Files",
+          "en": "Azure Files"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Tables",
+          "en": "Azure Tables"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Disks",
+          "en": "Azure Disks"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Azure Blobs",
+          "en": "Azure Blobs"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "D",
+      "3": "B",
+      "4": "A"
+    }
+  },
+  {
+    "id": "ARCH-03-01-04",
+    "requirement": "A14",
+    "subject": "características do Armazenamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Armazenamento de Tabelas é um armazenamento NoSQL para dados estruturados e não relacionais. O Armazenamento do Azure é gerenciado: o Azure cuida da manutenção de hardware, atualizações e problemas críticos. Todos os dados gravados em uma conta de armazenamento são criptografados pelo serviço.",
+      "en": "Table storage is a NoSQL store for structured, non-relational data. Azure Storage is managed: Azure handles hardware maintenance, updates, and critical issues. All data written to a storage account is encrypted by the service."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque armazenamento soa como infraestrutura, mas o Armazenamento do Azure é um serviço gerenciado.",
+      "en": "Statement 2 is tempting because storage sounds like infrastructure, but Azure Storage is a managed service."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Armazenamento de Tabelas do Azure é um serviço de banco de dados relacional que usa junções SQL.",
+          "en": "Azure Table storage is a relational database service that uses SQL joins."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Você deve aplicar patches ao hardware e ao sistema operacional dos servidores por trás do Armazenamento do Azure.",
+          "en": "You must patch the hardware and operating system of the servers behind Azure Storage."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Todos os dados gravados em uma conta de armazenamento do Azure são criptografados pelo serviço.",
+          "en": "All data written to an Azure storage account is encrypted by the service."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-03-01-05",
+    "requirement": "A14",
+    "subject": "benefícios do Armazenamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são benefícios do Armazenamento do Azure? Escolha três.",
+      "en": "Which three are benefits of Azure Storage? Choose three."
+    },
+    "explanation": {
+      "pt": "O Armazenamento do Azure é durável e altamente disponível, seguro, escalável, gerenciado e acessível. Os dados são acessíveis globalmente por HTTP ou HTTPS por meio de APIs REST, SDKs, CLI, PowerShell, portal ou Storage Explorer, e o Azure cuida da manutenção do hardware.",
+      "en": "Azure Storage is durable and highly available, secure, scalable, managed, and accessible. Data is reachable globally over HTTP or HTTPS through REST APIs, SDKs, CLI, PowerShell, the portal, or Storage Explorer, and Azure handles hardware maintenance."
+    },
+    "distractors": {
+      "pt": "As alternativas A e D contradizem os benefícios de serviço gerenciado e de acessibilidade.",
+      "en": "Options A and D contradict the managed and accessible benefits."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Você mantém o hardware de armazenamento e aplica as atualizações.",
+          "en": "You maintain the storage hardware and apply the updates."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Foi projetado para ser massivamente escalável.",
+          "en": "It is designed to be massively scalable."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Os dados gravados na conta são criptografados pelo serviço.",
+          "en": "Data written to the account is encrypted by the service."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os dados podem ser acessados somente pelo portal do Azure.",
+          "en": "Data can be accessed only from the Azure portal."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "As opções de redundância protegem os dados contra falhas de hardware, interrupções e incidentes regionais.",
+          "en": "Redundancy options protect data from hardware failures, outages, and regional incidents."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-03-01-06",
+    "requirement": "A14",
+    "subject": "Arquivos do Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe precisa de acesso compartilhado a arquivos para aplicativos existentes usando o protocolo SMB. Os compartilhamentos devem poder ser montados simultaneamente na nuvem e no ambiente local, sem hardware de servidor de arquivos nem aplicação de patches no sistema operacional para gerenciar. Qual serviço do Armazenamento do Azure se encaixa?",
+      "en": "A team needs shared file access for existing applications by using the SMB protocol. The shares must be mountable concurrently from cloud and on-premises, with no file server hardware or operating system patching to manage. Which Azure Storage service fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Files oferece compartilhamentos de arquivos totalmente gerenciados, acessíveis por SMB ou NFS, que podem ser montados simultaneamente em implantações na nuvem ou locais, sem hardware de servidor nem aplicação de patches no SO para gerenciar.",
+      "en": "Azure Files offers fully managed file shares accessible through SMB or NFS that can be mounted concurrently by cloud or on-premises deployments, with no server hardware or OS patching to manage."
+    },
+    "distractors": {
+      "pt": "O Azure Blobs é o vizinho tentador porque armazena arquivos, mas é um armazenamento de objetos acessado por URL ou API, e não montado como um compartilhamento SMB.",
+      "en": "Azure Blobs is the tempting neighbor because it stores files, but it is an object store accessed by URL or API, not mounted as an SMB share."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Files",
+          "en": "Azure Files"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Blobs",
+          "en": "Azure Blobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Disks",
+          "en": "Azure Disks"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Queues",
+          "en": "Azure Queues"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-03-01-07",
+    "requirement": "A14",
+    "subject": "Discos",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma máquina virtual do Azure precisa de volumes de armazenamento em nível de bloco, virtualizados e gerenciados pelo Azure para maior resiliência. Qual serviço do Armazenamento do Azure os fornece?",
+      "en": "An Azure virtual machine needs block-level storage volumes that are virtualized and managed by Azure for improved resiliency. Which Azure Storage service provides them?"
+    },
+    "explanation": {
+      "pt": "O Azure Disks (discos gerenciados) fornece volumes de armazenamento em nível de bloco para VMs do Azure, virtualizados e gerenciados pelo Azure para maior resiliência e operações mais simples.",
+      "en": "Azure Disks (managed disks) provide block-level storage volumes for Azure VMs, virtualized and managed by Azure for improved resiliency and simpler operations."
+    },
+    "distractors": {
+      "pt": "O Azure Files é tentador porque VMs podem montar compartilhamentos, mas os volumes de VM em nível de bloco são discos.",
+      "en": "Azure Files is tempting because VMs can mount shares, but VM volumes at block level are disks."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Files",
+          "en": "Azure Files"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Blobs",
+          "en": "Azure Blobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Disks",
+          "en": "Azure Disks"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Tables",
+          "en": "Azure Tables"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-03-01-08",
+    "requirement": "A14",
+    "subject": "Blobs e Big Data",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. O ______ lida com dados de texto e binários e também oferece suporte a análise de big data por meio do Data Lake Storage Gen2.",
+      "en": "Complete the sentence. ______ handles text and binary data and also supports big data analytics through Data Lake Storage Gen2."
+    },
+    "explanation": {
+      "pt": "O Azure Blobs é um armazenamento de objetos massivamente escalável para dados de texto e binários e também oferece suporte a análise de big data por meio do Data Lake Storage Gen2. Isso corresponde à avaliação deste módulo.",
+      "en": "Azure Blobs is a massively scalable object store for text and binary data, and it also supports big data analytics through Data Lake Storage Gen2. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "O Azure Disks é tentador porque análises podem envolver VMs, mas ele fornece volumes de bloco para VMs, e não um armazenamento de objetos.",
+      "en": "Azure Disks is tempting because analytics can involve VMs, but it provides block volumes for VMs, not an object store."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Files",
+          "en": "Azure Files"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Blobs",
+          "en": "Azure Blobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Queues",
+          "en": "Azure Queues"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Disks",
+          "en": "Azure Disks"
+        }
+      }
+    ],
+    "answer": "B"
+  }
+]

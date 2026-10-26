@@ -1,0 +1,213 @@
+[
+  {
+    "id": "GOV-03-01-01",
+    "requirement": "G08",
+    "subject": "finalidade do portal",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador júnior precisa criar, gerenciar e monitorar uma implantação em nuvem por meio de uma interface gráfica do usuário e quer criar painéis personalizados para ter uma visão organizada dos recursos. Qual ferramenta ele deve usar?",
+      "en": "A junior administrator must build, manage, and monitor a cloud deployment through a graphical user interface, and wants to create custom dashboards for an organized view of resources. Which tool should the administrator use?"
+    },
+    "explanation": {
+      "pt": "O portal do Azure é um console unificado baseado na Web que oferece uma alternativa gráfica às ferramentas de linha de comando. Você pode criar, gerenciar e monitorar de aplicativos Web simples a implantações de nuvem complexas e criar painéis personalizados.",
+      "en": "The Azure portal is a web-based, unified console that provides a graphical alternative to command-line tools. You can build, manage, and monitor everything from simple web apps to complex cloud deployments and create custom dashboards."
+    },
+    "distractors": {
+      "pt": "O Azure Cloud Shell é o vizinho tentador porque funciona no navegador e é aberto pelo portal, mas é um shell de comandos, e não uma interface gráfica.",
+      "en": "Azure Cloud Shell is the tempting neighbor because it is browser-based and opened from the portal, but it is a command shell, not a graphical interface."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure PowerShell",
+          "en": "Azure PowerShell"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Cloud Shell",
+          "en": "Azure Cloud Shell"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Portal do Azure",
+          "en": "Azure portal"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure CLI",
+          "en": "Azure CLI"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-03-01-02",
+    "requirement": "G08",
+    "subject": "resiliência do portal",
+    "level": "detail",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O portal do Azure foi projetado para resiliência e disponibilidade contínua. Ele tem presença em todos os datacenters do Azure, o que o torna resiliente a falhas de datacenters individuais, e é atualizado continuamente sem tempo de inatividade para manutenção. Os painéis personalizados são um de seus recursos.",
+      "en": "The Azure portal is designed for resiliency and continuous availability. It has a presence in every Azure datacenter, which makes it resilient to individual datacenter failures, and it updates continuously with no downtime for maintenance. Custom dashboards are one of its capabilities."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque um único local parece mais simples, mas o portal tem presença em todos os datacenters do Azure.",
+      "en": "Statement 2 is tempting because a single location sounds simpler, but the portal has a presence in every Azure datacenter."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O portal do Azure exige tempo de inatividade agendado para atividades de manutenção.",
+          "en": "The Azure portal requires scheduled downtime for maintenance activities."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O portal do Azure é hospedado em um único datacenter central para simplificar as atualizações.",
+          "en": "The Azure portal is hosted in a single central datacenter to simplify updates."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "No portal do Azure, você pode criar painéis personalizados para ter uma visão organizada dos recursos.",
+          "en": "In the Azure portal, you can create custom dashboards for an organized view of resources."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "GOV-03-01-03",
+    "requirement": "G08",
+    "subject": "Copilot no Azure",
+    "level": "detail",
+    "stem": {
+      "pt": "Qual afirmação sobre o Copilot no Azure está correta no nível de fundamentos?",
+      "en": "Which statement about Copilot in Azure is correct at the fundamentals level?"
+    },
+    "explanation": {
+      "pt": "O Copilot no Azure é uma experiência de assistente de IA que ajuda administradores a trabalhar mais rápido com orientação contextual em linguagem natural. Trate-o como um assistente operacional: valide as recomendações, confirme permissões e revise as alterações de implantação antes de aplicá-las em produção.",
+      "en": "Copilot in Azure is an AI assistant experience that helps administrators work faster with contextual guidance in natural language. Treat it as an operational assistant: validate recommendations, confirm permissions, and review deployment changes before applying them in production."
+    },
+    "distractors": {
+      "pt": "A opção da linguagem declarativa descreve o Bicep, e a opção do shell baseado em navegador descreve o Azure Cloud Shell.",
+      "en": "The declarative-language option describes Bicep, and the browser-based shell option describes Azure Cloud Shell."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "É um assistente de IA que fornece orientação contextual em linguagem natural, mas você ainda deve validar as recomendações, confirmar permissões e revisar as alterações de implantação antes da produção.",
+          "en": "It is an AI assistant that gives contextual guidance in natural language, but you should still validate its recommendations, confirm permissions, and review deployment changes before production."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Suas recomendações podem ser aplicadas à produção sem revisão, porque o Azure valida automaticamente cada sugestão.",
+          "en": "Its recommendations can be applied to production without review, because Azure validates every suggestion automatically."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "É uma linguagem declarativa para implantar recursos do Azure por meio do Azure Resource Manager.",
+          "en": "It is a declarative language for deploying Azure resources through Azure Resource Manager."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "É um shell baseado em navegador que executa apenas comandos da CLI do Azure.",
+          "en": "It is a browser-based shell that runs only Azure CLI commands."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-03-01-04",
+    "requirement": "G08",
+    "subject": "recursos do portal",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações descrevem o portal do Azure? Escolha duas.",
+      "en": "Which two statements describe the Azure portal? Choose two."
+    },
+    "explanation": {
+      "pt": "O portal do Azure é um console unificado baseado na Web, uma alternativa às ferramentas de linha de comando, com o qual você cria, gerencia e monitora de aplicativos Web simples a implantações de nuvem complexas. Cmdlets pertencem ao Azure PowerShell, definições JSON aos modelos do ARM e a projeção de recursos externos ao Azure Arc.",
+      "en": "The Azure portal is a web-based, unified console, an alternative to command-line tools, with which you can build, manage, and monitor everything from simple web apps to complex cloud deployments. Cmdlets belong to Azure PowerShell, JSON definitions to ARM templates, and projecting outside resources to Azure Arc."
+    },
+    "distractors": {
+      "pt": "Cada opção errada descreve outra ferramenta: Azure PowerShell, um modelo do ARM e o Azure Arc.",
+      "en": "Each wrong option describes another tool: Azure PowerShell, an ARM template, and Azure Arc."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "É um shell no qual você executa cmdlets que chamam a API REST do Azure.",
+          "en": "It is a shell in which you run cmdlets that call the Azure REST API."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "É um arquivo JSON declarativo que define o que implantar no Azure.",
+          "en": "It is a declarative JSON file that defines what to deploy to Azure."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Permite criar, gerenciar e monitorar de aplicativos Web simples a implantações de nuvem complexas.",
+          "en": "It lets you build, manage, and monitor everything from simple web apps to complex cloud deployments."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Projeta servidores hospedados fora do Azure no Azure Resource Manager.",
+          "en": "It projects servers hosted outside Azure into Azure Resource Manager."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "É um console unificado baseado na Web que oferece uma alternativa às ferramentas de linha de comando.",
+          "en": "It is a web-based, unified console that provides an alternative to command-line tools."
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "E"
+    ]
+  }
+]

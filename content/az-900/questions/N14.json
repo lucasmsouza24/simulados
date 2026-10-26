@@ -1,0 +1,265 @@
+[
+  {
+    "id": "CLOUD-03-03-01",
+    "requirement": "N14",
+    "subject": "SaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer usar um aplicativo totalmente desenvolvido que seja o mais fácil de colocar em funcionamento e exija o mínimo de conhecimento técnico, mesmo que seja a opção menos flexível. Qual é esse tipo de serviço de nuvem?",
+      "en": "A company wants to use a fully developed application that is the easiest to get up and running and requires the least technical knowledge, even if it is the least flexible option. Which cloud service type is this?"
+    },
+    "explanation": {
+      "pt": "O SaaS é o modelo de serviço de nuvem mais completo do ponto de vista do produto: você aluga ou usa um aplicativo totalmente desenvolvido. Pode ser o menos flexível, mas é o mais fácil de colocar em funcionamento e exige o mínimo de conhecimento técnico.",
+      "en": "SaaS is the most complete cloud service model from a product perspective: you rent or use a fully developed application. It may be the least flexible, but it is the easiest to get up and running and needs the least technical knowledge."
+    },
+    "distractors": {
+      "pt": "O PaaS é o vizinho: também é gerenciado, mas é uma plataforma para criar aplicativos e exige esforço de desenvolvimento.",
+      "en": "PaaS is the neighbor: it is managed too, but it is a platform for building applications and requires development effort."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/4-describe-software-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Plataforma como serviço (PaaS)",
+          "en": "Platform as a service (PaaS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Software como serviço (SaaS)",
+          "en": "Software as a service (SaaS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Infraestrutura como serviço (IaaS)",
+          "en": "Infrastructure as a service (IaaS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud)",
+          "en": "Hybrid cloud"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-03-03-02",
+    "requirement": "N14",
+    "subject": "responsabilidades no SaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "No SaaS, quais três itens você gerencia principalmente como cliente? Escolha três.",
+      "en": "In SaaS, which three items do you primarily manage as the customer? Choose three."
+    },
+    "explanation": {
+      "pt": "No SaaS o provedor gerencia quase toda a pilha do aplicativo, incluindo infraestrutura, plataforma e manutenção do aplicativo. Você gerencia principalmente seus dados, as configurações de identidade e acesso e a postura de acesso dos dispositivos.",
+      "en": "In SaaS the provider manages almost all of the application stack, including infrastructure, platform, and application maintenance. You primarily manage your data, identity and access settings, and device access posture."
+    },
+    "distractors": {
+      "pt": "As alternativas B e C são as tentadoras porque soam como deveres do cliente em outros modelos, mas no SaaS o provedor cuida delas.",
+      "en": "Options B and C are the tempting ones because they sound like customer duties in other models, but SaaS has the provider handle them."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/4-describe-software-service",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Seus dados",
+          "en": "Your data"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Manutenção do aplicativo",
+          "en": "Application maintenance"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Aplicação de patches na infraestrutura",
+          "en": "Infrastructure patching"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Configurações de identidade e acesso",
+          "en": "Identity and access settings"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Postura de acesso dos dispositivos",
+          "en": "Device access posture"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-03-03-03",
+    "requirement": "N14",
+    "subject": "características do SaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O SaaS pode ser o modelo menos flexível, mas é o mais fácil de colocar em funcionamento, exige o mínimo de conhecimento técnico e tem a menor sobrecarga operacional para os clientes.",
+      "en": "SaaS may be the least flexible model, but it is the easiest to get running, requires the least technical knowledge, and has the lowest operational overhead for customers."
+    },
+    "distractors": {
+      "pt": "As afirmações 1 e 2 descrevem o IaaS.",
+      "en": "Statements 1 and 2 describe IaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/4-describe-software-service",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O SaaS é o modelo de serviço de nuvem mais flexível.",
+          "en": "SaaS is the most flexible cloud service model."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O SaaS exige o máximo de conhecimento técnico ou especialização para ser totalmente empregado.",
+          "en": "SaaS requires the most technical knowledge or expertise to fully employ."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O SaaS tem a menor sobrecarga operacional para os clientes.",
+          "en": "SaaS has the lowest operational overhead for customers."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": false,
+      "3": true
+    }
+  },
+  {
+    "id": "CLOUD-03-03-04",
+    "requirement": "N14",
+    "subject": "responsabilidades no SaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Uma equipe que usa uma plataforma de colaboração SaaS pode se concentrar na integração de usuários, nos controles de acesso e na governança de dados, enquanto o provedor cuida de ______.",
+      "en": "Complete the sentence. A team using a SaaS collaboration platform can focus on user onboarding, access controls, and data governance while the provider handles ______."
+    },
+    "explanation": {
+      "pt": "No exemplo do Learn, o provedor de SaaS cuida de patches de infraestrutura, atualizações do aplicativo e disponibilidade, enquanto a equipe se concentra na integração de usuários, nos controles de acesso e na governança de dados.",
+      "en": "In Learn's example, the SaaS provider handles infrastructure patching, application updates, and availability, while the team focuses on user onboarding, access controls, and data governance."
+    },
+    "distractors": {
+      "pt": "As alternativas A, B e D são o lado do cliente no SaaS.",
+      "en": "Options A, B, and D are the customer's side in SaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/4-describe-software-service",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "a integração de usuários e a governança de dados",
+          "en": "user onboarding and data governance"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "as configurações de identidade e acesso",
+          "en": "identity and access settings"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "patches de infraestrutura, atualizações do aplicativo e disponibilidade",
+          "en": "infrastructure patching, application updates, and availability"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "a postura de acesso dos dispositivos",
+          "en": "device access posture"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-03-03-05",
+    "requirement": "N14",
+    "subject": "responsabilidades no SaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa usa um serviço de email SaaS. Qual tarefa continua sendo responsabilidade da empresa?",
+      "en": "A company uses a SaaS email service. Which task remains the company's responsibility?"
+    },
+    "explanation": {
+      "pt": "No SaaS você gerencia principalmente seus dados, as configurações de identidade e acesso e a postura de acesso dos dispositivos. Infraestrutura, plataforma e manutenção do aplicativo pertencem ao provedor.",
+      "en": "In SaaS you primarily manage your data, identity and access settings, and device access posture. Infrastructure, platform, and application maintenance belong to the provider."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque soa como uma decisão do cliente, mas as atualizações do aplicativo são feitas pelo provedor do SaaS.",
+      "en": "Option A is tempting because it sounds like a customer decision, but application updates are handled by the SaaS provider."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/4-describe-software-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Aplicar atualizações do aplicativo",
+          "en": "Applying application updates"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Aplicar patches na infraestrutura",
+          "en": "Patching the infrastructure"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Manter os servidores que hospedam o serviço",
+          "en": "Maintaining the servers that host the service"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Configurar as definições de identidade e acesso dos seus usuários",
+          "en": "Configuring identity and access settings for its users"
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

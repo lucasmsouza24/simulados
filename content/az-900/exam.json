@@ -1,0 +1,555 @@
+{
+  "id": "az-900",
+  "code": "AZ-900",
+  "name": {
+    "pt": "AZ-900: Fundamentos do Microsoft Azure",
+    "en": "AZ-900: Microsoft Azure Fundamentals"
+  },
+  "durationMinutes": 45,
+  "passScore": 700,
+  "scoreScale": 1000,
+  "questionCount": {
+    "min": 40,
+    "max": 60,
+    "default": 40
+  },
+  "domains": [
+    {
+      "id": "N",
+      "name": {
+        "pt": "Descrever os conceitos da nuvem",
+        "en": "Describe cloud concepts"
+      },
+      "weight": [
+        25,
+        30
+      ],
+      "sections": [
+        {
+          "id": "N-1",
+          "name": {
+            "pt": "Descrever a computação em nuvem",
+            "en": "Describe cloud computing"
+          },
+          "requirements": [
+            {
+              "id": "N01",
+              "name": {
+                "pt": "Definir a computação em nuvem",
+                "en": "Define cloud computing"
+              }
+            },
+            {
+              "id": "N02",
+              "name": {
+                "pt": "Descrever o modelo de responsabilidade compartilhada",
+                "en": "Describe the shared responsibility model"
+              }
+            },
+            {
+              "id": "N03",
+              "name": {
+                "pt": "Definir modelos de nuvem, incluindo pública, privada e híbrida",
+                "en": "Define cloud models, including public, private, and hybrid"
+              }
+            },
+            {
+              "id": "N04",
+              "name": {
+                "pt": "Identificar casos de uso apropriados para cada modelo de nuvem",
+                "en": "Identify appropriate use cases for each cloud model"
+              }
+            },
+            {
+              "id": "N05",
+              "name": {
+                "pt": "Descrever o modelo baseado em consumo",
+                "en": "Describe the consumption-based model"
+              }
+            },
+            {
+              "id": "N06",
+              "name": {
+                "pt": "Comparar modelos de preços de nuvem",
+                "en": "Compare cloud pricing models"
+              }
+            },
+            {
+              "id": "N07",
+              "name": {
+                "pt": "Descrever serverless (sem servidor)",
+                "en": "Describe serverless"
+              }
+            }
+          ]
+        },
+        {
+          "id": "N-2",
+          "name": {
+            "pt": "Descrever os benefícios do uso de serviços de nuvem",
+            "en": "Describe the benefits of using cloud services"
+          },
+          "requirements": [
+            {
+              "id": "N08",
+              "name": {
+                "pt": "Descrever os benefícios de alta disponibilidade e escalabilidade na nuvem",
+                "en": "Describe the benefits of high availability and scalability in the cloud"
+              }
+            },
+            {
+              "id": "N09",
+              "name": {
+                "pt": "Descrever os benefícios de confiabilidade e previsibilidade na nuvem",
+                "en": "Describe the benefits of reliability and predictability in the cloud"
+              }
+            },
+            {
+              "id": "N10",
+              "name": {
+                "pt": "Descrever os benefícios de segurança e governança na nuvem",
+                "en": "Describe the benefits of security and governance in the cloud"
+              }
+            },
+            {
+              "id": "N11",
+              "name": {
+                "pt": "Descrever os benefícios da capacidade de gerenciamento na nuvem",
+                "en": "Describe the benefits of manageability in the cloud"
+              }
+            }
+          ]
+        },
+        {
+          "id": "N-3",
+          "name": {
+            "pt": "Descrever os tipos de serviço de nuvem",
+            "en": "Describe cloud service types"
+          },
+          "requirements": [
+            {
+              "id": "N12",
+              "name": {
+                "pt": "Descrever infraestrutura como serviço (IaaS)",
+                "en": "Describe infrastructure as a service (IaaS)"
+              }
+            },
+            {
+              "id": "N13",
+              "name": {
+                "pt": "Descrever plataforma como serviço (PaaS)",
+                "en": "Describe platform as a service (PaaS)"
+              }
+            },
+            {
+              "id": "N14",
+              "name": {
+                "pt": "Descrever software como serviço (SaaS)",
+                "en": "Describe software as a service (SaaS)"
+              }
+            },
+            {
+              "id": "N15",
+              "name": {
+                "pt": "Identificar casos de uso apropriados para cada tipo de serviço de nuvem (IaaS, PaaS e SaaS)",
+                "en": "Identify appropriate use cases for each cloud service type (IaaS, PaaS, and SaaS)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "name": {
+        "pt": "Descrever a arquitetura e os serviços do Azure",
+        "en": "Describe Azure architecture and services"
+      },
+      "weight": [
+        35,
+        40
+      ],
+      "sections": [
+        {
+          "id": "A-1",
+          "name": {
+            "pt": "Descrever os principais componentes arquitetônicos do Azure",
+            "en": "Describe the core architectural components of Azure"
+          },
+          "requirements": [
+            {
+              "id": "A01",
+              "name": {
+                "pt": "Descrever regiões, pares de regiões e regiões soberanas do Azure",
+                "en": "Describe Azure regions, region pairs, and sovereign regions"
+              }
+            },
+            {
+              "id": "A02",
+              "name": {
+                "pt": "Descrever zonas de disponibilidade",
+                "en": "Describe availability zones"
+              }
+            },
+            {
+              "id": "A03",
+              "name": {
+                "pt": "Descrever datacenters do Azure",
+                "en": "Describe Azure datacenters"
+              }
+            },
+            {
+              "id": "A04",
+              "name": {
+                "pt": "Descrever recursos e grupos de recursos do Azure",
+                "en": "Describe Azure resources and resource groups"
+              }
+            },
+            {
+              "id": "A05",
+              "name": {
+                "pt": "Descrever assinaturas",
+                "en": "Describe subscriptions"
+              }
+            },
+            {
+              "id": "A06",
+              "name": {
+                "pt": "Descrever grupos de gerenciamento",
+                "en": "Describe management groups"
+              }
+            },
+            {
+              "id": "A07",
+              "name": {
+                "pt": "Descrever a hierarquia de grupos de recursos, assinaturas e grupos de gerenciamento",
+                "en": "Describe the hierarchy of resource groups, subscriptions, and management groups"
+              }
+            }
+          ]
+        },
+        {
+          "id": "A-2",
+          "name": {
+            "pt": "Descrever os serviços de computação e rede do Azure",
+            "en": "Describe Azure compute and networking services"
+          },
+          "requirements": [
+            {
+              "id": "A08",
+              "name": {
+                "pt": "Comparar tipos de computação, incluindo contêineres, máquinas virtuais e funções",
+                "en": "Compare compute types, including containers, virtual machines, and functions"
+              }
+            },
+            {
+              "id": "A09",
+              "name": {
+                "pt": "Descrever opções de máquina virtual, incluindo máquinas virtuais do Azure, Conjuntos de Dimensionamento de Máquinas Virtuais do Azure, conjuntos de disponibilidade e Azure Virtual Desktop",
+                "en": "Describe virtual machine options, including Azure virtual machines, Azure Virtual Machine Scale Sets, availability sets, and Azure Virtual Desktop"
+              }
+            },
+            {
+              "id": "A10",
+              "name": {
+                "pt": "Descrever os recursos necessários para máquinas virtuais",
+                "en": "Describe the resources required for virtual machines"
+              }
+            },
+            {
+              "id": "A11",
+              "name": {
+                "pt": "Descrever opções de hospedagem de aplicativos, incluindo aplicativos Web, contêineres e máquinas virtuais",
+                "en": "Describe application hosting options, including web apps, containers, and virtual machines"
+              }
+            },
+            {
+              "id": "A12",
+              "name": {
+                "pt": "Descrever rede virtual, incluindo a finalidade de redes virtuais do Azure, sub-redes, emparelhamento, Azure DNS, Gateway de VPN do Azure e ExpressRoute",
+                "en": "Describe virtual networking, including the purpose of Azure virtual networks, subnets, peering, Azure DNS, Azure VPN Gateway, and ExpressRoute"
+              }
+            },
+            {
+              "id": "A13",
+              "name": {
+                "pt": "Definir pontos de extremidade públicos e privados",
+                "en": "Define public and private endpoints"
+              }
+            }
+          ]
+        },
+        {
+          "id": "A-3",
+          "name": {
+            "pt": "Descrever os serviços de armazenamento do Azure",
+            "en": "Describe Azure storage services"
+          },
+          "requirements": [
+            {
+              "id": "A14",
+              "name": {
+                "pt": "Comparar os serviços do Armazenamento do Azure",
+                "en": "Compare Azure Storage services"
+              }
+            },
+            {
+              "id": "A15",
+              "name": {
+                "pt": "Descrever as camadas de armazenamento",
+                "en": "Describe storage tiers"
+              }
+            },
+            {
+              "id": "A16",
+              "name": {
+                "pt": "Descrever as opções de redundância",
+                "en": "Describe redundancy options"
+              }
+            },
+            {
+              "id": "A17",
+              "name": {
+                "pt": "Descrever as opções de conta de armazenamento e os tipos de armazenamento",
+                "en": "Describe storage account options and storage types"
+              }
+            },
+            {
+              "id": "A18",
+              "name": {
+                "pt": "Identificar opções para mover arquivos, incluindo AzCopy, Azure Storage Explorer e Azure File Sync",
+                "en": "Identify options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync"
+              }
+            },
+            {
+              "id": "A19",
+              "name": {
+                "pt": "Descrever opções de migração, incluindo Azure Migrate e Azure Data Box",
+                "en": "Describe migration options, including Azure Migrate and Azure Data Box"
+              }
+            }
+          ]
+        },
+        {
+          "id": "A-4",
+          "name": {
+            "pt": "Descrever a identidade, o acesso e a segurança do Azure",
+            "en": "Describe Azure identity, access, and security"
+          },
+          "requirements": [
+            {
+              "id": "A20",
+              "name": {
+                "pt": "Descrever os serviços de diretório no Azure, incluindo o Microsoft Entra ID e o Microsoft Entra Domain Services",
+                "en": "Describe directory services in Azure, including Microsoft Entra ID and Microsoft Entra Domain Services"
+              }
+            },
+            {
+              "id": "A21",
+              "name": {
+                "pt": "Descrever os métodos de autenticação no Azure, incluindo logon único (SSO), autenticação multifator (MFA) e sem senha",
+                "en": "Describe authentication methods in Azure, including single sign-on (SSO), multifactor authentication (MFA), and passwordless"
+              }
+            },
+            {
+              "id": "A22",
+              "name": {
+                "pt": "Descrever identidades externas no Azure",
+                "en": "Describe external identities in Azure"
+              }
+            },
+            {
+              "id": "A23",
+              "name": {
+                "pt": "Descrever o Acesso Condicional do Microsoft Entra",
+                "en": "Describe Microsoft Entra Conditional Access"
+              }
+            },
+            {
+              "id": "A24",
+              "name": {
+                "pt": "Descrever o controle de acesso baseado em função do Azure (RBAC)",
+                "en": "Describe Azure role-based access control (RBAC)"
+              }
+            },
+            {
+              "id": "A25",
+              "name": {
+                "pt": "Descrever o conceito de Confiança Zero (Zero Trust)",
+                "en": "Describe the concept of Zero Trust"
+              }
+            },
+            {
+              "id": "A26",
+              "name": {
+                "pt": "Descrever a finalidade do modelo de defesa em profundidade",
+                "en": "Describe the purpose of the defense-in-depth model"
+              }
+            },
+            {
+              "id": "A27",
+              "name": {
+                "pt": "Descrever a finalidade do Microsoft Defender para Nuvem",
+                "en": "Describe the purpose of Microsoft Defender for Cloud"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "name": {
+        "pt": "Descrever o gerenciamento e a governança do Azure",
+        "en": "Describe Azure management and governance"
+      },
+      "weight": [
+        30,
+        35
+      ],
+      "sections": [
+        {
+          "id": "G-1",
+          "name": {
+            "pt": "Descrever o gerenciamento de custos no Azure",
+            "en": "Describe cost management in Azure"
+          },
+          "requirements": [
+            {
+              "id": "G01",
+              "name": {
+                "pt": "Descrever os fatores que podem afetar os custos no Azure",
+                "en": "Describe factors that can affect costs in Azure"
+              }
+            },
+            {
+              "id": "G02",
+              "name": {
+                "pt": "Explorar a calculadora de preços",
+                "en": "Explore the pricing calculator"
+              }
+            },
+            {
+              "id": "G03",
+              "name": {
+                "pt": "Descrever os recursos de gerenciamento de custos no Azure",
+                "en": "Describe cost management capabilities in Azure"
+              }
+            },
+            {
+              "id": "G04",
+              "name": {
+                "pt": "Descrever a finalidade das marcas (tags)",
+                "en": "Describe the purpose of tags"
+              }
+            }
+          ]
+        },
+        {
+          "id": "G-2",
+          "name": {
+            "pt": "Descrever os recursos e as ferramentas de governança e conformidade no Azure",
+            "en": "Describe features and tools in Azure for governance and compliance"
+          },
+          "requirements": [
+            {
+              "id": "G05",
+              "name": {
+                "pt": "Descrever a finalidade do Microsoft Purview no Azure",
+                "en": "Describe the purpose of Microsoft Purview in Azure"
+              }
+            },
+            {
+              "id": "G06",
+              "name": {
+                "pt": "Descrever a finalidade do Azure Policy",
+                "en": "Describe the purpose of Azure Policy"
+              }
+            },
+            {
+              "id": "G07",
+              "name": {
+                "pt": "Descrever a finalidade dos bloqueios de recursos (resource locks)",
+                "en": "Describe the purpose of resource locks"
+              }
+            }
+          ]
+        },
+        {
+          "id": "G-3",
+          "name": {
+            "pt": "Descrever recursos e ferramentas para gerenciar e implantar recursos do Azure",
+            "en": "Describe features and tools for managing and deploying Azure resources"
+          },
+          "requirements": [
+            {
+              "id": "G08",
+              "name": {
+                "pt": "Descrever o portal do Azure",
+                "en": "Describe the Azure portal"
+              }
+            },
+            {
+              "id": "G09",
+              "name": {
+                "pt": "Descrever o Azure Cloud Shell, a CLI do Azure e o Azure PowerShell",
+                "en": "Describe Azure Cloud Shell, Azure CLI, and Azure PowerShell"
+              }
+            },
+            {
+              "id": "G10",
+              "name": {
+                "pt": "Descrever a finalidade do Azure Arc",
+                "en": "Describe the purpose of Azure Arc"
+              }
+            },
+            {
+              "id": "G11",
+              "name": {
+                "pt": "Descrever infraestrutura como código (IaC)",
+                "en": "Describe infrastructure as code (IaC)"
+              }
+            },
+            {
+              "id": "G12",
+              "name": {
+                "pt": "Descrever o Azure Resource Manager (ARM) e os modelos do ARM",
+                "en": "Describe Azure Resource Manager (ARM) and ARM templates"
+              }
+            }
+          ]
+        },
+        {
+          "id": "G-4",
+          "name": {
+            "pt": "Descrever as ferramentas de monitoramento no Azure",
+            "en": "Describe monitoring tools in Azure"
+          },
+          "requirements": [
+            {
+              "id": "G13",
+              "name": {
+                "pt": "Descrever a finalidade do Assistente do Azure (Azure Advisor)",
+                "en": "Describe the purpose of Azure Advisor"
+              }
+            },
+            {
+              "id": "G14",
+              "name": {
+                "pt": "Descrever a Integridade do Serviço do Azure (Azure Service Health)",
+                "en": "Describe Azure Service Health"
+              }
+            },
+            {
+              "id": "G15",
+              "name": {
+                "pt": "Descrever o Azure Monitor, incluindo Log Analytics, alertas do Azure Monitor e Application Insights",
+                "en": "Describe Azure Monitor, including Log Analytics, Azure Monitor alerts, and Application Insights"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

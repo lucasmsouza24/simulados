@@ -1,0 +1,395 @@
+[
+  {
+    "id": "GOV-03-03-01",
+    "requirement": "G10",
+    "subject": "finalidade do Azure Arc",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual serviço ajuda a gerenciar seus ambientes do Azure, locais e multicloud?",
+      "en": "Which service helps you manage your Azure, on-premises, and multicloud environments?"
+    },
+    "explanation": {
+      "pt": "O Azure Arc trabalha com o Azure Resource Manager para estender a conformidade e o monitoramento do Azure a configurações híbridas e multicloud, oferecendo uma plataforma de gerenciamento consistente no Azure, no ambiente local e em outras nuvens.",
+      "en": "Azure Arc works with Azure Resource Manager to extend Azure compliance and monitoring to hybrid and multicloud configurations, delivering a consistent management platform across Azure, on-premises, and other clouds."
+    },
+    "distractors": {
+      "pt": "O Azure Policy é o vizinho tentador porque é um serviço de governança, mas sozinho não alcança recursos fora do Azure.",
+      "en": "Azure Policy is the tempting neighbor because it is a governance service, but by itself it does not reach resources outside Azure."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Cloud Shell",
+          "en": "Azure Cloud Shell"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Portal do Azure",
+          "en": "Azure portal"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-03-03-02",
+    "requirement": "G10",
+    "subject": "Arc gerencia recursos fora do Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa executa cargas de trabalho no Azure, em um datacenter local e em outra nuvem pública. Ela quer aplicar governança, políticas e controle de inventário consistentes nos três ambientes a partir do Azure, sem mover os servidores que não estão no Azure. Qual serviço ela deve usar?",
+      "en": "A company runs workloads in Azure, in an on-premises datacenter, and in another public cloud. It wants to apply consistent governance, policy, and inventory tracking across all three from Azure, without moving the non-Azure servers. Which service should it use?"
+    },
+    "explanation": {
+      "pt": "O Azure Arc projeta recursos existentes que não estão no Azure no Azure Resource Manager, para que as equipes de operações apliquem governança, políticas e controle de inventário consistentes no Azure, no ambiente local e em outras nuvens, sem ferramentas desconectadas.",
+      "en": "Azure Arc projects existing non-Azure resources into Azure Resource Manager, so operations teams can apply consistent governance, policy, and inventory tracking across Azure, on-premises, and other clouds without disconnected tools."
+    },
+    "distractors": {
+      "pt": "O Azure Policy isoladamente é o vizinho tentador, mas os servidores fora do Azure precisam primeiro ser projetados no Azure Resource Manager, que é o que o Azure Arc faz.",
+      "en": "Azure Policy by itself is the tempting neighbor, but the non-Azure servers must first be projected into Azure Resource Manager, which is what Azure Arc does."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Modelos do Azure Resource Manager",
+          "en": "Azure Resource Manager templates"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Cloud Shell",
+          "en": "Azure Cloud Shell"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Policy isoladamente",
+          "en": "Azure Policy by itself"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-03-03-03",
+    "requirement": "G10",
+    "subject": "recursos gerenciados pelo Arc",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três tipos de recursos hospedados fora do Azure o Azure Arc pode gerenciar? Escolha três.",
+      "en": "Which three resource types hosted outside Azure can Azure Arc manage? Choose three."
+    },
+    "explanation": {
+      "pt": "O Azure Arc pode gerenciar os seguintes tipos de recursos hospedados fora do Azure: servidores, clusters do Kubernetes, serviços de dados do Azure, SQL Server e máquinas virtuais (versão prévia).",
+      "en": "Azure Arc can manage the following resource types hosted outside Azure: servers, Kubernetes clusters, Azure data services, SQL Server, and virtual machines (preview)."
+    },
+    "distractors": {
+      "pt": "Gateways de rede virtual e planos do App Service são tipos de recursos hospedados no Azure e não estão na lista do Azure Arc.",
+      "en": "Virtual network gateways and App Service plans are Azure-hosted resource types and are not in the Azure Arc list."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Gateways de rede virtual do Azure (Azure Virtual Network gateways)",
+          "en": "Azure Virtual Network gateways"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Servidores (servers)",
+          "en": "Servers"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Clusters do Kubernetes (Kubernetes clusters)",
+          "en": "Kubernetes clusters"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Planos do Azure App Service (App Service plans)",
+          "en": "Azure App Service plans"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "SQL Server",
+          "en": "SQL Server"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "GOV-03-03-04",
+    "requirement": "G10",
+    "subject": "projetar recursos no Resource Manager",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Azure Arc projeta recursos que não estão no Azure no Azure Resource Manager para que você os gerencie como se estivessem em execução no Azure, independentemente de onde estejam. Não é necessária migração.",
+      "en": "Azure Arc projects non-Azure resources into Azure Resource Manager so you can manage them as if they were running in Azure, regardless of where they live. No migration is required."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque o gerenciamento do Azure parece exigir hospedagem no Azure, mas o Arc estende o gerenciamento para onde os recursos já estão.",
+      "en": "Statement 3 is tempting because Azure management sounds like it requires Azure hosting, but Arc extends management to where the resources already live."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure Arc projeta recursos existentes que não estão no Azure no Azure Resource Manager.",
+          "en": "Azure Arc projects existing non-Azure resources into Azure Resource Manager."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure Arc permite gerenciar máquinas virtuais, clusters do Kubernetes e bancos de dados híbridos e multicloud como se estivessem em execução no Azure.",
+          "en": "Azure Arc lets you manage hybrid and multicloud virtual machines, Kubernetes clusters, and databases as if they were running in Azure."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Para usar o Azure Arc, os servidores que não estão no Azure precisam primeiro ser migrados para um datacenter do Azure.",
+          "en": "To use Azure Arc, non-Azure servers must first be migrated into an Azure datacenter."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "GOV-03-03-05",
+    "requirement": "G10",
+    "subject": "locais personalizados",
+    "level": "detail",
+    "stem": {
+      "pt": "No Azure Arc, o que são locais personalizados (custom locations)?",
+      "en": "In Azure Arc, what are custom locations?"
+    },
+    "explanation": {
+      "pt": "Com o Azure Arc, você pode configurar locais personalizados como uma camada de abstração sobre clusters do Kubernetes habilitados para Azure Arc e extensões de cluster.",
+      "en": "With Azure Arc you can configure custom locations as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions."
+    },
+    "distractors": {
+      "pt": "Cada distrator reaproveita um termo de outro domínio que contém a ideia de local ou região: pares de regiões, ExpressRoute e locais permitidos do Policy.",
+      "en": "Each distractor reuses a term that contains the word location or region from another domain: region pairs, ExpressRoute, and Policy allowed locations."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma camada de abstração sobre clusters do Kubernetes habilitados para Azure Arc e extensões de cluster",
+          "en": "An abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Regiões do Azure emparelhadas para recuperação de desastres",
+          "en": "Azure regions that are paired for disaster recovery"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Caminhos de rede que conectam datacenters locais ao Azure por meio do ExpressRoute",
+          "en": "Network paths that connect on-premises datacenters to Azure through ExpressRoute"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Restrições geográficas que o Azure Policy aplica a implantações de recursos",
+          "en": "Geographic restrictions that Azure Policy applies to resource deployments"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-03-03-06",
+    "requirement": "G10",
+    "subject": "Arc vs Resource Manager vs Cloud Shell",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure Arc projeta recursos que não estão no Azure no Azure Resource Manager e permite que as equipes continuem com o ITOps enquanto introduzem práticas de DevOps. O Azure Resource Manager recebe, autentica e autoriza todas as solicitações das ferramentas do Azure. O Azure Cloud Shell é o shell baseado em navegador.",
+      "en": "Azure Arc projects non-Azure resources into Azure Resource Manager and lets teams continue with ITOps while introducing DevOps practices. Azure Resource Manager receives, authenticates, and authorizes every request from Azure tools. Azure Cloud Shell is the browser-based shell."
+    },
+    "distractors": {
+      "pt": "Azure Arc e Azure Resource Manager são o par a separar: o Arc traz recursos externos para dentro, e o ARM é a camada que trata as solicitações.",
+      "en": "Azure Arc and Azure Resource Manager are the pair to separate: Arc brings outside resources in, ARM is the layer that handles the requests."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Projeta servidores e clusters do Kubernetes existentes que não estão no Azure no Azure Resource Manager",
+          "en": "Projects existing non-Azure servers and Kubernetes clusters into Azure Resource Manager"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Recebe solicitações de ferramentas, APIs e SDKs do Azure, autentica e autoriza e as envia ao serviço do Azure",
+          "en": "Receives requests from Azure tools, APIs, and SDKs, authenticates and authorizes them, and sends them to the Azure service"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Shell baseado em navegador para gerenciar recursos do Azure",
+          "en": "Browser-based shell for managing Azure resources"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Permite que as equipes mantenham o ITOps tradicional enquanto introduzem práticas de DevOps em ambientes híbridos e multicloud",
+          "en": "Lets teams keep traditional ITOps while introducing DevOps practices in hybrid and multicloud environments"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Resource Manager",
+          "en": "Azure Resource Manager"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Cloud Shell",
+          "en": "Azure Cloud Shell"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Arc",
+          "en": "Azure Arc"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B",
+      "4": "C"
+    }
+  },
+  {
+    "id": "GOV-03-03-07",
+    "requirement": "G10",
+    "subject": "Arc e Resource Manager",
+    "level": "essential",
+    "stem": {
+      "pt": "Como o Azure Arc se relaciona com o Azure Resource Manager?",
+      "en": "How does Azure Arc relate to Azure Resource Manager?"
+    },
+    "explanation": {
+      "pt": "O Azure Arc trabalha com o Azure Resource Manager para estender a conformidade e o monitoramento do Azure a configurações híbridas e multicloud, projetando recursos que não estão no Azure no Azure Resource Manager. Nada é movido nem substituído.",
+      "en": "Azure Arc works with Azure Resource Manager to extend Azure compliance and monitoring to hybrid and multicloud configurations by projecting non-Azure resources into Azure Resource Manager. Nothing is moved or replaced."
+    },
+    "distractors": {
+      "pt": "A opção da linguagem declarativa descreve o Bicep, e a opção do serviço de hospedagem confunde o Arc com migração.",
+      "en": "The declarative-language option describes Bicep, and the hosting-service option confuses Arc with migration."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O Azure Arc substitui o Azure Resource Manager para recursos hospedados fora do Azure, portanto esses recursos não são gerenciados pelo Azure Resource Manager.",
+          "en": "Azure Arc replaces Azure Resource Manager for resources hosted outside Azure, so those resources are not managed by Azure Resource Manager."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O Azure Arc é uma linguagem declarativa que é compilada em modelos do Azure Resource Manager.",
+          "en": "Azure Arc is a declarative language that compiles into Azure Resource Manager templates."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O Azure Arc trabalha com o Azure Resource Manager, projetando nele recursos existentes que não estão no Azure para que possam ser gerenciados com recursos do Azure.",
+          "en": "Azure Arc works with Azure Resource Manager, projecting existing non-Azure resources into it so they can be managed with Azure capabilities."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O Azure Arc é um serviço de hospedagem que move servidores que não estão no Azure para datacenters do Azure, onde o Azure Resource Manager passa a gerenciá-los.",
+          "en": "Azure Arc is a hosting service that moves non-Azure servers into Azure datacenters, where Azure Resource Manager then manages them."
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]

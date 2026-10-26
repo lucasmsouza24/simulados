@@ -1,0 +1,335 @@
+[
+  {
+    "id": "ARCH-01-02-01",
+    "requirement": "A02",
+    "subject": "zonas de disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação descreve uma zona de disponibilidade (availability zone)?",
+      "en": "Which statement describes an availability zone?"
+    },
+    "explanation": {
+      "pt": "Zonas de disponibilidade são datacenters fisicamente separados dentro de uma região do Azure. Cada zona tem um ou mais datacenters com energia, resfriamento e rede independentes e é um limite de isolamento.",
+      "en": "Availability zones are physically separate datacenters within an Azure region. Each zone has one or more datacenters with independent power, cooling, and networking, and is an isolation boundary."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a região, o contêiner das zonas, e a B é o par de regiões; ambas estão entre os vizinhos.",
+      "en": "Option A is the region, the container of the zones, and option B is the region pair; both are among the neighbors."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma área geográfica que contém pelo menos um datacenter, conectado por uma rede de baixa latência.",
+          "en": "A geographical area that contains at least one datacenter, networked with a low-latency network."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um par de regiões da mesma geografia que replicam recursos entre si.",
+          "en": "A pair of regions in the same geography that replicate resources between each other."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um agrupamento de recursos que compartilham o mesmo ciclo de vida.",
+          "en": "A grouping of resources that share the same lifecycle."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Datacenters fisicamente separados dentro de uma região, cada um com energia, resfriamento e rede independentes, que funcionam como um limite de isolamento.",
+          "en": "Physically separate datacenters within a region, each with independent power, cooling, and networking, that work as an isolation boundary."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-01-02-02",
+    "requirement": "A02",
+    "subject": "zonas de disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Nem todas as regiões do Azure oferecem suporte a zonas de disponibilidade atualmente. Uma zona é um limite de isolamento, então quando uma fica indisponível as outras continuam. As zonas são conectadas por redes de fibra óptica privadas e de alta velocidade.",
+      "en": "Not all Azure regions currently support availability zones. A zone is an isolation boundary, so when one goes down the others continue. Zones are connected through high-speed, private fiber-optic networks."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque soa como um link de rede comum, mas o Learn especifica fibra privada de alta velocidade.",
+      "en": "Statement 3 is tempting because it sounds like a normal network link, but Learn specifies high-speed private fiber."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Todas as regiões do Azure atualmente oferecem suporte a zonas de disponibilidade.",
+          "en": "All Azure regions currently support availability zones."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Se uma zona de disponibilidade ficar indisponível, as outras zonas da região continuam funcionando.",
+          "en": "If one availability zone goes down, the other zones in the region continue working."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "As zonas de disponibilidade são conectadas pela Internet pública.",
+          "en": "Availability zones are connected through the public internet."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-01-02-03",
+    "requirement": "A02",
+    "subject": "limite das zonas de disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa distribui suas máquinas virtuais entre zonas de disponibilidade de uma região. Um evento é tão grande que afeta várias zonas de disponibilidade nessa região. Qual recurso do Azure oferece resiliência adicional e o que a empresa deve lembrar?",
+      "en": "A company spreads its virtual machines across availability zones in a region. An event is so large that it impacts multiple availability zones in that region. Which Azure feature provides further resilience, and what must the company remember?"
+    },
+    "explanation": {
+      "pt": "Mesmo com zonas de disponibilidade, um evento pode afetar várias zonas em uma única região. Para oferecer ainda mais resiliência, o Azure tem pares de regiões; porém, nem todos os serviços replicam automaticamente, então o cliente pode precisar configurar a recuperação e a replicação.",
+      "en": "Even with availability zones, an event could impact multiple zones in a single region. To provide further resilience, Azure has region pairs; however, not all services replicate automatically, so the customer might need to configure recovery and replication."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque cita o recurso certo, mas promete automação total.",
+      "en": "Option D is the most tempting because it names the right feature but promises full automation."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Pares de regiões, mas nem todos os serviços replicam ou fazem failover automaticamente, então a recuperação e a replicação podem precisar ser configuradas pelo cliente",
+          "en": "Region pairs, but not all services automatically replicate or fail over, so recovery and replication might need to be configured by the customer"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Zonas de disponibilidade, porque adicionar mais zonas na mesma região sempre protege contra um evento que afete a região inteira",
+          "en": "Availability zones, because adding more zones in the same region always protects against a region-wide event"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Regiões soberanas, porque substituem a região com falha automaticamente",
+          "en": "Sovereign regions, because they replace the failed region automatically"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Pares de regiões, porque todo serviço do Azure faz fallback automaticamente para a região pareada",
+          "en": "Region pairs, because every Azure service automatically falls back to the paired region"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-01-02-04",
+    "requirement": "A02",
+    "subject": "serviço zonal vs redundância de zona",
+    "level": "detail",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Serviços zonais são fixados em uma zona específica. Serviços com redundância de zona replicam automaticamente entre as zonas. Serviços não regionais estão sempre disponíveis a partir de geografias do Azure e são resilientes a interrupções de zona e de região.",
+      "en": "Zonal services are pinned to a specific zone. Zone-redundant services replicate automatically across zones. Non-regional services are always available from Azure geographies and resilient to zone-wide and region-wide outages."
+    },
+    "distractors": {
+      "pt": "Zonal e com redundância de zona são o par mais próximo: quem escolhe a zona, você ou a plataforma.",
+      "en": "Zonal and zone-redundant are the closest pair: who chooses the zone, you or the platform."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Você fixa o recurso em uma zona específica, por exemplo máquinas virtuais, discos gerenciados e endereços IP.",
+          "en": "You pin the resource to a specific zone, for example virtual machines, managed disks, and IP addresses."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "A plataforma replica o recurso automaticamente entre as zonas, por exemplo armazenamento com redundância de zona e SQL Database.",
+          "en": "The platform replicates the resource automatically across zones, for example zone-redundant storage and SQL Database."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O serviço está sempre disponível a partir de geografias do Azure e é resiliente a interrupções de zona inteira e de região inteira.",
+          "en": "The service is always available from Azure geographies and is resilient to zone-wide and region-wide outages."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Serviço não regional (non-regional service)",
+          "en": "Non-regional service"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Serviço zonal (zonal service)",
+          "en": "Zonal service"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Serviço com redundância de zona (zone-redundant service)",
+          "en": "Zone-redundant service"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A"
+    }
+  },
+  {
+    "id": "ARCH-01-02-05",
+    "requirement": "A02",
+    "subject": "zonas de disponibilidade",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre zonas de disponibilidade estão corretas? Escolha duas.",
+      "en": "Which two statements about availability zones are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "Cada zona de disponibilidade é composta por um ou mais datacenters com energia, resfriamento e rede independentes, e existe um mínimo de três zonas separadas em toda região habilitada para zonas. A distância de 800 km (300 milhas) descreve pares de regiões, e pode haver custo para duplicar serviços e transferir dados entre zonas.",
+      "en": "Each availability zone is one or more datacenters with independent power, cooling, and networking, and a minimum of three separate zones exist in every zone-enabled region. The 300-mile distance describes region pairs, and there might be a cost to duplicating services and transferring data between zones."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a tentadora porque mistura a regra de distância dos pares de regiões nas zonas.",
+      "en": "Option B is the tempting one because it mixes the distance rule of region pairs into zones."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Cada zona é composta por um ou mais datacenters com energia, resfriamento e rede independentes.",
+          "en": "Each zone is made up of one or more datacenters with independent power, cooling, and networking."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "As zonas ficam a pelo menos 800 km (300 milhas) de distância entre si.",
+          "en": "Zones are at least 300 miles apart."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Duplicar serviços e transferir dados entre zonas não tem custo.",
+          "en": "Duplicating services and transferring data between zones has no cost."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Todas as regiões habilitadas para zonas de disponibilidade têm no mínimo três zonas separadas.",
+          "en": "All availability zone-enabled regions have a minimum of three separate zones."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Todas as regiões do Azure oferecem suporte a zonas de disponibilidade.",
+          "en": "All Azure regions support availability zones."
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "ARCH-01-02-06",
+    "requirement": "A02",
+    "subject": "isolamento das zonas",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Uma zona de disponibilidade é configurada como um limite de ______: se uma zona ficar indisponível, a outra continua funcionando.",
+      "en": "Complete the sentence. An availability zone is set up as an ______ boundary: if one zone goes down, the other continues working."
+    },
+    "explanation": {
+      "pt": "Uma zona de disponibilidade é configurada para ser um limite de isolamento. Limites de cobrança e de controle de acesso pertencem às assinaturas.",
+      "en": "An availability zone is set up to be an isolation boundary. Billing and access control boundaries belong to subscriptions."
+    },
+    "distractors": {
+      "pt": "Cobrança e controle de acesso são tentadores porque 'limite' também aparece no tópico de assinaturas.",
+      "en": "Billing and access control are tempting because 'boundary' also appears in the subscription topic."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "isolamento",
+          "en": "isolation"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "controle de acesso",
+          "en": "access control"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "cobrança",
+          "en": "billing"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "nomenclatura",
+          "en": "naming"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

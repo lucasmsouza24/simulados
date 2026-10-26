@@ -1,0 +1,265 @@
+[
+  {
+    "id": "CLOUD-03-01-01",
+    "requirement": "N12",
+    "subject": "IaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa aluga hardware em um datacenter de nuvem e decide o que fazer com ele. Ela quer o máximo de controle sobre seus recursos de nuvem e aceita a responsabilidade por tudo, exceto o hardware, a conectividade com a Internet e a segurança física. Qual tipo de serviço de nuvem é esse?",
+      "en": "A company rents hardware in a cloud datacenter and decides what to do with it. It wants the maximum amount of control over its cloud resources and accepts responsibility for everything except the hardware, the connectivity to the internet, and physical security. Which cloud service type is this?"
+    },
+    "explanation": {
+      "pt": "O IaaS é a categoria mais flexível de serviços de nuvem e oferece o máximo de controle. O provedor mantém o hardware, a conectividade de rede com a Internet e a segurança física; você é responsável por todo o resto. Com o IaaS você essencialmente aluga hardware em um datacenter de nuvem.",
+      "en": "IaaS is the most flexible category of cloud services and provides the maximum amount of control. The provider maintains the hardware, network connectivity to the internet, and physical security; you are responsible for everything else. With IaaS you essentially rent hardware in a cloud datacenter."
+    },
+    "distractors": {
+      "pt": "Nuvem privada é tentadora pela ideia de hardware dedicado, mas é um modelo de nuvem (tipo de implantação), e não um tipo de serviço. Entre os tipos de serviço, o PaaS é o vizinho, mas nele o provedor também mantém os sistemas operacionais.",
+      "en": "Private cloud is tempting because of the dedicated-hardware wording, but it is a cloud model (deployment type), not a service type. Among service types, PaaS is the neighbor, but there the provider also maintains the operating systems."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Plataforma como serviço (PaaS)",
+          "en": "Platform as a service (PaaS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Infraestrutura como serviço (IaaS)",
+          "en": "Infrastructure as a service (IaaS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Software como serviço (SaaS)",
+          "en": "Software as a service (SaaS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nuvem privada (private cloud)",
+          "en": "Private cloud"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "CLOUD-03-01-02",
+    "requirement": "N12",
+    "subject": "responsabilidades no IaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Na infraestrutura como serviço (IaaS), quais três itens são responsabilidade do cliente? Escolha três.",
+      "en": "In infrastructure as a service (IaaS), which three items are the customer's responsibility? Choose three."
+    },
+    "explanation": {
+      "pt": "No IaaS o provedor mantém o hardware, a conectividade de rede com a Internet e a segurança física. Você é responsável por todo o resto, incluindo instalação, configuração e manutenção do sistema operacional; configuração de rede; e configuração de banco de dados e armazenamento.",
+      "en": "In IaaS the provider maintains the hardware, network connectivity to the internet, and physical security. You are responsible for everything else, including operating system installation, configuration, and maintenance; network configuration; and database and storage configuration."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a tentadora porque contém a palavra rede, mas a conectividade com a Internet é do provedor; configurar a rede é sua.",
+      "en": "Option B is the tempting one because it contains the word network, but connectivity to the internet is the provider's; configuring the network is yours."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Manter o hardware",
+          "en": "Maintaining the hardware"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Conectividade de rede com a Internet",
+          "en": "Network connectivity to the internet"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Instalação, configuração e manutenção do sistema operacional",
+          "en": "Operating system installation, configuration, and maintenance"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Configuração de rede",
+          "en": "Network configuration"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Configuração de banco de dados e armazenamento",
+          "en": "Database and storage configuration"
+        }
+      }
+    ],
+    "answer": [
+      "C",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-03-01-03",
+    "requirement": "N12",
+    "subject": "responsabilidades no IaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O IaaS é a categoria mais flexível e oferece o máximo de controle. O provedor cobre hardware, conectividade com a Internet e segurança física; instalação, configuração e manutenção do sistema operacional, incluindo patches, são suas.",
+      "en": "IaaS is the most flexible category and gives the maximum control. The provider covers hardware, internet connectivity, and physical security; operating system installation, configuration, and maintenance, including patching, are yours."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque a nuvem é associada a atualizações gerenciadas pelo provedor, mas isso vale para PaaS e SaaS, e não para IaaS.",
+      "en": "Statement 3 is tempting because the cloud is associated with provider-managed updates, but that applies to PaaS and SaaS, not IaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O IaaS é a categoria mais flexível de serviços de nuvem.",
+          "en": "IaaS is the most flexible category of cloud services."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "No IaaS, o provedor de nuvem é responsável por manter o hardware, a conectividade de rede com a Internet e a segurança física.",
+          "en": "In IaaS, the cloud provider is responsible for maintaining the hardware, network connectivity to the internet, and physical security."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "No IaaS, o provedor de nuvem é responsável pela aplicação de patches no sistema operacional.",
+          "en": "In IaaS, the cloud provider is responsible for operating system patching."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "CLOUD-03-01-04",
+    "requirement": "N12",
+    "subject": "responsabilidades no IaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. No IaaS, o provedor de nuvem é responsável por manter o hardware, a conectividade de rede com a Internet e ______.",
+      "en": "Complete the sentence. In IaaS, the cloud provider is responsible for maintaining the hardware, network connectivity to the internet, and ______."
+    },
+    "explanation": {
+      "pt": "No IaaS o provedor é responsável pelo hardware, pela conectividade de rede com a Internet e pela segurança física.",
+      "en": "In IaaS the provider is responsible for the hardware, network connectivity to the internet, and physical security."
+    },
+    "distractors": {
+      "pt": "A configuração de rede é o vizinho tentador da conectividade de rede, mas pertence ao cliente no IaaS.",
+      "en": "Network configuration is the tempting neighbor of network connectivity, but it belongs to the customer in IaaS."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "a configuração do sistema operacional",
+          "en": "operating system configuration"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "a configuração de rede",
+          "en": "network configuration"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "a configuração de banco de dados e armazenamento",
+          "en": "database and storage configuration"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "a segurança física",
+          "en": "physical security"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "CLOUD-03-01-05",
+    "requirement": "N12",
+    "subject": "trade-off do IaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa escolhe o IaaS para replicar na nuvem a sua configuração local. Qual afirmação melhor descreve o trade-off dessa escolha?",
+      "en": "A company chooses IaaS to replicate its on-premises setup in the cloud. Which statement best describes the trade-off of this choice?"
+    },
+    "explanation": {
+      "pt": "No IaaS você gerencia a maior parte da pilha da carga de trabalho, incluindo sistemas operacionais, patches, configuração e muitos controles de segurança. Isso dá máxima flexibilidade e a maior responsabilidade operacional.",
+      "en": "In IaaS you manage most of the workload stack, including operating systems, patching, configuration, and many security controls. This gives maximum flexibility and the largest operational responsibility."
+    },
+    "distractors": {
+      "pt": "A alternativa B descreve o SaaS e a C descreve o PaaS; são os vizinhos com o trade-off oposto.",
+      "en": "Option B describes SaaS and option C describes PaaS; they are the neighbors with the opposite trade-off."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/2-describe-infrastructure-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Ela obtém o máximo de flexibilidade, mas também a maior responsabilidade operacional.",
+          "en": "It gets maximum flexibility, but also the largest operational responsibility."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ela obtém a menor sobrecarga operacional, mas a menor flexibilidade.",
+          "en": "It gets the lowest operational overhead, but the least flexibility."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ela obtém um ambiente de desenvolvimento completo, com o provedor mantendo sistemas operacionais e middleware.",
+          "en": "It gets a complete development environment, with the provider maintaining operating systems and middleware."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ela obtém um aplicativo totalmente desenvolvido que exige conhecimento técnico mínimo.",
+          "en": "It gets a fully developed application that requires minimal technical knowledge."
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

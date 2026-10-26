@@ -1,0 +1,393 @@
+[
+  {
+    "id": "ARCH-02-01-01",
+    "requirement": "A08",
+    "subject": "quando usar VM",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa de controle total sobre o sistema operacional, quer executar software personalizado e precisa de uma configuração de hospedagem personalizada. Qual tipo de computação do Azure é o mais adequado?",
+      "en": "A company needs total control over the operating system, wants to run custom software, and needs a custom hosting configuration. Which Azure compute type is the best fit?"
+    },
+    "explanation": {
+      "pt": "As VMs do Azure são adequadas quando você precisa de controle total sobre o sistema operacional, da capacidade de executar software personalizado ou de configurações de hospedagem personalizadas. Como serviço IaaS, você ainda gerencia patches, atualizações e configuração dentro da VM.",
+      "en": "Azure VMs are a good fit when you need total control over the operating system, the ability to run custom software, or custom hosting configurations. As an IaaS service, you still manage patching, updates, and configuration inside the VM."
+    },
+    "distractors": {
+      "pt": "O Azure Container Instances é o vizinho tentador por ser flexível, mas com contêineres você não gerencia o sistema operacional.",
+      "en": "Azure Container Instances is the tempting neighbor because it is flexible, but with containers you don't manage the operating system."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Functions",
+          "en": "Azure Functions"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Container Instances",
+          "en": "Azure Container Instances"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Virtual Machines",
+          "en": "Azure Virtual Machines"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Container Apps",
+          "en": "Azure Container Apps"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-02-01-02",
+    "requirement": "A08",
+    "subject": "Azure Functions",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe quer executar código em resposta a um temporizador ou a uma mensagem de outro serviço do Azure. O trabalho é concluído em segundos, a demanda é variável e a equipe quer pagar apenas pelo tempo de CPU usado enquanto o código é executado. Qual tipo de computação se encaixa?",
+      "en": "A team wants to run code in response to a timer or a message from another Azure service. The work completes within seconds, demand is variable, and the team wants to pay only for the CPU time used while the code runs. Which compute type fits?"
+    },
+    "explanation": {
+      "pt": "O Azure Functions é uma opção de computação serverless orientada a eventos. As funções são usadas para trabalho em resposta a um evento, temporizador ou mensagem que termina rapidamente, escalam automaticamente, e o Azure cobra apenas pelo tempo de CPU usado enquanto a função é executada.",
+      "en": "Azure Functions is an event-driven, serverless compute option. Functions are used for work in response to an event, timer, or message that completes quickly, scale automatically, and Azure charges only for the CPU time used while the function runs."
+    },
+    "distractors": {
+      "pt": "O Azure Container Instances é tentador porque também evita gerenciar VMs, mas os contêineres continuam em execução e não são cobrados apenas pelo tempo de CPU enquanto o código executa.",
+      "en": "Azure Container Instances is tempting because it also avoids managing VMs, but containers keep running and are not billed only for CPU time while code executes."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/6-functions",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Container Instances",
+          "en": "Azure Container Instances"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Functions",
+          "en": "Azure Functions"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Virtual Machines",
+          "en": "Azure Virtual Machines"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Kubernetes Service (AKS)",
+          "en": "Azure Kubernetes Service (AKS)"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-02-01-03",
+    "requirement": "A08",
+    "subject": "VM vs contêineres",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Cada VM executa seu próprio sistema operacional, ao qual você pode se conectar e que pode gerenciar. Com contêineres você não gerencia o sistema operacional. Contêineres são leves, projetados para serem criados, escalados e interrompidos dinamicamente, e reiniciam rapidamente.",
+      "en": "Each VM runs its own operating system that you can connect to and manage. With containers you don't manage the operating system. Containers are lightweight, designed to be created, scaled out, and stopped dynamically, and they restart quickly."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque contêineres são uma forma de virtualização como as VMs, mas o SO não é gerenciado por você.",
+      "en": "Statement 2 is tempting because containers are a form of virtualization like VMs, but the OS is not managed by you."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/5-containers",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Cada máquina virtual executa seu próprio sistema operacional, ao qual você pode se conectar e que pode gerenciar.",
+          "en": "Each virtual machine runs its own operating system that you can connect to and manage."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Com contêineres, você gerencia o sistema operacional de cada contêiner individual, como faz com uma máquina virtual.",
+          "en": "With containers, you manage the operating system of each individual container, as you do with a virtual machine."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Contêineres são mais pesados que máquinas virtuais, então levam mais tempo para serem criados e reiniciados.",
+          "en": "Containers are heavier than virtual machines, so they take longer to create and restart."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-02-01-04",
+    "requirement": "A08",
+    "subject": "ACI vs AKS vs Container Apps",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure Container Instances é a maneira mais rápida e simples de executar um contêiner. O AKS é o serviço de orquestração para frotas de contêineres. O Azure Container Apps é uma oferta PaaS com balanceamento de carga e dimensionamento integrados.",
+      "en": "Azure Container Instances is the fastest and simplest way to run a container. AKS is the orchestration service for fleets of containers. Azure Container Apps is a PaaS offering with built-in load balancing and scaling."
+    },
+    "distractors": {
+      "pt": "Container Instances e Container Apps são o par mais próximo: ambos são PaaS, mas só o Container Apps tem balanceamento de carga e dimensionamento integrados.",
+      "en": "Container Instances and Container Apps are the closest pair: both are PaaS, but only Container Apps has built-in load balancing and scaling."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/5-containers",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A maneira mais rápida e simples de executar um contêiner no Azure, sem gerenciar máquinas virtuais nem adotar serviços extras",
+          "en": "The fastest and simplest way to run a container in Azure, without managing virtual machines or adopting extra services"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um serviço de orquestração de contêineres que gerencia o ciclo de vida dos contêineres e simplifica o gerenciamento de uma frota de contêineres",
+          "en": "A container orchestration service that manages the lifecycle of containers and simplifies the management of a fleet of containers"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma oferta de contêineres PaaS com balanceamento de carga e dimensionamento integrados que remove a sobrecarga de gerenciamento de contêineres",
+          "en": "A PaaS container offering with built-in load balancing and scaling that removes the container management overhead"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Kubernetes Service (AKS)",
+          "en": "Azure Kubernetes Service (AKS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Container Apps",
+          "en": "Azure Container Apps"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Container Instances",
+          "en": "Azure Container Instances"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Functions",
+          "en": "Azure Functions"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B"
+    }
+  },
+  {
+    "id": "ARCH-02-01-05",
+    "requirement": "A08",
+    "subject": "VM vs contêineres",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações comparam corretamente máquinas virtuais e contêineres? Escolha duas.",
+      "en": "Which two statements correctly compare virtual machines and containers? Choose two."
+    },
+    "explanation": {
+      "pt": "As VMs são limitadas a um único sistema operacional por VM, enquanto os contêineres são leves, projetados para serem criados, escalados e interrompidos dinamicamente e permitem executar várias instâncias de um aplicativo em um único host.",
+      "en": "VMs are limited to a single operating system per VM, while containers are lightweight, designed to be created, scaled out, and stopped dynamically, and let you run multiple instances of an application on a single host."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque as VMs são familiares, mas os contêineres são a opção mais ágil e de reinício mais rápido.",
+      "en": "Option C is tempting because VMs are familiar, but containers are the more agile and faster-restarting option."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/5-containers",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "As máquinas virtuais são limitadas a um único sistema operacional por VM.",
+          "en": "Virtual machines are limited to a single operating system per VM."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Cada contêiner executa um sistema operacional dedicado completo que você gerencia.",
+          "en": "Each container runs a full dedicated operating system that you manage."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "As máquinas virtuais reiniciam mais rápido que os contêineres após uma falha.",
+          "en": "Virtual machines restart faster than containers after a crash."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Os contêineres são leves e projetados para serem criados, escalados e interrompidos dinamicamente.",
+          "en": "Containers are lightweight and designed to be created, scaled out, and stopped dynamically."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Os contêineres não conseguem executar várias instâncias de um aplicativo em um único host.",
+          "en": "Containers can't run multiple instances of an application on a single host."
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "ARCH-02-01-06",
+    "requirement": "A08",
+    "subject": "contêineres por componente",
+    "level": "essential",
+    "stem": {
+      "pt": "Um site é dividido em um contêiner para o front-end, um para o back-end e um para o armazenamento. O back-end atinge a capacidade, mas o front-end e o armazenamento não estão sobrecarregados. Qual benefício desse design baseado em contêineres se aplica?",
+      "en": "A website is split into one container for the front end, one for the back end, and one for storage. The back end reaches capacity, but the front end and storage are not stressed. Which benefit of this container-based design applies?"
+    },
+    "explanation": {
+      "pt": "Contêineres são frequentemente usados em arquiteturas de microsserviços: você divide uma solução em partes menores e independentes para poder manter, escalar ou atualizar cada parte de forma independente.",
+      "en": "Containers are often used for microservice architectures: you break a solution into smaller, independent pieces so that you can maintain, scale, or update each part independently."
+    },
+    "distractors": {
+      "pt": "A alternativa A é o raciocínio no estilo de VM, em que o aplicativo inteiro escala como uma unidade.",
+      "en": "Option A is the VM-style reasoning, where the whole application scales as one unit."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/5-containers",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os três contêineres devem ser escalados juntos porque compartilham o mesmo aplicativo.",
+          "en": "All three containers must be scaled together because they share the same application."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Os contêineres compartilham um sistema operacional que a equipe deve escalar como um todo.",
+          "en": "The containers share one operating system that the team must scale as a whole."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A equipe deve reimplantar o front-end e o armazenamento sempre que o back-end mudar.",
+          "en": "The team must redeploy the front end and storage whenever the back end changes."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A equipe pode escalar o back-end separadamente sem afetar os outros componentes.",
+          "en": "The team can scale the back end separately without affecting the other components."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-02-01-07",
+    "requirement": "A08",
+    "subject": "Durable Functions",
+    "level": "detail",
+    "stem": {
+      "pt": "Complete a frase. O Azure Functions é stateless por padrão. As funções stateful, que passam um contexto pela função para acompanhar a atividade anterior, são chamadas de ______.",
+      "en": "Complete the sentence. Azure Functions are stateless by default. Functions that are stateful, which pass a context through the function to track prior activity, are called ______."
+    },
+    "explanation": {
+      "pt": "As funções podem ser stateless (o padrão), comportando-se como se reiniciassem a cada evento, ou stateful, chamadas de Durable Functions, em que o runtime passa um contexto para acompanhar a atividade anterior.",
+      "en": "Functions can be stateless (the default), behaving as if they restart on every event, or stateful, called Durable Functions, where the runtime passes a context to track prior activity."
+    },
+    "distractors": {
+      "pt": "O WebJobs é tentador porque também executa tarefas em segundo plano, mas pertence ao App Service.",
+      "en": "WebJobs is tempting because it also runs background tasks, but it belongs to App Service."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/6-functions",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Durable Functions",
+          "en": "Durable Functions"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "WebJobs",
+          "en": "WebJobs"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Container Apps",
+          "en": "Container Apps"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "conjuntos de dimensionamento (scale sets)",
+          "en": "scale sets"
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

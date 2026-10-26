@@ -1,0 +1,367 @@
+[
+  {
+    "id": "ARCH-01-04-01",
+    "requirement": "A04",
+    "subject": "recurso em um grupo de recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre a relação entre um recurso e grupos de recursos está correta?",
+      "en": "Which statement about the relationship between a resource and resource groups is correct?"
+    },
+    "explanation": {
+      "pt": "Todo recurso deve pertencer a exatamente um grupo de recursos. Você pode mover alguns recursos entre grupos, mas um recurso fica associado a apenas um grupo por vez.",
+      "en": "Every resource must belong to exactly one resource group. You can move some resources between groups, but a resource is associated with only one group at a time."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a tentadora porque acerta o 'exatamente um', mas proíbe indevidamente mover recursos.",
+      "en": "Option D is the tempting one because it gets 'exactly one' right but wrongly forbids moving resources."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Um recurso pode pertencer a até dois grupos de recursos para redundância.",
+          "en": "A resource can belong to up to two resource groups for redundancy."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Todo recurso pertence a exatamente um grupo de recursos por vez, e alguns recursos podem ser movidos entre grupos.",
+          "en": "Every resource belongs to exactly one resource group at a time, and some resources can be moved between groups."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um recurso pode existir sem pertencer a nenhum grupo de recursos.",
+          "en": "A resource can exist without belonging to any resource group."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Um recurso pertence a um grupo de recursos permanentemente e nunca pode ser movido.",
+          "en": "A resource belongs to one resource group permanently and can never be moved."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-01-04-02",
+    "requirement": "A04",
+    "subject": "regras dos grupos de recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Grupos de recursos não podem ser aninhados e não podem ser renomeados depois de criados. Excluir um grupo de recursos exclui tudo que está dentro dele.",
+      "en": "Resource groups can't be nested and can't be renamed after creation. Deleting a resource group deletes everything in it."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque soa como um design seguro, mas a exclusão é total.",
+      "en": "Statement 3 is tempting because it sounds like a safe design, but the deletion is total."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Grupos de recursos podem ser aninhados dentro de outros grupos de recursos.",
+          "en": "Resource groups can be nested inside other resource groups."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um grupo de recursos não pode ser renomeado depois de criado.",
+          "en": "A resource group can't be renamed after it is created."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Quando você exclui um grupo de recursos, os recursos dentro dele permanecem e são movidos para um grupo padrão.",
+          "en": "When you delete a resource group, the resources inside it remain and are moved to a default group."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-01-04-03",
+    "requirement": "A04",
+    "subject": "herança no grupo de recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador aplica uma configuração de acesso no nível do grupo de recursos. O grupo já contém vários recursos, e mais recursos são adicionados depois. O que acontece?",
+      "en": "An administrator applies an access setting at the resource group level. The group already contains several resources, and more resources are added later. What happens?"
+    },
+    "explanation": {
+      "pt": "Ações aplicadas a um grupo de recursos afetam todos os recursos dentro dele, e a configuração se aplica aos recursos atuais e futuros. Isso corresponde à avaliação do módulo desta unidade.",
+      "en": "Actions applied to a resource group affect all resources inside it, and the setting applies to current and future resources. This matches the module assessment of this unit."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a tentadora porque herança soa como algo que se aplica ao que já existe.",
+      "en": "Option A is the tempting one because inheritance sounds like it applies to what already exists."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Os recursos atuais herdam a configuração, mas os futuros não.",
+          "en": "The current resources inherit the setting, but future resources don't."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Os recursos futuros herdam a configuração, mas os atuais não.",
+          "en": "The future resources inherit the setting, but the current ones don't."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A configuração é aplicada apenas a recursos criados pelo portal.",
+          "en": "The setting is applied only to resources created through the portal."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A configuração é aplicada aos recursos atuais e futuros.",
+          "en": "The setting is applied to current and future resources."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-01-04-04",
+    "requirement": "A04",
+    "subject": "ciclo de vida do grupo de recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe está montando um ambiente de desenvolvimento temporário com vários recursos. Qual é o principal benefício de agrupar todos esses recursos em um único grupo de recursos?",
+      "en": "A team is setting up a temporary development environment with several resources. What is the main benefit of grouping all of those resources in one resource group?"
+    },
+    "explanation": {
+      "pt": "Exemplo do Learn: em um ambiente de desenvolvimento temporário, agrupar todos os recursos permite excluir o grupo inteiro quando terminar, pois excluir um grupo de recursos exclui tudo que está nele.",
+      "en": "Learn's example: for a temporary dev environment, grouping all resources together lets you delete the entire group when you're done, because deleting a resource group deletes everything in it."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora, mas errada: grupos de recursos não podem ser renomeados depois de criados.",
+      "en": "Option C is tempting but wrong: resource groups can't be renamed after creation."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O grupo de recursos pode ser aninhado sob cada recurso para compartilhar configurações.",
+          "en": "The resource group can be nested under each resource to share settings."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Cada recurso também pode pertencer a um segundo grupo de recursos como backup.",
+          "en": "Each resource can also belong to a second resource group for backup."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O grupo de recursos pode ser renomeado depois, quando o projeto terminar.",
+          "en": "The resource group can be renamed later when the project ends."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A equipe pode excluir o grupo inteiro, e tudo que está nele, quando o ambiente não for mais necessário.",
+          "en": "The team can delete the entire group, and everything in it, when the environment is no longer needed."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-01-04-05",
+    "requirement": "A04",
+    "subject": "regras dos grupos de recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três afirmações sobre grupos de recursos estão corretas? Escolha três.",
+      "en": "Which three statements about resource groups are correct? Choose three."
+    },
+    "explanation": {
+      "pt": "Todo recurso pertence a exatamente um grupo de recursos, grupos de recursos não podem ser renomeados após a criação, e o acesso concedido ou negado no grupo se aplica a todos os recursos dele. Grupos de recursos não podem ser aninhados.",
+      "en": "Every resource belongs to exactly one resource group, resource groups can't be renamed after creation, and access granted or denied at the group applies to all its resources. Resource groups can't be nested."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque grupos de gerenciamento podem ser aninhados, mas grupos de recursos não.",
+      "en": "Option A is tempting because management groups can be nested, but resource groups can't."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Grupos de recursos podem ser aninhados.",
+          "en": "Resource groups can be nested."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Todo recurso pertence a exatamente um grupo de recursos.",
+          "en": "Every resource belongs to exactly one resource group."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um recurso pode pertencer a dois grupos de recursos ao mesmo tempo.",
+          "en": "A resource can belong to two resource groups at the same time."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Um grupo de recursos não pode ser renomeado após a criação.",
+          "en": "A resource group can't be renamed after creation."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Conceder ou negar acesso no nível do grupo de recursos se aplica a todos os recursos dele.",
+          "en": "Granting or denying access at the resource group level applies to all of its resources."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-01-04-06",
+    "requirement": "A04",
+    "subject": "recurso em um grupo de recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Uma máquina virtual, uma rede virtual e um banco de dados são exemplos de ______ do Azure, e cada um deles deve pertencer a exatamente um ______.",
+      "en": "Complete the sentence. A virtual machine, a virtual network, and a database are all examples of Azure ______, and each of them must belong to exactly one ______."
+    },
+    "explanation": {
+      "pt": "Um recurso é o bloco de construção básico do Azure: tudo o que você cria, provisiona ou implanta. Todo recurso deve pertencer a exatamente um grupo de recursos.",
+      "en": "A resource is the basic building block of Azure: anything you create, provision, or deploy. Every resource must belong to exactly one resource group."
+    },
+    "distractors": {
+      "pt": "A alternativa C troca os níveis: a VM é um recurso, e não um grupo de recursos.",
+      "en": "Option C swaps the levels: the VM is a resource, not a resource group."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "assinaturas; grupo de gerenciamento",
+          "en": "subscriptions; management group"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "recursos; zona de disponibilidade",
+          "en": "resources; availability zone"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "grupos de recursos; assinatura",
+          "en": "resource groups; subscription"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "recursos; grupo de recursos",
+          "en": "resources; resource group"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-01-04-07",
+    "requirement": "A04",
+    "subject": "organizar por grupo de recursos",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa executa vários projetos e quer que cada equipe veja e gerencie apenas os seus próprios recursos. Qual abordagem o Learn sugere?",
+      "en": "A company runs several projects and wants each team to see and manage only its own resources. Which approach does Learn suggest?"
+    },
+    "explanation": {
+      "pt": "Se você executa vários projetos, crie um grupo de recursos separado para cada um, para que cada equipe veja e gerencie apenas seus próprios recursos. Grupos de recursos não podem ser aninhados nem renomeados, e um recurso pertence a apenas um grupo.",
+      "en": "If you're running multiple projects, create a separate resource group for each so each team only sees and manages its own resources. Resource groups can't be nested, can't be renamed, and a resource belongs to only one group."
+    },
+    "distractors": {
+      "pt": "A alternativa A é a tentadora porque aninhamento soa como uma estrutura natural, mas grupos de recursos não podem ser aninhados.",
+      "en": "Option A is the tempting one because nesting sounds like a natural structure, but resource groups can't be nested."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Aninhar os grupos de recursos de cada projeto sob um único grupo de recursos pai.",
+          "en": "Nest the resource groups of each project under a single parent resource group."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Criar um grupo de recursos separado para cada projeto.",
+          "en": "Create a separate resource group for each project."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Colocar todos os recursos em um grupo de recursos e renomeá-lo para cada equipe.",
+          "en": "Place all resources in one resource group and rename it for each team."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Mover cada recurso para um segundo grupo de recursos para cada equipe.",
+          "en": "Move every resource into a second resource group for each team."
+        }
+      }
+    ],
+    "answer": "B"
+  }
+]

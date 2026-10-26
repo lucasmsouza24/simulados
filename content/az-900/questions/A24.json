@@ -1,0 +1,496 @@
+[
+  {
+    "id": "ARCH-04-05-01",
+    "requirement": "A24",
+    "subject": "funções internas",
+    "level": "essential",
+    "stem": {
+      "pt": "Um auditor precisa poder visualizar todos os grupos de recursos e recursos de uma assinatura, mas não deve fazer nenhuma alteração e não deve ter acesso a outras assinaturas. Seguindo o privilégio mínimo, qual atribuição de função se encaixa?",
+      "en": "An auditor must be able to view every resource group and resource in one subscription, but must not make any change, and must have no access to other subscriptions. Following least privilege, which role assignment fits?"
+    },
+    "explanation": {
+      "pt": "Atribuir Leitor (Reader) no escopo da assinatura permite que os membros vejam todos os grupos de recursos e recursos dessa assinatura, e nada além disso. As permissões são herdadas por escopos filhos, mas não alcançam outras assinaturas.",
+      "en": "Assigning Reader at the subscription scope lets members view every resource group and resource in that subscription, and nothing more. Permissions are inherited by child scopes but don't reach other subscriptions."
+    },
+    "distractors": {
+      "pt": "Reader no escopo do grupo de gerenciamento é o vizinho tentador porque também é somente leitura, mas alcançaria todas as assinaturas sob o grupo.",
+      "en": "Reader at the management group scope is the tempting neighbor because it is also read-only, but it would reach all subscriptions under the group."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Owner at the management group scope",
+          "en": "Owner at the management group scope"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Reader at the subscription scope",
+          "en": "Reader at the subscription scope"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Owner at the subscription scope",
+          "en": "Owner at the subscription scope"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Reader at the management group scope",
+          "en": "Reader at the management group scope"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-04-05-02",
+    "requirement": "A24",
+    "subject": "modelo aditivo",
+    "level": "essential",
+    "stem": {
+      "pt": "Um usuário recebe várias funções por meio do controle de acesso baseado em função. A Função 1 concede leitura, a Função 2 concede gravação e a Função 3 concede leitura e gravação. Quais são as permissões reais do usuário?",
+      "en": "A user is assigned multiple roles by using role-based access control. Role 1 grants read, Role 2 grants write, and Role 3 grants read and write. What are the user's actual permissions?"
+    },
+    "explanation": {
+      "pt": "O Azure RBAC usa um modelo de permissão (allow), então as permissões de várias atribuições de função são combinadas. O usuário pode ler e gravar. Isso corresponde à avaliação deste módulo.",
+      "en": "Azure RBAC uses an allow model, so permissions from multiple role assignments are combined. The user can read and write. This matches the module assessment of this module."
+    },
+    "distractors": {
+      "pt": "A alternativa D é tentadora porque regras conflitantes costumam se anular, mas as funções do RBAC são aditivas.",
+      "en": "Option D is tempting because conflicting rules often cancel out, but RBAC roles are additive."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Read only",
+          "en": "Read only"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Write only",
+          "en": "Write only"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Read and write",
+          "en": "Read and write"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "No access, because the roles conflict",
+          "en": "No access, because the roles conflict"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-04-05-03",
+    "requirement": "A24",
+    "subject": "herança de escopo",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Azure RBAC é hierárquico: permissões concedidas em um escopo pai são herdadas por todos os escopos filhos. Reader no escopo da assinatura visualiza todos os grupos de recursos e recursos; Owner no escopo do grupo de gerenciamento gerencia tudo em todas as suas assinaturas.",
+      "en": "Azure RBAC is hierarchical: permissions granted at a parent scope are inherited by all child scopes. Reader at the subscription scope views every resource group and resource; Owner at the management group scope manages everything in all its subscriptions."
+    },
+    "distractors": {
+      "pt": "Os casos de grupo de gerenciamento e assinatura são os mais trocados: quanto mais alto o escopo, mais ampla a herança.",
+      "en": "The management group and subscription cases are the most swapped: the higher the scope, the wider the inheritance."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "A função Leitor (Reader) atribuída a um grupo no escopo da assinatura",
+          "en": "The Reader role assigned to a group at the subscription scope"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "A função Proprietário (Owner) atribuída a um usuário no escopo do grupo de gerenciamento",
+          "en": "The Owner role assigned to a user at the management group scope"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "A função Leitor (Reader) atribuída a um usuário no escopo de um único grupo de recursos",
+          "en": "The Reader role assigned to a user at a single resource group scope"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Pode visualizar todos os grupos de recursos e recursos da assinatura",
+          "en": "Can view every resource group and resource in the subscription"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Pode gerenciar tudo em todas as assinaturas dentro do grupo de gerenciamento",
+          "en": "Can manage everything in all subscriptions within the management group"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Pode visualizar apenas os recursos desse grupo de recursos",
+          "en": "Can view only the resources in that resource group"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Pode gerenciar apenas um único recurso",
+          "en": "Can manage only a single resource"
+        }
+      }
+    ],
+    "answer": {
+      "1": "A",
+      "2": "B",
+      "3": "C"
+    }
+  },
+  {
+    "id": "ARCH-04-05-04",
+    "requirement": "A24",
+    "subject": "regras do RBAC",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Azure RBAC não impõe permissões no nível do aplicativo ou dos dados; a segurança do aplicativo deve ser tratada pelo seu aplicativo. Ele é hierárquico e as funções podem ser atribuídas a indivíduos ou grupos, de modo que os membros do grupo recebem todas as permissões da função.",
+      "en": "Azure RBAC doesn't enforce permissions at the application or data level; application security must be handled by your application. It is hierarchical and roles can be assigned to individuals or groups, so group members receive all the role's permissions."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque o RBAC parece controlar todo o acesso, mas governa ações do Azure Resource Manager.",
+      "en": "Statement 1 is tempting because RBAC sounds like it controls all access, but it governs Azure Resource Manager actions."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure RBAC impõe permissões de acesso no nível do aplicativo ou dos dados.",
+          "en": "Azure RBAC enforces access permissions at the application or data level."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Azure RBAC é hierárquico: as permissões concedidas em um escopo pai são herdadas por todos os escopos filhos.",
+          "en": "Azure RBAC is hierarchical: permissions granted at a parent scope are inherited by all child scopes."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "As funções do Azure RBAC podem ser atribuídas somente a usuários individuais, e não a grupos.",
+          "en": "Azure RBAC roles can be assigned only to individual users, not to groups."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-04-05-05",
+    "requirement": "A24",
+    "subject": "imposição pelo Resource Manager",
+    "level": "detail",
+    "stem": {
+      "pt": "O Azure RBAC é imposto em qualquer ação iniciada contra um recurso do Azure. Por qual serviço de gerenciamento a ação deve passar para que o RBAC seja imposto?",
+      "en": "Azure RBAC is enforced on any action initiated against an Azure resource. Through which management service must the action pass for RBAC to be enforced?"
+    },
+    "explanation": {
+      "pt": "O Azure RBAC é imposto em qualquer ação que passa pelo Azure Resource Manager, o serviço de gerenciamento usado pelo portal do Azure, Cloud Shell, Azure PowerShell e CLI do Azure.",
+      "en": "Azure RBAC is enforced on any action that passes through Azure Resource Manager, the management service used by the Azure portal, Cloud Shell, Azure PowerShell, and the Azure CLI."
+    },
+    "distractors": {
+      "pt": "O Azure Policy é o vizinho tentador porque também avalia recursos, mas a imposição do RBAC ocorre por meio do Resource Manager.",
+      "en": "Azure Policy is the tempting neighbor because it also evaluates resources, but RBAC enforcement happens through Resource Manager."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Resource Manager",
+          "en": "Azure Resource Manager"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Entra Connect",
+          "en": "Microsoft Entra Connect"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-04-05-06",
+    "requirement": "A24",
+    "subject": "escopos",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são escopos aos quais o Azure RBAC pode ser aplicado? Escolha três.",
+      "en": "Which three are scopes to which Azure RBAC can be applied? Choose three."
+    },
+    "explanation": {
+      "pt": "Os escopos do Azure RBAC são um grupo de gerenciamento, uma única assinatura, um grupo de recursos ou um único recurso.",
+      "en": "Azure RBAC scopes are a management group, a single subscription, a resource group, or a single resource."
+    },
+    "distractors": {
+      "pt": "Região e zona de disponibilidade são tentadoras por serem termos da hierarquia do Azure, mas não são escopos do RBAC.",
+      "en": "Region and availability zone are tempting because they are Azure hierarchy terms, but they aren't RBAC scopes."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma região do Azure",
+          "en": "An Azure region"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um grupo de gerenciamento",
+          "en": "A management group"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Uma zona de disponibilidade",
+          "en": "An availability zone"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma assinatura",
+          "en": "A subscription"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Um único recurso",
+          "en": "A single resource"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-04-05-07",
+    "requirement": "A24",
+    "subject": "atribuição a grupo",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe atribui funções a um grupo chamado Engenheiros. Um novo engenheiro é contratado e adicionado ao grupo. O que acontece?",
+      "en": "A team assigns roles to a group named Engineers. A new engineer is hired and added to the group. What happens?"
+    },
+    "explanation": {
+      "pt": "Quando você adiciona um novo engenheiro ao grupo de RBAC do Azure para engenheiros, ele obtém automaticamente o mesmo acesso que os outros engenheiros do grupo. Se novos recursos forem adicionados e o RBAC for apontado para eles, todos do grupo também recebem essas permissões.",
+      "en": "When you add a new engineer to the Azure RBAC group for engineers, they automatically get the same access as the other engineers in that group. If new resources are added and RBAC is pointed at them, everyone in the group gets those permissions too."
+    },
+    "distractors": {
+      "pt": "A alternativa A é tentadora porque descreve permissões manuais por usuário, exatamente o que o RBAC evita.",
+      "en": "Option A is tempting because it describes manual per-user permissions, which is exactly what RBAC avoids."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O engenheiro deve receber cada permissão individualmente, pois a participação em grupo não concede funções.",
+          "en": "The engineer must be given each permission individually, because group membership doesn't grant roles."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O engenheiro obtém acesso somente leitura até que um administrador reatribua o grupo.",
+          "en": "The engineer gets read-only access until an administrator reassigns the group."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O engenheiro só pode acessar recursos criados depois que ele entrou.",
+          "en": "The engineer can only access resources created after they joined."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O engenheiro obtém automaticamente o mesmo acesso que os outros engenheiros desse grupo.",
+          "en": "The engineer automatically gets the same access as the other engineers in that group."
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-04-05-08",
+    "requirement": "A24",
+    "subject": "escopos",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. O Azure RBAC é aplicado a um ______, que é um recurso ou conjunto de recursos ao qual o acesso se aplica.",
+      "en": "Complete the sentence. Azure RBAC is applied to a ______, which is a resource or set of resources that the access applies to."
+    },
+    "explanation": {
+      "pt": "O controle de acesso baseado em função é aplicado a um escopo: um grupo de gerenciamento, uma assinatura, um grupo de recursos ou um único recurso.",
+      "en": "Role-based access control is applied to a scope: a management group, a subscription, a resource group, or a single resource."
+    },
+    "distractors": {
+      "pt": "Região é tentadora por ser um limite comum do Azure, mas o acesso se aplica a escopos.",
+      "en": "Region is tempting because it is a common Azure boundary, but access applies to scopes."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "namespace",
+          "en": "namespace"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "escopo (scope)",
+          "en": "scope"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "região",
+          "en": "region"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "camada",
+          "en": "tier"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-04-05-09",
+    "requirement": "A24",
+    "subject": "RBAC não cobre o aplicativo",
+    "level": "essential",
+    "stem": {
+      "pt": "Um desenvolvedor quer que o Azure RBAC restrinja quais registros um usuário do aplicativo do próprio desenvolvedor pode ler dentro de um banco de dados. O Azure RBAC consegue fazer isso?",
+      "en": "A developer wants Azure RBAC to restrict which records a user of the developer's own application can read inside a database. Can Azure RBAC do this?"
+    },
+    "explanation": {
+      "pt": "O Azure RBAC é imposto sobre ações que passam pelo Azure Resource Manager. Ele não impõe permissões de acesso no nível do aplicativo ou dos dados; a segurança do aplicativo deve ser tratada pelo seu aplicativo.",
+      "en": "Azure RBAC is enforced on actions that pass through Azure Resource Manager. It doesn't enforce access permissions at the application or data level; application security must be handled by your application."
+    },
+    "distractors": {
+      "pt": "A alternativa B é tentadora porque o banco de dados é um recurso do Azure, mas o RBAC atua no nível de gerenciamento.",
+      "en": "Option B is tempting because the database is an Azure resource, but RBAC works at the management level."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Não: o Azure RBAC não impõe permissões no nível do aplicativo ou dos dados, então o aplicativo deve tratar essa segurança.",
+          "en": "No: Azure RBAC doesn't enforce permissions at the application or data level, so the application must handle that security."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Sim: o Azure RBAC impõe permissões em nível de linha dentro de bancos de dados SQL do Azure.",
+          "en": "Yes: Azure RBAC enforces row-level permissions inside Azure SQL databases."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Sim: o Azure RBAC impõe permissões em qualquer solicitação feita por um usuário do aplicativo.",
+          "en": "Yes: Azure RBAC enforces permissions on any request made by an application user."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Não: o Azure RBAC não pode ser usado com recursos do Azure.",
+          "en": "No: Azure RBAC can't be used with Azure resources at all."
+        }
+      }
+    ],
+    "answer": "A"
+  }
+]

@@ -1,0 +1,395 @@
+[
+  {
+    "id": "ARCH-03-02-01",
+    "requirement": "A15",
+    "subject": "camada cool",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa armazena faturas de clientes que são acessadas com pouca frequência, mas que devem permanecer online por pelo menos 30 dias. Qual camada de acesso do Armazenamento de Blobs é otimizada para esses dados?",
+      "en": "A company stores customer invoices that are accessed infrequently but must stay online for at least 30 days. Which Blob storage access tier is optimized for this data?"
+    },
+    "explanation": {
+      "pt": "A camada de acesso fria (cool) é otimizada para dados acessados com pouca frequência e armazenados por pelo menos 30 dias, como faturas de clientes.",
+      "en": "The cool access tier is optimized for data that is infrequently accessed and stored for at least 30 days, such as invoices for your customers."
+    },
+    "distractors": {
+      "pt": "A camada cold é a vizinha tentadora porque também é de acesso infrequente, mas seu período mínimo de armazenamento é de 90 dias.",
+      "en": "Cold is the tempting neighbor because it is also infrequent access, but its minimum storage period is 90 days."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Hot",
+          "en": "Hot"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Cold",
+          "en": "Cold"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Cool",
+          "en": "Cool"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Archive",
+          "en": "Archive"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-03-02-02",
+    "requirement": "A15",
+    "subject": "camada archive",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa mantém backups de longo prazo que raramente são acessados e armazenados por pelo menos 180 dias. A carga de trabalho tolera latência flexível, e a empresa quer o menor custo de armazenamento. Qual camada de acesso do Armazenamento de Blobs se encaixa?",
+      "en": "A company keeps long-term backups that are rarely accessed and stored for at least 180 days. The workload tolerates flexible latency, and the company wants the lowest storage cost. Which Blob storage access tier fits?"
+    },
+    "explanation": {
+      "pt": "A camada de acesso de arquivamento (archive) é para dados raramente acessados e armazenados por pelo menos 180 dias, com requisitos de latência flexíveis, como backups de longo prazo. Tem o menor custo de armazenamento, mas a maior latência de reidratação e o maior custo de acesso.",
+      "en": "The archive access tier is for data that is rarely accessed and stored for at least 180 days with flexible latency requirements, such as long-term backups. It has the lowest storage cost, but the highest rehydration latency and access cost."
+    },
+    "distractors": {
+      "pt": "A camada cold é a vizinha tentadora porque também é barata para acesso infrequente, mas a archive tem o menor custo de armazenamento e o mínimo de 180 dias.",
+      "en": "Cold is the tempting neighbor because it is also cheap for infrequent access, but archive has the lowest storage cost and the 180-day minimum."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Archive",
+          "en": "Archive"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Hot",
+          "en": "Hot"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Cool",
+          "en": "Cool"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Cold",
+          "en": "Cold"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-03-02-03",
+    "requirement": "A15",
+    "subject": "camadas de acesso",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Hot é para acesso frequente. Cool é para acesso infrequente armazenado por pelo menos 30 dias. Cold é para acesso infrequente armazenado por pelo menos 90 dias. Archive é para acesso raro armazenado por pelo menos 180 dias com latência flexível.",
+      "en": "Hot is for frequent access. Cool is for infrequent access stored at least 30 days. Cold is for infrequent access stored at least 90 days. Archive is for rare access stored at least 180 days with flexible latency."
+    },
+    "distractors": {
+      "pt": "Cool e cold são o par mais próximo: a diferença é o período mínimo, 30 contra 90 dias.",
+      "en": "Cool and cold are the closest pair: the difference is the minimum period, 30 versus 90 days."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Dados acessados com frequência, como imagens de um site",
+          "en": "Frequently accessed data, such as images for a website"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Dados acessados com pouca frequência e armazenados por pelo menos 90 dias",
+          "en": "Infrequently accessed data stored for at least 90 days"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Dados raramente acessados e armazenados por pelo menos 180 dias, com requisitos de latência flexíveis",
+          "en": "Rarely accessed data stored for at least 180 days, with flexible latency requirements"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Dados acessados com pouca frequência e armazenados por pelo menos 30 dias",
+          "en": "Infrequently accessed data stored for at least 30 days"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Archive",
+          "en": "Archive"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Cool (fria)",
+          "en": "Cool"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Hot (quente)",
+          "en": "Hot"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Cold",
+          "en": "Cold"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "D",
+      "3": "A",
+      "4": "B"
+    }
+  },
+  {
+    "id": "ARCH-03-02-04",
+    "requirement": "A15",
+    "subject": "camadas no nível da conta",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "As quatro camadas podem ser definidas no nível do blob. Hot, cool e cold também podem ser definidas no nível da conta, mas a archive não está disponível no nível da conta. A archive tem o menor custo de armazenamento, mas a maior latência de reidratação e o maior custo de acesso.",
+      "en": "All four tiers can be set at the blob level. Hot, cool, and cold can also be set at the account level, but archive isn't available at the account level. Archive has the lowest storage cost but the highest rehydration latency and access cost."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque a archive é a mais barata em armazenamento, mas seu custo de acesso e sua latência são os maiores.",
+      "en": "Statement 3 is tempting because archive is the cheapest in storage, but its access cost and latency are the highest."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "As camadas de acesso hot, cool, cold e archive podem ser definidas no nível do blob, durante ou após o upload.",
+          "en": "Hot, cool, cold, and archive access tiers can all be set at the blob level, during or after upload."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "A camada de acesso archive pode ser definida como a camada de acesso padrão no nível da conta de armazenamento.",
+          "en": "The archive access tier can be set as the default access tier at the storage account level."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "A camada de acesso archive tem o menor custo de acesso e a menor latência de reidratação.",
+          "en": "The archive access tier has the lowest access cost and the lowest rehydration latency."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-03-02-05",
+    "requirement": "A15",
+    "subject": "camada cold",
+    "level": "essential",
+    "stem": {
+      "pt": "Um conjunto de dados é acessado raramente e será armazenado por cerca de 100 dias. Ele deve permanecer imediatamente disponível online, e a equipe quer um custo de armazenamento menor que o da camada cool. Qual camada de acesso se encaixa?",
+      "en": "A dataset is accessed rarely and will be stored for about 100 days. It must remain immediately available online, and the team wants lower storage cost than the cool tier. Which access tier fits?"
+    },
+    "explanation": {
+      "pt": "A camada de acesso cold é otimizada para dados acessados com pouca frequência e armazenados por pelo menos 90 dias, e tem custo de armazenamento menor que a cool. A archive é incorreta porque exige reidratação e é voltada para pelo menos 180 dias.",
+      "en": "The cold access tier is optimized for data that is infrequently accessed and stored for at least 90 days, and has lower storage costs than cool. Archive is wrong because it requires rehydration and is meant for at least 180 days."
+    },
+    "distractors": {
+      "pt": "A archive é a vizinha tentadora por ser a mais barata, mas os dados devem permanecer imediatamente disponíveis e não ficam 180 dias.",
+      "en": "Archive is the tempting neighbor because it is cheapest, but the data must stay immediately available and is not kept 180 days."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Archive",
+          "en": "Archive"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Hot",
+          "en": "Hot"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Cool",
+          "en": "Cool"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Cold",
+          "en": "Cold"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-03-02-06",
+    "requirement": "A15",
+    "subject": "camadas no nível da conta",
+    "level": "detail",
+    "stem": {
+      "pt": "Quais três camadas de acesso podem ser definidas no nível da conta de armazenamento? Escolha três.",
+      "en": "Which three access tiers can be set at the storage account level? Choose three."
+    },
+    "explanation": {
+      "pt": "As camadas de acesso hot, cool e cold podem ser definidas no nível da conta. A camada archive não está disponível no nível da conta; só pode ser definida no nível do blob.",
+      "en": "Hot, cool, and cold access tiers can be set at the account level. The archive access tier isn't available at the account level; it can only be set at the blob level."
+    },
+    "distractors": {
+      "pt": "A archive é a armadilha: pode ser definida em um blob, mas não como padrão da conta.",
+      "en": "Archive is the trap: it can be set on a blob but not as the account default."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Hot (quente)",
+          "en": "Hot"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Archive (arquivamento)",
+          "en": "Archive"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Cool (fria)",
+          "en": "Cool"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Cold",
+          "en": "Cold"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "ARCH-03-02-07",
+    "requirement": "A15",
+    "subject": "custo das camadas",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre as compensações de custo das camadas de acesso do Armazenamento de Blobs está correta?",
+      "en": "Which statement about the cost trade-offs of Blob storage access tiers is correct?"
+    },
+    "explanation": {
+      "pt": "As camadas cool e cold têm custos de armazenamento menores, mas custos de acesso maiores e SLAs de disponibilidade menores. A archive tem o menor custo de armazenamento, com a maior latência de reidratação e o maior custo de acesso.",
+      "en": "Cool and cold tiers have lower storage costs but higher access costs and lower availability SLAs. Archive has the lowest storage cost with the highest rehydration latency and access cost."
+    },
+    "distractors": {
+      "pt": "A alternativa A inverte o perfil de custo da archive.",
+      "en": "Option A inverts archive's cost profile."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "A archive tem o maior custo de armazenamento e o menor custo de acesso.",
+          "en": "Archive has the highest storage cost and the lowest access cost."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "As camadas cool e cold têm custos de armazenamento menores, mas custos de acesso maiores e SLAs de disponibilidade menores que a hot.",
+          "en": "Cool and cold have lower storage costs but higher access costs and lower availability SLAs than hot."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A hot tem o menor custo de armazenamento de todas as camadas.",
+          "en": "Hot has the lowest storage cost of all tiers."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A cold tem custos de acesso menores que a hot.",
+          "en": "Cold has lower access costs than hot."
+        }
+      }
+    ],
+    "answer": "B"
+  }
+]

@@ -1,0 +1,265 @@
+[
+  {
+    "id": "CLOUD-03-02-01",
+    "requirement": "N13",
+    "subject": "PaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer um meio-termo entre alugar espaço em um datacenter e pagar por uma solução completa e implantada. O provedor deve manter os sistemas operacionais, o middleware, as ferramentas de desenvolvimento e os serviços de análise, para que a empresa não se preocupe com licenciamento nem com a aplicação de patches em sistemas operacionais e bancos de dados. Qual tipo de serviço de nuvem se encaixa?",
+      "en": "A company wants a middle ground between renting space in a datacenter and paying for a complete, deployed solution. The provider should maintain the operating systems, middleware, development tools, and analytics services, so the company doesn't worry about licensing or patching operating systems and databases. Which cloud service type fits?"
+    },
+    "explanation": {
+      "pt": "O PaaS é um meio-termo entre IaaS e SaaS. O provedor mantém a infraestrutura física, a segurança física, a conexão com a Internet, os sistemas operacionais, o middleware, as ferramentas de desenvolvimento e os serviços de análise, e você não se preocupa com licenciamento nem com patches de sistemas operacionais e bancos de dados.",
+      "en": "PaaS is a middle ground between IaaS and SaaS. The provider maintains the physical infrastructure, physical security, internet connection, operating systems, middleware, development tools, and analytics services, and you don't worry about licensing or patching operating systems and databases."
+    },
+    "distractors": {
+      "pt": "O SaaS é tentador porque também esconde os sistemas operacionais, mas é um aplicativo completo e implantado, e não uma plataforma para desenvolver um.",
+      "en": "SaaS is tempting because it also hides operating systems, but it is a complete, deployed application, not a platform for developing one."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Infraestrutura como serviço (IaaS)",
+          "en": "Infrastructure as a service (IaaS)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Software como serviço (SaaS)",
+          "en": "Software as a service (SaaS)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Plataforma como serviço (PaaS)",
+          "en": "Platform as a service (PaaS)"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Nuvem híbrida (hybrid cloud)",
+          "en": "Hybrid cloud"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "CLOUD-03-02-02",
+    "requirement": "N13",
+    "subject": "responsabilidades no PaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "No PaaS o provedor mantém a infraestrutura física, a segurança física, a conexão com a Internet e também os sistemas operacionais, o middleware, as ferramentas de desenvolvimento e os serviços de análise. Você se concentra no código do aplicativo, nos dados e nos controles de acesso.",
+      "en": "In PaaS the provider maintains the physical infrastructure, physical security, internet connection, and also the operating systems, middleware, development tools, and analytics services. You focus on application code, data, and access controls."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é a responsabilidade do IaaS, e por isso é tentadora.",
+      "en": "Statement 1 is the IaaS responsibility, which is why it is tempting."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "No PaaS, você é responsável por instalar e manter o sistema operacional.",
+          "en": "In PaaS, you are responsible for installing and maintaining the operating system."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "No PaaS, você não precisa se preocupar com licenciamento nem com patches de sistemas operacionais e bancos de dados.",
+          "en": "In PaaS, you don't have to worry about licensing or patching operating systems and databases."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "No PaaS, o provedor de nuvem mantém a infraestrutura física, a segurança física e a conexão com a Internet.",
+          "en": "In PaaS, the cloud provider maintains the physical infrastructure, physical security, and connection to the internet."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "CLOUD-03-02-03",
+    "requirement": "N13",
+    "subject": "responsabilidades no PaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "No PaaS, em quais três itens você se concentra como cliente? Escolha três.",
+      "en": "In PaaS, which three items do you focus on as the customer? Choose three."
+    },
+    "explanation": {
+      "pt": "No PaaS o provedor gerencia a infraestrutura física e componentes da plataforma, como sistemas operacionais, middleware e runtimes gerenciados. Você se concentra no código do aplicativo, nos dados e nos controles de acesso.",
+      "en": "In PaaS the provider manages the physical infrastructure and platform components such as operating systems, middleware, and managed runtimes. You focus on your application code, data, and access controls."
+    },
+    "distractors": {
+      "pt": "As alternativas B e D são tarefas no estilo IaaS que o provedor do PaaS assume.",
+      "en": "Options B and D are IaaS-style tasks that the PaaS provider takes over."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Seus dados",
+          "en": "Your data"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Aplicação de patches no sistema operacional",
+          "en": "Operating system patching"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O código do seu aplicativo",
+          "en": "Your application code"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Manutenção do middleware",
+          "en": "Middleware maintenance"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Controles de acesso",
+          "en": "Access controls"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "CLOUD-03-02-04",
+    "requirement": "N13",
+    "subject": "responsabilidades no PaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Complete a frase. Em um cenário de PaaS, você não precisa se preocupar com o licenciamento nem com a aplicação de patches em sistemas operacionais e ______.",
+      "en": "Complete the sentence. In a PaaS scenario, you don't have to worry about the licensing or patching for operating systems and ______."
+    },
+    "explanation": {
+      "pt": "O Learn afirma que em um cenário de PaaS você não precisa se preocupar com o licenciamento nem com patches de sistemas operacionais e bancos de dados.",
+      "en": "Learn states that in a PaaS scenario you don't have to worry about the licensing or patching for operating systems and databases."
+    },
+    "distractors": {
+      "pt": "As alternativas B, C e D são coisas que você continua gerenciando no PaaS: código, acesso e dados.",
+      "en": "Options B, C, and D are things you always keep managing in PaaS: code, access, and data."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "bancos de dados",
+          "en": "databases"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "o código do seu aplicativo",
+          "en": "your application code"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "os controles de acesso de usuários",
+          "en": "user access controls"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "os dados que você armazena",
+          "en": "the data you store"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "CLOUD-03-02-05",
+    "requirement": "N13",
+    "subject": "responsabilidades no PaaS",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação descreve corretamente a divisão de responsabilidades no PaaS?",
+      "en": "Which statement correctly describes the split of responsibilities in PaaS?"
+    },
+    "explanation": {
+      "pt": "No PaaS o provedor gerencia a infraestrutura física e os componentes da plataforma (sistemas operacionais, middleware, runtimes gerenciados); você se concentra no código do aplicativo, nos dados e nos controles de acesso. Dependendo da configuração do serviço, algumas configurações de rede e de segurança de aplicativo são compartilhadas.",
+      "en": "In PaaS the provider manages the physical infrastructure and platform components (operating systems, middleware, managed runtimes); you focus on application code, data, and access controls. Depending on the service configuration, some networking and application security settings are shared."
+    },
+    "distractors": {
+      "pt": "As alternativas A e C descrevem o IaaS e a B descreve o SaaS; o PaaS fica entre eles.",
+      "en": "Options A and C describe IaaS and option B describes SaaS; PaaS sits between them."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/3-describe-platform-service",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O provedor gerencia somente a infraestrutura física; você gerencia sistemas operacionais, middleware e runtimes.",
+          "en": "The provider manages only the physical infrastructure; you manage operating systems, middleware, and runtimes."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O provedor gerencia quase toda a pilha do aplicativo; você gerencia apenas dados, configurações de identidade e acesso e a postura de acesso dos dispositivos.",
+          "en": "The provider manages almost the whole application stack; you manage only data, identity and access settings, and device access posture."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O provedor gerencia somente o datacenter físico; você gerencia o sistema operacional, a configuração de rede e a configuração do banco de dados.",
+          "en": "The provider manages only the physical datacenter; you manage the operating system, network configuration, and database configuration."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O provedor gerencia a infraestrutura física e componentes da plataforma, como sistemas operacionais, middleware e runtimes gerenciados; você se concentra no código do aplicativo, nos dados e nos controles de acesso.",
+          "en": "The provider manages the physical infrastructure and platform components such as operating systems, middleware, and managed runtimes; you focus on application code, data, and access controls."
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

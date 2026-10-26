@@ -1,0 +1,350 @@
+[
+  {
+    "id": "ARCH-01-01-01",
+    "requirement": "A01",
+    "subject": "regiões",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação melhor descreve uma região do Azure (Azure region)?",
+      "en": "Which statement best describes an Azure region?"
+    },
+    "explanation": {
+      "pt": "Uma região é uma área geográfica que contém pelo menos um, mas possivelmente vários, datacenters próximos e conectados por uma rede de baixa latência. O Azure atribui e controla de forma inteligente os recursos dentro de cada região.",
+      "en": "A region is a geographical area that contains at least one, but potentially multiple, datacenters that are nearby and networked together with a low-latency network. Azure intelligently assigns and controls the resources within each region."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a zona de disponibilidade e a C é o par de regiões, os dois vizinhos; a alternativa D é uma região soberana.",
+      "en": "Option B is the availability zone and option C is the region pair, the two neighbors; option D is a sovereign region."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma área geográfica que contém pelo menos um, e possivelmente vários, datacenters próximos e conectados entre si por uma rede de baixa latência",
+          "en": "A geographical area that contains at least one, and potentially multiple, datacenters that are nearby and networked together with a low-latency network"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um conjunto de datacenters fisicamente separados dentro de uma área, cada um com energia, resfriamento e rede independentes, que funciona como um limite de isolamento",
+          "en": "A set of physically separate datacenters within an area, each with independent power, cooling, and networking, that works as an isolation boundary"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Duas áreas geograficamente distantes, com pelo menos 800 km de distância, que replicam recursos entre si",
+          "en": "Two geographically distant areas, at least 300 miles apart, that replicate resources between each other"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma instância do Azure isolada da instância principal do Azure",
+          "en": "An instance of Azure that is isolated from the main instance of Azure"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-01-01-02",
+    "requirement": "A01",
+    "subject": "pares de regiões",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa executa cargas de trabalho em uma região do Azure. Ela quer reduzir a chance de que um desastre natural que afete toda a região interrompa seus serviços, replicando recursos para outra região da mesma geografia que esteja a pelo menos 800 km de distância (300 milhas). Qual recurso apoia isso e o que a empresa deve lembrar?",
+      "en": "A company runs workloads in one Azure region. It wants to reduce the chance that a natural disaster affecting the entire region interrupts its services, by replicating resources to another region in the same geography that is at least 300 miles away. Which feature supports this, and what must the company remember?"
+    },
+    "explanation": {
+      "pt": "A maioria das regiões do Azure é pareada com outra região da mesma geografia a pelo menos 800 km (300 milhas) de distância para reduzir a probabilidade de interrupções causadas por eventos que afetem uma região inteira. Nem todos os serviços do Azure replicam dados ou fazem fallback automaticamente a partir de uma região com falha, então a recuperação e a replicação devem ser configuradas pelo cliente nesses cenários.",
+      "en": "Most Azure regions are paired with another region in the same geography at least 300 miles away to help reduce the likelihood of interruptions from events that affect an entire region. Not all Azure services automatically replicate data or fall back from a failed region, so recovery and replication must be configured by the customer in those scenarios."
+    },
+    "distractors": {
+      "pt": "A alternativa D é a mais tentadora porque acerta o recurso, mas exagera na automação; o Learn avisa explicitamente que nem todo serviço replica automaticamente.",
+      "en": "Option D is the most tempting because it gets the feature right but overstates automation; Learn explicitly warns that not every service replicates automatically."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Zonas de disponibilidade, porque ficam a pelo menos 800 km de distância",
+          "en": "Availability zones, because they are at least 300 miles apart"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Pares de regiões, mas nem todos os serviços replicam ou fazem failover automaticamente, então parte da recuperação e da replicação deve ser configurada pelo cliente",
+          "en": "Region pairs, but not all services replicate or fail over automatically, so some recovery and replication must be configured by the customer"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Regiões soberanas, porque são isoladas da instância principal do Azure",
+          "en": "Sovereign regions, because they are isolated from the main instance of Azure"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Pares de regiões, porque todo serviço do Azure replica e faz fallback automaticamente entre o par",
+          "en": "Region pairs, because every Azure service automatically replicates and falls back between the pair"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-01-01-03",
+    "requirement": "A01",
+    "subject": "pares de regiões",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "As atualizações planejadas são distribuídas para as regiões pareadas uma região por vez para minimizar tempo de inatividade e risco. Os clientes devem configurar recuperação e replicação para serviços que não fazem isso automaticamente. Os dados ficam na mesma geografia do seu par, exceto no Brazil South.",
+      "en": "Planned updates are rolled out to paired regions one region at a time to minimize downtime and risk. Customers must configure recovery and replication for services that don't do it automatically. Data stays in the same geography as its pair, except for Brazil South."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque pares sugerem simetria, mas as atualizações são escalonadas para proteger a disponibilidade.",
+      "en": "Statement 1 is tempting because pairs suggest symmetry, but updates are staggered to protect availability."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "As atualizações planejadas do Azure são distribuídas para as duas regiões de um par de regiões ao mesmo tempo.",
+          "en": "Planned Azure updates are rolled out to both regions of a region pair at the same time."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Nem todos os serviços do Azure replicam dados ou fazem fallback automaticamente a partir de uma região com falha, então o cliente deve configurar a recuperação e a replicação de alguns serviços.",
+          "en": "Not all Azure services automatically replicate data or fall back from a failed region, so the customer must configure recovery and replication for some services."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Os dados continuam residindo na mesma geografia do seu par de regiões para fins de residência de dados e conformidade, sendo o Brazil South a exceção.",
+          "en": "Data continues to reside within the same geography as its region pair for data-residency and compliance purposes, with Brazil South as the exception."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-01-01-04",
+    "requirement": "A01",
+    "subject": "região vs zona vs par vs soberana",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Zonas de disponibilidade são datacenters fisicamente separados dentro de uma região. Regiões soberanas são instâncias isoladas do Azure (por exemplo, governo dos EUA). Uma região é a área geográfica com um ou mais datacenters. Um par de regiões são duas regiões da mesma geografia a pelo menos 800 km (300 milhas) de distância.",
+      "en": "Availability zones are physically separate datacenters within a region. Sovereign regions are isolated instances of Azure (for example, U.S. government). A region is the geographical area with one or more datacenters. A region pair is two regions in the same geography at least 300 miles apart."
+    },
+    "distractors": {
+      "pt": "Região e zona de disponibilidade são o par mais confundido: uma zona fica dentro de uma região.",
+      "en": "Region and availability zone are the most confused pair: a zone lives inside a region."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Datacenters fisicamente separados dentro de uma área, cada um com energia, resfriamento e rede independentes",
+          "en": "Physically separate datacenters within an area, each with independent power, cooling, and networking"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Uma instância do Azure isolada física e logicamente em rede para agências governamentais e parceiros dos EUA",
+          "en": "A physical and logical network-isolated instance of Azure for U.S. government agencies and partners"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma área geográfica com pelo menos um datacenter, conectado por uma rede de baixa latência",
+          "en": "A geographical area with at least one datacenter, networked with a low-latency network"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Duas regiões da mesma geografia, a pelo menos 800 km (300 milhas) de distância, que replicam recursos entre si",
+          "en": "Two regions in the same geography, at least 300 miles apart, that replicate resources between each other"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Região (region)",
+          "en": "Region"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Zona de disponibilidade (availability zone)",
+          "en": "Availability zone"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Par de regiões (region pair)",
+          "en": "Region pair"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Região soberana (sovereign region)",
+          "en": "Sovereign region"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "D",
+      "3": "A",
+      "4": "C"
+    }
+  },
+  {
+    "id": "ARCH-01-01-05",
+    "requirement": "A01",
+    "subject": "regiões soberanas",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre regiões soberanas (sovereign regions) estão corretas? Escolha duas.",
+      "en": "Which two statements about sovereign regions are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "Regiões soberanas são instâncias do Azure isoladas da instância principal, e você pode precisar de uma por motivos de conformidade ou legais. As regiões da China estão disponíveis por meio de uma parceria com a 21Vianet, então a Microsoft não mantém diretamente os datacenters.",
+      "en": "Sovereign regions are instances of Azure isolated from the main instance, and you may need one for compliance or legal purposes. The China regions are available through a partnership with 21Vianet, so Microsoft doesn't directly maintain the datacenters."
+    },
+    "distractors": {
+      "pt": "A alternativa C é a definição de zona de disponibilidade, um vizinho tentador porque ambas envolvem isolamento.",
+      "en": "Option C is the availability zone definition, a tempting neighbor because both involve isolation."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Elas são a região secundária de todo par de regiões.",
+          "en": "They are the secondary region of every region pair."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Elas são instâncias do Azure isoladas da instância principal do Azure.",
+          "en": "They are instances of Azure that are isolated from the main instance of Azure."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Elas são datacenters fisicamente separados dentro de uma região que funcionam como limite de isolamento.",
+          "en": "They are physically separate datacenters within a region that act as an isolation boundary."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Você pode precisar usar uma delas por motivos de conformidade ou legais.",
+          "en": "You may need to use one for compliance or legal purposes."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "China East e China North são operadas diretamente pela Microsoft.",
+          "en": "China East and China North are operated directly by Microsoft."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "ARCH-01-01-06",
+    "requirement": "A01",
+    "subject": "serviços não regionais",
+    "level": "detail",
+    "stem": {
+      "pt": "Uma equipe está escolhendo onde implantar recursos. Qual dos itens a seguir NÃO exige que você selecione uma região específica?",
+      "en": "A team is choosing where to deploy resources. Which of the following does NOT require you to select a particular region?"
+    },
+    "explanation": {
+      "pt": "Alguns serviços ou recursos de VM, como tamanhos de VM ou tipos de armazenamento específicos, só estão disponíveis em certas regiões, então você seleciona uma região. Serviços globais do Azure, como Microsoft Entra ID, Azure Traffic Manager e Azure DNS, não exigem que você selecione uma região específica.",
+      "en": "Some services or VM features, such as specific VM sizes or storage types, are only available in certain regions, so you select a region. Global Azure services such as Microsoft Entra ID, Azure Traffic Manager, and Azure DNS don't require you to select a particular region."
+    },
+    "distractors": {
+      "pt": "A alternativa C é tentadora porque recursos zonais são fixados em uma zona, mas uma zona fica dentro de uma região, então você ainda escolhe a região primeiro.",
+      "en": "Option C is tempting because zonal resources are pinned to a zone, but a zone is inside a region, so you still choose the region first."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma máquina virtual que usa um tamanho de VM específico",
+          "en": "A virtual machine that uses a specific VM size"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um disco gerenciado com um tipo de armazenamento específico",
+          "en": "A managed disk with a specific storage type"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um recurso zonal fixado em uma zona específica",
+          "en": "A zonal resource pinned to a specific zone"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Microsoft Entra ID",
+          "en": "Microsoft Entra ID"
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

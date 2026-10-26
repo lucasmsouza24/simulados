@@ -1,0 +1,336 @@
+[
+  {
+    "id": "GOV-02-01-01",
+    "requirement": "G05",
+    "subject": "finalidade do Purview",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer uma família de soluções de governança de dados, risco e conformidade que ofereça uma visão única e unificada de seus dados em fontes locais, multicloud e software como serviço. Qual serviço se encaixa?",
+      "en": "A company wants a family of data governance, risk, and compliance solutions that gives a single, unified view into its data across on-premises, multicloud, and software-as-a-service sources. Which service fits?"
+    },
+    "explanation": {
+      "pt": "O Microsoft Purview é uma família de soluções de governança de dados, risco e conformidade que reúne informações sobre dados locais, multicloud e SaaS.",
+      "en": "Microsoft Purview is a family of data governance, risk, and compliance solutions that brings insights about on-premises, multicloud, and SaaS data together."
+    },
+    "distractors": {
+      "pt": "O Azure Policy é o vizinho tentador porque também é uma ferramenta de governança, mas governa configurações de recursos, e não dados.",
+      "en": "Azure Policy is the tempting neighbor because it is also a governance tool, but it governs resource configurations, not data."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Azure Monitor",
+          "en": "Azure Monitor"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Microsoft Purview",
+          "en": "Microsoft Purview"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Resource Manager",
+          "en": "Azure Resource Manager"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-02-01-02",
+    "requirement": "G05",
+    "subject": "áreas de solução do Purview",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Microsoft Purview tem duas áreas principais de solução. Riscos e conformidade, com o Microsoft 365 como componente central, protege dados confidenciais e gerencia a conformidade regulatória. A governança de dados unificada mapeia o patrimônio de dados com classificação e linhagem de ponta a ponta.",
+      "en": "Microsoft Purview has two main solution areas. Risk and compliance, with Microsoft 365 as a core component, protects sensitive data and manages regulatory compliance. Unified data governance maps the data estate with classification and end-to-end lineage."
+    },
+    "distractors": {
+      "pt": "As iniciativas do Azure Policy são a opção distratora: agrupam políticas, e não áreas de solução do Purview.",
+      "en": "Azure Policy initiatives are the distractor: they group policies, not Purview solution areas."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Proteger dados confidenciais entre nuvens, aplicativos e dispositivos e gerenciar requisitos de conformidade regulatória",
+          "en": "Protect sensitive data across clouds, apps, and devices, and manage regulatory compliance requirements"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Criar um mapa atualizado de todo o patrimônio de dados, incluindo classificação de dados e linhagem de ponta a ponta",
+          "en": "Create an up-to-date map of the entire data estate, including data classification and end-to-end lineage"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Usa serviços do Microsoft 365, como Teams, OneDrive e Exchange, como componente central",
+          "en": "Uses Microsoft 365 services such as Teams, OneDrive, and Exchange as a core component"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Governança de dados unificada (unified data governance)",
+          "en": "Unified data governance"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Riscos e conformidade (risk and compliance)",
+          "en": "Risk and compliance"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Iniciativas do Azure Policy",
+          "en": "Azure Policy initiatives"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "A",
+      "3": "B"
+    }
+  },
+  {
+    "id": "GOV-02-01-03",
+    "requirement": "G05",
+    "subject": "capacidades do Purview",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Purview governa dados, e não a configuração de recursos. Seus recursos de governança abrangem Azure, bancos SQL e Hive, ambiente local e outras nuvens, como o Amazon S3, com descoberta automatizada, classificação e linhagem. Impedir recursos fora de conformidade é função do Azure Policy.",
+      "en": "Purview governs data, not resource configuration. Its governance capabilities cover Azure, SQL and Hive databases, on-premises, and other clouds such as Amazon S3, with automated discovery, classification, and lineage. Preventing noncompliant resources is Azure Policy."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque Purview e Azure Policy são voltados a conformidade, mas só o Azure Policy impõe regras a recursos.",
+      "en": "Statement 1 is tempting because both Purview and Azure Policy are compliance-oriented, but only Azure Policy enforces resource rules."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Microsoft Purview impõe regras de configuração a recursos do Azure e pode impedir que recursos fora de conformidade sejam criados.",
+          "en": "Microsoft Purview enforces configuration rules on Azure resources and can prevent noncompliant resources from being created."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "O Microsoft Purview pode gerenciar dados armazenados no Azure, em bancos de dados SQL e Hive, localmente e em outras nuvens, como o Amazon S3.",
+          "en": "Microsoft Purview can manage data stored in Azure, in SQL and Hive databases, locally, and in other clouds such as Amazon S3."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Microsoft Purview oferece descoberta automatizada de dados, classificação de dados confidenciais e linhagem de dados de ponta a ponta.",
+          "en": "Microsoft Purview provides automated data discovery, sensitive data classification, and end-to-end data lineage."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "GOV-02-01-04",
+    "requirement": "G05",
+    "subject": "classificação de dados confidenciais",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe de conformidade precisa identificar onde os dados confidenciais estão armazenados em seu patrimônio, que inclui bancos de dados SQL do Azure, bancos de dados locais e o Amazon S3, e ver a linhagem de ponta a ponta desses dados. Qual solução se encaixa?",
+      "en": "A compliance team must identify where sensitive data is stored across its estate, which includes Azure SQL databases, on-premises databases, and Amazon S3, and see the end-to-end lineage of that data. Which solution fits?"
+    },
+    "explanation": {
+      "pt": "A governança de dados unificada do Microsoft Purview mapeia o patrimônio de dados (Azure, bancos SQL e Hive, ambiente local e outras nuvens, como o Amazon S3), identifica onde estão os dados confidenciais e acompanha a linhagem de ponta a ponta.",
+      "en": "Microsoft Purview unified data governance maps the data estate (Azure, SQL and Hive databases, local, and other clouds such as Amazon S3), identifies where sensitive data is stored, and tracks end-to-end lineage."
+    },
+    "distractors": {
+      "pt": "O Microsoft Defender for Cloud é o vizinho tentador porque é um serviço de segurança, mas avalia a postura de segurança de recursos, e não classifica a linhagem de dados.",
+      "en": "Microsoft Defender for Cloud is the tempting neighbor because it is a security service, but it assesses resource security posture rather than classifying data lineage."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Microsoft Purview",
+          "en": "Microsoft Purview"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Microsoft Defender for Cloud",
+          "en": "Microsoft Defender for Cloud"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure Key Vault",
+          "en": "Azure Key Vault"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Azure Policy",
+          "en": "Azure Policy"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-02-01-05",
+    "requirement": "G05",
+    "subject": "descoberta automatizada de dados",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três recursos ajudam você a se manter atualizado sobre seu cenário de dados com o Microsoft Purview? Escolha três.",
+      "en": "Which three capabilities help you stay up to date on your data landscape with Microsoft Purview? Choose three."
+    },
+    "explanation": {
+      "pt": "O Microsoft Purview mantém você atualizado sobre seu cenário de dados com descoberta automatizada de dados, classificação de dados confidenciais e linhagem de dados de ponta a ponta.",
+      "en": "Microsoft Purview keeps you up to date on your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage."
+    },
+    "distractors": {
+      "pt": "A alternativa E é tentadora porque é um controle de governança, mas descreve os bloqueios de recursos.",
+      "en": "Option E is tempting because it is a governance control, but it describes resource locks."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Descoberta automatizada de dados",
+          "en": "Automated data discovery"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Redimensionar máquinas virtuais automaticamente",
+          "en": "Automatically resizing virtual machines"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Classificação de dados confidenciais",
+          "en": "Sensitive data classification"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Linhagem de dados de ponta a ponta",
+          "en": "End-to-end data lineage"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Impedir que um recurso seja excluído",
+          "en": "Preventing a resource from being deleted"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "GOV-02-01-06",
+    "requirement": "G05",
+    "subject": "Purview vs Policy",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação distingue corretamente o Microsoft Purview do Azure Policy?",
+      "en": "Which statement correctly distinguishes Microsoft Purview from Azure Policy?"
+    },
+    "explanation": {
+      "pt": "O Microsoft Purview trata de governança de dados, riscos e conformidade. O Azure Policy cria, atribui e gerencia políticas que controlam ou auditam configurações de recursos.",
+      "en": "Microsoft Purview is about data governance, risk, and compliance. Azure Policy creates, assigns, and manages policies that control or audit resource configurations."
+    },
+    "distractors": {
+      "pt": "A alternativa A troca os dois serviços.",
+      "en": "Option A swaps the two services."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O Purview impõe regras a configurações de recursos; o Azure Policy classifica dados confidenciais.",
+          "en": "Purview enforces rules on resource configurations; Azure Policy classifies sensitive data."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O Purview e o Azure Policy impedem que recursos sejam excluídos.",
+          "en": "Purview and Azure Policy both prevent resources from being deleted."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "O Azure Policy mapeia o patrimônio de dados e sua linhagem; o Purview audita marcas (tags) de recursos.",
+          "en": "Azure Policy maps the data estate and its lineage; Purview audits resource tags."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O Purview governa dados, incluindo descoberta, classificação e linhagem; o Azure Policy impõe regras a configurações de recursos.",
+          "en": "Purview governs data, including discovery, classification, and lineage; Azure Policy enforces rules on resource configurations."
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

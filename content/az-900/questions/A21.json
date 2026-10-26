@@ -1,0 +1,414 @@
+[
+  {
+    "id": "ARCH-04-02-01",
+    "requirement": "A21",
+    "subject": "SSO",
+    "level": "essential",
+    "stem": {
+      "pt": "Um usuário entra uma vez e depois acessa vários aplicativos confiáveis sem entrar novamente. Qual recurso de autenticação oferece isso?",
+      "en": "A user signs in once and then accesses multiple trusted applications without signing in again. Which authentication capability provides this?"
+    },
+    "explanation": {
+      "pt": "O logon único (SSO) permite que um usuário entre uma vez e acesse vários aplicativos confiáveis, reduzindo a proliferação de senhas e simplificando o gerenciamento do ciclo de vida. O SSO é tão seguro quanto o autenticador inicial.",
+      "en": "Single sign-on (SSO) lets a user sign in once and access multiple trusted applications, reducing password sprawl and simplifying lifecycle management. SSO is only as secure as the initial authenticator."
+    },
+    "distractors": {
+      "pt": "A MFA é tentadora porque também se relaciona ao logon, mas adiciona um fator extra em vez de reutilizar um único logon entre aplicativos.",
+      "en": "MFA is tempting because it also relates to sign-in, but it adds an extra factor rather than reusing one sign-in across apps."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Single sign-on (SSO)",
+          "en": "Single sign-on (SSO)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Multifactor authentication (MFA)",
+          "en": "Multifactor authentication (MFA)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Passwordless authentication",
+          "en": "Passwordless authentication"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Conditional Access",
+          "en": "Conditional Access"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-04-02-02",
+    "requirement": "A21",
+    "subject": "MFA",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa quer garantir que uma senha comprometida, por si só, não seja suficiente para entrar. Os usuários devem fornecer um fator adicional, como uma notificação no telefone ou um sinal biométrico. Qual recurso se encaixa?",
+      "en": "A company wants to make sure that a compromised password alone isn't enough to sign in. Users must provide an additional factor, such as a phone prompt or a biometric signal. Which capability fits?"
+    },
+    "explanation": {
+      "pt": "A autenticação multifator (MFA) solicita um fator extra durante o logon, de modo que um invasor que obtém a senha ainda precisa do segundo fator para concluir o logon.",
+      "en": "Multifactor authentication (MFA) prompts for an extra factor during sign-in, so an attacker who obtains a password still needs the second factor to complete sign-in."
+    },
+    "distractors": {
+      "pt": "Uma lista de senhas banidas é tentadora porque protege senhas, mas não adiciona um segundo fator.",
+      "en": "A banned password list is tempting because it protects passwords, but it doesn't add a second factor."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Single sign-on (SSO)",
+          "en": "Single sign-on (SSO)"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Multifactor authentication (MFA)",
+          "en": "Multifactor authentication (MFA)"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "A banned password list",
+          "en": "A banned password list"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Smart lockout",
+          "en": "Smart lockout"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-04-02-03",
+    "requirement": "A21",
+    "subject": "categorias de fator MFA",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Os fatores de MFA se dividem em três categorias: algo que o usuário sabe (senha, pergunta de desafio), tem (um código enviado a um telefone celular) e é (biometria, como impressão digital ou reconhecimento facial).",
+      "en": "MFA factors fall into three categories: something the user knows (password, challenge question), has (a code sent to a mobile phone), and is (biometrics such as fingerprint or face scan)."
+    },
+    "distractors": {
+      "pt": "O código no telefone é o tentador: parece conhecimento, mas prova a posse do telefone.",
+      "en": "The phone code is the tempting one: it feels like knowledge, but it proves possession of the phone."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Uma senha ou uma pergunta de desafio",
+          "en": "A password or a challenge question"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um código enviado para um telefone celular",
+          "en": "A code sent to a mobile phone"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma impressão digital ou um reconhecimento facial",
+          "en": "A fingerprint or a face scan"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Algo que o usuário é",
+          "en": "Something the user is"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Algo que o usuário sabe",
+          "en": "Something the user knows"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Algo que o usuário tem",
+          "en": "Something the user has"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A"
+    }
+  },
+  {
+    "id": "ARCH-04-02-04",
+    "requirement": "A21",
+    "subject": "opções sem senha",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O Microsoft Entra ID oferece suporte a três opções sem senha: chaves de segurança FIDO2 (hardware à prova de phishing), Windows Hello para Empresas (credenciais vinculadas ao PC do usuário) e o aplicativo Microsoft Authenticator (notificação no telefone com correspondência de número e biometria ou PIN).",
+      "en": "Microsoft Entra ID supports three passwordless options: FIDO2 security keys (unphishable hardware), Windows Hello for Business (credentials tied to the user's PC), and the Microsoft Authenticator app (phone notification with number match and biometric or PIN)."
+    },
+    "distractors": {
+      "pt": "O bloqueio inteligente é a opção distratora: é uma proteção de autenticação, e não um método sem senha.",
+      "en": "Smart lockout is the distractor: it is an authentication protection, not a passwordless method."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Um dispositivo de hardware de padrão aberto e à prova de phishing (USB, Bluetooth ou NFC), baseado em WebAuthn, que autentica sem nome de usuário ou senha",
+          "en": "An open-standard, unphishable hardware device (USB, Bluetooth, or NFC) based on WebAuthn that signs in without a username or password"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Credenciais biométricas e PIN vinculadas ao PC Windows designado do usuário",
+          "en": "Biometric and PIN credentials tied to a user's designated Windows PC"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O usuário recebe uma notificação no telefone, confere um número exibido na tela e confirma com um sinal biométrico ou PIN",
+          "en": "The user receives a phone notification, matches a number shown on screen, and confirms with a biometric signal or PIN"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Aplicativo Microsoft Authenticator",
+          "en": "Microsoft Authenticator app"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Chaves de segurança FIDO2",
+          "en": "FIDO2 security keys"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Windows Hello para Empresas",
+          "en": "Windows Hello for Business"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Bloqueio inteligente (smart lockout)",
+          "en": "Smart lockout"
+        }
+      }
+    ],
+    "answer": {
+      "1": "B",
+      "2": "C",
+      "3": "A"
+    }
+  },
+  {
+    "id": "ARCH-04-02-05",
+    "requirement": "A21",
+    "subject": "SSO e sem senha",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O SSO é tão seguro quanto o autenticador inicial. A autenticação sem senha tem alta segurança e alta conveniência e, após o registro, o usuário entra com um fator que sabe ou é, como PIN ou impressão digital, em vez de digitar uma senha.",
+      "en": "SSO is only as secure as the initial authenticator. Passwordless is high security and high convenience, and after registration the user signs in with a factor they know or are, such as a PIN or fingerprint, instead of typing a password."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque mais segurança geralmente custa conveniência, mas a autenticação sem senha melhora ambas.",
+      "en": "Statement 2 is tempting because stronger security usually costs convenience, but passwordless improves both."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O logon único é tão seguro quanto o autenticador inicial, pois as conexões subsequentes se baseiam na segurança dele.",
+          "en": "Single sign-on is only as secure as the initial authenticator, because the subsequent connections are based on its security."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "A autenticação sem senha tem menos conveniência do que usar apenas senhas.",
+          "en": "Passwordless authentication has lower convenience than using passwords on their own."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Com a autenticação sem senha, o usuário ainda digita uma senha após o registro inicial.",
+          "en": "With passwordless authentication, the user still types a password after the initial registration."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-04-02-06",
+    "requirement": "A21",
+    "subject": "opções sem senha",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são opções sem senha compatíveis com o Microsoft Entra ID? Escolha três.",
+      "en": "Which three are passwordless options that Microsoft Entra ID supports? Choose three."
+    },
+    "explanation": {
+      "pt": "As três opções sem senha são o Windows Hello para Empresas, o aplicativo Microsoft Authenticator e as chaves de segurança FIDO2.",
+      "en": "The three passwordless options are Windows Hello for Business, the Microsoft Authenticator app, and FIDO2 security keys."
+    },
+    "distractors": {
+      "pt": "O bloqueio inteligente e as perguntas de segurança são tentadores porque se relacionam à autenticação, mas nenhum remove a senha.",
+      "en": "Smart lockout and security questions are tempting because they relate to authentication, but neither removes the password."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Perguntas de segurança combinadas com uma senha",
+          "en": "Security questions combined with a password"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Chaves de segurança FIDO2",
+          "en": "FIDO2 security keys"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Bloqueio inteligente (smart lockout)",
+          "en": "Smart lockout"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Windows Hello para Empresas",
+          "en": "Windows Hello for Business"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Aplicativo Microsoft Authenticator",
+          "en": "Microsoft Authenticator app"
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-04-02-07",
+    "requirement": "A21",
+    "subject": "Windows Hello para Empresas",
+    "level": "detail",
+    "stem": {
+      "pt": "Um trabalhador da informação tem seu próprio PC Windows designado. A empresa quer credenciais biométricas e PIN vinculadas diretamente a esse PC, com integração de infraestrutura de chave pública (PKI) e logon único integrado. Qual opção sem senha se encaixa melhor?",
+      "en": "An information worker has their own designated Windows PC. The company wants biometric and PIN credentials tied directly to that PC, with public key infrastructure (PKI) integration and built-in single sign-on. Which passwordless option fits best?"
+    },
+    "explanation": {
+      "pt": "O Windows Hello para Empresas é ideal para trabalhadores da informação com seu próprio PC Windows designado: as credenciais biométricas e PIN são vinculadas ao PC, com integração de PKI e SSO integrado.",
+      "en": "Windows Hello for Business is ideal for information workers with their own designated Windows PC: biometric and PIN credentials are tied to the PC, with PKI integration and built-in SSO."
+    },
+    "distractors": {
+      "pt": "As chaves FIDO2 são tentadoras porque também são sem senha, mas são dispositivos de hardware portáteis, e não credenciais vinculadas a um PC.",
+      "en": "FIDO2 security keys are tempting because they are also passwordless, but they are portable hardware devices rather than credentials tied to a PC."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "FIDO2 security keys",
+          "en": "FIDO2 security keys"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Microsoft Authenticator app",
+          "en": "Microsoft Authenticator app"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Multifactor authentication with a password",
+          "en": "Multifactor authentication with a password"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Windows Hello for Business",
+          "en": "Windows Hello for Business"
+        }
+      }
+    ],
+    "answer": "D"
+  }
+]

@@ -1,0 +1,460 @@
+[
+  {
+    "id": "GOV-03-05-01",
+    "requirement": "G12",
+    "subject": "mesma API para todas as ferramentas",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma equipe percebe que criar o mesmo recurso pelo portal do Azure, pela CLI do Azure, pelo Azure PowerShell ou por um SDK produz resultados e recursos consistentes. O que explica isso?",
+      "en": "A team notices that creating the same resource from the Azure portal, the Azure CLI, Azure PowerShell, or an SDK produces consistent results and capabilities. What explains this?"
+    },
+    "explanation": {
+      "pt": "Quando um usuário envia uma solicitação de qualquer ferramenta, API ou SDK do Azure, o Azure Resource Manager a recebe, autentica e autoriza e a envia ao serviço do Azure. Como a mesma API trata todas as solicitações, os resultados e recursos são consistentes entre as ferramentas.",
+      "en": "When a user sends a request from any Azure tool, API, or SDK, Azure Resource Manager receives it, authenticates and authorizes it, and sends it to the Azure service. Because the same API handles all requests, results and capabilities are consistent across tools."
+    },
+    "distractors": {
+      "pt": "Cada distrator coloca outro serviço no meio do caminho da solicitação; somente o Azure Resource Manager fica ali.",
+      "en": "Each distractor puts another service in the middle of the request path; only Azure Resource Manager sits there."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Cada ferramenta é um front-end do Azure Arc, que encaminha as solicitações para os serviços do Azure.",
+          "en": "Each tool is a front end for Azure Arc, which forwards the requests to the Azure services."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O Azure Policy reescreve cada solicitação no mesmo formato antes de ela ser processada.",
+          "en": "Azure Policy rewrites each request into the same format before it is processed."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Todas as solicitações são tratadas pela mesma API pelo Azure Resource Manager.",
+          "en": "All requests are handled through the same API by Azure Resource Manager."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "O Azure Cloud Shell executa todas as solicitações em nome das outras ferramentas.",
+          "en": "Azure Cloud Shell runs every request on behalf of the other tools."
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "GOV-03-05-02",
+    "requirement": "G12",
+    "subject": "benefícios do Resource Manager",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "O Azure RBAC é integrado nativamente à plataforma de gerenciamento, então o controle de acesso se aplica a todos os serviços, independentemente da ferramenta usada. O Azure Resource Manager também oferece suporte a marcas e a implantação, gerenciamento e monitoramento em grupo.",
+      "en": "Azure RBAC is natively integrated into the management platform, so access control applies to all services regardless of the tool used. Azure Resource Manager also supports tags and group-level deployment, management, and monitoring."
+    },
+    "distractors": {
+      "pt": "A afirmação 1 é tentadora porque o portal é a ferramenta mais visível, mas todas as ferramentas passam pelo Azure Resource Manager.",
+      "en": "Statement 1 is tempting because the portal is the most visible tool, but all tools go through Azure Resource Manager."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure Resource Manager aplica o controle de acesso do Azure RBAC somente a recursos criados pelo portal do Azure.",
+          "en": "Azure Resource Manager applies Azure RBAC access control only to resources created through the Azure portal."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Com o Azure Resource Manager, você pode aplicar marcas (tags) a recursos para organizar sua assinatura e dar suporte a relatórios de custo.",
+          "en": "With Azure Resource Manager, you can apply tags to resources to organize your subscription and support cost reporting."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Com o Azure Resource Manager, você pode implantar, gerenciar e monitorar todos os recursos de uma solução como um grupo, em vez de individualmente.",
+          "en": "With Azure Resource Manager, you can deploy, manage, and monitor all the resources for a solution as a group rather than individually."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "GOV-03-05-03",
+    "requirement": "G12",
+    "subject": "benefícios do Resource Manager",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três são benefícios do uso do Azure Resource Manager? Escolha três.",
+      "en": "Which three are benefits of using Azure Resource Manager? Choose three."
+    },
+    "explanation": {
+      "pt": "O Azure Resource Manager permite implantar e gerenciar recursos como um grupo, definir dependências para que sejam implantados na ordem correta e aplicar controle de acesso por meio do Azure RBAC integrado nativamente. O shell baseado em navegador é o Cloud Shell, e projetar servidores externos é o Azure Arc.",
+      "en": "Azure Resource Manager lets you deploy and manage resources as a group, define dependencies so they are deployed in the correct order, and apply access control through natively integrated Azure RBAC. The browser-based shell is Cloud Shell and projecting outside servers is Azure Arc."
+    },
+    "distractors": {
+      "pt": "As duas opções erradas tomam emprestados recursos do Azure Cloud Shell e do Azure Arc.",
+      "en": "The two wrong options borrow capabilities from Azure Cloud Shell and Azure Arc."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Implantar, gerenciar e monitorar todos os recursos de uma solução como um grupo",
+          "en": "Deploy, manage, and monitor all the resources of a solution as a group"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Aplicar controle de acesso a todos os serviços porque o Azure RBAC é integrado nativamente à plataforma de gerenciamento",
+          "en": "Apply access control to all services because Azure RBAC is natively integrated into the management platform"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Executar comandos da CLI do Azure em um shell baseado em navegador sem instalação",
+          "en": "Run Azure CLI commands from a browser-based shell with no installation"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Definir dependências entre recursos para que sejam implantados na ordem correta",
+          "en": "Define dependencies between resources so they are deployed in the correct order"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Projetar servidores hospedados em outras nuvens no Azure para gerenciamento",
+          "en": "Project servers hosted in other clouds into Azure for management"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "GOV-03-05-04",
+    "requirement": "G12",
+    "subject": "benefícios dos modelos do ARM",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "Os benefícios dos modelos do ARM são sintaxe declarativa, resultados repetíveis, orquestração (ordem das dependências e implantação em paralelo), modularidade (modelos reutilizáveis e aninhados) e extensibilidade (scripts de implantação).",
+      "en": "The benefits of ARM templates are declarative syntax, repeatable results, orchestration (dependency order and parallel deployment), modularity (reusable and nested templates), and extensibility (deployment scripts)."
+    },
+    "distractors": {
+      "pt": "A sintaxe declarativa é a opção não usada: ela descreve o que implantar, e não como.",
+      "en": "Declarative syntax is the unused option: it describes what to deploy rather than how."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Reutilizar o mesmo modelo em vários ambientes para obter resultados consistentes",
+          "en": "Reuse the same template across environments for consistent outcomes"
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Dividir uma implantação em componentes reutilizáveis, incluindo modelos aninhados",
+          "en": "Split a deployment into reusable components, including nested templates"
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Azure Resource Manager determina a ordem das dependências e implanta em paralelo quando possível",
+          "en": "Azure Resource Manager works out the dependency order and deploys in parallel when possible"
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Executar um script de implantação do PowerShell ou do Bash antes ou depois da criação dos recursos",
+          "en": "Run a PowerShell or Bash deployment script before or after the resources are created"
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Orquestração (Orchestration)",
+          "en": "Orchestration"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Extensibilidade (Extensibility)",
+          "en": "Extensibility"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Modularidade (Modularity)",
+          "en": "Modularity"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Resultados repetíveis (Repeatable results)",
+          "en": "Repeatable results"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Sintaxe declarativa (Declarative syntax)",
+          "en": "Declarative syntax"
+        }
+      }
+    ],
+    "answer": {
+      "1": "D",
+      "2": "C",
+      "3": "A",
+      "4": "B"
+    }
+  },
+  {
+    "id": "GOV-03-05-05",
+    "requirement": "G12",
+    "subject": "implantação de modelo do ARM",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre a implantação de um modelo do ARM está correta?",
+      "en": "Which statement about deploying an ARM template is correct?"
+    },
+    "explanation": {
+      "pt": "O Azure valida o modelo antes da implantação e depois orquestra a criação dos recursos na ordem certa e em paralelo quando possível. Os modelos também podem chamar scripts de implantação do PowerShell ou do Bash antes ou depois da criação dos recursos.",
+      "en": "Azure validates the template before deployment, then orchestrates resource creation in the right order and in parallel when possible. Templates can also call PowerShell or Bash deployment scripts before or after resource creation."
+    },
+    "distractors": {
+      "pt": "Cada opção errada contradiz um benefício dos modelos: sintaxe declarativa, extensibilidade e orquestração.",
+      "en": "Each wrong option contradicts a template benefit: declarative syntax, extensibility, and orchestration."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Você deve listar as etapas de implantação em ordem, porque o Azure Resource Manager as executa exatamente como escritas.",
+          "en": "You must list the deployment steps in order, because Azure Resource Manager runs them exactly as written."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "O Azure valida o modelo antes da implantação e depois orquestra a criação dos recursos na ordem certa e em paralelo quando possível.",
+          "en": "Azure validates the template before deployment and then orchestrates resource creation in the right order and in parallel when possible."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um modelo não pode executar scripts do PowerShell ou do Bash, então as ações de configuração precisam ser feitas manualmente após a implantação.",
+          "en": "A template cannot run PowerShell or Bash scripts, so setup actions must be done manually after deployment."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Um modelo só pode implantar um recurso por vez, então soluções grandes exigem vários modelos separados.",
+          "en": "A template can deploy only one resource at a time, so large solutions need many separate templates."
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "GOV-03-05-06",
+    "requirement": "G12",
+    "subject": "modelo do ARM declarativo",
+    "level": "essential",
+    "stem": {
+      "pt": "Os modelos do Azure Resource Manager descrevem os recursos desejados do Azure em JSON ______, então você define o estado final e o Azure cuida das etapas de implantação.",
+      "en": "Azure Resource Manager templates describe the desired Azure resources in ______ JSON, so you define the end state and Azure handles the deployment steps."
+    },
+    "explanation": {
+      "pt": "Os modelos do ARM descrevem os recursos desejados do Azure em JSON declarativo. As equipes definem o estado final desejado, e o Azure Resource Manager cuida da execução da implantação.",
+      "en": "ARM templates describe desired Azure resources in declarative JSON. Teams define the desired end state, and Azure Resource Manager handles deployment execution."
+    },
+    "distractors": {
+      "pt": "Imperativo e procedural descrevem scripts passo a passo, como o Azure PowerShell, o oposto de um modelo.",
+      "en": "Imperative and procedural describe step-by-step scripts such as Azure PowerShell, the opposite of a template."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "fill-in",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "imperativo",
+          "en": "imperative"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "interativo",
+          "en": "interactive"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "procedural",
+          "en": "procedural"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "declarativo",
+          "en": "declarative"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "GOV-03-05-07",
+    "requirement": "G12",
+    "subject": "tags no Resource Manager",
+    "level": "essential",
+    "stem": {
+      "pt": "Um gerente financeiro quer organizar os recursos de uma assinatura para que os custos possam ser relatados por projeto. Qual recurso do Azure Resource Manager oferece suporte a isso?",
+      "en": "A finance manager wants to organize the resources in a subscription so that costs can be reported by project. Which Azure Resource Manager capability supports this?"
+    },
+    "explanation": {
+      "pt": "Com o Azure Resource Manager, você pode aplicar marcas aos recursos para organizar sua assinatura e dar suporte a relatórios de custo.",
+      "en": "With Azure Resource Manager you can apply tags to resources to organize your subscription and support cost reporting."
+    },
+    "distractors": {
+      "pt": "Dependências e modelos aninhados se relacionam à implantação, e locais personalizados pertencem ao Azure Arc; nenhum deles organiza custos.",
+      "en": "Dependencies and nested templates relate to deployment, and custom locations belong to Azure Arc; none of them organizes costs."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Aplicar marcas (tags) aos recursos",
+          "en": "Applying tags to resources"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Definir dependências entre recursos",
+          "en": "Defining dependencies between resources"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Dividir um modelo em modelos aninhados",
+          "en": "Splitting a template into nested templates"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Criar locais personalizados em um cluster do Kubernetes",
+          "en": "Creating custom locations on a Kubernetes cluster"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "GOV-03-05-08",
+    "requirement": "G12",
+    "subject": "benefícios do Bicep",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual dos itens a seguir NÃO é um benefício do uso do Bicep?",
+      "en": "Which of the following is NOT a benefit of using Bicep?"
+    },
+    "explanation": {
+      "pt": "Os benefícios do Bicep incluem suporte a recursos atuais do Azure, sintaxe simples, implantações repetíveis (idempotentes), orquestração integrada pelo Azure Resource Manager e modularidade por meio de módulos. A ordem passo a passo é tratada pelo Azure Resource Manager, e não por você.",
+      "en": "Bicep benefits include support for current Azure resources, simple syntax, repeatable (idempotent) deployments, built-in orchestration by Azure Resource Manager, and modularity through modules. Step-by-step ordering is handled by Azure Resource Manager, not by you."
+    },
+    "distractors": {
+      "pt": "A pergunta é negativa: três opções são benefícios reais e a resposta correta é a descrição imperativa.",
+      "en": "The question is negative: three options are real benefits and the correct answer is the imperative description."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Sintaxe simples, mais fácil de ler e escrever que os modelos JSON equivalentes",
+          "en": "Simple syntax that is easier to read and write than equivalent JSON templates"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Exige que você escreva comandos passo a passo que criam cada recurso na ordem certa",
+          "en": "It requires you to write step-by-step commands that create each resource in the right order"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Arquivos idempotentes que oferecem implantações repetíveis",
+          "en": "Idempotent files that give repeatable deployments"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Modularidade por meio de módulos do Bicep",
+          "en": "Modularity through Bicep modules"
+        }
+      }
+    ],
+    "answer": "B"
+  }
+]

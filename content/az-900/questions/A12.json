@@ -1,0 +1,763 @@
+[
+  {
+    "id": "ARCH-02-05-01",
+    "requirement": "A12",
+    "subject": "sub-redes",
+    "level": "essential",
+    "stem": {
+      "pt": "Um administrador quer alocar partes do espaço de endereços IP privados de uma rede virtual a segmentos lógicos menores e nomeados. Qual recurso de rede do Azure oferece isso?",
+      "en": "An administrator wants to allocate parts of a virtual network's private IP address space to named, smaller logical segments. Which Azure networking feature provides this?"
+    },
+    "explanation": {
+      "pt": "Você pode dividir o espaço de endereços IP de uma rede virtual em sub-redes e alocar parte do espaço a cada sub-rede nomeada. Os grupos de segurança de rede filtram tráfego; não dividem o espaço de endereços.",
+      "en": "You can divide a virtual network's IP address space into subnets and allocate part of the address space to each named subnet. Network security groups filter traffic; they don't divide the address space."
+    },
+    "distractors": {
+      "pt": "Os grupos de segurança de rede são o vizinho tentador porque também atuam em sub-redes, mas permitem ou bloqueiam tráfego em vez de segmentar.",
+      "en": "Network security groups are the tempting neighbor because they also act on subnets, but they allow or block traffic rather than segmenting."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Sub-redes (subnets)",
+          "en": "Subnets"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Grupos de segurança de rede (network security groups)",
+          "en": "Network security groups"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Conjuntos de disponibilidade (availability sets)",
+          "en": "Availability sets"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Bloqueios de recursos (resource locks)",
+          "en": "Resource locks"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-02-05-02",
+    "requirement": "A12",
+    "subject": "finalidade da VNet",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Uma rede virtual define um espaço de endereços IP privados que existe apenas dentro dela e não é roteável pela Internet; você o divide em sub-redes. Conexões de entrada da Internet precisam de um IP público ou de um balanceador de carga público.",
+      "en": "A virtual network defines a private IP address space that exists only within the virtual network and isn't internet routable; you divide it into subnets. Incoming internet connections need a public IP or a public load balancer."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque o Azure é voltado para a Internet, mas o intervalo de endereços da rede virtual é isolado.",
+      "en": "Statement 3 is tempting because Azure is internet-facing, but the virtual network's address range is isolated."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Você pode dividir o espaço de endereços IP de uma rede virtual do Azure em sub-redes.",
+          "en": "You can divide the IP address space of an Azure virtual network into subnets."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Você pode habilitar conexões de entrada da Internet atribuindo um endereço IP público a um recurso do Azure ou colocando o recurso atrás de um balanceador de carga público.",
+          "en": "You can enable incoming connections from the internet by assigning a public IP address to an Azure resource or by putting the resource behind a public load balancer."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O intervalo de endereços IP de uma rede virtual do Azure é roteável pela Internet.",
+          "en": "The IP address range of an Azure virtual network is routable over the internet."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-02-05-03",
+    "requirement": "A12",
+    "subject": "emparelhamento",
+    "level": "essential",
+    "stem": {
+      "pt": "Duas redes virtuais em regiões diferentes do Azure precisam se comunicar de forma privada. O tráfego deve trafegar na rede de backbone da Microsoft e nunca entrar na Internet pública. Qual opção se encaixa?",
+      "en": "Two virtual networks in different Azure regions must communicate privately. Traffic must travel on the Microsoft backbone network and never enter the public internet. Which option fits?"
+    },
+    "explanation": {
+      "pt": "O emparelhamento de rede virtual conecta duas redes virtuais diretamente. O tráfego entre redes emparelhadas é privado, trafega na rede de backbone da Microsoft e nunca entra na Internet pública. As redes virtuais podem estar em regiões diferentes.",
+      "en": "Virtual network peering connects two virtual networks directly. Traffic between peered networks is private, travels on the Microsoft backbone network, and never enters the public internet. The virtual networks can be in separate regions."
+    },
+    "distractors": {
+      "pt": "O ExpressRoute é o mais tentador porque também é privado e evita a Internet, mas conecta redes locais ao Azure, e não duas redes virtuais.",
+      "en": "ExpressRoute is the most tempting because it is also private and avoids the internet, but it connects on-premises networks to Azure, not two virtual networks."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Conexão VPN ponto a site",
+          "en": "Point-to-site VPN connection"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Conexão VPN site a site",
+          "en": "Site-to-site VPN connection"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure ExpressRoute",
+          "en": "Azure ExpressRoute"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Emparelhamento de rede virtual (virtual network peering)",
+          "en": "Virtual network peering"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-02-05-04",
+    "requirement": "A12",
+    "subject": "VPN site a site",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa tem um dispositivo VPN local e quer que os dispositivos no Azure pareçam estar na rede local. A conexão deve ser criptografada e funcionar pela Internet, sem um circuito dedicado. Qual opção se encaixa?",
+      "en": "A company has an on-premises VPN device and wants devices in Azure to appear as if they were on the local network. The connection must be encrypted and work over the internet, without a dedicated circuit. Which option fits?"
+    },
+    "explanation": {
+      "pt": "As VPNs site a site vinculam seu dispositivo ou gateway VPN local ao gateway de VPN do Azure em uma rede virtual, de modo que os dispositivos no Azure possam parecer estar na rede local. A conexão é criptografada e funciona pela Internet.",
+      "en": "Site-to-site VPNs link your on-premises VPN device or gateway to the Azure VPN gateway in a virtual network, so that devices in Azure can appear as being on the local network. The connection is encrypted and works over the internet."
+    },
+    "distractors": {
+      "pt": "O ponto a site é o vizinho tentador porque também usa um gateway de VPN, mas conecta um computador individual, e não uma rede local inteira.",
+      "en": "Point-to-site is the tempting neighbor because it also uses a VPN gateway, but it connects an individual computer, not a whole on-premises network."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/3-virtual-private-networks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Emparelhamento de rede virtual",
+          "en": "Virtual network peering"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "VPN site a site por meio de um Gateway de VPN do Azure",
+          "en": "Site-to-site VPN through an Azure VPN Gateway"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure ExpressRoute",
+          "en": "Azure ExpressRoute"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "VPN ponto a site por meio de um Gateway de VPN do Azure",
+          "en": "Point-to-site VPN through an Azure VPN Gateway"
+        }
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "ARCH-02-05-05",
+    "requirement": "A12",
+    "subject": "ExpressRoute",
+    "level": "essential",
+    "stem": {
+      "pt": "Uma empresa precisa de conectividade privada e previsível entre seu datacenter local e o Azure, com maior largura de banda e maior segurança, e não quer que a conexão trafegue pela Internet pública. Qual opção é a mais adequada?",
+      "en": "A company needs private, predictable connectivity between its on-premises datacenter and Azure, with greater bandwidth and higher security, and does not want the connection to travel over the public internet. Which option is the best fit?"
+    },
+    "explanation": {
+      "pt": "O Azure ExpressRoute oferece conectividade privada dedicada ao Azure que não trafega pela Internet, com mais confiabilidade, velocidades maiores, latências consistentes e maior segurança que conexões típicas pela Internet. Corresponde à avaliação do módulo desta unidade.",
+      "en": "Azure ExpressRoute provides dedicated private connectivity to Azure that doesn't travel over the internet, with more reliability, faster speeds, consistent latencies, and higher security than typical internet connections. This matches the module assessment of this unit."
+    },
+    "distractors": {
+      "pt": "A VPN site a site é o vizinho tentador porque também conecta o local ao Azure de forma privada, mas seu túnel criptografado ainda atravessa a Internet pública.",
+      "en": "Site-to-site VPN is the tempting neighbor because it also connects on-premises to Azure privately, but its encrypted tunnel still crosses the public internet."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/4-expressroute",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "VPN site a site por meio de um Gateway de VPN do Azure",
+          "en": "Site-to-site VPN through an Azure VPN Gateway"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Emparelhamento de rede virtual",
+          "en": "Virtual network peering"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure ExpressRoute",
+          "en": "Azure ExpressRoute"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "VPN ponto a site por meio de um Gateway de VPN do Azure",
+          "en": "Point-to-site VPN through an Azure VPN Gateway"
+        }
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "ARCH-02-05-06",
+    "requirement": "A12",
+    "subject": "VPN ponto a site",
+    "level": "essential",
+    "stem": {
+      "pt": "O laptop de um funcionário remoto deve se conectar de volta à rede virtual do Azure da empresa. O próprio laptop inicia uma conexão VPN criptografada. Qual opção se encaixa?",
+      "en": "A remote employee's laptop must connect back into the company's Azure virtual network. The laptop itself initiates an encrypted VPN connection. Which option fits?"
+    },
+    "explanation": {
+      "pt": "As conexões VPN ponto a site vão de um computador fora do seu ambiente de volta à sua rede privada; o computador cliente inicia uma conexão VPN criptografada com a rede virtual do Azure.",
+      "en": "Point-to-site VPN connections are from a computer outside your environment back into your private network; the client computer initiates an encrypted VPN connection to the Azure virtual network."
+    },
+    "distractors": {
+      "pt": "O site a site é o vizinho tentador porque ambos usam VPN, mas o site a site liga redes e dispositivos inteiros.",
+      "en": "Site-to-site is the tempting neighbor because both use VPN, but site-to-site links whole networks and devices."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Conexão VPN ponto a site",
+          "en": "Point-to-site VPN connection"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Conexão VPN site a site",
+          "en": "Site-to-site VPN connection"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Azure ExpressRoute",
+          "en": "Azure ExpressRoute"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Emparelhamento de rede virtual",
+          "en": "Virtual network peering"
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-02-05-07",
+    "requirement": "A12",
+    "subject": "emparelhamento vs VPN vs ExpressRoute",
+    "level": "essential",
+    "stem": {
+      "pt": "Associe cada item à opção correta. Cada opção pode ser usada uma vez, mais de uma vez ou nenhuma vez.",
+      "en": "Match each item with the correct option. Each option can be used once, more than once, or not at all."
+    },
+    "explanation": {
+      "pt": "O emparelhamento liga redes virtuais pelo backbone da Microsoft. A VPN site a site liga um dispositivo ou gateway local a um gateway de VPN do Azure pela Internet em um túnel criptografado. O ExpressRoute é uma conexão privada dedicada que não passa pela Internet. O ponto a site conecta um dispositivo individual.",
+      "en": "Peering links virtual networks over the Microsoft backbone. Site-to-site VPN links an on-premises device or gateway to an Azure VPN gateway over the internet in an encrypted tunnel. ExpressRoute is a dedicated private connection not over the internet. Point-to-site connects an individual device."
+    },
+    "distractors": {
+      "pt": "Emparelhamento, VPN e ExpressRoute são o trio a separar: o que você conecta (VNets versus local) e se o caminho cruza a Internet pública.",
+      "en": "Peering, VPN, and ExpressRoute are the trio to separate: what you connect (VNets vs on-premises) and whether the path crosses the public internet."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network",
+    "format": "matching",
+    "items": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Duas redes virtuais se conectam direta e privadamente pela rede de backbone da Microsoft e podem estar em regiões diferentes.",
+          "en": "Two virtual networks connect directly and privately over the Microsoft backbone network, and can be in different regions."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Um dispositivo ou gateway VPN local se conecta a um gateway de VPN do Azure por um túnel criptografado pela Internet.",
+          "en": "An on-premises VPN device or gateway connects to an Azure VPN gateway through an encrypted tunnel over the internet."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "Uma conexão privada dedicada por meio de um provedor de conectividade que não trafega pela Internet.",
+          "en": "A dedicated private connection through a connectivity provider that doesn't travel over the internet."
+        }
+      },
+      {
+        "key": "4",
+        "text": {
+          "pt": "Um computador individual inicia uma conexão VPN criptografada de volta para a rede virtual do Azure.",
+          "en": "An individual computer initiates an encrypted VPN connection back into the Azure virtual network."
+        }
+      }
+    ],
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Azure ExpressRoute",
+          "en": "Azure ExpressRoute"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "VPN ponto a site",
+          "en": "Point-to-site VPN"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Emparelhamento de rede virtual",
+          "en": "Virtual network peering"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "VPN site a site",
+          "en": "Site-to-site VPN"
+        }
+      }
+    ],
+    "answer": {
+      "1": "C",
+      "2": "D",
+      "3": "A",
+      "4": "B"
+    }
+  },
+  {
+    "id": "ARCH-02-05-08",
+    "requirement": "A12",
+    "subject": "emparelhamento vs VPN vs ExpressRoute",
+    "level": "essential",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "A VPN site a site é criptografada e funciona pela Internet. As conexões do ExpressRoute não passam pela Internet pública. Redes virtuais emparelhadas se conectam diretamente e o tráfego trafega no backbone da Microsoft, sem nunca entrar na Internet pública, sem gateways de VPN.",
+      "en": "Site-to-site VPN is encrypted and works over the internet. ExpressRoute connections don't go over the public internet. Peered virtual networks connect directly and traffic travels on the Microsoft backbone network, never entering the public internet, without VPN gateways."
+    },
+    "distractors": {
+      "pt": "A afirmação 2 é tentadora porque 'privado' e 'túnel criptografado' costumam ser misturados: o ExpressRoute é um caminho privado separado, e não um túnel pela Internet.",
+      "en": "Statement 2 is tempting because 'private' and 'encrypted tunnel' are often mixed up: ExpressRoute is a separate private path, not a tunnel across the internet."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/4-expressroute",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "Uma conexão VPN site a site é criptografada e trafega pela Internet.",
+          "en": "A site-to-site VPN connection is encrypted and travels over the internet."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "As conexões do ExpressRoute trafegam pela Internet pública dentro de um túnel criptografado.",
+          "en": "ExpressRoute connections travel over the public internet inside an encrypted tunnel."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O emparelhamento de rede virtual exige um gateway de VPN em cada rede virtual para criptografar o tráfego.",
+          "en": "Virtual network peering requires a VPN gateway in each virtual network to encrypt the traffic."
+        }
+      }
+    ],
+    "answer": {
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "ARCH-02-05-09",
+    "requirement": "A12",
+    "subject": "ExpressRoute",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais duas afirmações sobre o Azure ExpressRoute estão corretas? Escolha duas.",
+      "en": "Which two statements about Azure ExpressRoute are correct? Choose two."
+    },
+    "explanation": {
+      "pt": "As conexões do ExpressRoute não passam pela Internet pública, e o ExpressRoute usa o BGP para roteamento dinâmico entre redes locais e o Azure. Túneis criptografados pela Internet, um gateway por rede virtual em uma sub-rede dedicada e chaves pré-compartilhadas descrevem o Gateway de VPN do Azure.",
+      "en": "ExpressRoute connections don't go over the public internet, and ExpressRoute uses BGP for dynamic routing between on-premises networks and Azure. Encrypted tunnels across the internet, one gateway per virtual network in a dedicated subnet, and preshared keys describe Azure VPN Gateway."
+    },
+    "distractors": {
+      "pt": "As alternativas A, C e D são características do Gateway de VPN, o vizinho mais confundido com o ExpressRoute.",
+      "en": "Options A, C, and D are VPN Gateway traits, the neighbor most often confused with ExpressRoute."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/4-expressroute",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "O tráfego é criptografado dentro de um túnel privado ao atravessar a Internet.",
+          "en": "Traffic is encrypted inside a private tunnel as it crosses the internet."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "As conexões não passam pela Internet pública.",
+          "en": "Connections don't go over the public internet."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Você pode implantar apenas um em cada rede virtual, em uma sub-rede dedicada.",
+          "en": "You can deploy only one in each virtual network, in a dedicated subnet."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "A autenticação usa uma chave pré-compartilhada.",
+          "en": "Authentication uses a preshared key."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Ele usa o BGP para roteamento dinâmico entre redes locais e o Azure.",
+          "en": "It uses BGP for dynamic routing between on-premises networks and Azure."
+        }
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-02-05-10",
+    "requirement": "A12",
+    "subject": "VPN baseada em rota",
+    "level": "detail",
+    "stem": {
+      "pt": "Uma empresa precisa conectar redes virtuais entre si, oferecer suporte a conexões ponto a site, a cenários de vários sites e coexistir com um gateway do ExpressRoute. Qual tipo de gateway de VPN ela deve usar?",
+      "en": "A company needs to connect virtual networks to each other, support point-to-site connections, support multisite scenarios, and coexist with an ExpressRoute gateway. Which VPN gateway type should it use?"
+    },
+    "explanation": {
+      "pt": "Use um gateway de VPN baseado em rota para conexões entre redes virtuais, conexões ponto a site, conexões de vários sites e coexistência com um gateway do ExpressRoute. VPNs baseadas em rota são o método recomendado e preferido.",
+      "en": "Use a route-based VPN gateway for connections between virtual networks, point-to-site connections, multisite connections, and coexistence with an ExpressRoute gateway. Route-based VPNs are the recommended and preferred method."
+    },
+    "distractors": {
+      "pt": "O baseado em política é o vizinho tentador por ser o outro tipo real; ele especifica estaticamente os endereços IP a criptografar e é menos resiliente a mudanças de topologia.",
+      "en": "Policy-based is the tempting neighbor because it is the other real type; it statically specifies the IP addresses to encrypt and is less resilient to topology changes."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/3-virtual-private-networks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Gateway de VPN baseado em política",
+          "en": "Policy-based VPN gateway"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Gateway de VPN baseado em emparelhamento",
+          "en": "Peering-based VPN gateway"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Gateway de VPN baseado em ponto",
+          "en": "Point-based VPN gateway"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Gateway de VPN baseado em rota",
+          "en": "Route-based VPN gateway"
+        }
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "ARCH-02-05-11",
+    "requirement": "A12",
+    "subject": "gateway de VPN",
+    "level": "essential",
+    "stem": {
+      "pt": "Quais três tipos de conectividade o Gateway de VPN do Azure permite? Escolha três.",
+      "en": "Which three types of connectivity does Azure VPN Gateway enable? Choose three."
+    },
+    "explanation": {
+      "pt": "O Gateway de VPN do Azure, implantado em uma sub-rede dedicada da rede virtual, permite conexões site a site, ponto a site e rede a rede. Circuitos do ExpressRoute e o emparelhamento de rede virtual são serviços separados.",
+      "en": "Azure VPN Gateway, deployed in a dedicated subnet of the virtual network, enables site-to-site, point-to-site, and network-to-network connections. ExpressRoute circuits and virtual network peering are separate services."
+    },
+    "distractors": {
+      "pt": "As alternativas B e D são tentadoras porque também conectam redes, mas não são tipos de conexão do Gateway de VPN.",
+      "en": "Options B and D are tempting because they also connect networks, but they are not VPN Gateway connection types."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/3-virtual-private-networks",
+    "format": "multi-select",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Conexão site a site entre um datacenter local e uma rede virtual",
+          "en": "Site-to-site connection between an on-premises datacenter and a virtual network"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Um circuito do ExpressRoute por meio de um provedor de conectividade",
+          "en": "An ExpressRoute circuit through a connectivity provider"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Conexão ponto a site entre um dispositivo individual e uma rede virtual",
+          "en": "Point-to-site connection between an individual device and a virtual network"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Emparelhamento de rede virtual pelo backbone da Microsoft",
+          "en": "Virtual network peering over the Microsoft backbone network"
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "pt": "Conexão rede a rede entre redes virtuais",
+          "en": "Network-to-network connection between virtual networks"
+        }
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "ARCH-02-05-12",
+    "requirement": "A12",
+    "subject": "DNS do Azure",
+    "level": "essential",
+    "stem": {
+      "pt": "Qual afirmação sobre o Azure DNS está correta?",
+      "en": "Which statement about Azure DNS is correct?"
+    },
+    "explanation": {
+      "pt": "O Azure DNS é um serviço de hospedagem de domínios DNS: você gerencia registros DNS com as mesmas credenciais, APIs, ferramentas e cobrança de outros serviços do Azure. Você não pode usar o Azure DNS para comprar um nome de domínio.",
+      "en": "Azure DNS is a hosting service for DNS domains: you manage DNS records with the same credentials, APIs, tools, and billing as other Azure services. You can't use Azure DNS to buy a domain name."
+    },
+    "distractors": {
+      "pt": "A alternativa B é a armadilha mais tentadora: o Azure DNS hospeda domínios, mas não os registra nem os vende.",
+      "en": "Option B is the most tempting trap: Azure DNS hosts domains but does not register or sell them."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/5-domain-name-system",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Você pode gerenciar registros DNS usando as mesmas credenciais, APIs, ferramentas e cobrança de seus outros serviços do Azure.",
+          "en": "You can manage DNS records by using the same credentials, APIs, tools, and billing as your other Azure services."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Ele fornece um registrador de domínios integrado para comprar qualquer nome de domínio.",
+          "en": "It provides a built-in domain registrar to buy any domain name."
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Ele elimina a necessidade de controles de segurança de rede nas redes virtuais.",
+          "en": "It removes the need for network security controls on virtual networks."
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Ele oferece suporte apenas a domínios DNS privados dentro de redes virtuais.",
+          "en": "It supports only private DNS domains inside virtual networks."
+        }
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "ARCH-02-05-13",
+    "requirement": "A12",
+    "subject": "DNS do Azure",
+    "level": "detail",
+    "stem": {
+      "pt": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+      "en": "For each of the following statements, select Yes if the statement is true. Otherwise, select No."
+    },
+    "explanation": {
+      "pt": "Você não pode comprar um domínio com o Azure DNS (use domínios do App Service ou um registrador de terceiros e depois hospede no Azure DNS). O Azure DNS oferece suporte a domínios DNS privados. Ele usa rede anycast, então o servidor DNS disponível mais próximo responde a cada consulta.",
+      "en": "You can't buy a domain with Azure DNS (use App Service domains or a third-party registrar, then host it in Azure DNS). Azure DNS supports private DNS domains. It uses anycast networking, so the closest available DNS server answers each query."
+    },
+    "distractors": {
+      "pt": "A afirmação 3 é tentadora porque soa simples, mas o anycast encaminha cada consulta ao servidor disponível mais próximo.",
+      "en": "Statement 3 is tempting because it sounds simple, but anycast routes each query to the closest available server."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/5-domain-name-system",
+    "format": "yes-no",
+    "statements": [
+      {
+        "key": "1",
+        "text": {
+          "pt": "O Azure DNS usa rede unicast, então um único servidor designado responde a todas as consultas DNS.",
+          "en": "Azure DNS uses unicast networking, so a single designated server answers every DNS query."
+        }
+      },
+      {
+        "key": "2",
+        "text": {
+          "pt": "Você não pode usar o Azure DNS para comprar um nome de domínio.",
+          "en": "You can't use Azure DNS to buy a domain name."
+        }
+      },
+      {
+        "key": "3",
+        "text": {
+          "pt": "O Azure DNS oferece suporte a domínios DNS privados, que permitem usar seus próprios nomes de domínio personalizados em suas redes virtuais privadas.",
+          "en": "Azure DNS supports private DNS domains, which let you use your own custom domain names in your private virtual networks."
+        }
+      }
+    ],
+    "answer": {
+      "1": false,
+      "2": true,
+      "3": true
+    }
+  },
+  {
+    "id": "ARCH-02-05-14",
+    "requirement": "A12",
+    "subject": "VPN como failover do ExpressRoute",
+    "level": "detail",
+    "stem": {
+      "pt": "Uma empresa usa um circuito do ExpressRoute para acessar o Azure, mas se preocupa com problemas físicos que afetem os cabos ou com uma interrupção do local inteiro do ExpressRoute. Ela quer um caminho alternativo que garanta que sempre haja uma conexão com suas redes virtuais. O que ela deve provisionar?",
+      "en": "A company uses an ExpressRoute circuit to reach Azure but is concerned about physical problems that affect the cables or an outage of the whole ExpressRoute location. It wants an alternative path that ensures there is always a connection to its virtual networks. What should it provision?"
+    },
+    "explanation": {
+      "pt": "Um gateway de VPN pode ser configurado como caminho de failover seguro para conexões do ExpressRoute. Os circuitos do ExpressRoute têm resiliência integrada, mas não estão imunes a problemas físicos ou a interrupções do local inteiro; um gateway de VPN que usa a Internet garante que sempre haja uma conexão.",
+      "en": "A VPN gateway can be configured as a secure failover path for ExpressRoute connections. ExpressRoute circuits have built-in resiliency but aren't immune to physical problems or outages of the whole location; a VPN gateway that uses the internet ensures there is always a connection."
+    },
+    "distractors": {
+      "pt": "O emparelhamento é tentador porque também é privado, mas conecta redes virtuais, e não o local ao Azure.",
+      "en": "Peering is tempting because it is also private, but it connects virtual networks, not on-premises to Azure."
+    },
+    "learnUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/3-virtual-private-networks",
+    "format": "single-choice",
+    "options": [
+      {
+        "key": "A",
+        "text": {
+          "pt": "Uma segunda assinatura com seu próprio circuito do ExpressRoute",
+          "en": "A second subscription with its own ExpressRoute circuit"
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "pt": "Emparelhamento de rede virtual com outra região",
+          "en": "Virtual network peering with another region"
+        }
+      },
+      {
+        "key": "C",
+        "text": {
+          "pt": "Um gateway de VPN que usa a Internet como caminho de failover",
+          "en": "A VPN gateway that uses the internet as a failover path"
+        }
+      },
+      {
+        "key": "D",
+        "text": {
+          "pt": "Uma zona DNS privada",
+          "en": "A private DNS zone"
+        }
+      }
+    ],
+    "answer": "C"
+  }
+]
